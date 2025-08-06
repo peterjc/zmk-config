@@ -1,0 +1,79 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
+
+/ {
+    kscan0: kscan0 {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+        wakeup-source;
+
+        col-gpios
+            = <&pico_header 11 GPIO_ACTIVE_HIGH>
+            , <&pico_header 10 GPIO_ACTIVE_HIGH>
+            , <&pico_header 3 GPIO_ACTIVE_HIGH>
+            , <&pico_header 4 GPIO_ACTIVE_HIGH>
+            , <&pico_header 7 GPIO_ACTIVE_HIGH>
+            , <&pico_header 26 GPIO_ACTIVE_HIGH>
+            , <&pico_header 27 GPIO_ACTIVE_HIGH>
+            , <&pico_header 28 GPIO_ACTIVE_HIGH>
+            , <&pico_header 15 GPIO_ACTIVE_HIGH>
+            , <&pico_header 21 GPIO_ACTIVE_HIGH>
+            , <&pico_header 19 GPIO_ACTIVE_HIGH>
+            , <&pico_header 20 GPIO_ACTIVE_HIGH>
+            , <&pico_header 16 GPIO_ACTIVE_HIGH>
+            ;
+
+        row-gpios
+            = <&pico_header 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pico_header 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            ;
+    };
+};
+
+/ {
+    default_transform: keymap_transform0 {
+        compatible = "zmk,matrix-transform";
+        columns = <13>;
+        rows = <13>;
+        map = <
+            RC(12,11) RC(3,9)  RC(7,7)   RC(7,6)   RC(5,5)  RC(5,4)   RC(3,3)  RC(7,2) RC(5,1) RC(1,0)
+            RC(1,11)  RC(9,9)  RC(8,7)   RC(0,6)   RC(6,5)  RC(4,4)   RC(12,3) RC(3,2) RC(1,1) RC(9,0)
+            RC(11,11) RC(10,9) RC(11,7)  RC(6,6)   RC(10,5) RC(8,4)   RC(4,3)  RC(2,2) RC(2,1) RC(0,0)
+                               RC(11,10) RC(10,10) RC(6,12) RC(12,12) RC(8,8)  RC(9,8)
+        >;
+    };
+};
+
+/ {
+    physical_layout0: physical_layout_0 { // First physical layout, use different naming for other layouts
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        kscan = <&kscan0>; // Label of the kscan node, optional if all layouts use the same
+        transform = <&default_transform>; // Label of the matrix transform for this layout
+    };
+};
+
+/ {
+    chosen {
+        zmk,physical-layout = &physical_layout0;
+        // Other chosen items
+    };
+};
+
