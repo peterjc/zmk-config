@@ -20,3 +20,5 @@
 include:
   - board: rpi_pico
     shield: tc36k
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
