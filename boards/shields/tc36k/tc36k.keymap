@@ -32,4 +32,17 @@
             status = "reserved";
         };
     };
- };
+};
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        // Top left (Q) + top right (P) = &studio_unlock
+        combo_sys_reset {
+            timeout-ms = <100>;
+            key-positions = <0 9>;
+            bindings = <&studio_unlock>;
+        };
+    };
+};
