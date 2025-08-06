@@ -23,3 +23,5 @@ include:
     snippet: zmk-usb-logging
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: rpi_pico
+    shield: settings_reset
