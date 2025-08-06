@@ -6,3 +6,4 @@ url: https://github.com/unspecworks/gamma-omega/tree/main/tc36k
 requires: [raspberrypi]
 features:
   - keys
+  - studio
