@@ -127,5 +127,36 @@
             key-positions = <9 19>;
         };
 
+
+        open_curly {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <3 4>;
+        };
+
+        close_curly {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <5 6>;
+        };
+
+        open_bracket {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <13 14>;
+        };
+
+        close_bracket {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <16 15>;
+        };
+
+        open_square {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <23 24>;
+        };
+
+        close_square {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <25 26>;
+        };
+
     };
 };
