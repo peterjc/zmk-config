@@ -2,6 +2,16 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+  chosen {
+    /delete-property/     zephyr,console;
+    /delete-property/     zephyr,shell-uart;
+    /delete-property/     zephyr,uart-mcumgr;
+    /delete-property/     zephyr,bt-mon-uart;
+    /delete-property/     zephyr,bt-c2h-uart;
+  };
+};
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 
