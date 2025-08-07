@@ -1,5 +1,5 @@
 # Copyright (c) 2025 Peter J. A. Cock
 # SPDX-License-Identifier: MIT
 
-config SHIELD_REVXLP
+config SHIELD_TC36C
     def_bool $(shields_list_contains,tc36k)
