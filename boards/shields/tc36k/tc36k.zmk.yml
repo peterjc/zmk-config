@@ -1,6 +1,6 @@
 file_format: "1"
 id: tc36k
-name: Tutte-Coxeter 36K
+name: "Tutte-Coxeter 36K"
 type: shield
 url: https://github.com/unspecworks/gamma-omega/tree/main/tc36k
 requires: [raspberrypi]
