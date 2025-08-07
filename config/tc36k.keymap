@@ -65,5 +65,67 @@
             key-positions = <0 9>;
             bindings = <&studio_unlock>;
         };
+
+
+        backtick {
+            bindings = <&kp GRAVE>;
+            key-positions = <0 10>;
+        };
+
+        at_sign {
+            bindings = <&kp LS(SQT)>;
+            key-positions = <1 11>;
+        };
+
+        gbp_sign {
+            bindings = <&kp LS(NUMBER_3)>;
+            key-positions = <2 12>;
+        };
+
+        dollar_sign {
+            bindings = <&kp DOLLAR>;
+            key-positions = <3 13>;
+        };
+
+        percent_sign {
+            bindings = <&kp PERCENT>;
+            key-positions = <4 14>;
+        };
+
+        pipe_sign {
+            bindings = <&kp PIPE>;
+            key-positions = <14 24>;
+        };
+
+        exclation_mark {
+            bindings = <&kp EXCL>;
+            key-positions = <25 15>;
+        };
+
+        caret_sign {
+            bindings = <&kp CARET>;
+            key-positions = <15 5>;
+        };
+
+        ampersand_sign {
+            bindings = <&kp AMPS>;
+            key-positions = <6 16>;
+        };
+
+        hash_sign {
+            bindings = <&kp NON_US_HASH>;
+            key-positions = <7 17>;
+        };
+
+        backslash_sign {
+            bindings = <&kp NON_US_BACKSLASH>;
+            key-positions = <18 8>;
+        };
+
+        tilde_sign {
+            bindings = <&kp LS(NON_US_HASH)>;
+            key-positions = <9 19>;
+        };
+
     };
 };
