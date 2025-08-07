@@ -1,6 +1,7 @@
 // A default Qwerty keymap is provided along with the Tutte-Coxeter 36K (TC36K) shield.
 // This file is my personal keymap, a modified version of Hands Down Promethium layout
-// with a numbers/navigation layer, and symbols on chords/combos.
+// with a numbers/navigation layer, and symbols on chords/combos. Assuming ISO with
+// British locale (e.g. double-quote versus at sign, pipe, etc)
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -66,6 +67,7 @@
             bindings = <&studio_unlock>;
         };
 
+        // 3-key horizontal combos (big four)
         esc_combo {
             bindings = <&kp ESCAPE>;
             key-positions = <1 2 3>;
@@ -86,6 +88,7 @@
             key-positions = <26 27 28>;
         };
 
+        // 2-key vertical combos (symbols)
         backtick {
             bindings = <&kp GRAVE>;
             key-positions = <0 10>;
@@ -112,7 +115,7 @@
         };
 
         pipe_sign {
-            bindings = <&kp PIPE>;
+            bindings = <&kp LS(NON_US_BACKSLASH)>;
             key-positions = <14 24>;
         };
 
@@ -146,7 +149,7 @@
             key-positions = <9 19>;
         };
 
-
+        // 2-key horizontal combos (brackets):
         open_curly {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <3 4>;
