@@ -1,0 +1,69 @@
+// A default Qwerty keymap is provided along with the Tutte-Coxeter 36K (TC36K) shield.
+// This file is my personal keymap, a modified version of Hands Down Promethium layout
+// with a numbers/navigation layer, and symbols on chords/combos.
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+  chosen {
+    /delete-property/     zephyr,console;
+    /delete-property/     zephyr,shell-uart;
+    /delete-property/     zephyr,uart-mcumgr;
+    /delete-property/     zephyr,bt-mon-uart;
+    /delete-property/     zephyr,bt-c2h-uart;
+  };
+};
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            display-name = "HD Promethium";
+            bindings = <
+                &kp V  &kp W  &kp P    &kp G   &kp M         &kp SLASH &kp DOT   &kp SQT &kp MINUS &kp EQUAL
+                &kp S  &kp N  &kp T    &kp H   &kp K         &kp COMMA &kp A     &kp E   &kp I     &kp C
+                &kp B  &kp F  &kp D    &kp L   &kp J         &kp SEMI  &kp U     &kp O   &kp Y     &kp W
+                              &kp LGUI &kp R   &kp BACKSPACE &kp LSHFT &kp SPACE &mo 1
+            >;
+        };
+
+        num_nav_layer {
+            display-name = "Num + Nav";
+            bindings = <
+                &kp KP_DIVIDE   &kp N1 &kp N3 &kp N3 &kp KP_EQUAL    &kp ESC   &kp HOME     &kp UP   &kp END       &kp BACKSPACE
+                &kp KP_MULTIPLY &kp N4 &kp N5 &kp N6 &kp KP_PLUS     &kp PG_UP &kp LEFT     &kp DOWN &kp RIGHT     &kp Q
+                &kp KP_DOT      &kp N7 &kp N8 &kp N9 &kp KP_MULTIPLY &kp PG_DN &kp LA(LEFT) &kp RET  &kp LA(RIGHT) &kp Z
+                                       &trans &kp N0 &trans          &trans    &trans       &trans
+            >;
+        };
+
+        // Empty layers for ZMK Studio:
+        extra2 {
+            status = "reserved";
+        };
+        extra3 {
+            status = "reserved";
+        };
+        extra4 {
+            status = "reserved";
+        };
+        extra5 {
+            status = "reserved";
+        };
+    };
+};
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        // Top left (Q) + top right (P) = &studio_unlock
+        combo_sys_reset {
+            timeout-ms = <100>;
+            key-positions = <0 9>;
+            bindings = <&studio_unlock>;
+        };
+    };
+};
