@@ -1,4 +1,5 @@
 # Copyright (c) 2020 The ZMK Contributors
+
 # SPDX-License-Identifier: MIT
 
 if SHIELD_TC36K
@@ -7,5 +8,8 @@ config ZMK_KEYBOARD_NAME
     default "TC36K"
 
 CONFIG_ZMK_HID_INDICATORS=y
+
+CONFIG_ZMK_KSCAN_DEBOUNCE_PRESS_MS=10
+CONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=10
 
 endif
