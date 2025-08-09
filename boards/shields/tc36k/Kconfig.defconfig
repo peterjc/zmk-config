@@ -8,8 +8,4 @@ config ZMK_KEYBOARD_NAME
 
 CONFIG_ZMK_HID_INDICATORS=y
 
-# This may solve issues pressing multiple keys on the same
-# scan row at the same time:
-CONFIG_ZMK_KSCAN_DIRECT_POLLING=y
-
 endif
