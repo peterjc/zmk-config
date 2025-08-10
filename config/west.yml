@@ -8,10 +8,15 @@ manifest:
       url-base: https://github.com/nmunnich
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+    - name: bluedrink9
+      url-base: https://github.com/bluedrink9
   projects:
     - name: zmk
       remote: forkedzmk
       revision: boards/rpi-storage+tester-shield
       import: app/west.yml
+    - name: zmk-poor-mans-led-indicator
+      remote: bluedrink9
+      revision: main
   self:
     path: config
