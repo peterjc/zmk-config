@@ -6,6 +6,18 @@ if SHIELD_TC36K
 config ZMK_KEYBOARD_NAME
     default "TC36K"
 
-CONFIG_ZMK_HID_INDICATORS=y
+# Want this for tracking caps lock etc
+config ZMK_HID_INDICATORS
+    default y
+
+# Make the 6-key roll over explicit (currently ZMK default)
+config CONFIG_ZMK_HID_REPORT_TYPE_HKRO
+    default y
+
+config ZMK_HID_KEYBOARD_REPORT_SIZE
+    default 6
+
+config ZMK_HID_CONSUMER_REPORT_SIZE
+    default 6
 
 endif
