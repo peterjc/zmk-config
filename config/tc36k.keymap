@@ -6,6 +6,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include "zmk-helpers/key-labels/36.h"
+#include <behaviors/naginata.dtsi>
 
 / {
   chosen {
@@ -19,7 +20,33 @@
 
 // Aliases for my layers
 #define DEFAULT 0
-#define NUM_NAV 1
+#define NAGINATA 1
+#define NUM_NAV 2
+
+/ {
+    macros {
+        // To switch to Japanese mode, this sends what Karabiner-Elements sees
+        // as japanese_kana (Apple's kana key for macOS),
+        // japanese_px_xfer (PC converted key for Windows)
+        ng_on: ng_on {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LANGUAGE_1 &kp INTERNATIONAL_4 &to 1>
+                ;
+        };
+        // To switch back to alphanumeric mode, this sends what Karabiner-Elements sees
+        // as japanese_eisuu (Apple's alphanumeric key for macOS),
+        // japanese_pc_nfer (PC unconverted key for Windows)
+        ng_off: ng_off {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LANGUAGE_2 &kp INTERNATIONAL_5 &to 0>
+                ;
+        };
+    };
+};
 
 / {
     behaviors {
@@ -48,6 +75,20 @@
             >;
         };
 
+        // The Japanese Naginata Style layer is usually layer 1, after the default layer 0.
+        // Follows Qwerty but with &np rather than &kp.
+        // Thumbs must include LSHIFT, ideally ENTER too.
+        naginata_layer {
+            display-name = "Naginata";
+            bindings = <
+            // +----------+----------+----------+----------+----------+----------+----------+----------+----------+----------
+                &ng Q      &ng W      &ng E      &ng R      &ng T      &ng Y      &ng U      &ng I      &ng O      &ng P
+                &ng A      &ng S      &ng D      &ng F      &ng G      &ng H      &ng J      &ng K      &ng L      &ng SEMI
+                &ng Z      &ng X      &ng C      &ng V      &ng B      &ng N      &ng M      &ng COMMA  &ng DOT    &ng SLASH
+                              &kp LGUI &ng ENTER   &kp BACKSPACE &kp LSHFT &ng SPACE &mo NUM_NAV
+                >;
+        };
+
         num_nav_layer {
             display-name = "Num + Nav";
             bindings = <
@@ -59,9 +100,6 @@
         };
 
         // Empty layers for ZMK Studio:
-        extra2 {
-            status = "reserved";
-        };
         extra3 {
             status = "reserved";
         };
@@ -91,6 +129,22 @@
             key-positions = <LT0 RT0 LB0 RB0>;
             bindings = <&bootloader>;
             layers = <DEFAULT>;
+        };
+
+        // Japanese mode and 薙刀 (Naginata Style) on/off
+        // Can't use <RM0 RM1> Qwerty H+J as I use that for close bracket
+        combo_ng_on {
+            timeout-ms = <300>;
+            key-positions = <RM0 RM2>; // Qwerty H+K, on right hand home row
+            bindings = <&ng_on>;
+            layers = <DEFAULT>;
+        };
+        // Can't use <LM0 LM1> Qwerty F+G as I use that for open bracket
+        combo_ng_off {
+            timeout-ms = <300>;
+            key-positions = <LM0 LM2>; // Qwerty D+G, on left hand home row
+            bindings = <&ng_off>;
+            layers = <DEFAULT NAGINATA>;
         };
 
         // 2 or 3-key horizontal combos (big four)
