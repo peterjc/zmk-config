@@ -10,6 +10,8 @@ manifest:
       url-base: https://github.com/peterjc
     - name: urob
       url-base: https://github.com/urob
+    - name: eswai
+      url-base: https://github.com/eswai
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -19,6 +21,8 @@ manifest:
       revision: main
     - name: zmk-helpers
       remote: urob
+    - name: zmk-naginata
+      remote: eswai
       revision: main
   self:
     path: config
