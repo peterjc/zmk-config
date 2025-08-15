@@ -16,6 +16,10 @@
   };
 };
 
+// Aliases for my layers
+#define DEFAULT 0
+#define NUM_NAV 1
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -26,7 +30,7 @@
                 &kp V  &kp P  &kp G    &kp M   &kp X         &kp SLASH &kp DOT   &kp SQT &kp MINUS &kp EQUAL
                 &kp S  &kp N  &kp T    &kp H   &kp K         &kp COMMA &kp A     &kp E   &kp I     &kp C
                 &kp B  &kp F  &kp D    &kp L   &kp J         &kp SEMI  &kp U     &kp O   &kp Y     &kp W
-                              &kp LGUI &kp R   &kp BACKSPACE &kp LSHFT &kp SPACE &mo 1
+                              &kp LGUI &kp R   &kp BACKSPACE &kp LSHFT &kp SPACE &mo NUM_NAV
             >;
         };
 
@@ -72,6 +76,7 @@
             timeout-ms = <300>;
             key-positions = <4 5 24 25>;
             bindings = <&bootloader>;
+            layers = <DEFAULT>;
         };
 
         // 2 or 3-key horizontal combos (big four)
@@ -120,92 +125,110 @@
         backtick {
             bindings = <&kp GRAVE>;
             key-positions = <0 10>;
+            layers = <DEFAULT NUM_NAV>;
         };
 
         at_sign {
             bindings = <&kp LS(SQT)>;
             key-positions = <1 11>;
+            layers = <DEFAULT NUM_NAV>;
         };
 
         gbp_sign {
             bindings = <&kp LS(NUMBER_3)>;
             key-positions = <2 12>;
+            layers = <DEFAULT NUM_NAV>;
         };
 
         dollar_sign {
             bindings = <&kp DOLLAR>;
             key-positions = <3 13>;
+            layers = <DEFAULT NUM_NAV>;
         };
 
         percent_sign {
             bindings = <&kp PERCENT>;
             key-positions = <4 14>;
+            layers = <DEFAULT NUM_NAV>;
         };
 
         pipe_sign {
             bindings = <&kp LS(NON_US_BACKSLASH)>;
             key-positions = <14 24>;
+            layers = <DEFAULT NUM_NAV>;
         };
 
         exclation_mark {
             bindings = <&kp EXCL>;
             key-positions = <25 15>;
+            layers = <DEFAULT NUM_NAV>;
         };
 
         caret_sign {
             bindings = <&kp CARET>;
             key-positions = <15 5>;
+            layers = <DEFAULT NUM_NAV>;
         };
 
         ampersand_sign {
             bindings = <&kp AMPS>;
             key-positions = <6 16>;
+            layers = <DEFAULT NUM_NAV>;
         };
 
         hash_sign {
             bindings = <&kp NON_US_HASH>;
             key-positions = <7 17>;
+            layers = <DEFAULT NUM_NAV>;
         };
 
         backslash_sign {
             bindings = <&kp NON_US_BACKSLASH>;
             key-positions = <18 8>;
+            layers = <DEFAULT NUM_NAV>;
         };
 
         tilde_sign {
             bindings = <&kp LS(NON_US_HASH)>;
             key-positions = <9 19>;
+            layers = <DEFAULT NUM_NAV>;
         };
 
         // 2-key horizontal combos (brackets):
         open_curly {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <3 4>;
+            layers = <DEFAULT NUM_NAV>;
         };
 
         close_curly {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <5 6>;
+            layers = <DEFAULT NUM_NAV>;
         };
 
         open_bracket {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <13 14>;
+            layers = <DEFAULT NUM_NAV>;
         };
 
         close_bracket {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <16 15>;
+            layers = <DEFAULT NUM_NAV>;
         };
 
         open_square {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <23 24>;
+            layers = <DEFAULT NUM_NAV>;
         };
 
         close_square {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <25 26>;
+            layers = <DEFAULT NUM_NAV>;
         };
 
     };
