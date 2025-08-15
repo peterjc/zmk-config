@@ -5,6 +5,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include "zmk-helpers/key-labels/36.h"
 
 / {
   chosen {
@@ -74,7 +75,7 @@
         // Inner corners (T, Y, B, N) = &bootloader
         combo_bootloader {
             timeout-ms = <300>;
-            key-positions = <4 5 24 25>;
+            key-positions = <LT0 RT0 LB0 RB0>;
             bindings = <&bootloader>;
             layers = <DEFAULT>;
         };
@@ -82,152 +83,152 @@
         // 2 or 3-key horizontal combos (big four)
         esc_combo {
             bindings = <&kp ESCAPE>;
-            key-positions = <1 2 3>;
+            key-positions = <LT1 LT2 LT3>;
         };
 
         esc2_combo {
             bindings = <&kp ESCAPE>;
-            key-positions = <1 2>;
+            key-positions = <LT1 LT2>;
         };
 
         esc3_combo {
             bindings = <&kp ESCAPE>;
-            key-positions = <2 3>;
+            key-positions = <LT2 LT3>;
         };
 
         bksp_combo {
             bindings = <&kp BACKSPACE>;
-            key-positions = <6 7 8>;
+            key-positions = <RT1 RT2 RT3>;
         };
 
         bksp2_combo {
             bindings = <&kp BACKSPACE>;
-            key-positions = <6 7>;
+            key-positions = <RT1 RT2>;
         };
 
         bksp3_combo {
             bindings = <&kp BACKSPACE>;
-            key-positions = <7 8>;
+            key-positions = <RT2 RT3>;
         };
 
 
         tab_combo {
             bindings = <&kp TAB>;
-            key-positions = <21 22 23>;
+            key-positions = <LB1 LB2 LB3>;
         };
 
         enter_combo {
             bindings = <&kp ENTER>;
-            key-positions = <26 27 28>;
+            key-positions = <RB1 RB2 RB3>;
         };
 
         // 2-key vertical combos (symbols)
         backtick {
             bindings = <&kp GRAVE>;
-            key-positions = <0 10>;
+            key-positions = <LT4 LM4>;
             layers = <DEFAULT NUM_NAV>;
         };
 
         at_sign {
             bindings = <&kp LS(SQT)>;
-            key-positions = <1 11>;
+            key-positions = <LT3 LM3>;
             layers = <DEFAULT NUM_NAV>;
         };
 
         gbp_sign {
             bindings = <&kp LS(NUMBER_3)>;
-            key-positions = <2 12>;
+            key-positions = <LT2 LM2>;
             layers = <DEFAULT NUM_NAV>;
         };
 
         dollar_sign {
             bindings = <&kp DOLLAR>;
-            key-positions = <3 13>;
+            key-positions = <LT1 LM1>;
             layers = <DEFAULT NUM_NAV>;
         };
 
         percent_sign {
             bindings = <&kp PERCENT>;
-            key-positions = <4 14>;
+            key-positions = <LT0 LM0>;
             layers = <DEFAULT NUM_NAV>;
         };
 
         pipe_sign {
             bindings = <&kp LS(NON_US_BACKSLASH)>;
-            key-positions = <14 24>;
+            key-positions = <LM0 LB0>;
             layers = <DEFAULT NUM_NAV>;
         };
 
         exclation_mark {
             bindings = <&kp EXCL>;
-            key-positions = <25 15>;
+            key-positions = <RM0 RB0>;
             layers = <DEFAULT NUM_NAV>;
         };
 
         caret_sign {
             bindings = <&kp CARET>;
-            key-positions = <15 5>;
+            key-positions = <RT0 RM0>;
             layers = <DEFAULT NUM_NAV>;
         };
 
         ampersand_sign {
             bindings = <&kp AMPS>;
-            key-positions = <6 16>;
+            key-positions = <RT1 RM1>;
             layers = <DEFAULT NUM_NAV>;
         };
 
         hash_sign {
             bindings = <&kp NON_US_HASH>;
-            key-positions = <7 17>;
+            key-positions = <RT2 RM2>;
             layers = <DEFAULT NUM_NAV>;
         };
 
         backslash_sign {
             bindings = <&kp NON_US_BACKSLASH>;
-            key-positions = <18 8>;
+            key-positions = <RT3 RM3>;
             layers = <DEFAULT NUM_NAV>;
         };
 
         tilde_sign {
             bindings = <&kp LS(NON_US_HASH)>;
-            key-positions = <9 19>;
+            key-positions = <RT4 RM4>;
             layers = <DEFAULT NUM_NAV>;
         };
 
         // 2-key horizontal combos (brackets):
         open_curly {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <3 4>;
+            key-positions = <LT0 LT1>;
             layers = <DEFAULT NUM_NAV>;
         };
 
         close_curly {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <5 6>;
+            key-positions = <RT0 RT1>;
             layers = <DEFAULT NUM_NAV>;
         };
 
         open_bracket {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <13 14>;
+            key-positions = <LM0 LM1>;
             layers = <DEFAULT NUM_NAV>;
         };
 
         close_bracket {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <16 15>;
+            key-positions = <RM0 RM1>;
             layers = <DEFAULT NUM_NAV>;
         };
 
         open_square {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <23 24>;
+            key-positions = <LB0 LB1>;
             layers = <DEFAULT NUM_NAV>;
         };
 
         close_square {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <25 26>;
+            key-positions = <RB0 RB1>;
             layers = <DEFAULT NUM_NAV>;
         };
 
