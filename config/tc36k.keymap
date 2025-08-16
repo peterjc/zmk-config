@@ -96,14 +96,17 @@
 
         // The Japanese Naginata Style layer is usually layer 1, after the default layer 0.
         // Follows Qwerty but with &np rather than &kp.
-        // Thumbs must include LSHIFT, ideally ENTER too.
+        // Thumbs must include `&ng SPACE` (kana-shift when held) and/or
+        // `&ng ENTER` (kana-shift when held), ideally both.
+        // Standard (ABC) shift is useful for katakana, here combined
+        // with shift+space for selecting previous kanji selection on tap.
         naginata_layer {
             display-name = "Naginata";
             bindings = <
                 &ng Q  &ng W  &ng E               &ng R     &ng T         &ng Y     &ng U     &ng I     &ng O      &ng P
                 &ng A  &ng S  &ng D               &ng F     &ng G         &ng H     &ng J     &ng K     &ng L      &ng SEMI
                 &ng Z  &ng X  &ng C               &ng V     &ng B         &ng N     &ng M     &ng COMMA &ng DOT    &ng SLASH
-                              &base_with_mod LGUI &ng ENTER &kp BACKSPACE &kp LSHFT &ng SPACE &mo NUM_NAV
+                              &base_with_mod LGUI &ng ENTER &kp BACKSPACE &mt LSHFT LS(SPACE) &ng SPACE &mo NUM_NAV
                 >;
         };
 
