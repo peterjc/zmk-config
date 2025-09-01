@@ -179,6 +179,38 @@
             key-positions = <RB1 RB2 RB3>;
         };
 
+        // 2-key horizontal home-row combos for modifiers
+        left_alt_combo {
+            bindings = <&kp LALT>;
+            key-positions = <LM3 LM4>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+        left_ctrl_combo {
+            bindings = <&kp LCTRL>;
+            key-positions = <LM2 LM3>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+        left_gui_combo {
+            bindings = <&kp LGUI>;
+            key-positions = <LM1 LM2>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+        right_alt_combo {
+            bindings = <&kp RALT>;
+            key-positions = <RM3 RM4>;
+             layers = <DEFAULT NUM_NAV>;
+        };
+        right_ctrl_combo {
+            bindings = <&kp RCTRL>;
+            key-positions = <RM2 RM3>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+        right_gui_combo {
+            bindings = <&kp RGUI>;
+            key-positions = <RM1 RM2>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
         // 2-key horizontal combos for rare letters
         q_combo {
             bindings = <&kp Q>;
