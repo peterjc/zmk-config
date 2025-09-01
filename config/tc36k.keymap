@@ -87,10 +87,10 @@
         default_layer {
             display-name = "HD Promethium";
             bindings = <
-                &kp V  &kp P  &kp G    &kp M   &kp X         &kp SLASH &kp DOT   &xquote &kp MINUS &kp EQUAL
-                &kp S  &kp N  &kp T    &kp H   &kp K         &kp COMMA &kp A     &kp E   &kp I     &kp C
-                &kp B  &kp F  &kp D    &kp L   &kp J         &kp SEMI  &kp U     &kp O   &kp Y     &kp W
-                              &kp LGUI &kp R   &kp BACKSPACE &kp LSHFT &kp SPACE &mo NUM_NAV
+                &kp ESCAPE &kp P  &kp G    &kp M   &kp X         &kp SLASH &kp DOT   &xquote &kp MINUS &kp EQUAL
+                &kp S      &kp N  &kp T    &kp H   &kp K         &kp COMMA &kp A     &kp E   &kp I     &kp C
+                &kp B      &kp F  &kp D    &kp L   &kp J         &kp SEMI  &kp U     &kp O   &kp Y     &kp W
+                                  &kp LGUI &kp R   &kp BACKSPACE &kp LSHFT &kp SPACE &mo NUM_NAV
             >;
         };
 
@@ -168,38 +168,7 @@
             layers = <DEFAULT NAGINATA>;
         };
 
-        // 2 or 3-key horizontal combos (big four)
-        esc_combo {
-            bindings = <&kp ESCAPE>;
-            key-positions = <LT1 LT2 LT3>;
-        };
-
-        esc2_combo {
-            bindings = <&kp ESCAPE>;
-            key-positions = <LT1 LT2>;
-        };
-
-        esc3_combo {
-            bindings = <&kp ESCAPE>;
-            key-positions = <LT2 LT3>;
-        };
-
-        bksp_combo {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <RT1 RT2 RT3>;
-        };
-
-        bksp2_combo {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <RT1 RT2>;
-        };
-
-        bksp3_combo {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <RT2 RT3>;
-        };
-
-
+        // 3-key horizontal combos
         tab_combo {
             bindings = <&kp TAB>;
             key-positions = <LB1 LB2 LB3>;
@@ -208,6 +177,25 @@
         enter_combo {
             bindings = <&kp ENTER>;
             key-positions = <RB1 RB2 RB3>;
+        };
+
+        // 2-key horizontal combos for rare letters
+        q_combo {
+            bindings = <&kp Q>;
+            key-positions = <LB3 LB4>;
+            layers = <DEFAULT>;
+        };
+
+        z_combo {
+            bindings = <&kp Z>;
+            key-positions = <RB3 RB4>;
+            layers = <DEFAULT>;
+        };
+
+        v_combo {
+            bindings = <&kp V>;
+            key-positions = <LT2 LT3>;
+            layers = <DEFAULT>;
         };
 
         // 2-key vertical combos (symbols)
