@@ -159,7 +159,7 @@
             timeout-ms = <300>;
             key-positions = <RM0 RM2>; // Qwerty H+K, on right hand home row
             bindings = <&ng_on>;
-            layers = <DEFAULT>;
+            layers = <DEFAULT NAGINATA>;
         };
         // Can't use <LM0 LM1> Qwerty F+G as I use that for open bracket
         combo_ng_off {
