@@ -1,6 +1,7 @@
 parse_config:
   zmk_additional_includes: ["zmk-helpers/include"]
   zmk_keycode_map:
+    BACKSPACE: '⌫'
     BSPC: '⌫'
     DEL: '⌦'
     AMPERSAND: '&'
@@ -90,6 +91,7 @@ parse_config:
     DOWN: ↓
     TAB: ↹
     RETURN: '⏎'
+    ENTER: '⏎'
     ESCAPE: '⎋'
     C_REWIND: '⏮'
     C_FAST_FORWARD: '⏭'
@@ -126,3 +128,7 @@ parse_config:
     combo_ng_off: {'align': 'bottom', 'offset': 0.1, 'slide': -0.25, 'key': 'JP-off', 'width': 50}
     pipe_sign: {'align': 'right', 'key': '|'}
     exclamation_mark: {'align': 'left'}
+    backtick: {'key': '`'}
+    at_sign: {'key': '@'}
+    gbp_sign: {'key': '£'}
+    tilde_sign: {'key': '~'}
