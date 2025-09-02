@@ -113,10 +113,10 @@
         num_nav_layer {
             display-name = "Num + Nav";
             bindings = <
-                &mt LALT  KP_DIVIDE   &kp N1 &kp N2 &kp N3 &kp KP_EQUAL &kp ESC   &kp HOME     &kp UP   &kp END       &mt RALT BACKSPACE
-                &mt LCTRL KP_MULTIPLY &kp N4 &kp N5 &kp N6 &kp KP_PLUS  &kp PG_UP &kp LEFT     &kp DOWN &kp RIGHT     &mt RCTRL Q
-                &mt LSHFT KP_DOT      &kp N7 &kp N8 &kp N9 &kp KP_MINUS &kp PG_DN &kp LA(LEFT) &kp RET  &kp LA(RIGHT) &mt RSHFT Z
-                                       &trans &kp N0 &trans             &trans    &trans       &trans
+                &mt LALT  KP_DIVIDE   &kp N1 &kp N2 &kp N3 &kp KP_EQUAL &kp ESCAPE &kp HOME     &kp UP     &kp END       &mt RALT BACKSPACE
+                &mt LCTRL KP_MULTIPLY &kp N4 &kp N5 &kp N6 &kp KP_PLUS  &kp PG_UP  &kp LEFT     &kp DOWN   &kp RIGHT     &mt RCTRL Q
+                &mt LSHFT KP_DOT      &kp N7 &kp N8 &kp N9 &kp KP_MINUS &kp PG_DN  &kp LA(LEFT) &kp RETURN &kp LA(RIGHT) &mt RSHFT Z
+                                             &trans &kp N0 &trans       &trans     &trans       &trans
             >;
         };
 
@@ -138,7 +138,7 @@
         compatible = "zmk,combos";
 
         // Top left (Q) + top right (P) = &studio_unlock
-        combo_sys_reset {
+        combo_studio_unlock {
             timeout-ms = <100>;
             key-positions = <0 9>;
             bindings = <&studio_unlock>;
@@ -268,7 +268,7 @@
             layers = <DEFAULT NUM_NAV>;
         };
 
-        exclation_mark {
+        exclamation_mark {
             bindings = <&kp EXCL>;
             key-positions = <RM0 RB0>;
             layers = <DEFAULT NUM_NAV>;
