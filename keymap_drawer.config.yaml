@@ -129,10 +129,10 @@ parse_config:
   zmk_combos:
     combo_studio_unlock: {'hidden': true}
     combo_bootloader: {'hidden': true}
-    tab_combo: {'align': 'bottom', 'offset': 0.1, 'slide': -0.65}
-    enter_combo: {'align': 'bottom', 'offset': 0.1, 'slide': 0.65}
-    combo_ng_on: {'align': 'bottom', 'offset': 0.1, 'slide': 0.25, 'key': 'JP-on', 'width': 50}
-    combo_ng_off: {'align': 'bottom', 'offset': 0.1, 'slide': -0.25, 'key': 'JP-off', 'width': 50}
+    tab_combo: {'align': 'bottom', 'offset': 0.1, 'slide': -0.5}
+    enter_combo: {'align': 'bottom', 'offset': 0.1, 'slide': 0.5}
+    combo_ng_on: {'align': 'bottom', 'offset': 0.1, 'slide': 0.5, 'key': 'かな', 'width': 30}
+    combo_ng_off: {'align': 'bottom', 'offset': 0.1, 'slide': -0.5, 'key': 'ABC', 'width': 30}
     pipe_sign: {'align': 'right', 'key': '|'}
     exclamation_mark: {'align': 'left'}
     backtick: {'key': '`'}
