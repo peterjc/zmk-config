@@ -142,6 +142,7 @@
             timeout-ms = <100>;
             key-positions = <0 9>;
             bindings = <&studio_unlock>;
+            layers = <DEFAULT>;
         };
 
         // Inner corners (T, Y, B, N) = &bootloader
