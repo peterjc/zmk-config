@@ -119,6 +119,12 @@ parse_config:
     'LC(TAB)': '⌃↹'
     'LS(LC(TAB))': '⌃⇧↹'
     SPACE: ⎵
+    KP_DIVIDE: '/'
+    KP_MULTIPLY: '*'
+    KP_DOT: '.'
+    KP_EQUAL: '='
+    KP_PLUS: '+'
+    KP_MINUS: '-'
   zmk_combos:
     combo_studio_unlock: {'hidden': true}
     combo_bootloader: {'hidden': true}
