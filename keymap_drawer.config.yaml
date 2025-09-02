@@ -172,3 +172,4 @@ parse_config:
     '&ng SLASH': {'t': 'れ'}
     '&ng SPACE': {'t': '⎵', 'h': 'Kana-Shift'}
     '&ng ENTER': {'t': '⏎', 'h': 'Kana-Shift'}
+    '&base_with_mod LGUI': '⌘'
