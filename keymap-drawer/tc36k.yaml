@@ -75,7 +75,7 @@ layers:
   - {t: ⎵, h: Kana-Shift}
   - Num + Nav
   Num + Nav:
-  - {t: /, h: ⎇}
+  - /
   - '1'
   - '2'
   - '3'
@@ -84,8 +84,8 @@ layers:
   - HOME
   - ↑
   - END
-  - {t: ⌫, h: ⎇}
-  - {t: '*', h: ⌃}
+  - ⌫
+  - '*'
   - '4'
   - '5'
   - '6'
@@ -94,7 +94,7 @@ layers:
   - ←
   - ↓
   - →
-  - {t: Q, h: ⌃}
+  - Q
   - {t: ., h: ⇧}
   - '7'
   - '8'
@@ -104,7 +104,7 @@ layers:
   - ↞
   - ⏎
   - ↠
-  - {t: Z, h: ⇧}
+  - Z
   - {t: ▽, type: trans}
   - '0'
   - {t: ▽, type: trans}
