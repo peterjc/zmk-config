@@ -89,10 +89,10 @@ parse_config:
     RIGHT: →
     UP: ↑
     DOWN: ↓
-    PG_UP: 'Pg Up'
-    PG_DN: 'Pg Dn'
-    HOME: Home
-    END: End
+    PG_UP: ⇞
+    PG_DN: ⇟
+    HOME: ↖
+    END: ↘
     TAB: ↹
     RETURN: '⏎'
     ENTER: '⏎'
@@ -231,6 +231,10 @@ draw_config:
         paint-order: stroke;
     }
 
+    text.tap {
+        font-size: 16px;
+    }
+
     /* styling for combo tap, and key hold/shifted label text */
     text.combo, text.hold, text.shifted {
         font-size: 11px;
@@ -278,11 +282,11 @@ draw_config:
         fill: #00CC00;
     }
     text.left {
-        font-size: 22px;
+        font-size: 18px;
         translate: 16px 7px;
     }
     text.right {
         fill: #00CC00;
-        font-size: 18px;
+        font-size: 16px;
         translate: -16px -10px;
     }
