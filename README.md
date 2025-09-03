@@ -34,4 +34,8 @@ and the Naginata layer on and off, those are Qwerty `D`+`G` (labelled 'ABC' in
 the image) and Qwerty `H`+`K` instead (labelled 'かな'). This layout uses a *lot*
 of chording, but these are not defined as ZMK combos, and so are not drawn here.
 
-![Image](keymap-drawer/tc36k.svg)
+![Keymap Image](keymap-drawer/tc36k.svg)
+
+In this keymap image the base layer keys and space are coloured by usage frequencies (orange/pink
+for highest use - mainly home keys, down through pink, purples, to a dark blue for low like the
+letters demoted to combos: Q, Z, and V).

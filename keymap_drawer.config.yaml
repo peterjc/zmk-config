@@ -144,6 +144,43 @@ parse_config:
     gbp_sign: {'key': '£'}
     tilde_sign: {'key': '~'}
   raw_binding_map:
+    # These are the English letters defined here to tag them by usage:
+    '&kp Q': {'t': 'Q', 'type': 'low'}
+    '&kp W': {'t': 'W', 'type': 'medium'}
+    '&kp E': {'t': 'E', 'type': 'high'}
+    '&kp R': {'t': 'R', 'type': 'high'}
+    '&kp T': {'t': 'T', 'type': 'high'}
+    '&kp Y': {'t': 'Y', 'type': 'medium'}
+    '&kp U': {'t': 'U', 'type': 'medium-high'}
+    '&kp I': {'t': 'I', 'type': 'high'}
+    '&kp O': {'t': 'O', 'type': 'high'}
+    '&kp P': {'t': 'P', 'type': 'medium-low'}
+    '&kp A': {'t': 'A', 'type': 'high'}
+    '&kp S': {'t': 'S', 'type': 'high'}
+    '&kp D': {'t': 'D', 'type': 'medium-high'}
+    '&kp F': {'t': 'F', 'type': 'medium'}
+    '&kp G': {'t': 'G', 'type': 'medium'}
+    '&kp H': {'t': 'H', 'type': 'high'}
+    '&kp J': {'t': 'J', 'type': 'low'}
+    '&kp K': {'t': 'K', 'type': 'low'}
+    '&kp L': {'t': 'L', 'type': 'medium-high'}
+    '&kp SEMI': {'t': ';', 'type': 'low'}
+    '&kp Z': {'t': 'Z', 'type': 'low'}
+    '&kp X': {'t': 'X', 'type': 'low'}
+    '&kp C': {'t': 'C', 'type': 'medium'}
+    '&kp V': {'t': 'V', 'type': 'low'}
+    '&kp B': {'t': 'B', 'type': 'medium-low'}
+    '&kp N': {'t': 'N', 'type': 'high'}
+    '&kp M': {'t': 'M', 'type': 'medium'}
+    '&kp COMMA': {'t': ',', 'type': 'medium-low'}
+    '&kp DOT': {'t': '.', 'type': 'medium-low'}
+    # not in Bird mappings:
+    '&kp SLASH': {'t': '/', 'type': 'low'}
+    '&xquote': {'t': '''', 'type': 'medium-low'}  # this key is single & double quote
+    '&kp MINUS': {'t': '-', 'type': 'medium-low'}
+    '&kp EQUAL': {'t': '=', 'type': 'low'}
+    '&kp SPACE': {'t': '⎵', 'type': 'high'}
+     # These are the Naginata Style keys for typing in Japanese using kana:
     '&ng Q': {'t': '⎋', 'h': 'Small-kana'}
     '&ng W': {'left': 'き', 'right': 'ぬ'}
     '&ng E': {'left': 'て', 'right': 'り'}
@@ -277,6 +314,23 @@ draw_config:
     .icon-tabler > path[stroke="none"][fill="none"] {
         visibility: collapse;
     }
+
+    rect.low {
+        fill: #355978;
+    }
+    rect.medium-low {
+        fill: #636696;
+    }
+    rect.medium {
+        fill: #9E6DA4;
+    }
+    rect.medium-high {
+        fill: #D7749D;
+    }
+    rect.high {
+        fill: #FF8585;
+    }
+
     /* green styling for Naginata kana-shift */
     rect.kshift {
         fill: #00CC00;
