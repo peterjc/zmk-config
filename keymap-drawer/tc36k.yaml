@@ -2,40 +2,40 @@ layout: {zmk_keyboard: tc36k}
 layers:
   HD Promethium:
   - ⎋
-  - P
-  - G
-  - M
-  - X
-  - {t: /, s: '?'}
-  - {t: ., s: '>'}
-  - {t: '''', s: '2'}
-  - {t: '-', s: _}
-  - {t: '=', s: +}
-  - S
-  - N
-  - T
-  - H
-  - K
-  - {t: ',', s: <}
-  - A
-  - E
-  - I
-  - C
-  - B
-  - F
-  - D
-  - L
-  - J
-  - {t: ;, s: ':'}
-  - U
-  - O
-  - Y
-  - W
+  - {t: P, type: medium-low}
+  - {t: G, type: medium}
+  - {t: M, type: medium}
+  - {t: X, type: low}
+  - {t: /, type: low}
+  - {t: ., type: medium-low}
+  - {t: '''', type: medium-low}
+  - {t: '-', type: medium-low}
+  - {t: '=', type: low}
+  - {t: S, type: high}
+  - {t: N, type: high}
+  - {t: T, type: high}
+  - {t: H, type: high}
+  - {t: K, type: low}
+  - {t: ',', type: medium-low}
+  - {t: A, type: high}
+  - {t: E, type: high}
+  - {t: I, type: high}
+  - {t: C, type: medium}
+  - {t: B, type: medium-low}
+  - {t: F, type: medium}
+  - {t: D, type: medium-high}
+  - {t: L, type: medium-high}
+  - {t: J, type: low}
+  - {t: ;, type: low}
+  - {t: U, type: medium-high}
+  - {t: O, type: high}
+  - {t: Y, type: medium}
+  - {t: W, type: medium}
   - ⌘
-  - R
+  - {t: R, type: high}
   - ⌫
   - ⇧
-  - ⎵
+  - {t: ⎵, type: high}
   - Num + Nav
   Naginata:
   - {t: ⎋, h: Small-kana}
@@ -94,7 +94,7 @@ layers:
   - ←
   - ↓
   - →
-  - Q
+  - {t: Q, type: low}
   - {t: ., h: ⇧}
   - '7'
   - '8'
@@ -104,7 +104,7 @@ layers:
   - ↞
   - ⏎
   - ↠
-  - Z
+  - {t: Z, type: low}
   - {t: ▽, type: trans}
   - '0'
   - {t: ▽, type: trans}
@@ -165,13 +165,13 @@ combos:
   k: ⌘
   l: [HD Promethium, Num + Nav]
 - p: [21, 20]
-  k: Q
+  k: {t: Q, type: low}
   l: [HD Promethium]
 - p: [28, 29]
-  k: Z
+  k: {t: Z, type: low}
   l: [HD Promethium]
 - p: [2, 1]
-  k: V
+  k: {t: V, type: low}
   l: [HD Promethium]
 - p: [0, 10]
   k: '`'
