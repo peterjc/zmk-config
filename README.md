@@ -31,6 +31,7 @@ made minor changes so that Qwerty `Q` is now Escape on tap, small on hold, and
 added shift-space on a thumb for kanji selection without needing editing layers.
 Due to my brackets combos clashing with the default way to switch Japanese mode
 and the Naginata layer on and off, those are Qwerty `D`+`G` (labelled 'ABC' in
-the image) and `H`+`K` instead (labelled 'かな').
+the image) and Qwerty `H`+`K` instead (labelled 'かな'). This layout uses a *lot*
+of chording, but these are not defined as ZMK combos, and so are not drawn here.
 
 ![Image](keymap-drawer/tc36k.svg)
