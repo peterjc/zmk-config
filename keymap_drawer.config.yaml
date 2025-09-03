@@ -89,6 +89,10 @@ parse_config:
     RIGHT: →
     UP: ↑
     DOWN: ↓
+    PG_UP: 'Pg Up'
+    PG_DN: 'Pg Dn'
+    HOME: Home
+    END: End
     TAB: ↹
     RETURN: '⏎'
     ENTER: '⏎'
