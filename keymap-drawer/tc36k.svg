@@ -327,12 +327,12 @@ text.right {
 <text x="448" y="84" class="combo tap">⌘</text>
 </g>
 <g class="combo low combopos-12">
-<rect rx="6" ry="6" x="42" y="127" width="28" height="26" class="combo low"/>
-<text x="56" y="140" class="combo low tap">Q</text>
+<rect rx="6" ry="6" x="154" y="15" width="28" height="26" class="combo low"/>
+<text x="168" y="28" class="combo low tap">Q</text>
 </g>
 <g class="combo low combopos-13">
-<rect rx="6" ry="6" x="546" y="127" width="28" height="26" class="combo low"/>
-<text x="560" y="140" class="combo low tap">Z</text>
+<rect rx="6" ry="6" x="490" y="15" width="28" height="26" class="combo low"/>
+<text x="504" y="28" class="combo low tap">Z</text>
 </g>
 <g class="combo low combopos-14">
 <rect rx="6" ry="6" x="98" y="15" width="28" height="26" class="combo low"/>
