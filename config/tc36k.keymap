@@ -221,13 +221,13 @@
         // 2-key horizontal combos for rare letters
         q_combo {
             bindings = <&kp Q>;
-            key-positions = <LB3 LB4>;
+            key-positions = <LT1 LT2>;
             layers = <DEFAULT>;
         };
 
         z_combo {
             bindings = <&kp Z>;
-            key-positions = <RB3 RB4>;
+            key-positions = <RT2 RT3>;
             layers = <DEFAULT>;
         };
 
