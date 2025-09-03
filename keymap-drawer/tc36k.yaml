@@ -39,40 +39,40 @@ layers:
   - Num + Nav
   Naginata:
   - {t: ⎋, h: Small-kana}
-  - {t: き, s: ぬ}
-  - {t: て, s: り}
-  - {t: し, s: め}
+  - {left: き, right: ぬ}
+  - {left: て, right: り}
+  - {left: し, right: め}
   - ←
   - →
-  - {t: ⌫, s: さ}
-  - {t: る, s: よ}
-  - {t: す, s: え}
-  - {t: へ, s: ゆ}
-  - {t: ろ, s: せ}
-  - {t: け, s: み}
-  - {t: と, s: に}
-  - {t: か, h: 濁音, s: ま}
-  - {t: っ, s: ち}
-  - {t: く, s: や}
-  - {t: あ, h: 濁音, s: の}
-  - {t: い, s: も}
-  - {t: う, s: つ}
-  - {t: ー, s: ふ}
-  - ほ
-  - ひ
-  - {t: は, s: を}
-  - {t: こ, h: 半濁音, s: 、}
-  - {t: そ, s: む}
-  - {t: た, s: お}
-  - {t: な, h: 半濁音, s: 。}
-  - {t: ん, s: ね}
-  - {t: ら, s: わ}
-  - れ
+  - {left: ⌫, right: さ}
+  - {left: る, right: よ}
+  - {left: す, right: え}
+  - {left: へ, right: ゆ}
+  - {left: ろ, right: せ}
+  - {left: け, right: み}
+  - {left: と, right: に}
+  - {h: 濁音, left: か, right: ま}
+  - {left: っ, right: ち}
+  - {left: く, right: や}
+  - {h: 濁音, left: あ, right: の}
+  - {left: い, right: も}
+  - {left: う, right: つ}
+  - {left: ー, right: ふ}
+  - {left: ほ}
+  - {left: ひ}
+  - {left: は, right: を}
+  - {h: 半濁音, left: こ, right: 、}
+  - {left: そ, right: む}
+  - {left: た, right: お}
+  - {h: 半濁音, left: な, right: 。}
+  - {left: ん, right: ね}
+  - {left: ら, right: わ}
+  - {left: れ}
   - ⌘
-  - {t: ⏎, h: Kana-Shift}
+  - {t: ⏎, h: Kana-Shift, type: kshift}
   - ⌫
   - {t: ⇧⎵, h: ⇧}
-  - {t: ⎵, h: Kana-Shift}
+  - {t: ⎵, h: Kana-Shift, type: kshift}
   - Num + Nav
   Num + Nav:
   - /
@@ -81,16 +81,16 @@ layers:
   - '3'
   - '='
   - ⎋
-  - HOME
+  - ↖
   - ↑
-  - END
+  - ↘
   - ⌫
   - '*'
   - '4'
   - '5'
   - '6'
   - +
-  - PG UP
+  - ⇞
   - ←
   - ↓
   - →
@@ -100,7 +100,7 @@ layers:
   - '8'
   - '9'
   - '-'
-  - PG DN
+  - ⇟
   - ↞
   - ⏎
   - ↠
@@ -124,26 +124,28 @@ combos:
   k: かな
   l: [HD Promethium, Naginata]
   a: bottom
-  o: 0.1
+  o: -0.02
   s: 0.5
-  w: 30.0
+  h: 15.0
 - p: [14, 12]
   k: ABC
   l: [HD Promethium, Naginata]
   a: bottom
-  o: 0.1
+  o: -0.02
   s: -0.5
-  w: 30.0
+  h: 15.0
 - p: [23, 22, 21]
   k: ↹
   a: bottom
-  o: 0.1
+  o: -0.02
   s: -0.5
+  h: 15.0
 - p: [26, 27, 28]
   k: ⏎
   a: bottom
-  o: 0.1
+  o: -0.02
   s: 0.5
+  h: 15.0
 - p: [11, 10]
   k: ⎇
   l: [HD Promethium, Num + Nav]
