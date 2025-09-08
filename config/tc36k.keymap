@@ -21,7 +21,8 @@
 // Aliases for my layers
 #define DEFAULT 0
 #define NAGINATA 1
-#define NUM_NAV 2
+#define KOGAKI 2
+#define NUM_NAV 3
 
 / {
     macros {
@@ -64,6 +65,20 @@
                 ;
         };
 
+        // Small kana (kogaki) macros to define as a ZMK layer
+        ng_xya: ng_xya {compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &kp X &kp Y &kp A>;};
+        ng_xyu: ng_xyu {compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &kp X &kp Y &kp U>;};
+        ng_xyo: ng_xyo {compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &kp X &kp Y &kp O>;};
+        ng_xa: ng_xa {compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &kp X &kp A>;};
+        ng_xi: ng_xi {compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &kp X &kp I>;};
+        ng_xu: ng_xu {compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &kp X &kp U>;};
+        ng_xe: ng_xe {compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &kp X &kp E>;};
+        ng_xo: ng_xo {compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &kp X &kp O>;}; 
+        ng_xwa: ng_xwa {compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &kp X &kp W &kp A>;};
+        ng_xtu: ng_xtu {compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &kp X &kp T &kp U>;};
+        ng_xke: ng_xke {compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &kp X &kp K &kp E>;};
+        ng_xka: ng_xka {compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&macro_tap &kp X &kp K &kp A>;};
+ 
     };
 };
 
@@ -103,10 +118,19 @@
         naginata_layer {
             display-name = "Naginata";
             bindings = <
-                &ng Q  &ng W  &ng E               &ng R     &ng T         &ng Y     &ng U     &ng I     &ng O      &ng P
-                &ng A  &ng S  &ng D               &ng F     &ng G         &ng H     &ng J     &ng K     &ng L      &ng SEMI
-                &ng Z  &ng X  &ng C               &ng V     &ng B         &ng N     &ng M     &ng COMMA &ng DOT    &ng SLASH
-                              &base_with_mod LGUI &ng ENTER &kp BACKSPACE &mt LSHFT LS(SPACE) &ng SPACE &mo NUM_NAV
+                &lt KOGAKI ESCAPE &ng W  &ng E               &ng R     &ng T         &ng Y     &ng U     &ng I     &ng O      &ng P
+                &ng A             &ng S  &ng D               &ng F     &ng G         &ng H     &ng J     &ng K     &ng L      &ng SEMI
+                &ng Z             &ng X  &ng C               &ng V     &ng B         &ng N     &ng M     &ng COMMA &ng DOT    &ng SLASH
+                                         &base_with_mod LGUI &ng ENTER &kp BACKSPACE &mt LSHFT LS(SPACE) &ng SPACE &mo NUM_NAV
+                >;
+        };
+        kogaki_layer {
+            display-name = "Kogaki";
+            bindings = <
+                &trans &trans  &trans &trans  &trans  &trans  &trans &ng_xyo &ng_xe  &ng_xyu
+                &trans &ng_xke &trans &ng_xka &ng_xtu &ng_xya &ng_xa &ng_xi  &ng_xu  &trans
+                &trans &trans  &trans &trans  &trans  &ng_xo  &trans &trans  &ng_xwa &trans
+                               &trans &trans  &trans  &trans  &trans &trans
                 >;
         };
 
