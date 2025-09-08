@@ -38,7 +38,7 @@ layers:
   - {t: ⎵, type: high}
   - Num + Nav
   Naginata:
-  - {t: ⎋, h: Small-kana}
+  - {t: ⎋, h: Kogaki}
   - {left: き, right: ぬ}
   - {left: て, right: り}
   - {left: し, right: め}
@@ -74,6 +74,43 @@ layers:
   - {t: ⇧⎵, h: ⇧}
   - {t: ⎵, h: Kana-Shift, type: kshift}
   - Num + Nav
+  Kogaki:
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {left: ょ}
+  - {left: ぇ}
+  - {left: ゅ}
+  - {t: ▽, type: trans}
+  - {left: ヶ}
+  - {t: ▽, type: trans}
+  - {left: ヵ}
+  - {left: っ}
+  - {left: ゃ}
+  - {left: ぁ}
+  - {left: ぃ}
+  - {left: ぅ}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {left: ぉ}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {left: ゎ}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Num + Nav:
   - /
   - '1'
