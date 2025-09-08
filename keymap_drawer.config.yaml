@@ -214,6 +214,20 @@ parse_config:
     '&ng SPACE': {'t': '⎵', 'h': 'Kana-Shift', 'type': 'kshift'}
     '&ng ENTER': {'t': '⏎', 'h': 'Kana-Shift', 'type': 'kshift'}
     '&base_with_mod LGUI': '⌘'
+    # These are macros for the small kana layer (kogaki)
+    '&ng_xya': {'left': 'ゃ'}
+    '&ng_xyu': {'left': 'ゅ'}
+    '&ng_xyo': {'left': 'ょ'}
+    '&ng_xa': {'left': 'ぁ'}
+    '&ng_xi': {'left': 'ぃ'}
+    '&ng_xu': {'left': 'ぅ'}
+    '&ng_xe': {'left': 'ぇ'}
+    '&ng_xo': {'left': 'ぉ'}
+    '&ng_xwa': {'left': 'ゎ'}
+    '&ng_xtu': {'left': 'っ'}
+    '&ng_xka': {'left': 'ヵ'}
+    '&ng_xke': {'left': 'ヶ'}
+
 draw_config:
   append_colon_to_layer_header: false
   # dark_mode: auto
