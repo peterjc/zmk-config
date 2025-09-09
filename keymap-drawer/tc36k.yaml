@@ -26,7 +26,7 @@ layers:
   - {t: D, type: medium-high}
   - {t: L, type: medium-high}
   - {t: J, type: low}
-  - {t: ;, type: low}
+  - {t: ;, s: ':', type: low}
   - {t: U, type: medium-high}
   - {t: O, type: high}
   - {t: Y, type: medium}
