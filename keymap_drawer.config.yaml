@@ -138,6 +138,7 @@ parse_config:
     combo_ng_on: {'align': 'bottom', 'offset': -0.02, 'slide': 0.5, 'key': 'かな', 'height': 15}
     combo_ng_off: {'align': 'bottom', 'offset': -0.02, 'slide': -0.5, 'key': 'ABC', 'height': 15}
     pipe_sign: {'align': 'right', 'key': '|'}
+    caret_sign: {'align': 'left'}
     exclamation_mark: {'align': 'left'}
     backtick: {'key': '`'}
     at_sign: {'key': '@'}
@@ -172,13 +173,13 @@ parse_config:
     '&kp B': {'t': 'B', 'type': 'medium-low'}
     '&kp N': {'t': 'N', 'type': 'high'}
     '&kp M': {'t': 'M', 'type': 'medium'}
-    '&kp COMMA': {'t': ',', 'type': 'medium-low'}
-    '&kp DOT': {'t': '.', 'type': 'medium-low'}
+    '&kp COMMA': {'t': ',', 's': '<', 'type': 'medium-low'}
+    '&kp DOT': {'t': '.', 's': '>', 'type': 'medium-low'}
     # not in Bird mappings:
-    '&kp SLASH': {'t': '/', 'type': 'low'}
-    '&xquote': {'t': '''', 'type': 'medium-low'}  # this key is single & double quote
-    '&kp MINUS': {'t': '-', 'type': 'medium-low'}
-    '&kp EQUAL': {'t': '=', 'type': 'low'}
+    '&kp SLASH': {'t': '/', 's': '?', 'type': 'low'}
+    '&xquote': {'t': '''', 's': '"', 'type': 'medium-low'}
+    '&kp MINUS': {'t': '-', 's': '_', 'type': 'medium-low'}
+    '&kp EQUAL': {'t': '=', 's': '+', 'type': 'low'}
     '&kp SPACE': {'t': '⎵', 'type': 'high'}
      # These are the Naginata Style keys for typing in Japanese using kana:
     '&ng Q': {'t': '⎋', 'h': 'Small-kana'}
