@@ -165,7 +165,7 @@ parse_config:
     '&kp J': {'t': 'J', 'type': 'low'}
     '&kp K': {'t': 'K', 'type': 'low'}
     '&kp L': {'t': 'L', 'type': 'medium-high'}
-    '&kp SEMI': {'t': ';', 'type': 'low'}
+    '&kp SEMI': {'t': ';', 's': ':', 'type': 'low'}
     '&kp Z': {'t': 'Z', 'type': 'low'}
     '&kp X': {'t': 'X', 'type': 'low'}
     '&kp C': {'t': 'C', 'type': 'medium'}
