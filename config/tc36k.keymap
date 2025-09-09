@@ -76,7 +76,10 @@
             #binding-cells = <0>;
             bindings = <&kp SQT>, <&kp N2>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+            // need to keep shift, and anything else too:
+            keep-mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
         };
+
     };
 };
 
@@ -87,10 +90,10 @@
         default_layer {
             display-name = "HD Promethium";
             bindings = <
-                &kp ESCAPE &kp P  &kp G    &kp M   &kp X         &kp SLASH &kp DOT   &xquote &kp MINUS &kp EQUAL
-                &kp S      &kp N  &kp T    &kp H   &kp K         &kp COMMA &kp A     &kp E   &kp I     &kp C
-                &kp B      &kp F  &kp D    &kp L   &kp J         &kp SEMI  &kp U     &kp O   &kp Y     &kp W
-                                  &kp LGUI &kp R   &kp BACKSPACE &kp LSHFT &kp SPACE &mo NUM_NAV
+                &kp ESCAPE &kp P  &kp G    &kp M   &kp X    &kp SLASH &kp DOT   &xquote &kp MINUS &kp EQUAL
+                &kp S      &kp N  &kp T    &kp H   &kp K    &kp COMMA &kp A     &kp E   &kp I     &kp C
+                &kp B      &kp F  &kp D    &kp L   &kp J    &kp SEMI  &kp U     &kp O   &kp Y     &kp W
+                                  &kp LGUI &kp R   &kp BSPC &kp LSHFT &kp SPACE &mo NUM_NAV
             >;
         };
 
@@ -103,17 +106,17 @@
         naginata_layer {
             display-name = "Naginata";
             bindings = <
-                &ng Q  &ng W  &ng E               &ng R     &ng T         &ng Y     &ng U     &ng I     &ng O      &ng P
-                &ng A  &ng S  &ng D               &ng F     &ng G         &ng H     &ng J     &ng K     &ng L      &ng SEMI
-                &ng Z  &ng X  &ng C               &ng V     &ng B         &ng N     &ng M     &ng COMMA &ng DOT    &ng SLASH
-                              &base_with_mod LGUI &ng ENTER &kp BACKSPACE &mt LSHFT LS(SPACE) &ng SPACE &mo NUM_NAV
+                &ng Q  &ng W  &ng E               &ng R     &ng T    &ng Y     &ng U     &ng I     &ng O      &ng P
+                &ng A  &ng S  &ng D               &ng F     &ng G    &ng H     &ng J     &ng K     &ng L      &ng SEMI
+                &ng Z  &ng X  &ng C               &ng V     &ng B    &ng N     &ng M     &ng COMMA &ng DOT    &ng SLASH
+                              &base_with_mod LGUI &ng ENTER &kp BSPC &mt LSHFT LS(SPACE) &ng SPACE &mo NUM_NAV
                 >;
         };
 
         num_nav_layer {
             display-name = "Num + Nav";
             bindings = <
-                &kp KP_DIVIDE    &kp N1 &kp N2 &kp N3 &kp KP_EQUAL &kp ESCAPE &kp HOME     &kp UP     &kp END       &kp BACKSPACE
+                &kp KP_DIVIDE    &kp N1 &kp N2 &kp N3 &kp KP_EQUAL &kp ESCAPE &kp HOME     &kp UP     &kp END       &kp BSPC
                 &kp KP_MULTIPLY  &kp N4 &kp N5 &kp N6 &kp KP_PLUS  &kp PG_UP  &kp LEFT     &kp DOWN   &kp RIGHT     &kp Q
                 &mt LSHFT KP_DOT &kp N7 &kp N8 &kp N9 &kp KP_MINUS &kp PG_DN  &kp LA(LEFT) &kp RETURN &kp LA(RIGHT) &kp Z
                                         &trans &kp N0 &trans       &trans     &trans       &trans
