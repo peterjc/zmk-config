@@ -6,17 +6,17 @@ layers:
   - {t: G, type: medium}
   - {t: M, type: medium}
   - {t: X, type: low}
-  - {t: /, type: low}
-  - {t: ., type: medium-low}
-  - {t: '''', type: medium-low}
-  - {t: '-', type: medium-low}
-  - {t: '=', type: low}
+  - {t: /, s: '?', type: low}
+  - {t: ., s: '>', type: medium-low}
+  - {t: '''', s: '"', type: medium-low}
+  - {t: '-', s: _, type: medium-low}
+  - {t: '=', s: +, type: low}
   - {t: S, type: high}
   - {t: N, type: high}
   - {t: T, type: high}
   - {t: H, type: high}
   - {t: K, type: low}
-  - {t: ',', type: medium-low}
+  - {t: ',', s: <, type: medium-low}
   - {t: A, type: high}
   - {t: E, type: high}
   - {t: I, type: high}
@@ -199,6 +199,7 @@ combos:
 - p: [5, 15]
   k: ^
   l: [HD Promethium, Num + Nav]
+  a: left
 - p: [6, 16]
   k: '&'
   l: [HD Promethium, Num + Nav]
