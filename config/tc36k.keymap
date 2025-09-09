@@ -85,6 +85,24 @@
 
 #include "adaptive-keys.h"
 
+        dot_colon: dot_colon {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp SEMI>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            // need to keep shift, and anything else too:
+            keep-mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+        };
+
+        comma_semi: comma_semi {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp SEMI>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            // do NOT want to keep shift active, but anything else is fine:
+            keep-mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+        };
+
     };
 };
 
@@ -95,9 +113,9 @@
         default_layer {
             display-name = "HD Promethium";
             bindings = <
-                &kp ESCAPE &ak_P  &ak_G    &ak_M   &ak_X    &kp SLASH   &kp DOT   &xquote &kp MINUS &kp EQUAL
-                &ak_S      &ak_N  &ak_T    &ak_H   &ak_K    &kp COMMA   &ak_A     &ak_E   &ak_I     &ak_C
-                &ak_B      &ak_F  &ak_D    &ak_L   &ak_J    &kp SEMI    &ak_U     &ak_O   &ak_Y     &ak_W
+                &kp ESCAPE &ak_P  &ak_G    &ak_M   &ak_X    &kp SLASH   &kp BSPC  &xquote &kp MINUS &kp EQUAL
+                &ak_S      &ak_N  &ak_T    &ak_H   &ak_K    &dot_colon  &ak_A     &ak_E   &ak_I     &ak_C
+                &ak_B      &ak_F  &ak_D    &ak_L   &ak_J    &comma_semi &ak_U     &ak_O   &ak_Y     &ak_W
                                   &kp LGUI &kp R   &kp BSPC &kp LSHFT   &kp SPACE &mo NUM_NAV
             >;
         };
@@ -352,6 +370,18 @@
         close_square {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <RB0 RB1>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        less_than {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <LB3 LB4>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        greater_than {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <RB3 RB4>;
             layers = <DEFAULT NUM_NAV>;
         };
 

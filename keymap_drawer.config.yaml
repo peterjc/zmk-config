@@ -147,6 +147,8 @@ parse_config:
     at_sign: {'key': '@'}
     gbp_sign: {'key': '£'}
     tilde_sign: {'key': '~'}
+    less_than: {'key': '<'}
+    greater_than: {'key': '>'}
   raw_binding_map:
     # These are the English letters defined here to tag them by usage:
     '&kp Q': {'t': 'Q', 'type': 'low'}
@@ -177,7 +179,9 @@ parse_config:
     '&kp N': {'t': 'N', 'type': 'high'}
     '&kp M': {'t': 'M', 'type': 'medium'}
     '&kp COMMA': {'t': ',', 's': '<', 'type': 'medium-low'}
+    '&comma_semi': {'t': ',', 's': ';', 'type': 'medium-low'}
     '&kp DOT': {'t': '.', 's': '>', 'type': 'medium-low'}
+    '&dot_colon': {'t': '.', 's':':', 'type': 'medium-low'}
     # not in Bird mappings:
     '&kp SLASH': {'t': '/', 's': '?', 'type': 'low'}
     '&xquote': {'t': '''', 's': '"', 'type': 'medium-low'}
