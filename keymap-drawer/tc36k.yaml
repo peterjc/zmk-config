@@ -84,7 +84,7 @@ layers:
   - ↖
   - ↑
   - ↘
-  - ⌫
+  - ⏯
   - '*'
   - '4'
   - '5'
@@ -94,7 +94,9 @@ layers:
   - ←
   - ↓
   - →
-  - {t: Q, type: low}
+  - 'VOL
+
+    UP'
   - {t: ., h: ⇧}
   - '7'
   - '8'
@@ -104,7 +106,9 @@ layers:
   - ↞
   - ⏎
   - ↠
-  - {t: Z, type: low}
+  - 'VOL
+
+    DOWN'
   - {t: ▽, type: trans}
   - '0'
   - {t: ▽, type: trans}
