@@ -100,9 +100,12 @@ parse_config:
     C_REWIND: '⏮'
     C_FAST_FORWARD: '⏭'
     C_PAUSE: '⏯'
+    C_PLAY_PAUSE: '⏯'
     C_MUTE: "VOL\nMUTE"
     C_VOLUME_DOWN: "VOL\nDOWN"
     C_VOLUME_UP: "VOL\nUP"
+    K_VOLUME_DOWN: "VOL\nDOWN"
+    K_VOLUME_UP: "VOL\nUP"
     C_BRIGHTNESS_DEC: '☀↓'
     C_BRIGHTNESS_INC: '☀↑'
     LA(LEFT): ↞
