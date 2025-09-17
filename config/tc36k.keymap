@@ -116,9 +116,9 @@
         num_nav_layer {
             display-name = "Num + Nav";
             bindings = <
-                &kp KP_DIVIDE    &kp N1 &kp N2 &kp N3 &kp KP_EQUAL &kp ESCAPE &kp HOME     &kp UP     &kp END       &kp BSPC
-                &kp KP_MULTIPLY  &kp N4 &kp N5 &kp N6 &kp KP_PLUS  &kp PG_UP  &kp LEFT     &kp DOWN   &kp RIGHT     &kp Q
-                &mt LSHFT KP_DOT &kp N7 &kp N8 &kp N9 &kp KP_MINUS &kp PG_DN  &kp LA(LEFT) &kp RETURN &kp LA(RIGHT) &kp Z
+                &kp KP_DIVIDE    &kp N1 &kp N2 &kp N3 &kp KP_EQUAL &kp ESCAPE &kp HOME     &kp UP     &kp END       &kp C_PLAY_PAUSE
+                &kp KP_MULTIPLY  &kp N4 &kp N5 &kp N6 &kp KP_PLUS  &kp PG_UP  &kp LEFT     &kp DOWN   &kp RIGHT     &kp K_VOLUME_UP
+                &mt LSHFT KP_DOT &kp N7 &kp N8 &kp N9 &kp KP_MINUS &kp PG_DN  &kp LA(LEFT) &kp RETURN &kp LA(RIGHT) &kp K_VOLUME_DOWN
                                         &trans &kp N0 &trans       &trans     &trans       &trans
             >;
         };
