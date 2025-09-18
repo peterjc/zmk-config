@@ -184,7 +184,35 @@ parse_config:
     '&kp MINUS': {'t': '-', 's': '_', 'type': 'medium-low'}
     '&kp EQUAL': {'t': '=', 's': '+', 'type': 'low'}
     '&kp SPACE': {'t': '⎵', 'type': 'high'}
-     # These are the Naginata Style keys for typing in Japanese using kana:
+    # Again for adaptive key variants:
+    '&ak_Q': {'t': 'Q', 'type': 'low'}
+    '&ak_W': {'t': 'W', 'type': 'medium'}
+    '&ak_E': {'t': 'E', 'type': 'high'}
+    '&ak_R': {'t': 'R', 'type': 'high'}
+    '&ak_T': {'t': 'T', 'type': 'high'}
+    '&ak_Y': {'t': 'Y', 'type': 'medium'}
+    '&ak_U': {'t': 'U', 'type': 'medium-high'}
+    '&ak_I': {'t': 'I', 'type': 'high'}
+    '&ak_O': {'t': 'O', 'type': 'high'}
+    '&ak_P': {'t': 'P', 'type': 'medium-low'}
+    '&ak_A': {'t': 'A', 'type': 'high'}
+    '&ak_S': {'t': 'S', 'type': 'high'}
+    '&ak_D': {'t': 'D', 'type': 'medium-high'}
+    '&ak_F': {'t': 'F', 'type': 'medium'}
+    '&ak_G': {'t': 'G', 'type': 'medium'}
+    '&ak_H': {'t': 'H', 'type': 'high'}
+    '&ak_J': {'t': 'J', 'type': 'low'}
+    '&ak_K': {'t': 'K', 'type': 'low'}
+    '&ak_L': {'t': 'L', 'type': 'medium-high'}
+    '&ak_Z': {'t': 'Z', 'type': 'low'}
+    '&ak_X': {'t': 'X', 'type': 'low'}
+    '&ak_C': {'t': 'C', 'type': 'medium'}
+    '&ak_V': {'t': 'V', 'type': 'low'}
+    '&ak_B': {'t': 'B', 'type': 'medium-low'}
+    '&ak_N': {'t': 'N', 'type': 'high'}
+    '&ak_M': {'t': 'M', 'type': 'medium'}
+    '&ak_COMMA': {'t': ',', 's': '<', 'type': 'medium-low'}
+    # These are the Naginata Style keys for typing in Japanese using kana:
     '&ng Q': {'t': '⎋', 'h': 'Small-kana'}
     '&ng W': {'left': 'き', 'right': 'ぬ'}
     '&ng E': {'left': 'て', 'right': 'り'}
