@@ -23,6 +23,8 @@
 #define NAGINATA 1
 #define NUM_NAV 2
 
+#define my_cc_term 1400 // CommaCap trigger time window
+
 / {
     macros {
         // To switch to Japanese mode, this sends what Karabiner-Elements sees
@@ -80,6 +82,8 @@
             keep-mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
         };
 
+#include "adaptive-keys.h"
+
     };
 };
 
@@ -90,10 +94,10 @@
         default_layer {
             display-name = "HD Promethium";
             bindings = <
-                &kp ESCAPE &kp P  &kp G    &kp M   &kp X    &kp SLASH &kp DOT   &xquote &kp MINUS &kp EQUAL
-                &kp S      &kp N  &kp T    &kp H   &kp K    &kp COMMA &kp A     &kp E   &kp I     &kp C
-                &kp B      &kp F  &kp D    &kp L   &kp J    &kp SEMI  &kp U     &kp O   &kp Y     &kp W
-                                  &kp LGUI &kp R   &kp BSPC &kp LSHFT &kp SPACE &mo NUM_NAV
+                &kp ESCAPE &ak_P  &ak_G    &ak_M   &ak_X    &kp SLASH   &kp DOT   &xquote &kp MINUS &kp EQUAL
+                &ak_S      &ak_N  &ak_T    &ak_H   &ak_K    &kp COMMA   &ak_A     &ak_E   &ak_I     &ak_C
+                &ak_B      &ak_F  &ak_D    &ak_L   &ak_J    &kp SEMI    &ak_U     &ak_O   &ak_Y     &ak_W
+                                  &kp LGUI &kp R   &kp BSPC &kp LSHFT   &kp SPACE &mo NUM_NAV
             >;
         };
 
@@ -223,19 +227,19 @@
 
         // 2-key horizontal combos for rare letters
         q_combo {
-            bindings = <&kp Q>;
+            bindings = <&ak_Q>;
             key-positions = <LT1 LT2>;
             layers = <DEFAULT>;
         };
 
         z_combo {
-            bindings = <&kp Z>;
+            bindings = <&ak_Z>;
             key-positions = <RT2 RT3>;
             layers = <DEFAULT>;
         };
 
         v_combo {
-            bindings = <&kp V>;
+            bindings = <&ak_V>;
             key-positions = <LT2 LT3>;
             layers = <DEFAULT>;
         };
