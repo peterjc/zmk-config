@@ -18,8 +18,8 @@
             bindings = <&kp A>;
 
             akA_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(A)>; strict-modifiers; };
-            // qa -> qua:
-            akQA_t_ua { trigger-keys = <Q>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U &kp A>; strict-modifiers; };
+            // qa -> qua, and Qa -> Qua:
+            akQA_t_ua { trigger-keys = <Q LS(Q) RS(Q)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U &kp A>; strict-modifiers; };
         };
         ak_B: ak_B {
             compatible = "zmk,behavior-adaptive-key";
@@ -48,8 +48,8 @@
             bindings = <&kp E>;
 
             akE_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(E)>; strict-modifiers; };
-            // qe -> que
-            akQE_t_ue { trigger-keys = <Q>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U &kp E>; strict-modifiers; };
+            // qe -> que, and Qe -> Que
+            akQE_t_ue { trigger-keys = <Q LS(Q) RS(Q)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U &kp E>; strict-modifiers; };
         };
         ak_F: ak_F {
             compatible = "zmk,behavior-adaptive-key";
@@ -79,8 +79,8 @@
             bindings = <&kp I>;
 
             akI_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(I)>; strict-modifiers; };
-            // qi -> qui
-            akQI_t_ui { trigger-keys = <Q>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U &kp I>; strict-modifiers; };
+            // qi -> qui, and Qi -> Qui
+            akQI_t_ui { trigger-keys = <Q LS(Q) RS(Q)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U &kp I>; strict-modifiers; };
         };
         ak_J: ak_J {
             compatible = "zmk,behavior-adaptive-key";
@@ -124,8 +124,8 @@
             bindings = <&kp O>;
 
             akO_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(O)>; strict-modifiers; };
-            // qo -> quo
-            akQO_t_uo { trigger-keys = <Q>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U &kp O>; strict-modifiers; };
+            // qo -> quo, and Qo -> Quo
+            akQO_t_uo { trigger-keys = <Q LS(Q) RS(Q)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U &kp O>; strict-modifiers; };
         };
         ak_P: ak_P {
             compatible = "zmk,behavior-adaptive-key";
