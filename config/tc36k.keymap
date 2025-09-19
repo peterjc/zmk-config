@@ -23,6 +23,7 @@
 #define NAGINATA 1
 #define NUM_NAV 2
 
+#define my_ak_term 350 // behavior-adaptive-key trigger time window
 #define my_cc_term 1400 // CommaCap trigger time window
 
 / {
