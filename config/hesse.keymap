@@ -1,0 +1,4 @@
+// Other than the Hesse being limited to 4-key roll-over it is
+// essentially the same as the TC36K (which has 6-key roll-over).
+// May want to add some BlueTooth keypresses here later though...
+#include "tc36k.keymap"
