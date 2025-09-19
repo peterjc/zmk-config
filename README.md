@@ -5,16 +5,13 @@ configuration/layouts, for use with programable mechanical computer keyboards.
 The keymap images are rendered automatically using [keymap-drawer](https://github.com/caksoylar/keymap-drawer)
 using this [Draw Keymaps GitHub Action](.github/workflows/draw-keymaps.yml).
 
-## Gamma Omega TC36K
+## Split 3x5_3 Layout
 
-The ZMK keymap in file [tc36k.keymap](config/tc36k.keymap) is for the
-[Gamma Omega TC36K](https://github.com/unspecworks/gamma-omega/tree/main/tc36k) 
-(a monoblock 'split' keyboard where [I designed the wiring and
-PCB](https://astrobeano.blogspot.com/2025/08/my-first-self-built-computer-keyboard.html)) when
-used with my [ZMK firmware for TC36K](https://github.com/peterjc/zmk-keyboard-graph-theory/tree/main/boards/shields/tc36k)
-(I also wrote [QMK firmware for TC36K](https://github.com/peterjc/qmk_userspace/tree/main/keyboards/tutte_coxeter_36k).
+The QMK project uses the term `split_3x5_3` for one of their standarr community layout names.
+This means a symetrical split layout chere each hand has three rows and five columns (the index
+finger gets an extra inner columm), plus three thumb keys.
 
-The base layer is the inverted [Hands Down Promethium
+My base layer is the inverted [Hands Down Promethium
 layout](https://www.reddit.com/r/KeyboardLayouts/comments/1g66ivi/hands_down_promethium_snth_meets_hd_silverengram/)
 with my personal modifications ("Pico Mod") intended to help with some readline shortcuts.
 Most of the symbols are 2-key vertical combos, the brackets are 2-key horizontal combos
@@ -39,3 +36,13 @@ of chording, but these are not defined as ZMK combos, and so are not drawn here.
 In this keymap image the base layer keys and space are coloured by usage frequencies (orange/pink
 for highest use - mainly home keys, down through pink, purples, to a dark blue for low like the
 letters demoted to combos: Q, Z, and V).
+
+### Gamma Omega TC36K
+
+I use the split 3x5_3 layout described above for this 36-key self-built keyboard.
+The ZMK keymap in file [tc36k.keymap](config/tc36k.keymap) is for the
+[Gamma Omega TC36K](https://github.com/unspecworks/gamma-omega/tree/main/tc36k) 
+(a monoblock 'split' keyboard where [I designed the wiring and
+PCB](https://astrobeano.blogspot.com/2025/08/my-first-self-built-computer-keyboard.html)) when
+used with my [ZMK firmware for TC36K](https://github.com/peterjc/zmk-keyboard-graph-theory/tree/main/boards/shields/tc36k)
+(I also wrote [QMK firmware for TC36K](https://github.com/peterjc/qmk_userspace/tree/main/keyboards/tutte_coxeter_36k).)
