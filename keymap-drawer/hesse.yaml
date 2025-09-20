@@ -2,37 +2,37 @@ layout: {zmk_keyboard: hesse}
 layers:
   HD Promethium:
   - ⎋
-  - {t: P, type: medium-low}
-  - {t: G, type: medium}
-  - {t: M, type: medium}
-  - {t: X, type: low}
-  - {t: /, s: '?', type: low}
-  - {t: ., s: '>', type: medium-low}
-  - {t: '''', s: '"', type: medium-low}
-  - {t: '-', s: _, type: medium-low}
-  - {t: '=', s: +, type: low}
-  - {t: S, type: high}
-  - {t: N, type: high}
-  - {t: T, type: high}
-  - {t: H, type: high}
-  - {t: K, type: low}
-  - {t: ',', s: <, type: medium-low}
-  - {t: A, type: high}
-  - {t: E, type: high}
-  - {t: I, type: high}
-  - {t: C, type: medium}
-  - {t: B, type: medium-low}
-  - {t: F, type: medium}
-  - {t: D, type: medium-high}
-  - {t: L, type: medium-high}
-  - {t: J, type: low}
-  - {t: ;, s: ':', type: low}
-  - {t: U, type: medium-high}
-  - {t: O, type: high}
-  - {t: Y, type: medium}
-  - {t: W, type: medium}
+  - {t: pP, type: medium-low}
+  - {t: gG, type: medium}
+  - {t: mM, type: medium}
+  - {t: xX, type: low}
+  - {t: '/?', type: low}
+  - ⌫
+  - {t: '''"', type: medium-low}
+  - {t: -_, type: medium-low}
+  - {t: =+, type: low}
+  - {t: sS, type: high}
+  - {t: nN, type: high}
+  - {t: tT, type: high}
+  - {t: hH, type: high}
+  - {t: kK, type: low}
+  - {t: '.:', type: medium-low}
+  - {t: aA, type: high}
+  - {t: eE, type: high}
+  - {t: iI, type: high}
+  - {t: cC, type: medium}
+  - {t: bB, type: medium-low}
+  - {t: fF, type: medium}
+  - {t: dD, type: medium-high}
+  - {t: lL, type: medium-high}
+  - {t: jJ, type: low}
+  - {t: ',;', type: medium-low}
+  - {t: uU, type: medium-high}
+  - {t: oO, type: high}
+  - {t: yY, type: medium}
+  - {t: wW, type: medium}
   - ⌘
-  - {t: R, type: high}
+  - {t: rR, type: high}
   - ⌫
   - ⇧
   - {t: ⎵, type: high}
@@ -169,13 +169,13 @@ combos:
   k: ⌘
   l: [HD Promethium, Num + Nav]
 - p: [3, 2]
-  k: {t: Q, type: low}
+  k: {t: qQ, type: low}
   l: [HD Promethium]
 - p: [7, 8]
-  k: {t: Z, type: low}
+  k: {t: zZ, type: low}
   l: [HD Promethium]
 - p: [2, 1]
-  k: {t: V, type: low}
+  k: {t: vV, type: low}
   l: [HD Promethium]
 - p: [0, 10]
   k: '`'
@@ -233,4 +233,10 @@ combos:
   l: [HD Promethium, Num + Nav]
 - p: [25, 26]
   k: ']'
+  l: [HD Promethium, Num + Nav]
+- p: [21, 20]
+  k: <
+  l: [HD Promethium, Num + Nav]
+- p: [28, 29]
+  k: '>'
   l: [HD Promethium, Num + Nav]
