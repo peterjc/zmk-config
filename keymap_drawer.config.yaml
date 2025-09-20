@@ -151,71 +151,71 @@ parse_config:
     greater_than: {'key': '>'}
   raw_binding_map:
     # These are the English letters defined here to tag them by usage:
-    '&kp Q': {'t': 'Q', 'type': 'low'}
-    '&kp W': {'t': 'W', 'type': 'medium'}
-    '&kp E': {'t': 'E', 'type': 'high'}
-    '&kp R': {'t': 'R', 'type': 'high'}
-    '&kp T': {'t': 'T', 'type': 'high'}
-    '&kp Y': {'t': 'Y', 'type': 'medium'}
-    '&kp U': {'t': 'U', 'type': 'medium-high'}
-    '&kp I': {'t': 'I', 'type': 'high'}
-    '&kp O': {'t': 'O', 'type': 'high'}
-    '&kp P': {'t': 'P', 'type': 'medium-low'}
-    '&kp A': {'t': 'A', 'type': 'high'}
-    '&kp S': {'t': 'S', 'type': 'high'}
-    '&kp D': {'t': 'D', 'type': 'medium-high'}
-    '&kp F': {'t': 'F', 'type': 'medium'}
-    '&kp G': {'t': 'G', 'type': 'medium'}
-    '&kp H': {'t': 'H', 'type': 'high'}
-    '&kp J': {'t': 'J', 'type': 'low'}
-    '&kp K': {'t': 'K', 'type': 'low'}
-    '&kp L': {'t': 'L', 'type': 'medium-high'}
-    '&kp SEMI': {'t': ';', 's': ':', 'type': 'low'}
-    '&kp Z': {'t': 'Z', 'type': 'low'}
-    '&kp X': {'t': 'X', 'type': 'low'}
-    '&kp C': {'t': 'C', 'type': 'medium'}
-    '&kp V': {'t': 'V', 'type': 'low'}
-    '&kp B': {'t': 'B', 'type': 'medium-low'}
-    '&kp N': {'t': 'N', 'type': 'high'}
-    '&kp M': {'t': 'M', 'type': 'medium'}
-    '&kp COMMA': {'t': ',', 's': '<', 'type': 'medium-low'}
-    '&comma_semi': {'t': ',', 's': ';', 'type': 'medium-low'}
-    '&kp DOT': {'t': '.', 's': '>', 'type': 'medium-low'}
-    '&dot_colon': {'t': '.', 's':':', 'type': 'medium-low'}
+    '&kp Q': {'t': 'vQ', 'type': 'low'}
+    '&kp W': {'t': 'wW', 'type': 'medium'}
+    '&kp E': {'t': 'eE', 'type': 'high'}
+    '&kp R': {'t': 'rR', 'type': 'high'}
+    '&kp T': {'t': 'tT', 'type': 'high'}
+    '&kp Y': {'t': 'yY', 'type': 'medium'}
+    '&kp U': {'t': 'uU', 'type': 'medium-high'}
+    '&kp I': {'t': 'iI', 'type': 'high'}
+    '&kp O': {'t': 'oO', 'type': 'high'}
+    '&kp P': {'t': 'pP', 'type': 'medium-low'}
+    '&kp A': {'t': 'aA', 'type': 'high'}
+    '&kp S': {'t': 'sS', 'type': 'high'}
+    '&kp D': {'t': 'dD', 'type': 'medium-high'}
+    '&kp F': {'t': 'fF', 'type': 'medium'}
+    '&kp G': {'t': 'gG', 'type': 'medium'}
+    '&kp H': {'t': 'hH', 'type': 'high'}
+    '&kp J': {'t': 'jJ', 'type': 'low'}
+    '&kp K': {'t': 'kK', 'type': 'low'}
+    '&kp L': {'t': 'lL', 'type': 'medium-high'}
+    '&kp SEMI': {'t': ';:', 'type': 'low'}
+    '&kp Z': {'t': 'zZ', 'type': 'low'}
+    '&kp X': {'t': 'xX', 'type': 'low'}
+    '&kp C': {'t': 'cC', 'type': 'medium'}
+    '&kp V': {'t': 'vV', 'type': 'low'}
+    '&kp B': {'t': 'bB', 'type': 'medium-low'}
+    '&kp N': {'t': 'nN', 'type': 'high'}
+    '&kp M': {'t': 'mM', 'type': 'medium'}
+    '&kp COMMA': {'t': ',<', 'type': 'medium-low'}
+    '&comma_semi': {'t': ',;', 'type': 'medium-low'}
+    '&kp DOT': {'t': '.>', 'type': 'medium-low'}
+    '&dot_colon': {'t': '.:', 'type': 'medium-low'}
     # not in Bird mappings:
-    '&kp SLASH': {'t': '/', 's': '?', 'type': 'low'}
-    '&xquote': {'t': '''', 's': '"', 'type': 'medium-low'}
-    '&kp MINUS': {'t': '-', 's': '_', 'type': 'medium-low'}
-    '&kp EQUAL': {'t': '=', 's': '+', 'type': 'low'}
+    '&kp SLASH': {'t': '/?', 'type': 'low'}
+    '&xquote': {'t': '''"', 'type': 'medium-low'}
+    '&kp MINUS': {'t': '-_', 'type': 'medium-low'}
+    '&kp EQUAL': {'t': '=+', 'type': 'low'}
     '&kp SPACE': {'t': '⎵', 'type': 'high'}
     # Again for adaptive key variants:
-    '&ak_Q': {'t': 'Q', 'type': 'low'}
-    '&ak_W': {'t': 'W', 'type': 'medium'}
-    '&ak_E': {'t': 'E', 'type': 'high'}
-    '&ak_R': {'t': 'R', 'type': 'high'}
-    '&ak_T': {'t': 'T', 'type': 'high'}
-    '&ak_Y': {'t': 'Y', 'type': 'medium'}
-    '&ak_U': {'t': 'U', 'type': 'medium-high'}
-    '&ak_I': {'t': 'I', 'type': 'high'}
-    '&ak_O': {'t': 'O', 'type': 'high'}
-    '&ak_P': {'t': 'P', 'type': 'medium-low'}
-    '&ak_A': {'t': 'A', 'type': 'high'}
-    '&ak_S': {'t': 'S', 'type': 'high'}
-    '&ak_D': {'t': 'D', 'type': 'medium-high'}
-    '&ak_F': {'t': 'F', 'type': 'medium'}
-    '&ak_G': {'t': 'G', 'type': 'medium'}
-    '&ak_H': {'t': 'H', 'type': 'high'}
-    '&ak_J': {'t': 'J', 'type': 'low'}
-    '&ak_K': {'t': 'K', 'type': 'low'}
-    '&ak_L': {'t': 'L', 'type': 'medium-high'}
-    '&ak_Z': {'t': 'Z', 'type': 'low'}
-    '&ak_X': {'t': 'X', 'type': 'low'}
-    '&ak_C': {'t': 'C', 'type': 'medium'}
-    '&ak_V': {'t': 'V', 'type': 'low'}
-    '&ak_B': {'t': 'B', 'type': 'medium-low'}
-    '&ak_N': {'t': 'N', 'type': 'high'}
-    '&ak_M': {'t': 'M', 'type': 'medium'}
-    '&ak_COMMA': {'t': ',', 's': '<', 'type': 'medium-low'}
+    '&ak_Q': {'t': 'qQ', 'type': 'low'}
+    '&ak_W': {'t': 'wW', 'type': 'medium'}
+    '&ak_E': {'t': 'eE', 'type': 'high'}
+    '&ak_R': {'t': 'rR', 'type': 'high'}
+    '&ak_T': {'t': 'tT', 'type': 'high'}
+    '&ak_Y': {'t': 'yY', 'type': 'medium'}
+    '&ak_U': {'t': 'uU', 'type': 'medium-high'}
+    '&ak_I': {'t': 'iI', 'type': 'high'}
+    '&ak_O': {'t': 'oO', 'type': 'high'}
+    '&ak_P': {'t': 'pP', 'type': 'medium-low'}
+    '&ak_A': {'t': 'aA', 'type': 'high'}
+    '&ak_S': {'t': 'sS', 'type': 'high'}
+    '&ak_D': {'t': 'dD', 'type': 'medium-high'}
+    '&ak_F': {'t': 'fF', 'type': 'medium'}
+    '&ak_G': {'t': 'gG', 'type': 'medium'}
+    '&ak_H': {'t': 'hH', 'type': 'high'}
+    '&ak_J': {'t': 'jJ', 'type': 'low'}
+    '&ak_K': {'t': 'kK', 'type': 'low'}
+    '&ak_L': {'t': 'lL', 'type': 'medium-high'}
+    '&ak_Z': {'t': 'zZ', 'type': 'low'}
+    '&ak_X': {'t': 'xX', 'type': 'low'}
+    '&ak_C': {'t': 'cC', 'type': 'medium'}
+    '&ak_V': {'t': 'vV', 'type': 'low'}
+    '&ak_B': {'t': 'bB', 'type': 'medium-low'}
+    '&ak_N': {'t': 'nN', 'type': 'high'}
+    '&ak_M': {'t': 'mM', 'type': 'medium'}
+    '&ak_COMMA': {'t': ',<', 'type': 'medium-low'}
     # These are the Naginata Style keys for typing in Japanese using kana:
     '&ng Q': {'t': '⎋', 'h': 'Small-kana'}
     '&ng W': {'left': 'き', 'right': 'ぬ'}
