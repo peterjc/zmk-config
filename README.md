@@ -57,7 +57,8 @@ I use the split 3x5_3 layout described above for this 36-key self-built keyboard
 The ZMK keymap in file [hesse.keymap](config/hesse.keymap) is for the
 [Gamma Omega Hesse](https://github.com/unspecworks/gamma-omega/tree/main/tc36k)
 which is a Bluetooth version of the Gamma Omega, which uses essentially the layout
-as the Gamma Omega TC36K above.
+as the Gamma Omega TC36K above. This uses my [ZMK firmware for the
+Hesse](https://github.com/peterjc/zmk-keyboard-graph-theory/tree/main/boards/shields/hesse)
 
 This keyboard has only 4-key roll-over, which was kept in mind when editing this
 keymap. i.e. I try not to use any combos needing more than four keys in total. 
