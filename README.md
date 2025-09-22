@@ -7,9 +7,10 @@ using this [Draw Keymaps GitHub Action](.github/workflows/draw-keymaps.yml).
 
 ## Split 3x5_3 Layout
 
-The QMK project uses the term `split_3x5_3` for one of their standarr community layout names.
-This means a symetrical split layout chere each hand has three rows and five columns (the index
-finger gets an extra inner columm), plus three thumb keys.
+The QMK project uses the term `split_3x5_3` for one of their standard community
+layout names. This means a symetrical split layout chere each hand has three
+rows and five columns (the index finger gets an extra inner columm), plus three
+thumb keys.
 
 My base layer is the inverted [Hands Down Promethium
 layout](https://www.reddit.com/r/KeyboardLayouts/comments/1g66ivi/hands_down_promethium_snth_meets_hd_silverengram/)
