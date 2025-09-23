@@ -159,6 +159,9 @@ combos:
 - p: [13, 12]
   k: ⌘
   l: [HD Promethium, Num + Nav]
+- p: [23, 22]
+  k: ⇧
+  l: [HD Promethium, Num + Nav]
 - p: [18, 19]
   k: ⎇
   l: [HD Promethium, Num + Nav]
@@ -167,6 +170,9 @@ combos:
   l: [HD Promethium, Num + Nav]
 - p: [16, 17]
   k: ⌘
+  l: [HD Promethium, Num + Nav]
+- p: [26, 27]
+  k: ⇧
   l: [HD Promethium, Num + Nav]
 - p: [3, 2]
   k: {t: qQ, type: low}
