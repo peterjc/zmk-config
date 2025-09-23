@@ -199,11 +199,13 @@
         tab_combo {
             bindings = <&kp TAB>;
             key-positions = <LB1 LB2 LB3>;
+            timeout-ms = <75>;
         };
 
         enter_combo {
             bindings = <&kp ENTER>;
             key-positions = <RB1 RB2 RB3>;
+            timeout-ms = <75>;
         };
 
         // 2-key horizontal home-row combos for modifiers
@@ -249,7 +251,7 @@
             bindings = <&ak_Q>;
             key-positions = <LT1 LT2>;
             layers = <DEFAULT>;
-            timeout-ms = <75>;
+            timeout-ms = <100>;
         };
 
         z_combo {
