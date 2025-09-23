@@ -40,26 +40,25 @@ letters demoted to combos: Q, Z, and V).
 
 ### Gamma Omega TC36K
 
-I use the split 3x5_3 layout described above for this 36-key self-built keyboard.
+The ZMK keymap in file [tc36k.keymap](config/tc36k.keymap) is the
+split 3x5_3 layout described above for the self-built
+[Gamma Omega TC36K](https://github.com/unspecworks/gamma-omega/tree/main/tc36k).
+This is a single PCB no-diode variant of the Gamma Omega where [I designed the
+wiring and PCB](https://astrobeano.blogspot.com/2025/08/my-first-self-built-computer-keyboard.html)).
 
-The ZMK keymap in file [tc36k.keymap](config/tc36k.keymap) is for the
-[Gamma Omega TC36K](https://github.com/unspecworks/gamma-omega/tree/main/tc36k) 
-(a monoblock 'split' keyboard where [I designed the wiring and
-PCB](https://astrobeano.blogspot.com/2025/08/my-first-self-built-computer-keyboard.html)) when
-used with my [ZMK firmware for TC36K](https://github.com/peterjc/zmk-keyboard-graph-theory/tree/main/boards/shields/tc36k)
-(I also wrote [QMK firmware for TC36K](https://github.com/peterjc/qmk_userspace/tree/main/keyboards/tutte_coxeter_36k)).
+This uses my [ZMK firmware for the TC36K](https://github.com/peterjc/zmk-keyboard-graph-theory/tree/main/boards/shields/tc36k)
+(I also wrote [QMK firmware for the TC36K](https://github.com/peterjc/qmk_userspace/tree/main/keyboards/tutte_coxeter_36k)).
 
 This keyboard has 6-key roll-over. which is not an issue with this or most keymaps.
 
 ### Gamma Omega Hesse
 
-I use the split 3x5_3 layout described above for this 36-key self-built keyboard.
+The ZMK keymap in file [hesse.keymap](config/hesse.keymap) is the
+split 3x5_3 layout described above for the self-built
+[Gamma Omega Hesse](https://github.com/unspecworks/gamma-omega/tree/main/tc36k).
+This is a Bluetooth version of the Gamma Omega.
 
-The ZMK keymap in file [hesse.keymap](config/hesse.keymap) is for the
-[Gamma Omega Hesse](https://github.com/unspecworks/gamma-omega/tree/main/tc36k)
-which is a Bluetooth version of the Gamma Omega, which uses essentially the layout
-as the Gamma Omega TC36K above. This uses my [ZMK firmware for the
-Hesse](https://github.com/peterjc/zmk-keyboard-graph-theory/tree/main/boards/shields/hesse)
+This uses my [ZMK firmware for the Hesse](https://github.com/peterjc/zmk-keyboard-graph-theory/tree/main/boards/shields/hesse)
 
 This keyboard has only 4-key roll-over, which was kept in mind when editing this
 keymap. i.e. I try not to use any combos needing more than four keys in total. 
