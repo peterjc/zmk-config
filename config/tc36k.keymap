@@ -397,5 +397,29 @@
             layers = <DEFAULT NUM_NAV>;
         };
 
+// Bluetooth combos for the Hesse
+#ifdef CONFIG_WIRELESS
+        combo_bt_prev {
+            bindings = <&bt BT_PRV>;
+            key-positions = <LT2 LT3>;
+            layers = <NUM_NAV>;
+        };
+        combo_bt_next {
+            bindings = <&bt BT_NXT>;
+            key-positions = <LT1 LT2>;
+            layers = <NUM_NAV>;
+        };
+        combo_bt_clear {
+            bindings = <&bt BT_CLR>;
+            key-positions = <RT1 RT2>;
+            layers = <NUM_NAV>;
+        };
+        combo_bt_clear_all {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <RT2 RT3>;
+            layers = <NUM_NAV>;
+        };
+#endif // CONFIG_WIRELESS
+
     };
 };
