@@ -263,6 +263,12 @@
             layers = <DEFAULT>;
         };
 
+        x_combo {
+            bindings = <&ak_X>;
+            key-positions = <LB2 LB3>;
+            layers = <DEFAULT>;
+        };
+
         // 2-key vertical combos (symbols)
         backtick {
             bindings = <&kp GRAVE>;
