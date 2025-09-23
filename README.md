@@ -32,7 +32,7 @@ and the Naginata layer on and off, those are Qwerty `D`+`G` (labelled 'ABC' in
 the image) and Qwerty `H`+`K` instead (labelled 'かな'). This layout uses a *lot*
 of chording, but these are not defined as ZMK combos, and so are not drawn here.
 
-![Keymap Image](keymap-drawer/tc36k.svg)
+![Keymap Image](keymap-drawer/hesse.svg)
 
 In this keymap image the base layer keys and space are coloured by usage frequencies (orange/pink
 for highest use - mainly home keys, down through pink, purples, to a dark blue for low like the
@@ -40,8 +40,8 @@ letters demoted to combos: Q, Z, and V).
 
 ### Gamma Omega TC36K
 
-The ZMK keymap in file [tc36k.keymap](config/tc36k.keymap) is the
-split 3x5_3 layout described above for the self-built
+The ZMK keymap in file [tc36k.keymap](config/tc36k.keymap) is the split 3x5_3
+layout described above (without the bluetooth combos) for the self-built
 [Gamma Omega TC36K](https://github.com/unspecworks/gamma-omega/tree/main/tc36k).
 This is a single PCB no-diode variant of the Gamma Omega where [I designed the
 wiring and PCB](https://astrobeano.blogspot.com/2025/08/my-first-self-built-computer-keyboard.html)).
