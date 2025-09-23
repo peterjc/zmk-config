@@ -227,6 +227,12 @@
             layers = <DEFAULT NUM_NAV>;
             require-prior-idle-ms = <125>;
         };
+        left_shift_combo {
+            bindings = <&kp LSHFT>;
+            key-positions = <LB1 LB2>;
+            layers = <DEFAULT NUM_NAV>;
+            require-prior-idle-ms = <125>;
+        };
         right_alt_combo {
             bindings = <&kp RALT>;
             key-positions = <RM3 RM4>;
@@ -245,7 +251,13 @@
             layers = <DEFAULT NUM_NAV>;
             require-prior-idle-ms = <125>;
         };
-
+        right_shift_combo {
+            bindings = <&kp LSHFT>;
+            key-positions = <RB1 RB2>;
+            layers = <DEFAULT NUM_NAV>;
+            require-prior-idle-ms = <125>;
+        };
+ 
         // 2-key horizontal combos for rare letters
         q_combo {
             bindings = <&ak_Q>;
