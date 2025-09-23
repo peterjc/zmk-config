@@ -249,24 +249,28 @@
             bindings = <&ak_Q>;
             key-positions = <LT1 LT2>;
             layers = <DEFAULT>;
+            timeout-ms = <75>;
         };
 
         z_combo {
             bindings = <&ak_Z>;
             key-positions = <RT2 RT3>;
             layers = <DEFAULT>;
+            timeout-ms = <75>;
         };
 
         v_combo {
             bindings = <&ak_V>;
             key-positions = <LT2 LT3>;
             layers = <DEFAULT>;
+            timeout-ms = <75>;
         };
 
         x_combo {
             bindings = <&ak_X>;
             key-positions = <LB2 LB3>;
             layers = <DEFAULT>;
+            timeout-ms = <75>;
         };
 
         // 2-key vertical combos (symbols)
