@@ -182,6 +182,8 @@
             bindings = <&kp W>;
 
             akW_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(W)>; strict-modifiers; };
+            // qw -> qwerty, and Qw -> Qwerty
+            akQW_t_werty { trigger-keys = <Q LS(Q) RS(Q)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp W &kp E &kp R &kp T &kp Y>; strict-modifiers; };
         };
         ak_X: ak_X {
             compatible = "zmk,behavior-adaptive-key";
