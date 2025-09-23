@@ -243,3 +243,15 @@ combos:
 - p: [28, 29]
   k: '>'
   l: [HD Promethium, Num + Nav]
+- p: [2, 1]
+  k: BT PRV
+  l: [Num + Nav]
+- p: [3, 2]
+  k: BT NXT
+  l: [Num + Nav]
+- p: [6, 7]
+  k: BT CLR
+  l: [Num + Nav]
+- p: [7, 8]
+  k: BT CLR ALL
+  l: [Num + Nav]
