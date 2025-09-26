@@ -1,7 +1,12 @@
-// A default Qwerty keymap is provided along with the Tutte-Coxeter 36K (TC36K) shield.
-// This file is my personal keymap, a modified version of Hands Down Promethium layout
-// with a numbers/navigation layer, and symbols on chords/combos. Assuming ISO with
-// British locale (e.g. double-quote versus at sign, pipe, etc)
+// A default Qwerty keymap is provided along with the Tutte-Coxeter 36K (TC36K)
+// and Hesse shields for my split 3x5_3 style 36-key keyboards.
+//
+// This file is my personal keymap, a modified version of the inverted Hands
+// Down Promethium layout, with a numbers/navigation layer, symbols on
+// chords/combos, and a Naginata Style layer for typing in Japanese.
+//
+// Tested on macOS. Symbols assume keyboard is set in the OS as ISO, and used
+// with the British locale (e.g. double-quote versus at sign, pipe, etc).
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
