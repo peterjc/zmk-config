@@ -436,25 +436,25 @@ text.right {
 <g transform="translate(30, 280)" class="layer-Naginata">
 <text x="0" y="28" class="label" id="Naginata">Naginata</text>
 <g transform="translate(0, 56)">
-<g transform="translate(28, 28)" class="key keypos-0">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⎋</text>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 70%">Small-kana</tspan></text>
+<g transform="translate(28, 28)" class="key low keypos-0">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key low"/>
+<text x="0" y="0" class="key low tap">⎋</text>
+<text x="0" y="24" class="key low hold"><tspan style="font-size: 70%">Small-kana</tspan></text>
 </g>
-<g transform="translate(84, 28)" class="key keypos-1">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="-24" y="0" class="key left">き</text>
-<text x="24" y="0" class="key right">ぬ</text>
+<g transform="translate(84, 28)" class="key medium-high keypos-1">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key medium-high"/>
+<text x="-24" y="0" class="key medium-high left">き</text>
+<text x="24" y="0" class="key medium-high right">ぬ</text>
 </g>
-<g transform="translate(140, 28)" class="key keypos-2">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="-24" y="0" class="key left">て</text>
-<text x="24" y="0" class="key right">り</text>
+<g transform="translate(140, 28)" class="key medium-high keypos-2">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key medium-high"/>
+<text x="-24" y="0" class="key medium-high left">て</text>
+<text x="24" y="0" class="key medium-high right">り</text>
 </g>
-<g transform="translate(196, 28)" class="key keypos-3">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="-24" y="0" class="key left">し</text>
-<text x="24" y="0" class="key right">め</text>
+<g transform="translate(196, 28)" class="key high keypos-3">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key high"/>
+<text x="-24" y="0" class="key high left">し</text>
+<text x="24" y="0" class="key high right">め</text>
 </g>
 <g transform="translate(252, 28)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -464,126 +464,126 @@ text.right {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">→</text>
 </g>
-<g transform="translate(420, 28)" class="key keypos-6">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="-24" y="0" class="key left">⌫</text>
-<text x="24" y="0" class="key right">さ</text>
+<g transform="translate(420, 28)" class="key medium-low keypos-6">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key medium-low"/>
+<text x="-24" y="0" class="key medium-low left">⌫</text>
+<text x="24" y="0" class="key medium-low right">さ</text>
 </g>
-<g transform="translate(476, 28)" class="key keypos-7">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="-24" y="0" class="key left">る</text>
-<text x="24" y="0" class="key right">よ</text>
+<g transform="translate(476, 28)" class="key high keypos-7">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key high"/>
+<text x="-24" y="0" class="key high left">る</text>
+<text x="24" y="0" class="key high right">よ</text>
 </g>
-<g transform="translate(532, 28)" class="key keypos-8">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="-24" y="0" class="key left">す</text>
-<text x="24" y="0" class="key right">え</text>
+<g transform="translate(532, 28)" class="key medium keypos-8">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key medium"/>
+<text x="-24" y="0" class="key medium left">す</text>
+<text x="24" y="0" class="key medium right">え</text>
 </g>
-<g transform="translate(588, 28)" class="key keypos-9">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="-24" y="0" class="key left">へ</text>
-<text x="24" y="0" class="key right">ゆ</text>
+<g transform="translate(588, 28)" class="key medium-low keypos-9">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key medium-low"/>
+<text x="-24" y="0" class="key medium-low left">へ</text>
+<text x="24" y="0" class="key medium-low right">ゆ</text>
 </g>
-<g transform="translate(28, 84)" class="key keypos-10">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="-24" y="0" class="key left">ろ</text>
-<text x="24" y="0" class="key right">せ</text>
+<g transform="translate(28, 84)" class="key high keypos-10">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key high"/>
+<text x="-24" y="0" class="key high left">ろ</text>
+<text x="24" y="0" class="key high right">せ</text>
 </g>
-<g transform="translate(84, 84)" class="key keypos-11">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="-24" y="0" class="key left">け</text>
-<text x="24" y="0" class="key right">み</text>
+<g transform="translate(84, 84)" class="key medium-low keypos-11">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key medium-low"/>
+<text x="-24" y="0" class="key medium-low left">け</text>
+<text x="24" y="0" class="key medium-low right">み</text>
 </g>
-<g transform="translate(140, 84)" class="key keypos-12">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="-24" y="0" class="key left">と</text>
-<text x="24" y="0" class="key right">に</text>
+<g transform="translate(140, 84)" class="key high keypos-12">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key high"/>
+<text x="-24" y="0" class="key high left">と</text>
+<text x="24" y="0" class="key high right">に</text>
 </g>
-<g transform="translate(196, 84)" class="key keypos-13">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="24" class="key hold">濁音</text>
-<text x="-24" y="0" class="key left">か</text>
-<text x="24" y="0" class="key right">ま</text>
+<g transform="translate(196, 84)" class="key high keypos-13">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key high"/>
+<text x="0" y="24" class="key high hold">濁音</text>
+<text x="-24" y="0" class="key high left">か</text>
+<text x="24" y="0" class="key high right">ま</text>
 </g>
-<g transform="translate(252, 84)" class="key keypos-14">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="-24" y="0" class="key left">っ</text>
-<text x="24" y="0" class="key right">ち</text>
+<g transform="translate(252, 84)" class="key medium-low keypos-14">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key medium-low"/>
+<text x="-24" y="0" class="key medium-low left">っ</text>
+<text x="24" y="0" class="key medium-low right">ち</text>
 </g>
-<g transform="translate(364, 84)" class="key keypos-15">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="-24" y="0" class="key left">く</text>
-<text x="24" y="0" class="key right">や</text>
+<g transform="translate(364, 84)" class="key medium-high keypos-15">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key medium-high"/>
+<text x="-24" y="0" class="key medium-high left">く</text>
+<text x="24" y="0" class="key medium-high right">や</text>
 </g>
-<g transform="translate(420, 84)" class="key keypos-16">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="24" class="key hold">濁音</text>
-<text x="-24" y="0" class="key left">あ</text>
-<text x="24" y="0" class="key right">の</text>
+<g transform="translate(420, 84)" class="key medium-high keypos-16">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key medium-high"/>
+<text x="0" y="24" class="key medium-high hold">濁音</text>
+<text x="-24" y="0" class="key medium-high left">あ</text>
+<text x="24" y="0" class="key medium-high right">の</text>
 </g>
-<g transform="translate(476, 84)" class="key keypos-17">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="-24" y="0" class="key left">い</text>
-<text x="24" y="0" class="key right">も</text>
+<g transform="translate(476, 84)" class="key high keypos-17">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key high"/>
+<text x="-24" y="0" class="key high left">い</text>
+<text x="24" y="0" class="key high right">も</text>
 </g>
-<g transform="translate(532, 84)" class="key keypos-18">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="-24" y="0" class="key left">う</text>
-<text x="24" y="0" class="key right">つ</text>
+<g transform="translate(532, 84)" class="key high keypos-18">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key high"/>
+<text x="-24" y="0" class="key high left">う</text>
+<text x="24" y="0" class="key high right">つ</text>
 </g>
-<g transform="translate(588, 84)" class="key keypos-19">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="-24" y="0" class="key left">ー</text>
-<text x="24" y="0" class="key right">ふ</text>
+<g transform="translate(588, 84)" class="key medium-low keypos-19">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key medium-low"/>
+<text x="-24" y="0" class="key medium-low left">ー</text>
+<text x="24" y="0" class="key medium-low right">ふ</text>
 </g>
-<g transform="translate(28, 140)" class="key keypos-20">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="-24" y="0" class="key left">ほ</text>
+<g transform="translate(28, 140)" class="key low keypos-20">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key low"/>
+<text x="-24" y="0" class="key low left">ほ</text>
 </g>
-<g transform="translate(84, 140)" class="key keypos-21">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="-24" y="0" class="key left">ひ</text>
+<g transform="translate(84, 140)" class="key low keypos-21">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key low"/>
+<text x="-24" y="0" class="key low left">ひ</text>
 </g>
-<g transform="translate(140, 140)" class="key keypos-22">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="-24" y="0" class="key left">は</text>
-<text x="24" y="0" class="key right">を</text>
+<g transform="translate(140, 140)" class="key medium-high keypos-22">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key medium-high"/>
+<text x="-24" y="0" class="key medium-high left">は</text>
+<text x="24" y="0" class="key medium-high right">を</text>
 </g>
-<g transform="translate(196, 140)" class="key keypos-23">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="24" class="key hold">半濁音</text>
-<text x="-24" y="0" class="key left">こ</text>
-<text x="24" y="0" class="key right">、</text>
+<g transform="translate(196, 140)" class="key medium keypos-23">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key medium"/>
+<text x="0" y="24" class="key medium hold">半濁音</text>
+<text x="-24" y="0" class="key medium left">こ</text>
+<text x="24" y="0" class="key medium right">、</text>
 </g>
-<g transform="translate(252, 140)" class="key keypos-24">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="-24" y="0" class="key left">そ</text>
-<text x="24" y="0" class="key right">む</text>
+<g transform="translate(252, 140)" class="key low keypos-24">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key low"/>
+<text x="-24" y="0" class="key low left">そ</text>
+<text x="24" y="0" class="key low right">む</text>
 </g>
-<g transform="translate(364, 140)" class="key keypos-25">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="-24" y="0" class="key left">た</text>
-<text x="24" y="0" class="key right">お</text>
+<g transform="translate(364, 140)" class="key high keypos-25">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key high"/>
+<text x="-24" y="0" class="key high left">た</text>
+<text x="24" y="0" class="key high right">お</text>
 </g>
-<g transform="translate(420, 140)" class="key keypos-26">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="24" class="key hold">半濁音</text>
-<text x="-24" y="0" class="key left">な</text>
-<text x="24" y="0" class="key right">。</text>
+<g transform="translate(420, 140)" class="key medium keypos-26">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key medium"/>
+<text x="0" y="24" class="key medium hold">半濁音</text>
+<text x="-24" y="0" class="key medium left">な</text>
+<text x="24" y="0" class="key medium right">。</text>
 </g>
-<g transform="translate(476, 140)" class="key keypos-27">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="-24" y="0" class="key left">ん</text>
-<text x="24" y="0" class="key right">ね</text>
+<g transform="translate(476, 140)" class="key high keypos-27">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key high"/>
+<text x="-24" y="0" class="key high left">ん</text>
+<text x="24" y="0" class="key high right">ね</text>
 </g>
-<g transform="translate(532, 140)" class="key keypos-28">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="-24" y="0" class="key left">ら</text>
-<text x="24" y="0" class="key right">わ</text>
+<g transform="translate(532, 140)" class="key medium-low keypos-28">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key medium-low"/>
+<text x="-24" y="0" class="key medium-low left">ら</text>
+<text x="24" y="0" class="key medium-low right">わ</text>
 </g>
-<g transform="translate(588, 140)" class="key keypos-29">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="-24" y="0" class="key left">れ</text>
+<g transform="translate(588, 140)" class="key low keypos-29">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key low"/>
+<text x="-24" y="0" class="key low left">れ</text>
 </g>
 <g transform="translate(140, 196)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

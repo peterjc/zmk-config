@@ -38,36 +38,36 @@ layers:
   - {t: ⎵, type: high}
   - Num + Nav
   Naginata:
-  - {t: ⎋, h: Small-kana}
-  - {left: き, right: ぬ}
-  - {left: て, right: り}
-  - {left: し, right: め}
+  - {t: ⎋, h: Small-kana, type: low}
+  - {left: き, right: ぬ, type: medium-high}
+  - {left: て, right: り, type: medium-high}
+  - {left: し, right: め, type: high}
   - ←
   - →
-  - {left: ⌫, right: さ}
-  - {left: る, right: よ}
-  - {left: す, right: え}
-  - {left: へ, right: ゆ}
-  - {left: ろ, right: せ}
-  - {left: け, right: み}
-  - {left: と, right: に}
-  - {h: 濁音, left: か, right: ま}
-  - {left: っ, right: ち}
-  - {left: く, right: や}
-  - {h: 濁音, left: あ, right: の}
-  - {left: い, right: も}
-  - {left: う, right: つ}
-  - {left: ー, right: ふ}
-  - {left: ほ}
-  - {left: ひ}
-  - {left: は, right: を}
-  - {h: 半濁音, left: こ, right: 、}
-  - {left: そ, right: む}
-  - {left: た, right: お}
-  - {h: 半濁音, left: な, right: 。}
-  - {left: ん, right: ね}
-  - {left: ら, right: わ}
-  - {left: れ}
+  - {left: ⌫, right: さ, type: medium-low}
+  - {left: る, right: よ, type: high}
+  - {left: す, right: え, type: medium}
+  - {left: へ, right: ゆ, type: medium-low}
+  - {left: ろ, right: せ, type: high}
+  - {left: け, right: み, type: medium-low}
+  - {left: と, right: に, type: high}
+  - {h: 濁音, left: か, right: ま, type: high}
+  - {left: っ, right: ち, type: medium-low}
+  - {left: く, right: や, type: medium-high}
+  - {h: 濁音, left: あ, right: の, type: medium-high}
+  - {left: い, right: も, type: high}
+  - {left: う, right: つ, type: high}
+  - {left: ー, right: ふ, type: medium-low}
+  - {left: ほ, type: low}
+  - {left: ひ, type: low}
+  - {left: は, right: を, type: medium-high}
+  - {h: 半濁音, left: こ, right: 、, type: medium}
+  - {left: そ, right: む, type: low}
+  - {left: た, right: お, type: high}
+  - {h: 半濁音, left: な, right: 。, type: medium}
+  - {left: ん, right: ね, type: high}
+  - {left: ら, right: わ, type: medium-low}
+  - {left: れ, type: low}
   - ⌘
   - {t: ⏎, h: Kana-Shift, type: kshift}
   - ⌫
