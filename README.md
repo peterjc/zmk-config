@@ -16,8 +16,8 @@ My base layer is the inverted [Hands Down Promethium
 layout](https://www.reddit.com/r/KeyboardLayouts/comments/1g66ivi/hands_down_promethium_snth_meets_hd_silverengram/)
 with my personal modifications ("Pico Mod") intended to help with some readline shortcuts.
 Most of the symbols are 2-key vertical combos, the brackets are 2-key horizontal combos
-(open on the left hand, close on the right). There is a single combined numbers and navigation
-layer accessed by holding the right thumb.
+(open on the left hand, close on the right). There is a single combined numbers and
+navigation layer accessed by holding either thumb.
 I wanted to be able to use this on my laptop too - achieved with [custom Karabiner-Elements
 rules](https://codeberg.org/peterjc/kana-chording-ke/src/branch/main/hands-down-on-jis-macbook)
 (see this [blog post](https://blastedbio.blogspot.com/2025/05/what-have-you-done-to-your-keyboard.html)).
