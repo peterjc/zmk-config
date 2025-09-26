@@ -217,36 +217,61 @@ parse_config:
     '&ak_M': {'t': 'mM', 'type': 'medium'}
     '&ak_COMMA': {'t': ',<', 'type': 'medium-low'}
     # These are the Naginata Style keys for typing in Japanese using kana:
-    '&ng Q': {'t': '⎋', 'h': 'Small-kana'}
-    '&ng W': {'left': 'き', 'right': 'ぬ'}
-    '&ng E': {'left': 'て', 'right': 'り'}
-    '&ng R': {'left': 'し', 'right': 'め'}
+    # Coloured by usage frequency of the primary key, based on the Asahi
+    # newspaper corpus as reported in Tomaoka & Makioka (2004).
+    # Top 8 "high":
+    # 1, い (i)
+    # 2. う (u)
+    # 3. ん (nn)
+    # 4. し (si)
+    # 5. か (ka)
+    # 6. る (ru)
+    # 7. た (ta)
+    # 8. と (to)
+    # Next 5/6, medium-high
+    # 9. の (no) - shifted a, so mark that
+    # 10. て (te)
+    # 11. ょ (xyo) - a chord/combo here with shi and ru (which when shifted is yo), above
+    # 12. く (ku)
+    # 13. き (ki)
+    # 14. は (ha)
+    # Next, medium
+    # 15. に (ni) - shifted to, above
+    # 16. こ (ko)
+    # 17, お (o) - shifted ta, above
+    # 18. す (su)
+    # 19. な (na)
+    # Medium low, low etc.
+    '&ng Q': {'t': '⎋', 'h': 'Small-kana', 'type': 'low'}
+    '&ng W': {'left': 'き', 'right': 'ぬ', 'type': 'medium-high'}
+    '&ng E': {'left': 'て', 'right': 'り', 'type': 'medium-high'}
+    '&ng R': {'left': 'し', 'right': 'め', 'type': 'high'}
     '&ng T': {'t': '←'}
     '&ng Y': {'t': '→'}
-    '&ng U': {'left': '⌫', 'right': 'さ'}
-    '&ng I': {'left': 'る', 'right': 'よ'}
-    '&ng O': {'left': 'す', 'right': 'え'}
-    '&ng P': {'left': 'へ', 'right': 'ゆ'}
-    '&ng A': {'left': 'ろ', 'right': 'せ'}
-    '&ng S': {'left': 'け', 'right': 'み'}
-    '&ng D': {'left': 'と', 'right': 'に'}
-    '&ng F': {'left': 'か', 'right': 'ま', 'h': '濁音'}
-    '&ng G': {'left': 'っ', 'right': 'ち'}
-    '&ng H': {'left': 'く', 'right': 'や'}
-    '&ng J': {'left': 'あ', 'right': 'の', 'h': '濁音'}
-    '&ng K': {'left': 'い', 'right': 'も'}
-    '&ng L': {'left': 'う', 'right': 'つ'}
-    '&ng SEMI': {'left': 'ー', 'right': 'ふ'}
-    '&ng Z': {'left': 'ほ'}
-    '&ng X': {'left': 'ひ'}
-    '&ng C': {'left': 'は', 'right': 'を'}
-    '&ng V': {'left': 'こ', 'right': '、', 'h': '半濁音'}
-    '&ng B': {'left': 'そ', 'right': 'む'}
-    '&ng N': {'left': 'た', 'right': 'お'}
-    '&ng M': {'left': 'な', 'right': '。', 'h': '半濁音'}
-    '&ng COMMA': {'left': 'ん', 'right': 'ね'}
-    '&ng DOT': {'left': 'ら', 'right': 'わ'}
-    '&ng SLASH': {'left': 'れ'}
+    '&ng U': {'left': '⌫', 'right': 'さ', 'type': 'medium-low'}
+    '&ng I': {'left': 'る', 'right': 'よ', 'type': 'high'}
+    '&ng O': {'left': 'す', 'right': 'え', 'type': 'medium'}
+    '&ng P': {'left': 'へ', 'right': 'ゆ', 'type': 'medium-low'}
+    '&ng A': {'left': 'ろ', 'right': 'せ', 'type': 'high'}
+    '&ng S': {'left': 'け', 'right': 'み', 'type': 'medium-low'}
+    '&ng D': {'left': 'と', 'right': 'に', 'type': 'high'}
+    '&ng F': {'left': 'か', 'right': 'ま', 'h': '濁音', 'type': 'high'}
+    '&ng G': {'left': 'っ', 'right': 'ち', 'type': 'medium-low'}
+    '&ng H': {'left': 'く', 'right': 'や', 'type': 'medium-high'}
+    '&ng J': {'left': 'あ', 'right': 'の', 'h': '濁音', 'type': 'medium-high'}
+    '&ng K': {'left': 'い', 'right': 'も', 'type': 'high'}
+    '&ng L': {'left': 'う', 'right': 'つ', 'type': 'high'}
+    '&ng SEMI': {'left': 'ー', 'right': 'ふ', 'type': 'medium-low'}
+    '&ng Z': {'left': 'ほ', 'type': 'low'}
+    '&ng X': {'left': 'ひ', 'type': 'low'}
+    '&ng C': {'left': 'は', 'right': 'を', 'type': 'medium-high'}
+    '&ng V': {'left': 'こ', 'right': '、', 'h': '半濁音', 'type': 'medium'}
+    '&ng B': {'left': 'そ', 'right': 'む', 'type': 'low'}
+    '&ng N': {'left': 'た', 'right': 'お', 'type': 'high'}
+    '&ng M': {'left': 'な', 'right': '。', 'h': '半濁音', 'type': 'medium'}
+    '&ng COMMA': {'left': 'ん', 'right': 'ね', 'type': 'high'}
+    '&ng DOT': {'left': 'ら', 'right': 'わ', 'type': 'medium-low'}
+    '&ng SLASH': {'left': 'れ', 'type': 'low'}
     '&ng SPACE': {'t': '⎵', 'h': 'Kana-Shift', 'type': 'kshift'}
     '&ng ENTER': {'t': '⏎', 'h': 'Kana-Shift', 'type': 'kshift'}
     '&base_with_mod LGUI': '⌘'
