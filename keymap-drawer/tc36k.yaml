@@ -34,8 +34,8 @@ layers:
   - Num + Nav
   - {t: rR, type: high}
   - ⌫
-  - ⇧
-  - {t: ⎵, type: high}
+  - {t: ⎵, h: ⇧}
+  - {t: ⎵, h: ⇧}
   - Num + Nav
   Naginata:
   - {t: ⎋, h: Small-kana}
