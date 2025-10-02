@@ -74,6 +74,7 @@ parse_config:
     LGUI: ⌘
     LSHFT: ⇧
     RCTRL: ⌃
+    RSHFT: ⇧
     LEFT_CONTROL: ⌃
     LEFT_ALT: ⎇
     LEFT_GUI: ⌘
