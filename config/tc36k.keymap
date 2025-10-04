@@ -78,6 +78,15 @@
 / {
     behaviors {
 
+        hpmt: hold_preferred_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+        };
+
         bmt: balanced_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -128,10 +137,10 @@
         default_layer {
             display-name = "HD Promethium";
             bindings = <
-                &kp ESCAPE &ak_P &ak_G       &ak_M  &ak_X    &kp SLASH        &kp BSPC          &xquote &kp MINUS &kp EQUAL
-                &ak_S      &ak_N &ak_T       &ak_H  &ak_K    &dot_colon       &ak_A             &ak_E   &ak_I     &ak_C
-                &ak_B      &ak_F &ak_D       &ak_L  &ak_J    &comma_semi      &ak_U             &ak_O   &ak_Y     &ak_W
-                                 &mo NUM_NAV &ak_R  &kp BSPC &bmt LSHFT SPACE &bmt RSHFT SPACE &mo NUM_NAV
+                &kp ESCAPE &ak_P &ak_G       &ak_M  &ak_X    &kp SLASH         &kp BSPC          &xquote &kp MINUS &kp EQUAL
+                &ak_S      &ak_N &ak_T       &ak_H  &ak_K    &dot_colon        &ak_A             &ak_E   &ak_I     &ak_C
+                &ak_B      &ak_F &ak_D       &ak_L  &ak_J    &comma_semi       &ak_U             &ak_O   &ak_Y     &ak_W
+                                 &mo NUM_NAV &ak_R  &kp BSPC &hpmt LSHFT SPACE &hpmt RSHFT SPACE &mo NUM_NAV
             >;
         };
 
