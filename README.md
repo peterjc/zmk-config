@@ -5,12 +5,12 @@ configuration/layouts, for use with programable mechanical computer keyboards.
 The keymap images are rendered automatically using [keymap-drawer](https://github.com/caksoylar/keymap-drawer)
 using this [Draw Keymaps GitHub Action](.github/workflows/draw-keymaps.yml).
 
-## Split 3x5_3 Layout
+## Split 3x5_3 aka 33333+3 Layout with 36 keys
 
 The QMK project uses the term `split_3x5_3` for one of their standard community
-layout names. This means a symetrical split layout chere each hand has three
-rows and five columns (the index finger gets an extra inner columm), plus three
-thumb keys.
+layout names for the most common 36 key layout. This means a symetrical split
+layout where each hand has three rows and five columns (the index finger gets
+an extra inner columm), plus three thumb keys.
 
 My base layer is the inverted [Hands Down Promethium
 layout](https://www.reddit.com/r/KeyboardLayouts/comments/1g66ivi/hands_down_promethium_snth_meets_hd_silverengram/)
@@ -61,4 +61,35 @@ This is a Bluetooth version of the Gamma Omega.
 This uses my [ZMK firmware for the Hesse](https://github.com/peterjc/zmk-keyboard-graph-theory/tree/main/boards/shields/hesse)
 
 This keyboard has only 4-key roll-over, which was kept in mind when editing this
-keymap. i.e. I try not to use any combos needing more than four keys in total. 
+keymap. i.e. I try not to use any combos needing more than four keys in total.
+
+## Split 3x5_2 aka 33333+2 Layout with 34 keys
+
+The QMK project uses the term `split_3x5_2` for one of their standard community
+layout names for the most common 34 key layout. This means a symetrical split
+layout where each hand has three rows and five columns (the index finger gets
+an extra inner columm), plus two thumb keys.
+
+While I am currently using the 36-key layout above, I plan to try only 34-keys
+later (with just R and backspace on the left, and space/shift and the layer key
+on the right).
+
+## Split 33332+2 Layout with 32 keys
+
+By this I mean a layout where each hand gets columns of 3 keys for the pinky,
+ring, middle, and index fingers - but then only 2 keys for the index finger's
+inner column, and two thumb keys. This is used by the keyboards like the
+[Visorbearer](https://github.com/carrefinho/visorbearer).
+
+This would mean dropping my `X` and `/` (slash) keys and all the combos on them.
+This seems doable. Note the placement of a combo for `X`.
+
+## Split 23332+2 Layout with 30 keys
+
+By this I mean a layout where each hand gets columns of only 2 keys for the pinky,
+but 3 keys for the ring, middle, and index fingers, and again only 2 keys for the
+index finger's inner column, and two thumb keys. This is used by the keyboards like
+the [Hummingbird](https://github.com/PJE66/hummingbird).
+
+This would mean dropping my `Escape` and `=`/`+` keys and all the combos on them.
+Right now that seems challenging.
