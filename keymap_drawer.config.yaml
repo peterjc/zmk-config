@@ -142,8 +142,10 @@ parse_config:
     combo_ng_on: {'align': 'bottom', 'offset': -0.02, 'slide': 0.5, 'key': 'かな', 'height': 15}
     combo_ng_off: {'align': 'bottom', 'offset': -0.02, 'slide': -0.5, 'key': 'ABC', 'height': 15}
     pipe_sign: {'align': 'right', 'key': '|'}
-    caret_sign: {'align': 'left'}
+    caret_sign: {'key': '^'}
     exclamation_mark: {'align': 'left'}
+    # Do not show slash and question-mark, just show slash:
+    slash: {'key': '/', 'align': 'left'}
     backtick: {'key': '`'}
     at_sign: {'key': '@'}
     gbp_sign: {'key': '£'}
@@ -181,8 +183,10 @@ parse_config:
     '&kp M': {'t': 'mM', 'type': 'medium'}
     '&kp COMMA': {'t': ',<', 'type': 'medium-low'}
     '&comma_semi': {'t': ',;', 'type': 'medium-low'}
+    '&comma_etc': {'t': ',;?', 'type': 'medium-low'}
     '&kp DOT': {'t': '.>', 'type': 'medium-low'}
     '&dot_colon': {'t': '.:', 'type': 'medium-low'}
+    '&dot_etc': {'t': '.:!', 'type': 'medium-low'}
     # not in Bird mappings:
     '&kp SLASH': {'t': '/?', 'type': 'low'}
     '&xquote': {'t': '''"', 'type': 'medium-low'}
