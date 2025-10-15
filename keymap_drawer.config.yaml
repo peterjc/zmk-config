@@ -181,8 +181,10 @@ parse_config:
     '&kp M': {'t': 'mM', 'type': 'medium'}
     '&kp COMMA': {'t': ',<', 'type': 'medium-low'}
     '&comma_semi': {'t': ',;', 'type': 'medium-low'}
+    '&comma_etc': {'t': ',;!', 'type': 'medium-low'}
     '&kp DOT': {'t': '.>', 'type': 'medium-low'}
     '&dot_colon': {'t': '.:', 'type': 'medium-low'}
+    '&dot_etc': {'t': '.:/?', 'type': 'medium-low'}
     # not in Bird mappings:
     '&kp SLASH': {'t': '/?', 'type': 'low'}
     '&xquote': {'t': '''"', 'type': 'medium-low'}
