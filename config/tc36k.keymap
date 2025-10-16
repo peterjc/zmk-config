@@ -28,6 +28,7 @@
 #define NAGINATA 1
 #define NUM_NAV 2
 
+#define my_linger_term 350 // linger mod-tap trigger time window
 #define my_ak_term 350 // behavior-adaptive-key trigger time window
 #define my_cc_term 1400 // CommaCap trigger time window
 
@@ -76,6 +77,22 @@
 };
 
 / {
+    macros {
+        m_slash: m_slash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp SLASH>;
+        };
+
+        m_excl: m_excl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp EXCL>;
+        };
+    };
+};
+
+/ {
     behaviors {
 
         hpmt: hold_preferred_mod_tap {
@@ -108,6 +125,16 @@
             // need to keep shift, and anything else too:
             keep-mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
         };
+        linger_dot: linger_dot {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <my_linger_term>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&m_slash &dot_colon>;
+        };
+
+#define dot_etc linger_dot 0 0
 
         comma_semi: comma_semi {
             compatible = "zmk,behavior-mod-morph";
@@ -117,6 +144,16 @@
             // do NOT want to keep shift active, but anything else is fine:
             keep-mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
         };
+        linger_comma: linger_comma {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <my_linger_term>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&m_excl &comma_semi>;
+        };
+
+#define comma_etc linger_comma 0 0
 
     };
 };
@@ -129,8 +166,8 @@
             display-name = "HD Promethium";
             bindings = <
                 &kp ESCAPE &ak_P &ak_G       &ak_M  &ak_X    &kp SLASH         &kp BSPC          &xquote &kp MINUS &kp EQUAL
-                &ak_S      &ak_N &ak_T       &ak_H  &ak_K    &dot_colon        &ak_A             &ak_E   &ak_I     &ak_C
-                &ak_B      &ak_F &ak_D       &ak_L  &ak_J    &comma_semi       &ak_U             &ak_O   &ak_Y     &ak_W
+                &ak_S      &ak_N &ak_T       &ak_H  &ak_K    &dot_etc          &ak_A             &ak_E   &ak_I     &ak_C
+                &ak_B      &ak_F &ak_D       &ak_L  &ak_J    &comma_etc        &ak_U             &ak_O   &ak_Y     &ak_W
                                  &mo NUM_NAV &ak_R  &kp BSPC &hpmt LSHFT SPACE &hpmt RSHFT SPACE &mo NUM_NAV
             >;
         };
