@@ -157,10 +157,10 @@
         default_layer {
             display-name = "HD Promethium";
             bindings = <
-                &kp ESCAPE &ak_P &ak_G       &ak_M  &ak_X    &kp SLASH         &kp BSPC          &xquote &kp MINUS &kp EQUAL
-                &ak_S      &ak_N &ak_T       &ak_H  &ak_K    &dot_etc          &ak_A             &ak_E   &ak_I     &ak_C
-                &ak_B      &ak_F &ak_D       &ak_L  &ak_J    &comma_etc        &ak_U             &ak_O   &ak_Y     &ak_W
-                                 &mo NUM_NAV &ak_R  &kp BSPC &hpmt LSHFT SPACE &hpmt RSHFT SPACE &mo NUM_NAV
+                &kp ESCAPE &ak_P &ak_G   &ak_M &ak_X    &kp SLASH         &kp BSPC          &xquote &kp MINUS &kp EQUAL
+                &ak_S      &ak_N &ak_T   &ak_H &ak_K    &dot_etc          &ak_A             &ak_E   &ak_I     &ak_C
+                &ak_B      &ak_F &ak_D   &ak_L &ak_J    &comma_etc        &ak_U             &ak_O   &ak_Y     &ak_W
+                                 &kp TAB &ak_R &kp BSPC &hpmt LSHFT SPACE &hpmt RSHFT SPACE &mo NUM_NAV
             >;
         };
 
@@ -173,10 +173,10 @@
         naginata_layer {
             display-name = "Naginata";
             bindings = <
-                &ng Q &ng W &ng E               &ng R     &ng T    &ng Y     &ng U      &ng I     &ng O      &ng P
-                &ng A &ng S &ng D               &ng F     &ng G    &ng H     &ng J      &ng K     &ng L      &ng SEMI
-                &ng Z &ng X &ng C               &ng V     &ng B    &ng N     &ng M      &ng COMMA &ng DOT    &ng SLASH
-                            &base_with_mod LGUI &ng ENTER &kp BSPC &hpmt LSHFT LS(SPACE) &ng SPACE &mo NUM_NAV
+                &ng Q &ng W &ng E   &ng R     &ng T    &ng Y     &ng U      &ng I     &ng O      &ng P
+                &ng A &ng S &ng D   &ng F     &ng G    &ng H     &ng J      &ng K     &ng L      &ng SEMI
+                &ng Z &ng X &ng C   &ng V     &ng B    &ng N     &ng M      &ng COMMA &ng DOT    &ng SLASH
+                            &kp TAB &ng ENTER &kp BSPC &hpmt LSHFT LS(SPACE) &ng SPACE &mo NUM_NAV
                 >;
         };
 
