@@ -70,9 +70,17 @@ layout names for the most common 34 key layouts. This means a symmetrical split
 layout where each hand has three rows and five columns (the index finger still
 gets a full extra inner column), plus two thumb keys.
 
-While I am currently using the 36-key layout above, I plan to try only 34-keys
-later (with just R and backspace on the left, and space, shift and layer on the
-right).
+My layout here is the 3x5_3 layout above with the most tucked thumb keys
+discarded (being the least comfortable for me on my 36-key keyboards). This
+is done via the `LAYER_FROM36` macro idea from the creator of the Forager
+keyboard [Cem Aksoylar's ZMK config](https://github.com/caksoylar/zmk-config),
+
+### Forager Acid
+
+The ZMK keymap in file [acid.keymap](config/hesse.keymap) is the split 3x5_2
+layout described above for my self-built variant of the Forager keyboard.
+
+![Keymap Image](keymap-drawer/acid.svg)
 
 ## Split 33332+2 Layout with 32 keys
 
