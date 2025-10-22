@@ -1,6 +1,9 @@
-#include "zmk-helpers/key-labels/36.h"
+#define CONFIG_WIRELESS
+#include <dt-bindings/zmk/bt.h>
 
-// This is an identity mapping keeping all 36 keys:
+#include "zmk-helpers/key-labels/34.h"
+
+// Drop the most tucked thumbs (LH2 and RH2 in ZMK-helpers terms)
 #define LAYER_FROM36( \
     k00, k01, k02, k03, k04, k05, k06, k07, k08, k09, \
     k10, k11, k12, k13, k14, k15, k16, k17, k18, k19, \
@@ -10,7 +13,6 @@
     k00  k01  k02  k03  k04  k05  k06  k07  k08  k09  \
     k10  k11  k12  k13  k14  k15  k16  k17  k18  k19  \
     k20  k21  k22  k23  k24  k25  k26  k27  k28  k29  \
-              k30  k31  k32  k33  k34  k35
+                   k31  k32  k33  k34
 
 #include "3x5_3.dtsi"
-

@@ -1,0 +1,472 @@
+// This file is my personal keymap, a modified version of the inverted Hands
+// Down Promethium layout, with a numbers/navigation layer, symbols on
+// chords/combos, and a Naginata Style layer for typing in Japanese.
+//
+// Tested on macOS. Symbols assume keyboard is set in the OS as ISO, and used
+// with the British locale (e.g. double-quote versus at sign, pipe, etc).
+//
+// Assumes 36-key keyboard in the common 3x5_3 layout (three rows of five
+// columns, and three thumb keys, per hand) or 34-key keyboard in the 3x5_2
+// layout (where the most tucked thumb keys are dropped). This is handled
+// via the LAYER_FROM36 definition, which must be defined before including
+// this file. This should also include a line like this:
+// #include "zmk-helpers/key-labels/36.h"
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <behaviors/naginata.dtsi>
+
+/ {
+  chosen {
+    /delete-property/     zephyr,console;
+    /delete-property/     zephyr,shell-uart;
+    /delete-property/     zephyr,uart-mcumgr;
+    /delete-property/     zephyr,bt-mon-uart;
+    /delete-property/     zephyr,bt-c2h-uart;
+  };
+};
+
+// Aliases for my layers
+#define DEFAULT 0
+#define NAGINATA 1
+#define NUM_NAV 2
+
+#define my_linger_term 350 // linger mod-tap trigger time window
+#define my_ak_term 350 // behavior-adaptive-key trigger time window
+#define my_cc_term 1400 // CommaCap trigger time window
+
+/ {
+    macros {
+        // To switch to Japanese mode, this sends what Karabiner-Elements sees
+        // as japanese_kana (Apple's kana key for macOS),
+        // japanese_px_xfer (PC converted key for Windows)
+        ng_on: ng_on {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LANGUAGE_1 &kp INTERNATIONAL_4 &to 1>
+                ;
+        };
+        // To switch back to alphanumeric mode, this sends what Karabiner-Elements sees
+        // as japanese_eisuu (Apple's alphanumeric key for macOS),
+        // japanese_pc_nfer (PC unconverted key for Windows)
+        ng_off: ng_off {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LANGUAGE_2 &kp INTERNATIONAL_5 &to 0>
+                ;
+        };
+
+        // Temporarily switch off the Naginata layer (`&tog 1`) while a modifier is held.
+        // Analogous to QMK's `LM(layer, mod)` and ZMK's `&lm` macro but want layer 0 active!
+        base_with_mod: base_with_mod {
+            compatible = "zmk,behavior-macro-one-param";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <1>;
+            bindings
+                = <&macro_press &tog NAGINATA >
+                , <&macro_param_1to1>
+                , <&macro_press &kp MACRO_PLACEHOLDER>
+                , <&macro_pause_for_release>
+                , <&macro_param_1to1>
+                , <&macro_release &kp MACRO_PLACEHOLDER>
+                , <&macro_press &tog NAGINATA >
+                ;
+        };
+
+        // Single key-press macro for use in linger-keys
+        ktap: key_tap {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            display-name = "Key Tap";
+            bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>;
+            tap-ms = <30>;
+        };
+    };
+};
+
+/ {
+    behaviors {
+
+        hpmt: hold_preferred_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <300>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        // make shift+quote give double-quote like ANSI or Apple UK
+        // when host setup with British layout (would be @-sign)
+        xquote: override_shift_quote {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>, <&kp N2>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            // need to keep shift, and anything else too:
+            keep-mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+        };
+
+#include "adaptive-keys.h"
+
+        dot_colon: dot_colon {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp SEMI>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            // need to keep shift, and anything else too:
+            keep-mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+        };
+        linger_dot: linger_dot {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <my_linger_term>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&ktap &dot_colon>;
+        };
+
+#define dot_etc linger_dot EXCL 0
+
+        comma_semi: comma_semi {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp SEMI>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            // do NOT want to keep shift active, but anything else is fine:
+            keep-mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+        };
+        linger_comma: linger_comma {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <my_linger_term>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&ktap &comma_semi>;
+        };
+
+#define comma_etc linger_comma QUESTION 0
+
+    };
+};
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            display-name = "HD Promethium";
+            bindings = <LAYER_FROM36( \
+                &kp ESCAPE, &ak_P, &ak_G,   &ak_M, &ak_X,    &kp SLASH,  &kp BSPC,          &xquote, &kp MINUS, &kp EQUAL, \
+                &ak_S,      &ak_N, &ak_T,   &ak_H, &ak_K,    &dot_etc,   &ak_A,             &ak_E,   &ak_I,     &ak_C, \
+                &ak_B,      &ak_F, &ak_D,   &ak_L, &ak_J,    &comma_etc, &ak_U,             &ak_O,   &ak_Y,     &ak_W, \
+                                   &kp TAB, &ak_R, &kp BSPC, &kp RSHFT,  &lt NUM_NAV SPACE, &mo NUM_NAV \
+            )>;
+        };
+
+        // The Japanese Naginata Style layer is usually layer 1, after the default layer 0.
+        // Follows Qwerty but with &np rather than &kp.
+        // Thumbs must include `&ng SPACE` (kana-shift when held) and/or
+        // `&ng ENTER` (kana-shift when held), ideally both.
+        // Standard (ABC) shift is useful for katakana, here ommitted.
+        // Layer combined with shift+space for selecting previous kanji selection on tap.
+        naginata_layer {
+            display-name = "Naginata";
+            bindings = <LAYER_FROM36( \
+                &ng Q, &ng W, &ng E,   &ng R,     &ng T,    &ng Y,     &ng U,                 &ng I,     &ng O,      &ng P, \
+                &ng A, &ng S, &ng D,   &ng F,     &ng G,    &ng H,     &ng J,                 &ng K,     &ng L,      &ng SEMI, \
+                &ng Z, &ng X, &ng C,   &ng V,     &ng B,    &ng N,     &ng M,                 &ng COMMA, &ng DOT,    &ng SLASH, \
+                              &kp TAB, &ng ENTER, &kp BSPC, &ng SPACE, &lt NUM_NAV LS(SPACE), &mo NUM_NAV \
+                )>;
+        };
+
+        num_nav_layer {
+            display-name = "Num + Nav";
+            bindings = <LAYER_FROM36( \
+                &kp KP_DIVIDE,    &kp N1, &kp N2, &kp N3, &kp KP_EQUAL, &kp ESCAPE, &kp HOME,     &kp UP,     &kp END,       &kp C_PLAY_PAUSE, \
+                &kp KP_MULTIPLY,  &kp N4, &kp N5, &kp N6, &kp KP_PLUS,  &kp PG_UP,  &kp LEFT,     &kp DOWN,   &kp RIGHT,     &kp K_VOLUME_UP, \
+                &mt LSHFT KP_DOT, &kp N7, &kp N8, &kp N9, &kp KP_MINUS, &kp PG_DN,  &kp LA(LEFT), &kp RETURN, &kp LA(RIGHT), &kp K_VOLUME_DOWN, \
+                                          &trans, &hpmt LSHFT N0, &trans, &trans, &trans, &trans \
+            )>;
+        };
+
+        // Empty layers for ZMK Studio:
+        extra3 {
+            status = "reserved";
+        };
+        extra4 {
+            status = "reserved";
+        };
+        extra5 {
+            status = "reserved";
+        };
+    };
+};
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        // Top left (Q) + top right (P) = &studio_unlock
+        combo_studio_unlock {
+            timeout-ms = <100>;
+            key-positions = <0 9>;
+            bindings = <&studio_unlock>;
+            layers = <DEFAULT>;
+        };
+
+        // Inner corners (T, Y, B, N) = &bootloader
+        combo_bootloader {
+            timeout-ms = <300>;
+            key-positions = <LT0 RT0 LB0 RB0>;
+            bindings = <&bootloader>;
+            layers = <DEFAULT>;
+        };
+
+        // Japanese mode and 薙刀 (Naginata Style) on/off
+        // Can't use <RM0 RM1> Qwerty H+J as I use that for close bracket
+        combo_ng_on {
+            timeout-ms = <300>;
+            key-positions = <RM0 RM2>; // Qwerty H+K, on right hand home row
+            bindings = <&ng_on>;
+            layers = <DEFAULT NAGINATA>;
+        };
+        // Can't use <LM0 LM1> Qwerty F+G as I use that for open bracket
+        combo_ng_off {
+            timeout-ms = <300>;
+            key-positions = <LM0 LM2>; // Qwerty D+G, on left hand home row
+            bindings = <&ng_off>;
+            layers = <DEFAULT NAGINATA>;
+        };
+
+        // 3-key horizontal combos
+        tab_combo {
+            bindings = <&kp TAB>;
+            key-positions = <LB1 LB2 LB3>;
+            timeout-ms = <75>;
+        };
+
+        enter_combo {
+            bindings = <&kp ENTER>;
+            key-positions = <RB1 RB2 RB3>;
+            timeout-ms = <75>;
+        };
+
+        // 2-key horizontal home-row combos for modifiers
+        left_alt_combo {
+            bindings = <&kp LALT>;
+            key-positions = <LM3 LM4>;
+            layers = <DEFAULT NUM_NAV>;
+            require-prior-idle-ms = <125>;
+        };
+        left_ctrl_combo {
+            bindings = <&kp LCTRL>;
+            key-positions = <LM2 LM3>;
+            layers = <DEFAULT NUM_NAV>;
+            require-prior-idle-ms = <125>;
+        };
+        left_gui_combo {
+            bindings = <&kp LGUI>;
+            key-positions = <LM1 LM2>;
+            layers = <DEFAULT NUM_NAV>;
+            require-prior-idle-ms = <125>;
+        };
+        right_alt_combo {
+            bindings = <&kp RALT>;
+            key-positions = <RM3 RM4>;
+            layers = <DEFAULT NUM_NAV>;
+            require-prior-idle-ms = <125>;
+        };
+        right_ctrl_combo {
+            bindings = <&kp RCTRL>;
+            key-positions = <RM2 RM3>;
+            layers = <DEFAULT NUM_NAV>;
+            require-prior-idle-ms = <125>;
+        };
+        right_gui_combo {
+            bindings = <&kp RGUI>;
+            key-positions = <RM1 RM2>;
+            layers = <DEFAULT NUM_NAV>;
+            require-prior-idle-ms = <125>;
+        };
+
+        // 2-key horizontal combos for rare letters
+        q_combo {
+            bindings = <&ak_Q>;
+            key-positions = <LT1 LT2>;
+            layers = <DEFAULT>;
+            timeout-ms = <100>;
+        };
+
+        z_combo {
+            bindings = <&ak_Z>;
+            key-positions = <RT2 RT3>;
+            layers = <DEFAULT>;
+            timeout-ms = <75>;
+        };
+
+        v_combo {
+            bindings = <&ak_V>;
+            key-positions = <LT2 LT3>;
+            layers = <DEFAULT>;
+            timeout-ms = <75>;
+        };
+
+        x_combo {
+            bindings = <&ak_X>;
+            key-positions = <LB2 LB3>;
+            layers = <DEFAULT>;
+            timeout-ms = <75>;
+        };
+
+        // 2-key vertical combos (symbols)
+        backtick {
+            bindings = <&kp GRAVE>;
+            key-positions = <LT4 LM4>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        at_sign {
+            bindings = <&kp LS(SQT)>;
+            key-positions = <LT3 LM3>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        gbp_sign {
+            bindings = <&kp LS(NUMBER_3)>;
+            key-positions = <LT2 LM2>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        dollar_sign {
+            bindings = <&kp DOLLAR>;
+            key-positions = <LT1 LM1>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        percent_sign {
+            bindings = <&kp PERCENT>;
+            key-positions = <LT0 LM0>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        pipe_sign {
+            bindings = <&kp LS(NON_US_BACKSLASH)>;
+            key-positions = <LM0 LB0>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        slash {
+            bindings = <&kp SLASH>;
+            key-positions = <RM0 RB0>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        caret_sign {
+            bindings = <&kp CARET>;
+            key-positions = <RT0 RM0>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        ampersand_sign {
+            bindings = <&kp AMPS>;
+            key-positions = <RT1 RM1>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        hash_sign {
+            bindings = <&kp NON_US_HASH>;
+            key-positions = <RT2 RM2>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        backslash_sign {
+            bindings = <&kp NON_US_BACKSLASH>;
+            key-positions = <RT3 RM3>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        tilde_sign {
+            bindings = <&kp LS(NON_US_HASH)>;
+            key-positions = <RT4 RM4>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        // 2-key horizontal combos (brackets):
+        open_curly {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <LT0 LT1>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        close_curly {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <RT0 RT1>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        open_bracket {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <LM0 LM1>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        close_bracket {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <RM0 RM1>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        open_square {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <LB0 LB1>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        close_square {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <RB0 RB1>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        less_than {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <LB3 LB4>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        greater_than {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <RB3 RB4>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+// Bluetooth combos for the Hesse
+#ifdef CONFIG_WIRELESS
+        combo_bt_prev {
+            bindings = <&bt BT_PRV>;
+            key-positions = <LT2 LT3>;
+            layers = <NUM_NAV>;
+        };
+        combo_bt_next {
+            bindings = <&bt BT_NXT>;
+            key-positions = <LT1 LT2>;
+            layers = <NUM_NAV>;
+        };
+        combo_bt_clear {
+            bindings = <&bt BT_CLR>;
+            key-positions = <RT1 RT2>;
+            layers = <NUM_NAV>;
+        };
+        combo_bt_clear_all {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <RT2 RT3>;
+            layers = <NUM_NAV>;
+        };
+#endif // CONFIG_WIRELESS
+
+    };
+};
