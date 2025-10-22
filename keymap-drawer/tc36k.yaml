@@ -31,7 +31,7 @@ layers:
   - {t: oO, type: high}
   - {t: yY, type: medium}
   - {t: wW, type: medium}
-  - Num + Nav
+  - ↹
   - {t: rR, type: high}
   - ⌫
   - {t: ⎵, h: ⇧}
@@ -68,7 +68,7 @@ layers:
   - {left: ん, right: ね}
   - {left: ら, right: わ}
   - {left: れ}
-  - ⌘
+  - ↹
   - {t: ⏎, h: Kana-Shift, type: kshift}
   - ⌫
   - {t: ⇧⎵, h: ⇧}
@@ -109,12 +109,12 @@ layers:
   - 'VOL
 
     DOWN'
-  - {type: held}
+  - {t: ▽, type: trans}
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
 combos:
 - p: [0, 9]
   k: '&studio_unlock'
