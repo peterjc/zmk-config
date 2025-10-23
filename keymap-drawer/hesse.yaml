@@ -110,7 +110,7 @@ layers:
 
     DOWN'
   - {t: ▽, type: trans}
-  - '0'
+  - {t: '0', h: ⇧}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
