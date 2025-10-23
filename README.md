@@ -8,7 +8,7 @@ using this [Draw Keymaps GitHub Action](.github/workflows/draw-keymaps.yml).
 ## Split 3x5_3 aka 33333+3 Layout with 36 keys
 
 The QMK project uses the term `split_3x5_3` for one of their standard community
-layout names for the most common 36 key layouts. This means a symetrical split
+layout names for the most common 36 key layouts. This means a symmetrical split
 layout where each hand has three rows and five columns (the index finger gets
 an extra inner columm), plus three thumb keys.
 
