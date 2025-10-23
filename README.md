@@ -8,7 +8,7 @@ using this [Draw Keymaps GitHub Action](.github/workflows/draw-keymaps.yml).
 ## Split 3x5_3 aka 33333+3 Layout with 36 keys
 
 The QMK project uses the term `split_3x5_3` for one of their standard community
-layout names for the most common 36 key layout. This means a symetrical split
+layout names for the most common 36 key layouts. This means a symetrical split
 layout where each hand has three rows and five columns (the index finger gets
 an extra inner columm), plus three thumb keys.
 
@@ -66,13 +66,13 @@ keymap. i.e. I try not to use any combos needing more than four keys in total.
 ## Split 3x5_2 aka 33333+2 Layout with 34 keys
 
 The QMK project uses the term `split_3x5_2` for one of their standard community
-layout names for the most common 34 key layout. This means a symetrical split
-layout where each hand has three rows and five columns (the index finger gets
-an extra inner columm), plus two thumb keys.
+layout names for the most common 34 key layouts. This means a symmetrical split
+layout where each hand has three rows and five columns (the index finger still
+gets a full extra inner column), plus two thumb keys.
 
 While I am currently using the 36-key layout above, I plan to try only 34-keys
-later (with just R and backspace on the left, and space/shift and the layer key
-on the right).
+later (with just R and backspace on the left, and space, shift and layer on the
+right).
 
 ## Split 33332+2 Layout with 32 keys
 
@@ -81,8 +81,9 @@ ring, middle, and index fingers - but then only 2 keys for the index finger's
 inner column, and two thumb keys. This is used by the keyboards like the
 [Visorbearer](https://github.com/carrefinho/visorbearer).
 
-This would mean dropping my `X` and `/` (slash) keys and all the combos on them.
-This seems doable. Note the placement of a combo for `X`.
+This would mean dropping my `X` and `/` (slash) keys and all the combos with
+them. This seems doable. Note I already have a combo for `X`, and for `/`,
+with `?` (shift+`/`) available by holding comma.
 
 ## Split 23332+2 Layout with 30 keys
 
