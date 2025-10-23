@@ -193,6 +193,7 @@ parse_config:
     '&kp MINUS': {'t': '-_', 'type': 'medium-low'}
     '&kp EQUAL': {'t': '=+', 'type': 'low'}
     '&kp SPACE': {'t': '⎵', 'type': 'high'}
+    '&blt NUM_NAV SPACE': {'t': '⎵', 'h': 'Num+Nav', 'type': 'high'}
     # Again for adaptive key variants:
     '&ak_Q': {'t': 'qQ', 'type': 'low'}
     '&ak_W': {'t': 'wW', 'type': 'medium'}

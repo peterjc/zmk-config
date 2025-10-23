@@ -99,6 +99,15 @@
             bindings = <&kp>, <&kp>;
         };
 
+        blt: balanced_layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <300>;
+            quick-tap-ms = <250>;
+            bindings = <&mo>, <&kp>;
+        };
+
         // make shift+quote give double-quote like ANSI or Apple UK
         // when host setup with British layout (would be @-sign)
         xquote: override_shift_quote {
@@ -160,10 +169,10 @@
         default_layer {
             display-name = "HD Promethium";
             bindings = <LAYER_FROM36( \
-                &kp ESCAPE, &ak_P, &ak_G,   &ak_M, &ak_X,    &kp SLASH,  &kp BSPC,          &xquote, &kp MINUS, &kp EQUAL, \
-                &ak_S,      &ak_N, &ak_T,   &ak_H, &ak_K,    &dot_etc,   &ak_A,             &ak_E,   &ak_I,     &ak_C, \
-                &ak_B,      &ak_F, &ak_D,   &ak_L, &ak_J,    &comma_etc, &ak_U,             &ak_O,   &ak_Y,     &ak_W, \
-                                   &kp TAB, &ak_R, &kp BSPC, &kp RSHFT,  &lt NUM_NAV SPACE, &mo NUM_NAV \
+                &kp ESCAPE, &ak_P, &ak_G,   &ak_M, &ak_X,    &kp SLASH,  &kp BSPC,           &xquote, &kp MINUS, &kp EQUAL, \
+                &ak_S,      &ak_N, &ak_T,   &ak_H, &ak_K,    &dot_etc,   &ak_A,              &ak_E,   &ak_I,     &ak_C, \
+                &ak_B,      &ak_F, &ak_D,   &ak_L, &ak_J,    &comma_etc, &ak_U,              &ak_O,   &ak_Y,     &ak_W, \
+                                   &kp TAB, &ak_R, &kp BSPC, &kp RSHFT,  &blt NUM_NAV SPACE, &mo NUM_NAV \
             )>;
         };
 
