@@ -32,8 +32,6 @@
 #define NUM_NAV 2
 
 #define my_linger_term 350 // linger mod-tap trigger time window
-#define my_ak_term 350 // behavior-adaptive-key trigger time window
-#define my_cc_term 1400 // CommaCap trigger time window
 
 / {
     macros {
@@ -119,8 +117,6 @@
             keep-mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
         };
 
-#include "adaptive-keys.h"
-
         dot_colon: dot_colon {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -169,10 +165,10 @@
         default_layer {
             display-name = "HD Promethium";
             bindings = <LAYER_FROM36( \
-                &kp ESCAPE, &ak_P, &ak_G,   &ak_M, &ak_X,    &kp SLASH,  &kp BSPC,           &xquote, &kp MINUS, &kp EQUAL, \
-                &ak_S,      &ak_N, &ak_T,   &ak_H, &ak_K,    &dot_etc,   &ak_A,              &ak_E,   &ak_I,     &ak_C, \
-                &ak_B,      &ak_F, &ak_D,   &ak_L, &ak_J,    &comma_etc, &ak_U,              &ak_O,   &ak_Y,     &ak_W, \
-                                   &kp TAB, &ak_R, &kp BSPC, &kp RSHFT,  &blt NUM_NAV SPACE, &mo NUM_NAV \
+                &kp ESCAPE, &kp P, &kp G,   &kp M, &kp X,    &kp SLASH,  &kp BSPC,           &xquote, &kp MINUS, &kp EQUAL, \
+                &kp S,      &kp N, &kp T,   &kp H, &kp K,    &dot_etc,   &kp A,              &kp E,   &kp I,     &kp C, \
+                &kp B,      &kp F, &kp D,   &kp L, &kp J,    &comma_etc, &kp U,              &kp O,   &kp Y,     &kp W, \
+                                   &kp TAB, &kp R, &kp BSPC, &kp RSHFT,  &blt NUM_NAV SPACE, &mo NUM_NAV \
             )>;
         };
 
@@ -304,28 +300,28 @@
 
         // 2-key horizontal combos for rare letters
         q_combo {
-            bindings = <&ak_Q>;
+            bindings = <&kp Q>;
             key-positions = <LT1 LT2>;
             layers = <DEFAULT>;
             timeout-ms = <100>;
         };
 
         z_combo {
-            bindings = <&ak_Z>;
+            bindings = <&kp Z>;
             key-positions = <RT2 RT3>;
             layers = <DEFAULT>;
             timeout-ms = <75>;
         };
 
         v_combo {
-            bindings = <&ak_V>;
+            bindings = <&kp V>;
             key-positions = <LT2 LT3>;
             layers = <DEFAULT>;
             timeout-ms = <75>;
         };
 
         x_combo {
-            bindings = <&ak_X>;
+            bindings = <&kp X>;
             key-positions = <LB2 LB3>;
             layers = <DEFAULT>;
             timeout-ms = <75>;

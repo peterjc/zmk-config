@@ -183,10 +183,8 @@ parse_config:
     '&kp M': {'t': 'mM', 'type': 'medium'}
     '&kp COMMA': {'t': ',<', 'type': 'medium-low'}
     '&comma_semi': {'t': ',;', 'type': 'medium-low'}
-    '&comma_etc': {'t': ',;?', 'type': 'medium-low'}
     '&kp DOT': {'t': '.>', 'type': 'medium-low'}
     '&dot_colon': {'t': '.:', 'type': 'medium-low'}
-    '&dot_etc': {'t': '.:!', 'type': 'medium-low'}
     # not in Bird mappings:
     '&kp SLASH': {'t': '/?', 'type': 'low'}
     '&xquote': {'t': '''"', 'type': 'medium-low'}
@@ -194,34 +192,6 @@ parse_config:
     '&kp EQUAL': {'t': '=+', 'type': 'low'}
     '&kp SPACE': {'t': '⎵', 'type': 'high'}
     '&blt NUM_NAV SPACE': {'t': '⎵', 'h': 'Num+Nav', 'type': 'high'}
-    # Again for adaptive key variants:
-    '&ak_Q': {'t': 'qQ', 'type': 'low'}
-    '&ak_W': {'t': 'wW', 'type': 'medium'}
-    '&ak_E': {'t': 'eE', 'type': 'high'}
-    '&ak_R': {'t': 'rR', 'type': 'high'}
-    '&ak_T': {'t': 'tT', 'type': 'high'}
-    '&ak_Y': {'t': 'yY', 'type': 'medium'}
-    '&ak_U': {'t': 'uU', 'type': 'medium-high'}
-    '&ak_I': {'t': 'iI', 'type': 'high'}
-    '&ak_O': {'t': 'oO', 'type': 'high'}
-    '&ak_P': {'t': 'pP', 'type': 'medium-low'}
-    '&ak_A': {'t': 'aA', 'type': 'high'}
-    '&ak_S': {'t': 'sS', 'type': 'high'}
-    '&ak_D': {'t': 'dD', 'type': 'medium-high'}
-    '&ak_F': {'t': 'fF', 'type': 'medium'}
-    '&ak_G': {'t': 'gG', 'type': 'medium'}
-    '&ak_H': {'t': 'hH', 'type': 'high'}
-    '&ak_J': {'t': 'jJ', 'type': 'low'}
-    '&ak_K': {'t': 'kK', 'type': 'low'}
-    '&ak_L': {'t': 'lL', 'type': 'medium-high'}
-    '&ak_Z': {'t': 'zZ', 'type': 'low'}
-    '&ak_X': {'t': 'xX', 'type': 'low'}
-    '&ak_C': {'t': 'cC', 'type': 'medium'}
-    '&ak_V': {'t': 'vV', 'type': 'low'}
-    '&ak_B': {'t': 'bB', 'type': 'medium-low'}
-    '&ak_N': {'t': 'nN', 'type': 'high'}
-    '&ak_M': {'t': 'mM', 'type': 'medium'}
-    '&ak_COMMA': {'t': ',<', 'type': 'medium-low'}
     # These are the Naginata Style keys for typing in Japanese using kana:
     '&ng Q': {'t': '⎋', 'h': 'Small-kana'}
     '&ng W': {'left': 'き', 'right': 'ぬ'}
