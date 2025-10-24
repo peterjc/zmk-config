@@ -33,6 +33,8 @@
 
 #define my_linger_term 350 // linger mod-tap trigger time window
 
+#define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
+
 / {
     macros {
         // To switch to Japanese mode, this sends what Karabiner-Elements sees
@@ -87,6 +89,15 @@
 
 / {
     behaviors {
+
+        as: auto_shift {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping_term_ms = <my_linger_term>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
 
         hpmt: hold_preferred_mod_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -165,10 +176,10 @@
         default_layer {
             display-name = "HD Promethium";
             bindings = <LAYER_FROM36( \
-                &kp ESCAPE, &kp P, &kp G,   &kp M, &kp X,    &kp SLASH,  &kp BSPC,           &xquote, &kp MINUS, &kp EQUAL, \
-                &kp S,      &kp N, &kp T,   &kp H, &kp K,    &dot_etc,   &kp A,              &kp E,   &kp I,     &kp C, \
-                &kp B,      &kp F, &kp D,   &kp L, &kp J,    &comma_etc, &kp U,              &kp O,   &kp Y,     &kp W, \
-                                   &kp TAB, &kp R, &kp BSPC, &kp RSHFT,  &blt NUM_NAV SPACE, &mo NUM_NAV \
+                &kp ESCAPE, AS(P), AS(G),   AS(M), AS(X),    &kp SLASH,  &kp BSPC,           &xquote, &kp MINUS, &kp EQUAL, \
+                AS(S),      AS(N), AS(T),   AS(H), AS(K),    &dot_etc,   AS(A),              AS(E),   AS(I),     AS(C),  \
+                AS(B),      AS(F), AS(D),   AS(L), AS(J),    &comma_etc, AS(U),              AS(O),   AS(Y),     AS(W),  \
+                                   &kp TAB, AS(R), &kp BSPC, &kp RSHFT,  &blt NUM_NAV SPACE, &mo NUM_NAV \
             )>;
         };
 
@@ -300,28 +311,28 @@
 
         // 2-key horizontal combos for rare letters
         q_combo {
-            bindings = <&kp Q>;
+            bindings = <AS(Q)>;
             key-positions = <LT1 LT2>;
             layers = <DEFAULT>;
             timeout-ms = <100>;
         };
 
         z_combo {
-            bindings = <&kp Z>;
+            bindings = <AS(Z)>;
             key-positions = <RT2 RT3>;
             layers = <DEFAULT>;
             timeout-ms = <75>;
         };
 
         v_combo {
-            bindings = <&kp V>;
+            bindings = <AS(V)>;
             key-positions = <LT2 LT3>;
             layers = <DEFAULT>;
             timeout-ms = <75>;
         };
 
         x_combo {
-            bindings = <&kp X>;
+            bindings = <AS(X)>;
             key-positions = <LB2 LB3>;
             layers = <DEFAULT>;
             timeout-ms = <75>;

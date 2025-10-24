@@ -192,6 +192,33 @@ parse_config:
     '&kp EQUAL': {'t': '=+', 'type': 'low'}
     '&kp SPACE': {'t': '⎵', 'type': 'high'}
     '&blt NUM_NAV SPACE': {'t': '⎵', 'h': 'Num+Nav', 'type': 'high'}
+    # And again for auto-shift:
+    'AS(Q)': {'t': 'qQ', 'type': 'low'}
+    'AS(W)': {'t': 'wW', 'type': 'medium'}
+    'AS(E)': {'t': 'eE', 'type': 'high'}
+    'AS(R)': {'t': 'rR', 'type': 'high'}
+    'AS(T)': {'t': 'tT', 'type': 'high'}
+    'AS(Y)': {'t': 'yY', 'type': 'medium'}
+    'AS(U)': {'t': 'uU', 'type': 'medium-high'}
+    'AS(I)': {'t': 'iI', 'type': 'high'}
+    'AS(O)': {'t': 'oO', 'type': 'high'}
+    'AS(P)': {'t': 'pP', 'type': 'medium-low'}
+    'AS(A)': {'t': 'aA', 'type': 'high'}
+    'AS(S)': {'t': 'sS', 'type': 'high'}
+    'AS(D)': {'t': 'dD', 'type': 'medium-high'}
+    'AS(F)': {'t': 'fF', 'type': 'medium'}
+    'AS(G)': {'t': 'gG', 'type': 'medium'}
+    'AS(H)': {'t': 'hH', 'type': 'high'}
+    'AS(J)': {'t': 'jJ', 'type': 'low'}
+    'AS(K)': {'t': 'kK', 'type': 'low'}
+    'AS(L)': {'t': 'lL', 'type': 'medium-high'}
+    'AS(Z)': {'t': 'zZ', 'type': 'low'}
+    'AS(X)': {'t': 'xX', 'type': 'low'}
+    'AS(C)': {'t': 'cC', 'type': 'medium'}
+    'AS(V)': {'t': 'vV', 'type': 'low'}
+    'AS(B)': {'t': 'bB', 'type': 'medium-low'}
+    'AS(N)': {'t': 'nN', 'type': 'high'}
+    'AS(M)': {'t': 'mM', 'type': 'medium'}
     # These are the Naginata Style keys for typing in Japanese using kana:
     '&ng Q': {'t': '⎋', 'h': 'Small-kana'}
     '&ng W': {'left': 'き', 'right': 'ぬ'}
