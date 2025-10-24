@@ -34,8 +34,8 @@ layers:
   - ↹
   - {t: rR, type: high}
   - ⌫
-  - {t: ⎵, h: ⇧}
-  - {t: ⎵, h: ⇧}
+  - ⇧
+  - {t: ⎵, h: Num+Nav, type: high}
   - Num + Nav
   Naginata:
   - {t: ⎋, h: Small-kana}
@@ -71,8 +71,8 @@ layers:
   - ↹
   - {t: ⏎, h: Kana-Shift, type: kshift}
   - ⌫
-  - {t: ⇧⎵, h: ⇧}
   - {t: ⎵, h: Kana-Shift, type: kshift}
+  - {t: ⇧⎵, h: Num + Nav}
   - Num + Nav
   Num + Nav:
   - /

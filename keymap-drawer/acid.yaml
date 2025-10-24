@@ -1,4 +1,4 @@
-layout: {zmk_keyboard: tc36k}
+layout: {zmk_keyboard: acid}
 layers:
   HD Promethium:
   - ⎋
@@ -31,12 +31,10 @@ layers:
   - {t: oO, type: high}
   - {t: yY, type: medium}
   - {t: wW, type: medium}
-  - ↹
   - {t: rR, type: high}
   - ⌫
   - ⇧
   - {t: ⎵, h: Num+Nav, type: high}
-  - Num + Nav
   Naginata:
   - {t: ⎋, h: Small-kana}
   - {left: き, right: ぬ}
@@ -68,12 +66,10 @@ layers:
   - {left: ん, right: ね}
   - {left: ら, right: わ}
   - {left: れ}
-  - ↹
   - {t: ⏎, h: Kana-Shift, type: kshift}
   - ⌫
   - {t: ⎵, h: Kana-Shift, type: kshift}
   - {t: ⇧⎵, h: Num + Nav}
-  - Num + Nav
   Num + Nav:
   - /
   - '1'
@@ -109,9 +105,7 @@ layers:
   - 'VOL
 
     DOWN'
-  - {t: ▽, type: trans}
   - {t: '0', h: ⇧}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -242,3 +236,15 @@ combos:
 - p: [28, 29]
   k: '>'
   l: [HD Promethium, Num + Nav]
+- p: [2, 1]
+  k: BT PRV
+  l: [Num + Nav]
+- p: [3, 2]
+  k: BT NXT
+  l: [Num + Nav]
+- p: [6, 7]
+  k: BT CLR
+  l: [Num + Nav]
+- p: [7, 8]
+  k: BT CLR ALL
+  l: [Num + Nav]
