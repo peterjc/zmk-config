@@ -72,8 +72,8 @@ gets a full extra inner column), plus two thumb keys.
 
 My layout here is the 3x5_3 layout above with the most tucked thumb keys
 discarded (being the least comfortable for me on my 36-key keyboards). This
-is done via the `LAYER_FROM36` macro idea from the creator of the Forager
-keyboard [Cem Aksoylar's ZMK config](https://github.com/caksoylar/zmk-config),
+is done via the `LAYER_FROM36` macro idea from [Cem Aksoylar's ZMK
+config](https://github.com/caksoylar/zmk-config),
 
 ### Forager Acid
 
