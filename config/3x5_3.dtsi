@@ -156,7 +156,7 @@
         default_layer {
             display-name = "HD Promethium";
             bindings = <LAYER_FROM36( \
-                &kp ESCAPE, AS(P), AS(G),   AS(M), AS(X),    &kp SLASH,   &kp BSPC,           &xquote, &kp MINUS, &kp EQUAL, \
+                &kp ESCAPE, AS(P), AS(G),   AS(M), AS(X),    AS(SLASH),   &kp BSPC,           &xquote, AS(MINUS), AS(EQUAL), \
                 AS(S),      AS(N), AS(T),   AS(H), AS(K),    &dot_colon,  AS(A),              AS(E),   AS(I),     AS(C),  \
                 AS(B),      AS(F), AS(D),   AS(L), AS(J),    &comma_semi, AS(U),              AS(O),   AS(Y),     AS(W),  \
                                    &kp TAB, AS(R), &kp BSPC, &kp RSHFT,   &blt NUM_NAV SPACE, &mo NUM_NAV \
