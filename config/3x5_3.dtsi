@@ -136,16 +136,6 @@
             // need to keep shift, and anything else too:
             keep-mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
         };
-        linger_dot: linger_dot {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <my_linger_term>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&ktap &dot_colon>;
-        };
-
-#define dot_etc linger_dot EXCL 0
 
         comma_semi: comma_semi {
             compatible = "zmk,behavior-mod-morph";
@@ -155,16 +145,6 @@
             // do NOT want to keep shift active, but anything else is fine:
             keep-mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
         };
-        linger_comma: linger_comma {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <my_linger_term>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&ktap &comma_semi>;
-        };
-
-#define comma_etc linger_comma QUESTION 0
 
     };
 };
@@ -176,10 +156,10 @@
         default_layer {
             display-name = "HD Promethium";
             bindings = <LAYER_FROM36( \
-                &kp ESCAPE, AS(P), AS(G),   AS(M), AS(X),    &kp SLASH,  &kp BSPC,           &xquote, &kp MINUS, &kp EQUAL, \
-                AS(S),      AS(N), AS(T),   AS(H), AS(K),    &dot_etc,   AS(A),              AS(E),   AS(I),     AS(C),  \
-                AS(B),      AS(F), AS(D),   AS(L), AS(J),    &comma_etc, AS(U),              AS(O),   AS(Y),     AS(W),  \
-                                   &kp TAB, AS(R), &kp BSPC, &kp RSHFT,  &blt NUM_NAV SPACE, &mo NUM_NAV \
+                &kp ESCAPE, AS(P), AS(G),   AS(M), AS(X),    &kp SLASH,   &kp BSPC,           &xquote, &kp MINUS, &kp EQUAL, \
+                AS(S),      AS(N), AS(T),   AS(H), AS(K),    &dot_colon,  AS(A),              AS(E),   AS(I),     AS(C),  \
+                AS(B),      AS(F), AS(D),   AS(L), AS(J),    &comma_semi, AS(U),              AS(O),   AS(Y),     AS(W),  \
+                                   &kp TAB, AS(R), &kp BSPC, &kp RSHFT,   &blt NUM_NAV SPACE, &mo NUM_NAV \
             )>;
         };
 
@@ -375,8 +355,8 @@
             layers = <DEFAULT NUM_NAV>;
         };
 
-        slash {
-            bindings = <&kp SLASH>;
+        exclamation_mark {
+            bindings = <&kp EXCL>;
             key-positions = <RM0 RB0>;
             layers = <DEFAULT NUM_NAV>;
         };
