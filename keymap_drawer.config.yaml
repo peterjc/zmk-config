@@ -150,8 +150,10 @@ parse_config:
     at_sign: {'key': '@'}
     gbp_sign: {'key': '£'}
     tilde_sign: {'key': '~'}
-    less_than: {'key': '<'}
-    greater_than: {'key': '>'}
+    open_bracket_less_than: {'key': '(<'}
+    close_bracket_greater_than: {'key': ')>'}
+    open_square_curly: {'key': '[{'}
+    close_square_curly: {'key': ']}'}
   raw_binding_map:
     # These are the English letters defined here to tag them by usage:
     '&kp Q': {'t': 'vQ', 'type': 'low'}
