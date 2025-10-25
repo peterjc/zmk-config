@@ -221,6 +221,9 @@ parse_config:
     'AS(B)': {'t': 'bB', 'type': 'medium-low'}
     'AS(N)': {'t': 'nN', 'type': 'high'}
     'AS(M)': {'t': 'mM', 'type': 'medium'}
+    'AS(SLASH)': {'t': '/?', 'type': 'low'}
+    'AS(MINUS)': {'t': '-_', 'type': 'medium-low'}
+    'AS(EQUAL)': {'t': '=+', 'type': 'low'}
     # These are the Naginata Style keys for typing in Japanese using kana:
     '&ng Q': {'t': '⎋', 'h': 'Small-kana'}
     '&ng W': {'left': 'き', 'right': 'ぬ'}
