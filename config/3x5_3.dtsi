@@ -391,7 +391,7 @@
             layers = <DEFAULT NUM_NAV>;
         };
 
-        // 2-key horizontal combos (brackets):
+        // 2-key horizontal combos for {}:
         open_curly {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <LT0 LT1>;
@@ -404,39 +404,29 @@
             layers = <DEFAULT NUM_NAV>;
         };
 
-        open_bracket {
-            bindings = <&kp LEFT_PARENTHESIS>;
+        // 2-key horizontal combos for () with linger for alternative <>
+        open_bracket_less_than {
+            bindings = <&as LESS_THAN LEFT_PARENTHESIS>;
             key-positions = <LM0 LM1>;
             layers = <DEFAULT NUM_NAV>;
         };
 
-        close_bracket {
-            bindings = <&kp RIGHT_PARENTHESIS>;
+        close_bracket_greater_than {
+            bindings = <&as GREATER_THAN RIGHT_PARENTHESIS>;
             key-positions = <RM0 RM1>;
             layers = <DEFAULT NUM_NAV>;
         };
 
-        open_square {
-            bindings = <&kp LEFT_BRACKET>;
+        // 2-key horizontal combos for [] with linger for shifted form {}
+        open_square_curly {
+            bindings = <&as LEFT_BRACE LEFT_BRACKET>;
             key-positions = <LB0 LB1>;
             layers = <DEFAULT NUM_NAV>;
         };
 
-        close_square {
-            bindings = <&kp RIGHT_BRACKET>;
+        close_square_curly {
+            bindings = <&as RIGHT_BRACE RIGHT_BRACKET>;
             key-positions = <RB0 RB1>;
-            layers = <DEFAULT NUM_NAV>;
-        };
-
-        less_than {
-            bindings = <&kp LESS_THAN>;
-            key-positions = <LB3 LB4>;
-            layers = <DEFAULT NUM_NAV>;
-        };
-
-        greater_than {
-            bindings = <&kp GREATER_THAN>;
-            key-positions = <RB3 RB4>;
             layers = <DEFAULT NUM_NAV>;
         };
 
