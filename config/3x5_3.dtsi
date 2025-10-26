@@ -31,7 +31,7 @@
 #define NAGINATA 1
 #define NUM_NAV 2
 
-#define my_linger_term 350 // linger mod-tap trigger time window
+#define my_linger_term 300// linger mod-tap trigger time window
 
 #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 
