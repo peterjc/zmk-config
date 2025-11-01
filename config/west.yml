@@ -15,13 +15,14 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
+      revision: v0.3
       import: app/west.yml
     - name: zmk-keyboard-graph-theory
       remote: peterjc
       revision: main
     - name: zmk-adaptive-key
       remote: urob
-      revision: main # set to same as ZMK version above
+      revision: v0.3 # set to same as ZMK version above
     - name: zmk-helpers
       remote: urob
     - name: zmk-naginata
