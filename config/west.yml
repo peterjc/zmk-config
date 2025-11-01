@@ -20,9 +20,6 @@ manifest:
     - name: zmk-keyboard-graph-theory
       remote: peterjc
       revision: main
-    - name: zmk-adaptive-key
-      remote: urob
-      revision: v0.3 # set to same as ZMK version above
     - name: zmk-helpers
       remote: urob
     - name: zmk-naginata
