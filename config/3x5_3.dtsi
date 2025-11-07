@@ -128,6 +128,24 @@
             keep-mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
         };
 
+        // Flip equal and plus (when shift or no mods are used)
+        shift_plus_equal: _plus_equal {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&as EQUAL LS(EQUAL)>, <&kp EQUAL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            // do NOT want to keep shift active, but anything else is fine:
+            keep-mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+        };
+        // Do not flip equal and plus when any non-shift mod is used:
+        plus_equal: plus_equal {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&shift_plus_equal>, <&kp EQUAL>;
+            mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+        };
+
         dot_colon: dot_colon {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -156,7 +174,7 @@
         default_layer {
             display-name = "HD Promethium";
             bindings = <LAYER_FROM36( \
-                &kp ESCAPE, AS(P), AS(G),   AS(M), AS(X),    AS(SLASH),   &kp BSPC,           &xquote, AS(MINUS), AS(EQUAL), \
+                &kp ESCAPE, AS(P), AS(G),   AS(M), AS(X),    AS(SLASH),   &kp BSPC,           &xquote, AS(MINUS), &plus_equal, \
                 AS(S),      AS(N), AS(T),   AS(H), AS(K),    &dot_colon,  AS(A),              AS(E),   AS(I),     AS(C),  \
                 AS(B),      AS(F), AS(D),   AS(L), AS(J),    &comma_semi, AS(U),              AS(O),   AS(Y),     AS(W),  \
                                    &kp TAB, AS(R), &kp BSPC, &kp RSHFT,   &blt NUM_NAV SPACE, &mo NUM_NAV \
