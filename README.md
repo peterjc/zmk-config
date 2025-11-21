@@ -44,7 +44,7 @@ The ZMK keymap in file [tc36k.keymap](config/tc36k.keymap) is the split 3x5_3
 layout described above (without the bluetooth combos) for the self-built
 [Gamma Omega TC36K](https://github.com/unspecworks/gamma-omega/tree/main/tc36k).
 This is a single PCB no-diode variant of the Gamma Omega where [I designed the
-wiring and PCB](https://astrobeano.blogspot.com/2025/08/my-first-self-built-computer-keyboard.html)).
+wiring and PCB](https://astrobeano.blogspot.com/2025/08/my-first-self-built-computer-keyboard.html).
 
 This uses my [ZMK firmware for the TC36K](https://github.com/peterjc/zmk-keyboard-graph-theory/tree/main/boards/shields/tc36k)
 (I also wrote [QMK firmware for the TC36K](https://github.com/peterjc/qmk_userspace/tree/main/keyboards/tutte_coxeter_36k)).
