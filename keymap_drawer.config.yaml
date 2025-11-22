@@ -139,8 +139,11 @@ parse_config:
     combo_bootloader: {'hidden': true}
     tab_combo: {'align': 'bottom', 'offset': -0.02, 'slide': -0.5, 'height': 15}
     enter_combo: {'align': 'bottom', 'offset': -0.02, 'slide': 0.5, 'height': 15}
+    bksp_combo: {'align': 'top', 'key': '⌫'}
     combo_ng_on: {'align': 'bottom', 'offset': -0.02, 'slide': 0.5, 'key': 'かな', 'height': 15}
     combo_ng_off: {'align': 'bottom', 'offset': -0.02, 'slide': -0.5, 'key': 'ABC', 'height': 15}
+    combo_default: {'align': 'right', 'offset': 1.5, 'slide': -0.5, 'key': 'HDP', 'height': 15}
+    combo_d5: {'align': 'left', 'offset': 1.5, 'slide': -0.5, 'key': 'D5', 'height': 15}
     pipe_sign: {'align': 'right', 'key': '|'}
     caret_sign: {'key': '^'}
     exclamation_mark: {'align': 'left'}

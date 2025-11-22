@@ -28,8 +28,9 @@
 
 // Aliases for my layers
 #define DEFAULT 0
-#define NAGINATA 1
-#define NUM_NAV 2
+#define DOUBLE5 1
+#define NAGINATA 2
+#define NUM_NAV 3
 
 #define my_linger_term 300// linger mod-tap trigger time window
 
@@ -163,6 +164,19 @@
             )>;
         };
 
+        // D5 - Five Doubles (2x space, 2x E, 2x Y, 2x thumbs with letters, 2x letters per thumb)
+        // This only defines the home row pinkies (both space), so adding Escape, Tab, Minus, and Equals
+        // The top inner key is also undefined, so using the column's combos of X and Q
+        double5_layer {
+            display-name = "D5 - Five doubles";
+            bindings = <LAYER_FROM36( \
+                &kp ESCAPE, AS(D), AS(G),   AS(M), AS(X),    AS(Q), AS(B), AS(F), AS(V), &kp BSPC, \
+                &kp SPACE,  AS(E), AS(T),   AS(R), AS(Y),    AS(Y), AS(L), AS(N), AS(E), &kp SPACE, \
+                &kp TAB,    AS(C), AS(W),   AS(K), AS(J),    AS(Z), AS(H), AS(P), AS(S), &kp ENTER, \
+                                   &kp TAB, AS(U), AS(I),    AS(A), AS(O), &mo NUM_NAV \
+            )>;
+        };
+
         // The Japanese Naginata Style layer is usually layer 1, after the default layer 0.
         // Follows Qwerty but with &np rather than &kp.
         // Thumbs must include `&ng SPACE` (kana-shift when held) and/or
@@ -190,9 +204,6 @@
         };
 
         // Empty layers for ZMK Studio:
-        extra3 {
-            status = "reserved";
-        };
         extra4 {
             status = "reserved";
         };
@@ -228,14 +239,14 @@
             timeout-ms = <300>;
             key-positions = <RM0 RM2>; // Qwerty H+K, on right hand home row
             bindings = <&ng_on>;
-            layers = <DEFAULT NAGINATA>;
+            layers = <DEFAULT DOUBLE5 NAGINATA>;
         };
         // Can't use <LM0 LM1> Qwerty F+G as I use that for open bracket
         combo_ng_off {
             timeout-ms = <300>;
             key-positions = <LM0 LM2>; // Qwerty D+G, on left hand home row
             bindings = <&ng_off>;
-            layers = <DEFAULT NAGINATA>;
+            layers = <DEFAULT DOUBLE5 NAGINATA>;
         };
 
         // 3-key horizontal combos
@@ -248,6 +259,13 @@
         enter_combo {
             bindings = <&kp ENTER>;
             key-positions = <RB1 RB2 RB3>;
+            timeout-ms = <75>;
+        };
+
+        // 2-key horizontal backspace combo inc. the Naginata backspace key
+        bksp_combo {
+            bindings = <&kp BKSP>;
+            key-positions = <RT1 RT2>;
             timeout-ms = <75>;
         };
 
@@ -455,6 +473,31 @@
             layers = <NUM_NAV>;
         };
 #endif // CONFIG_WIRELESS
+
+        // D5 combos
+        combo_default {
+            bindings = <&to DEFAULT>;
+            key-positions = <LB1 LT1>;
+            layers = <DOUBLE5>;
+        };
+
+        combo_d5 {
+            bindings = <&to DOUBLE5>;
+            key-positions = <RB1 RT1>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        combo_d5_x { 
+            bindings = <AS(X)>;
+            key-positions = <LB0 LM0>;
+            layers = <DOUBLE5>;
+        };
+
+        combo_d5_q {
+            bindings = <AS(Q)>;
+            key-positions = <RB0 RM0>;
+            layers = <DOUBLE5>;
+        };
 
     };
 };
