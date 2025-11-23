@@ -37,6 +37,43 @@ layers:
   - ⇧
   - {t: ⎵, h: Num+Nav, type: high}
   - Num + Nav
+  D5 - Five doubles:
+  - ⎋
+  - {t: dD, type: medium-high}
+  - {t: gG, type: medium}
+  - {t: mM, type: medium}
+  - {t: xX, type: low}
+  - {t: qQ, type: low}
+  - {t: bB, type: medium-low}
+  - {t: fF, type: medium}
+  - {t: vV, type: low}
+  - ⌫
+  - {t: ⎵, type: high}
+  - {t: eE, type: high}
+  - {t: tT, type: high}
+  - {t: rR, type: high}
+  - {t: yY, type: medium}
+  - {t: yY, type: medium}
+  - {t: lL, type: medium-high}
+  - {t: nN, type: high}
+  - {t: eE, type: high}
+  - {t: ⎵, type: high}
+  - ↹
+  - {t: cC, type: medium}
+  - {t: wW, type: medium}
+  - {t: kK, type: low}
+  - {t: jJ, type: low}
+  - {t: zZ, type: low}
+  - {t: hH, type: high}
+  - {t: pP, type: medium-low}
+  - {t: sS, type: high}
+  - ⏎
+  - ↹
+  - {t: uU, type: medium-high}
+  - {t: iI, type: high}
+  - {t: aA, type: high}
+  - {t: oO, type: high}
+  - Num + Nav
   Naginata:
   - {t: ⎋, h: Small-kana}
   - {left: き, right: ぬ}
@@ -126,14 +163,14 @@ combos:
   hidden: true
 - p: [15, 17]
   k: かな
-  l: [HD Promethium, Naginata]
+  l: [HD Promethium, D5 - Five doubles, Naginata]
   a: bottom
   o: -0.02
   s: 0.5
   h: 15.0
 - p: [14, 12]
   k: ABC
-  l: [HD Promethium, Naginata]
+  l: [HD Promethium, D5 - Five doubles, Naginata]
   a: bottom
   o: -0.02
   s: -0.5
@@ -150,6 +187,9 @@ combos:
   o: -0.02
   s: 0.5
   h: 15.0
+- p: [6, 7]
+  k: ⌫
+  a: top
 - p: [11, 10]
   k: ⎇
   l: [HD Promethium, Num + Nav]
@@ -236,3 +276,23 @@ combos:
 - p: [25, 26]
   k: ']}'
   l: [HD Promethium, Num + Nav]
+- p: [23, 3]
+  k: HDP
+  l: [D5 - Five doubles]
+  a: right
+  o: 1.5
+  s: -0.5
+  h: 15.0
+- p: [26, 6]
+  k: D5
+  l: [HD Promethium, Num + Nav]
+  a: left
+  o: 1.5
+  s: -0.5
+  h: 15.0
+- p: [24, 14]
+  k: {t: xX, type: low}
+  l: [D5 - Five doubles]
+- p: [25, 15]
+  k: {t: qQ, type: low}
+  l: [D5 - Five doubles]
