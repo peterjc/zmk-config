@@ -165,15 +165,16 @@
         };
 
         // D5 - Five Doubles (2x space, 2x E, 2x Y, 2x thumbs with letters, 2x letters per thumb)
-        // This only defines the home row pinkies (both space), so adding Escape, Tab, Minus, and Equals
+        // This only defines the home row pinkies (both space) and bottom (tab and enter), so adding Escape, and another BKSP
         // The top inner key is also undefined, so using the column's combos of X and Q
+        // Intended for 5 thumbs (backspace in the middle)
         double5_layer {
             display-name = "D5 - Five doubles";
             bindings = <LAYER_FROM36( \
-                &kp ESCAPE, AS(G), AS(D),   AS(M), AS(X),    AS(Q), AS(B), AS(F), AS(J), &kp BSPC, \
-                &kp SPACE,  AS(E), AS(T),   AS(R), AS(Y),    AS(Y), AS(L), AS(N), AS(E), &kp SPACE, \
-                &kp TAB,    AS(W), AS(C),   AS(K), AS(V),    AS(Z), AS(H), AS(P), AS(S), &kp ENTER, \
-                                   &kp TAB, AS(U), AS(I),    AS(A), AS(O), &mo NUM_NAV \
+                &kp ESCAPE, AS(G), AS(D), AS(M), AS(X),        AS(Q), AS(B), AS(F), AS(J), &kp BSPC, \
+                &kp SPACE,  AS(E), AS(T), AS(R), AS(Y),        AS(Y), AS(L), AS(N), AS(E), &kp SPACE, \
+                &kp TAB,    AS(W), AS(C), AS(K), AS(V),        AS(Z), AS(H), AS(P), AS(S), &kp ENTER, \
+                                   AS(U), AS(I), &kp BSPC, &kp RSHFT, AS(A), AS(O) \
             )>;
         };
 
