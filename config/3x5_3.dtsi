@@ -170,9 +170,9 @@
         double5_layer {
             display-name = "D5 - Five doubles";
             bindings = <LAYER_FROM36( \
-                &kp ESCAPE, AS(D), AS(G),   AS(M), AS(X),    AS(Q), AS(B), AS(F), AS(V), &kp BSPC, \
+                &kp ESCAPE, AS(G), AS(D),   AS(M), AS(X),    AS(Q), AS(B), AS(F), AS(J), &kp BSPC, \
                 &kp SPACE,  AS(E), AS(T),   AS(R), AS(Y),    AS(Y), AS(L), AS(N), AS(E), &kp SPACE, \
-                &kp TAB,    AS(C), AS(W),   AS(K), AS(J),    AS(Z), AS(H), AS(P), AS(S), &kp ENTER, \
+                &kp TAB,    AS(W), AS(C),   AS(K), AS(V),    AS(Z), AS(H), AS(P), AS(S), &kp ENTER, \
                                    &kp TAB, AS(U), AS(I),    AS(A), AS(O), &mo NUM_NAV \
             )>;
         };
