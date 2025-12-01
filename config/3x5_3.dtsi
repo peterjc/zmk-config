@@ -129,7 +129,7 @@
         };
 
         // Flip equal and plus (when shift or no mods are used)
-        shift_plus_equal: _plus_equal {
+        _plus_equal: _plus_equal {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&as EQUAL LS(EQUAL)>, <&kp EQUAL>;
@@ -141,7 +141,7 @@
         plus_equal: plus_equal {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&shift_plus_equal>, <&kp EQUAL>;
+            bindings = <&_plus_equal>, <&kp EQUAL>;
             mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
             keep-mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
         };
