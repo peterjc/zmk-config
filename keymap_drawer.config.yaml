@@ -62,7 +62,6 @@ parse_config:
     SEMICOLON:  {t: ';', s: ':'}
     SINGLE_QUOTE:  {t: '''', s: '"'}
     SLASH: {t: '/', s: '?'}
-    SLASH: {t: '/', s: '?'}
     SQT: ''''
     STAR: '*'
     TILDE: '~'
