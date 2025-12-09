@@ -49,7 +49,7 @@ wiring and PCB](https://astrobeano.blogspot.com/2025/08/my-first-self-built-comp
 This uses my [ZMK firmware for the TC36K](https://github.com/peterjc/zmk-keyboard-graph-theory/tree/main/boards/shields/tc36k)
 (I also wrote [QMK firmware for the TC36K](https://github.com/peterjc/qmk_userspace/tree/main/keyboards/tutte_coxeter_36k)).
 
-This keyboard has 6-key roll-over. which is not an issue with this or most keymaps.
+This keyboard has 6-key roll-over, which is not a limitation with this or most keymaps.
 
 ### Gamma Omega Hesse
 
@@ -81,6 +81,10 @@ The ZMK keymap in file [acid.keymap](config/hesse.keymap) is the split 3x5_2
 layout described above for my self-built variant of the Forager keyboard.
 
 ![Keymap Image](keymap-drawer/acid.svg)
+
+The Forager Acid keyboard has only 4-key roll-over per hand (so better than
+the Hesse mentioned above), which was kept in mind when editing this keymap.
+i.e. I try not to use any combos needing more than four keys in total.
 
 ## Split 33332+2 Layout with 32 keys
 
