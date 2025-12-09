@@ -90,8 +90,7 @@ inner column, and two thumb keys. This is used by the keyboards like the
 [Visorbearer](https://github.com/carrefinho/visorbearer).
 
 This would mean dropping my `X` and `/` (slash) keys and all the combos with
-them. This seems doable. Note I already have a combo for `X`, and for `/`,
-with `?` (shift+`/`) available by holding comma.
+them. This seems doable. Note I already have a combo for `X`.
 
 ## Split 23332+2 Layout with 30 keys
 
