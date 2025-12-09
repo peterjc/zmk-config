@@ -107,3 +107,21 @@ the [Hummingbird](https://github.com/PJE66/hummingbird).
 
 This would mean dropping my `Escape` and `=`/`+` keys and all the combos on them.
 Right now that seems challenging.
+
+## Slump layouts - Split 133332+2
+
+My 34-key 'slump' layouts have a 30-key core with one thumb key per hand (shift
+and space with Qwerty), and one top corner key per hand (Escape and Backspace
+with Qwerty), but the inner column is staggered (or 'slumped') to allow the
+bottom key to be a thumb key. This then looks like the Visorbearer style Split
+33332+2 Layout with 32 keys with an extra corner key (see above), or Split 133332+2.
+
+### Slump52
+
+This keyboard has the core 34-keys in the Slump style, plus an extra central
+thumb key, bottom left modifier key, number pad and cursors. This layout has
+2 of the left thumb keys in my 36-key layout, and 3 of the right thumb keys:
+
+![Keymap Image](keymap-drawer/slump52.svg)
+
+The ZMK keymap in file [acid.keymap](config/slump52.keymap) defines this.
