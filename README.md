@@ -1,7 +1,9 @@
 # Peter's personal ZMK keyboard firmware configurations
 
 This repository is where I keep my personal [ZMK keyboard firmware](https://zmk.dev/)
-configuration/layouts, for use with programable mechanical computer keyboards.
+configuration/layouts (generally for keyboard PCBs that I designed and provide
+[default firmware](https://github.com/peterjc/zmk-keyboard-graph-theory/) for),
+for use with programable mechanical computer keyboards.
 The keymap images are rendered automatically using [keymap-drawer](https://github.com/caksoylar/keymap-drawer)
 using this [Draw Keymaps GitHub Action](.github/workflows/draw-keymaps.yml).
 
