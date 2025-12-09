@@ -1,0 +1,286 @@
+layout: {zmk_keyboard: slump52}
+layers:
+  HD Promethium:
+  - ⎋
+  - {t: xX, type: low}
+  - {t: pP, type: medium-low}
+  - {t: gG, type: medium}
+  - {t: mM, type: medium}
+  - {t: kK, type: low}
+  - {t: '.:', type: medium-low}
+  - ⌫
+  - {t: '''"', type: medium-low}
+  - {t: -_, type: medium-low}
+  - {t: +=, type: low}
+  - {t: '/?', type: low}
+  - '7'
+  - '8'
+  - '9'
+  - {t: sS, type: high}
+  - {t: nN, type: high}
+  - {t: tT, type: high}
+  - {t: hH, type: high}
+  - {t: jJ, type: low}
+  - {t: ',;', type: medium-low}
+  - {t: aA, type: high}
+  - {t: eE, type: high}
+  - {t: iI, type: high}
+  - {t: cC, type: medium}
+  - '4'
+  - '5'
+  - '6'
+  - {t: bB, type: medium-low}
+  - {t: fF, type: medium}
+  - {t: dD, type: medium-high}
+  - {t: lL, type: medium-high}
+  - {t: rR, type: high}
+  - Num + Nav
+  - {t: uU, type: medium-high}
+  - {t: oO, type: high}
+  - {t: yY, type: medium}
+  - {t: wW, type: medium}
+  - '1'
+  - '2'
+  - '3'
+  - tab
+  - ⌫
+  - ⇧
+  - {t: ⎵, h: Num+Nav, type: high}
+  - ←
+  - ↓
+  - ↑
+  - →
+  - '*'
+  - '0'
+  - RET
+  Naginata:
+  - {t: ⎋, h: Small-kana}
+  - ←
+  - {left: き, right: ぬ}
+  - {left: て, right: り}
+  - {left: し, right: め}
+  - {left: っ, right: ち}
+  - {left: く, right: や}
+  - {left: ⌫, right: さ}
+  - {left: る, right: よ}
+  - {left: す, right: え}
+  - {left: へ, right: ゆ}
+  - →
+  - '7'
+  - '8'
+  - '9'
+  - {left: ろ, right: せ}
+  - {left: け, right: み}
+  - {left: と, right: に}
+  - {h: 濁音, left: か, right: ま}
+  - {left: そ, right: む}
+  - {left: た, right: お}
+  - {h: 濁音, left: あ, right: の}
+  - {left: い, right: も}
+  - {left: う, right: つ}
+  - {left: ー, right: ふ}
+  - '4'
+  - '5'
+  - '6'
+  - {left: ほ}
+  - {left: ひ}
+  - {left: は, right: を}
+  - {h: 半濁音, left: こ, right: 、}
+  - {t: ⏎, h: Kana-Shift, type: kshift}
+  - Num + Nav
+  - {h: 半濁音, left: な, right: 。}
+  - {left: ん, right: ね}
+  - {left: ら, right: わ}
+  - {left: れ}
+  - '1'
+  - '2'
+  - '3'
+  - tab
+  - ⌫
+  - {t: ⎵, h: Kana-Shift, type: kshift}
+  - {t: ⇧⎵, h: Num + Nav}
+  - ←
+  - ↓
+  - ↑
+  - →
+  - '*'
+  - '0'
+  - RET
+  Num + Nav:
+  - /
+  - '='
+  - '1'
+  - '2'
+  - '3'
+  - +
+  - ⇞
+  - ↖
+  - ↑
+  - ↘
+  - ⏯
+  - ⎋
+  - '7'
+  - '8'
+  - '9'
+  - '*'
+  - '4'
+  - '5'
+  - '6'
+  - '-'
+  - ⇟
+  - ←
+  - ↓
+  - →
+  - 'VOL
+
+    UP'
+  - '4'
+  - '5'
+  - '6'
+  - .
+  - '7'
+  - '8'
+  - '9'
+  - {t: '0', h: ⇧}
+  - {type: held}
+  - ↞
+  - ⏎
+  - ↠
+  - 'VOL
+
+    DOWN'
+  - '1'
+  - '2'
+  - '3'
+  - tab
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ←
+  - ↓
+  - ↑
+  - →
+  - '*'
+  - '0'
+  - RET
+combos:
+- p: [0, 9]
+  k: '&studio_unlock'
+  l: [HD Promethium]
+  hidden: true
+- p: [5, 6, 32, 33]
+  k: '&bootloader'
+  l: [HD Promethium]
+  hidden: true
+- p: [20, 22]
+  k: かな
+  l: [HD Promethium, Naginata]
+  a: bottom
+  o: -0.02
+  s: 0.5
+  h: 15.0
+- p: [19, 17]
+  k: ABC
+  l: [HD Promethium, Naginata]
+  a: bottom
+  o: -0.02
+  s: -0.5
+  h: 15.0
+- p: [31, 30, 29]
+  k: ↹
+  a: bottom
+  o: -0.02
+  s: -0.5
+  h: 15.0
+- p: [34, 35, 36]
+  k: ⏎
+  a: bottom
+  o: -0.02
+  s: 0.5
+  h: 15.0
+- p: [16, 15]
+  k: ⎇
+  l: [HD Promethium, Num + Nav]
+- p: [17, 16]
+  k: ⌃
+  l: [HD Promethium, Num + Nav]
+- p: [18, 17]
+  k: ⌘
+  l: [HD Promethium, Num + Nav]
+- p: [23, 24]
+  k: ⎇
+  l: [HD Promethium, Num + Nav]
+- p: [22, 23]
+  k: ⌃
+  l: [HD Promethium, Num + Nav]
+- p: [21, 22]
+  k: ⌘
+  l: [HD Promethium, Num + Nav]
+- p: [4, 3]
+  k: {t: qQ, type: low}
+  l: [HD Promethium]
+- p: [8, 9]
+  k: {t: zZ, type: low}
+  l: [HD Promethium]
+- p: [3, 2]
+  k: {t: vV, type: low}
+  l: [HD Promethium]
+- p: [30, 29]
+  k: {t: xX, type: low}
+  l: [HD Promethium]
+- p: [1, 15]
+  k: '`'
+  l: [HD Promethium, Num + Nav]
+- p: [2, 16]
+  k: '@'
+  l: [HD Promethium, Num + Nav]
+- p: [3, 17]
+  k: £
+  l: [HD Promethium, Num + Nav]
+- p: [4, 18]
+  k: $
+  l: [HD Promethium, Num + Nav]
+- p: [5, 19]
+  k: '%'
+  l: [HD Promethium, Num + Nav]
+- p: [19, 32]
+  k: '|'
+  l: [HD Promethium, Num + Nav]
+  a: right
+- p: [20, 33]
+  k: '!'
+  l: [HD Promethium, Num + Nav]
+  a: left
+- p: [6, 20]
+  k: ^
+  l: [HD Promethium, Num + Nav]
+- p: [7, 21]
+  k: '&'
+  l: [HD Promethium, Num + Nav]
+- p: [8, 22]
+  k: '#'
+  l: [HD Promethium, Num + Nav]
+- p: [9, 23]
+  k: \
+  l: [HD Promethium, Num + Nav]
+- p: [10, 24]
+  k: '~'
+  l: [HD Promethium, Num + Nav]
+- p: [5, 4]
+  k: '{'
+  l: [HD Promethium, Num + Nav]
+- p: [6, 7]
+  k: '}'
+  l: [HD Promethium, Num + Nav]
+- p: [19, 18]
+  k: (<
+  l: [HD Promethium, Num + Nav]
+- p: [20, 21]
+  k: )>
+  l: [HD Promethium, Num + Nav]
+- p: [32, 31]
+  k: '[{'
+  l: [HD Promethium, Num + Nav]
+- p: [33, 34]
+  k: ']}'
+  l: [HD Promethium, Num + Nav]
