@@ -7,13 +7,6 @@ for use with programable mechanical computer keyboards.
 The keymap images are rendered automatically using [keymap-drawer](https://github.com/caksoylar/keymap-drawer)
 using this [Draw Keymaps GitHub Action](.github/workflows/draw-keymaps.yml).
 
-## Split 3x5_3 aka 33333+3 Layout with 36 keys
-
-The QMK project uses the term `split_3x5_3` for one of their standard community
-layout names for the most common 36 key layouts. This means a symmetrical split
-layout where each hand has three rows and five columns (the index finger gets
-an extra inner column), plus three thumb keys.
-
 My base layer is the inverted [Hands Down Promethium
 layout](https://www.reddit.com/r/KeyboardLayouts/comments/1g66ivi/hands_down_promethium_snth_meets_hd_silverengram/)
 with my personal modifications ("Pico Mod") intended to help with some readline shortcuts.
@@ -33,6 +26,13 @@ Due to my brackets combos clashing with the default way to switch Japanese mode
 and the Naginata layer on and off, those are Qwerty `D`+`G` (labelled 'ABC' in
 the image) and Qwerty `H`+`K` instead (labelled 'かな'). This layout uses a *lot*
 of chording, but these are not defined as ZMK combos, and so are not drawn here.
+
+## Split 3x5_3 aka 33333+3 Layout with 36 keys
+
+The QMK project uses the term `split_3x5_3` for one of their standard community
+layout names for the most common 36 key layouts. This means a symmetrical split
+layout where each hand has three rows and five columns (the index finger gets
+an extra inner column), plus three thumb keys.
 
 ![Keymap Image](keymap-drawer/hesse.svg)
 
