@@ -125,3 +125,4 @@ thumb key, bottom left modifier key, number pad and cursors. This layout has
 ![Keymap Image](keymap-drawer/slump52.svg)
 
 The ZMK keymap in file [slump52.keymap](config/slump52.keymap) defines this.
+Currently X and slash are moved to the extra outer corner keys.
