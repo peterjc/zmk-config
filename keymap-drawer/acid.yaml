@@ -5,8 +5,8 @@ layers:
   - {t: pP, type: medium-low}
   - {t: gG, type: medium}
   - {t: mM, type: medium}
-  - {t: xX, type: low}
-  - {t: '/?', type: low}
+  - '&bootloader'
+  - '&bootloader'
   - ⌫
   - {t: '''"', type: medium-low}
   - {t: -_, type: medium-low}
@@ -40,8 +40,8 @@ layers:
   - {left: き, right: ぬ}
   - {left: て, right: り}
   - {left: し, right: め}
-  - ←
-  - →
+  - '&bootloader'
+  - '&bootloader'
   - {left: ⌫, right: さ}
   - {left: る, right: よ}
   - {left: す, right: え}
@@ -75,8 +75,8 @@ layers:
   - '1'
   - '2'
   - '3'
-  - '='
-  - ⎋
+  - '&bootloader'
+  - '&bootloader'
   - ↖
   - ↑
   - ↘

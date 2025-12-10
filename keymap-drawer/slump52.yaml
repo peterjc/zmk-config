@@ -42,7 +42,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - tab
+  - ↹
   - ⌫
   - ⇧
   - {t: ⎵, h: Num+Nav, type: high}
@@ -95,7 +95,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - tab
+  - ↹
   - ⌫
   - {t: ⎵, h: Kana-Shift, type: kshift}
   - {t: ⇧⎵, h: Num + Nav}
@@ -152,7 +152,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - tab
+  - ↹
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
