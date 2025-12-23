@@ -33,7 +33,8 @@
 
 #define my_linger_term 300// linger mod-tap trigger time window
 
-#define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
+// #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
+#define AS(keycode) &kp keycode     // place-holder for autoshift Macro
 
 / {
     macros {
