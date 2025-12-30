@@ -9,7 +9,10 @@ using this [Draw Keymaps GitHub Action](.github/workflows/draw-keymaps.yml).
 
 My base layer is the inverted [Hands Down Promethium
 layout](https://www.reddit.com/r/KeyboardLayouts/comments/1g66ivi/hands_down_promethium_snth_meets_hd_silverengram/)
-with my personal modifications ("Pico Mod") intended to help with some readline shortcuts.
+with my personal modifications ("Pico Mod") intended to help with some readline shortcuts
+(horizontal pair `B`/`F` for back/forward, vertical pair `P`/`N` for previous/next).
+It also has matching `B` (bottom left) and `W` (bottom right) for back to start of word, and
+forward to start of next word in Vim or Helix.
 Most of the symbols are 2-key vertical combos, the brackets are 2-key horizontal combos
 (open on the left hand, close on the right). There is a single combined numbers and navigation
 layer accessed by holding the right thumb.
