@@ -34,7 +34,7 @@ layers:
   - ↹
   - {t: rR, type: high}
   - ⌫
-  - ⇧
+  - ⇧⇪
   - {t: ⎵, h: Num+Nav, type: high}
   - Num + Nav
   Naginata:
