@@ -561,12 +561,12 @@
         // my addition:
         combo_d5_left_period {
             bindings = <LK(PERIOD)>;
-            key-positions = <LB1 LB2>;
+            key-positions = <LB2 LB3>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
         combo_d5_left_tab {
             bindings = <LK(TAB)>;
-            key-positions = <LB2 LB3>;
+            key-positions = <LB1 LB2>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
         combo_d5_left_q {
