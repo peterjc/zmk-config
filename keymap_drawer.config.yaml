@@ -257,6 +257,7 @@ parse_config:
     '&ng SPACE': {'t': '⎵', 'h': 'Kana-Shift', 'type': 'kshift'}
     '&ng ENTER': {'t': '⏎', 'h': 'Kana-Shift', 'type': 'kshift'}
     '&base_with_mod LGUI': '⌘'
+    '&td_caps': {'t': '⇧⇪'}
 draw_config:
   append_colon_to_layer_header: false
   # dark_mode: auto
