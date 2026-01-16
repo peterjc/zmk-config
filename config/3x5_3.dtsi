@@ -117,6 +117,22 @@
             bindings = <&mo>, <&kp>;
         };
 
+        skq: sticky_key_quick_release {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <1000>;
+            quick-release;
+            ignore-modifiers;
+        };
+
+        td_caps: tap_dance_shift_cap_words{
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&skq RSHFT>, <&caps_word>;
+        };
+
         // make shift+quote give double-quote like ANSI or Apple UK
         // when host setup with British layout (would be @-sign)
         xquote: override_shift_quote {
@@ -167,6 +183,11 @@
     };
 };
 
+// make sticky key &sk use quick release
+&sk {
+    quick-release;
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -177,7 +198,7 @@
                 &kp ESCAPE, AS(P), AS(G),   AS(M), AS(X),    AS(SLASH),   &kp BSPC,           &xquote, AS(MINUS), &plus_equal, \
                 AS(S),      AS(N), AS(T),   AS(H), AS(K),    &dot_colon,  AS(A),              AS(E),   AS(I),     AS(C),  \
                 AS(B),      AS(F), AS(D),   AS(L), AS(J),    &comma_semi, AS(U),              AS(O),   AS(Y),     AS(W),  \
-                                   &kp TAB, AS(R), &kp BSPC, &kp RSHFT,   &blt NUM_NAV SPACE, &mo NUM_NAV \
+                                   &kp TAB, AS(R), &kp BSPC, &td_caps,    &blt NUM_NAV SPACE, &mo NUM_NAV \
             )>;
         };
 
