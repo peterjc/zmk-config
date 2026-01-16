@@ -164,16 +164,17 @@
             )>;
         };
 
-        // D5 - Five Doubles (2x space, 2x E, 2x Y, 2x thumbs with letters, 2x letters per thumb)
+        // D5 - Five Doubles (2x space, 2x S, 2x E, 2x Y, 2x thumbs with two letters)
         // This only defines the home row pinkies (both space) and bottom (tab and enter), so adding Escape, and another BKSP
-        // The top inner key is also undefined, so using the column's combos of X and Q
+        // The top inner key is also undefined, so using Q and Z (otherwise only on combos)
         // Intended for 5 thumbs (backspace in the middle)
+        // Has *lots* of combos
         double5_layer {
             display-name = "D5 - Five doubles";
             bindings = <LAYER_FROM36( \
-                &kp ESCAPE, AS(G), AS(D), AS(M), AS(X),        AS(Q), AS(B), AS(F), AS(J), &kp BSPC, \
+                &kp ESCAPE, AS(C), AS(K), AS(W), AS(Q),        AS(Z), AS(B), AS(F), AS(G), &kp BSPC, \
                 &kp SPACE,  AS(E), AS(T), AS(R), AS(Y),        AS(Y), AS(L), AS(N), AS(E), &kp SPACE, \
-                &kp TAB,    AS(W), AS(C), AS(K), AS(V),        AS(Z), AS(H), AS(P), AS(S), &kp ENTER, \
+                &kp TAB,    AS(S), AS(D), AS(M), AS(V),        AS(J), AS(H), AS(P), AS(S), &kp ENTER, \
                                    AS(U), AS(I), &kp BSPC, &kp RSHFT, AS(A), AS(O) \
             )>;
         };
