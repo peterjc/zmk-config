@@ -29,12 +29,16 @@
 // Aliases for my layers
 #define DEFAULT 0
 #define DOUBLE5 1
-#define NAGINATA 2
-#define NUM_NAV 3
+#define D5_LEFT 2
+#define D5_RIGHT 3
+#define NAGINATA 4
+#define NUM_NAV 5
 
 #define my_linger_term 300// linger mod-tap trigger time window
 
 #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
+#define LK(keycode) &D5_left_ktap keycode
+#define RK(keycode) &D5_right_ktap keycode
 
 / {
     macros {
@@ -83,6 +87,22 @@
             #binding-cells = <1>;
             display-name = "Key Tap";
             bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>;
+            tap-ms = <30>;
+        };
+
+        // Single key-press macros for D5 with sticky layer change:
+        D5_left_ktap: D5_left_key_tap {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            display-name = "D5 Left Key Tap";
+            bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, < &sl D5_LEFT>;
+            tap-ms = <30>;
+        };
+        D5_right_ktap: D5_right_key_tap {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            display-name = "D5 Right Key Tap";
+            bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&sl D5_RIGHT>;
             tap-ms = <30>;
         };
     };
@@ -170,12 +190,30 @@
         // Intended for 5 thumbs (backspace in the middle)
         // Has *lots* of combos
         double5_layer {
-            display-name = "D5 - Five doubles";
+            display-name = "D5 - Five doubles base layer";
             bindings = <LAYER_FROM36( \
-                &kp ESCAPE, AS(C), AS(K), AS(W), AS(Q),        AS(Z), AS(B), AS(F), AS(G), &kp BSPC, \
-                &kp SPACE,  AS(E), AS(T), AS(R), AS(Y),        AS(Y), AS(L), AS(N), AS(E), &kp SPACE, \
-                &kp TAB,    AS(S), AS(D), AS(M), AS(V),        AS(J), AS(H), AS(P), AS(S), &kp ENTER, \
-                                   AS(U), AS(I), &kp BSPC, &kp RSHFT, AS(A), AS(O) \
+                &kp ESCAPE, LK(C), LK(K), LK(W), LK(Q),        RK(Z), RK(B), RK(F), RK(G), &kp BSPC, \
+                &kp SPACE,  LK(E), LK(T), LK(R), LK(Y),        RK(Y), RK(L), RK(N), RK(E), &kp SPACE, \
+                &kp TAB,    LK(S), LK(D), LK(M), LK(V),        RK(J), RK(H), RK(P), RK(S), &kp ENTER, \
+                                   LK(U), LK(I), &kp BSPC, &kp RSHFT, RK(A), RK(O) \
+            )>;
+        };
+        double5_left_layer {
+            display-name = "D5 - after key on left";
+            bindings = <LAYER_FROM36( \
+                &trans,      &trans, &trans, &trans, &trans,        &trans, &trans, &trans, &trans, &trans, \
+                &key_repeat, &trans, &trans, &trans, &trans,        &trans, &trans, &trans, &trans, &trans, \
+                &trans,      &trans, &trans, &trans, &trans,        &trans, &trans, &trans, &trans, &trans, \
+                                     &trans, &trans, &trans,        &trans, &trans, &trans \
+            )>;
+        };
+        double5_right_layer {
+            display-name = "D5 - after key or right";
+            bindings = <LAYER_FROM36( \
+                &trans, &trans, &trans, &trans, &trans,        &trans, &trans, &trans, &trans, &trans, \
+                &trans, &trans, &trans, &trans, &trans,        &trans, &trans, &trans, &trans, &key_repeat, \
+                &trans, &trans, &trans, &trans, &trans,        &trans, &trans, &trans, &trans, &trans, \
+                                &trans, &trans, &trans,        &trans, &trans, &trans \
             )>;
         };
 
@@ -480,7 +518,7 @@
         combo_default {
             bindings = <&to DEFAULT>;
             key-positions = <LB1 LT1>;
-            layers = <DOUBLE5>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
 
         combo_d5 {
@@ -489,17 +527,106 @@
             layers = <DEFAULT NUM_NAV>;
         };
 
-        combo_d5_x { 
-            bindings = <AS(X)>;
-            key-positions = <LB0 LM0>;
-            layers = <DOUBLE5>;
+        // D5 left hand horizontal combos:
+        combo_d5_left_delete {
+            bindings = <&kp DELETE>;
+            key-positions = <LT2 LT3>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
-
-        combo_d5_q {
-            bindings = <AS(Q)>;
-            key-positions = <RB0 RM0>;
-            layers = <DOUBLE5>;
+        combo_d5_left_backspace {
+            bindings = <&kp BKSP>;
+            key-positions = <LT1 LT2>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
+        combo_d5_left_z {
+            bindings = <LK(Z)>;
+            key-positions = <LT1 LT3>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        combo_d5_left_o {
+            bindings = <LK(O)>;
+            key-positions = <LM2 LM3>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        combo_d5_left_a {
+            bindings = <LK(A)>;
+            key-positions = <LM1 LM2>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        combo_d5_left_x {
+            bindings = <LK(X)>;
+            key-positions = <LM1 LM3>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        // my addition:
+        combo_d5_left_period {
+            bindings = <LK(PERIOD)>;
+            key-positions = <LB1 LB2>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        combo_d5_left_tab {
+            bindings = <LK(TAB)>;
+            key-positions = <LB2 LB3>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        combo_d5_left_q {
+            bindings = <LK(Q)>;
+            key-positions = <LB1 LB3>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        // need another macro...
+        // combo_d5_left_ui {
+        //     bindings = <LK(U)>;
+        //     key-positions = <LB1 LB3>;
+        //     layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        //};
 
+        // D5 right hand horizontal combos:
+        combo_d5_right_escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <RT3 RT2>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        combo_d5_right_backspace {
+            bindings = <&kp BKSP>;
+            key-positions = <RT2 RT1>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        combo_d5_right_z {
+            bindings = <RK(Z)>;
+            key-positions = <RT1 RT3>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        combo_d5_right_u {
+            bindings = <RK(U)>;
+            key-positions = <RM3 RM2>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        combo_d5_right_i {
+            bindings = <RK(I)>;
+            key-positions = <RM2 RM1>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        combo_d5_right_x {
+            bindings = <RK(X)>;
+            key-positions = <RM1 RM3>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        // my addition:
+        combo_d5_right_comma {
+            bindings = <RK(COMMA)>;
+            key-positions = <RB3 RB2>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        combo_d5_right_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <RB2 RB1>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        combo_d5_right_q {
+            bindings = <RK(Q)>;
+            key-positions = <RB1 RB3>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
     };
 };
