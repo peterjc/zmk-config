@@ -248,6 +248,15 @@
             layers = <DEFAULT>;
         };
 
+#ifndef LT0
+        // Inner corners on 32-style  (T, G, H, N) = &bootloader
+        combo_bootloader {
+            timeout-ms = <300>;
+            key-positions = <LM0 RM0 LB0 RB0>;
+            bindings = <&bootloader>;
+            layers = <DEFAULT>;
+        };
+#else
         // Inner corners (T, Y, B, N) = &bootloader
         combo_bootloader {
             timeout-ms = <300>;
@@ -255,6 +264,7 @@
             bindings = <&bootloader>;
             layers = <DEFAULT>;
         };
+#endif
 
         // Japanese mode and 薙刀 (Naginata Style) on/off
         // Can't use <RM0 RM1> Qwerty H+J as I use that for close bracket
@@ -379,11 +389,19 @@
             layers = <DEFAULT NUM_NAV>;
         };
 
+#ifndef LT0
+        percent_sign {
+            bindings = <&kp PERCENT>;
+            key-positions = <LT1 LM0>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+#else
         percent_sign {
             bindings = <&kp PERCENT>;
             key-positions = <LT0 LM0>;
             layers = <DEFAULT NUM_NAV>;
         };
+#endif
 
         pipe_sign {
             bindings = <&kp LS(NON_US_BACKSLASH)>;
@@ -397,11 +415,19 @@
             layers = <DEFAULT NUM_NAV>;
         };
 
+#ifndef RT0
+        caret_sign {
+            bindings = <&kp CARET>;
+            key-positions = <RT1 RM0>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+#else
         caret_sign {
             bindings = <&kp CARET>;
             key-positions = <RT0 RM0>;
             layers = <DEFAULT NUM_NAV>;
         };
+#endif
 
         ampersand_sign {
             bindings = <&kp AMPS>;
@@ -427,7 +453,20 @@
             layers = <DEFAULT NUM_NAV>;
         };
 
-        // 2-key horizontal combos for {}:
+        // 2-key horizontal combos for {}, can also use shift with [] combos:
+#ifndef LT0
+        open_curly {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <LB0 LM1>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        close_curly {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <RB0 RM1>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+#else
         open_curly {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <LT0 LT1>;
@@ -439,6 +478,7 @@
             key-positions = <RT0 RT1>;
             layers = <DEFAULT NUM_NAV>;
         };
+#endif
 
         // 2-key horizontal combos for () with linger for alternative <>
         open_bracket_less_than {
