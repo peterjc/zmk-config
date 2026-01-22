@@ -105,6 +105,21 @@
             bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&sl D5_RIGHT>;
             tap-ms = <30>;
         };
+        // Double key-press macros for D5 with sticky layer change
+        D5_left2_ktap: D5_left_two_key_tap {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <2>;
+            display-name = "D5 Left 2 Key Taps";
+            bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, < &sl D5_LEFT>;
+            tap-ms = <30>;
+        };
+        D5_right2_ktap: D5_right_two_key_tap {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <2>;
+            display-name = "D5 Right 2 Key Taps";
+            bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&sl D5_RIGHT>;
+            tap-ms = <30>;
+        };
     };
 };
 
@@ -190,7 +205,7 @@
         // Intended for 5 thumbs (backspace in the middle)
         // Has *lots* of combos
         double5_layer {
-            display-name = "D5 - Five doubles base layer";
+            display-name = "D5 - Five doubles base";
             bindings = <LAYER_FROM36( \
                 &kp ESCAPE, LK(C), LK(K), LK(W), LK(Q),        RK(Z), RK(B), RK(F), RK(G), &kp BSPC, \
                 &kp SPACE,  LK(E), LK(T), LK(R), LK(Y),        RK(Y), RK(L), RK(N), RK(E), &kp SPACE, \
@@ -199,7 +214,7 @@
             )>;
         };
         double5_left_layer {
-            display-name = "D5 - after key on left";
+            display-name = "D5 - left repeat";
             bindings = <LAYER_FROM36( \
                 &trans,      &trans, &trans, &trans, &trans,        &trans, &trans, &trans, &trans, &trans, \
                 &key_repeat, &trans, &trans, &trans, &trans,        &trans, &trans, &trans, &trans, &trans, \
@@ -208,7 +223,7 @@
             )>;
         };
         double5_right_layer {
-            display-name = "D5 - after key or right";
+            display-name = "D5 - right repeat";
             bindings = <LAYER_FROM36( \
                 &trans, &trans, &trans, &trans, &trans,        &trans, &trans, &trans, &trans, &trans, \
                 &trans, &trans, &trans, &trans, &trans,        &trans, &trans, &trans, &trans, &key_repeat, \
@@ -574,12 +589,11 @@
             key-positions = <LB1 LB3>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
-        // need another macro...
-        // combo_d5_left_ui {
-        //     bindings = <LK(U)>;
-        //     key-positions = <LB1 LB3>;
-        //     layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
-        //};
+        combo_d5_left_ui {
+            bindings = <LK2(U, I)>;
+            key-positions = <LH1 LH2>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
 
         // D5 right hand horizontal combos:
         combo_d5_right_escape {
@@ -628,5 +642,24 @@
             key-positions = <RB1 RB3>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
+        combo_d5_right_oa {
+            bindings = <LK2(O, A)>;
+            key-positions = <RH1 RH2>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+
+        // D5 left hand vertical combos:
+        combo_d5_left_ec {
+            bindings = <RK2(E,C)>;
+            key-positions = <LT3 LM3>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        combo_d5_left_es {
+            bindings = <RK2(E,S)>;
+            key-positions = <LM3 LB3>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+
+
     };
 };
