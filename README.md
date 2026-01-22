@@ -88,8 +88,7 @@ layout described above for my self-built variant of the Forager keyboard.
 ![Keymap Image](keymap-drawer/acid.svg)
 
 The Forager Acid keyboard has only 4-key roll-over per hand (so better than
-the Hesse mentioned above), which was kept in mind when editing this keymap.
-i.e. I try not to use any combos needing more than four keys in total.
+the Hesse mentioned above).
 
 ## Split 33332+2 Layout with 32 keys
 
@@ -98,8 +97,20 @@ ring, middle, and index fingers - but then only 2 keys for the index finger's
 inner column, and two thumb keys. This is used by the keyboards like the
 [Visorbearer](https://github.com/carrefinho/visorbearer).
 
-This would mean dropping my `X` and `/` (slash) keys and all the combos with
-them. This seems doable. Note I already have a combo for `X`.
+For this I drop my `X` and `/` (slash) keys. Note the `X` combo bottom left.
+
+TODO: Resolve their vertical combos for percent and caret.
+
+### Bivvy16D
+
+The ZMK keymap in file [bivvy16d.keymap](config/bivvy16D.keymap) uses the split
+33332+2 layout described here plus navigation and cursors on the two 5-way
+navigation buttons.
+
+![Keymap image](keymap-drawer/bivvy16d.svg)
+
+The Bivvy16D has 14-key roll-over excluding the navigation buttons, 4-key roll
+over when they are included. This is much better than the Hesse mentioned above.
 
 ## Split 23332+2 Layout with 30 keys
 
