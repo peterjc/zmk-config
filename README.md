@@ -112,17 +112,11 @@ navigation buttons.
 The Bivvy16D has 14-key roll-over excluding the navigation buttons, 4-key roll
 over when they are included. This is much better than the Hesse mentioned above.
 
-## Split 33332+3 Layout with 34 keys
-
-By this I mean a layout where each hand gets columns of 3 keys for the pinky,
-ring, middle, and index fingers - but then only 2 keys for the index finger's
-inner column, and three thumb keys. So same as the above but with more thumb
-keys.
-
 ### Bivouac34
 
 The ZMK keymap in file [bivouac34.keymap](config/bivouac34.keymap) uses the split
-33332+3 layout described here.
+33332+2 layout described here (32 keys only). The keyboard also supports a 34 key
+33332+3 layout (which I am not using).
 
 ## Split 23332+2 Layout with 30 keys
 
