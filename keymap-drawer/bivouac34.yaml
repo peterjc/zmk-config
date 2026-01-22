@@ -1,4 +1,4 @@
-layout: {zmk_keyboard: bivouac34}
+layout: {zmk_keyboard: bivouac34, layout_name: physical_layout32}
 layers:
   HD Promethium:
   - ⎋
@@ -29,12 +29,10 @@ layers:
   - {t: oO, type: high}
   - {t: yY, type: medium}
   - {t: wW, type: medium}
-  - ↹
-  - {t: rR, type: high}
+  - ⌫
   - ⌫
   - ⇧⇪
   - {t: ⎵, h: Num+Nav, type: high}
-  - Num + Nav
   Naginata:
   - {t: ⎋, h: Small-kana}
   - {left: き, right: ぬ}
@@ -64,12 +62,10 @@ layers:
   - {left: ん, right: ね}
   - {left: ら, right: わ}
   - {left: れ}
-  - ↹
-  - {t: ⏎, h: Kana-Shift, type: kshift}
+  - ⌫
   - ⌫
   - {t: ⎵, h: Kana-Shift, type: kshift}
   - {t: ⇧⎵, h: Num + Nav}
-  - Num + Nav
   Num + Nav:
   - /
   - '1'
@@ -103,8 +99,6 @@ layers:
   - 'VOL
 
     DOWN'
-  - {t: ▽, type: trans}
-  - {t: '0', h: ⇧}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
