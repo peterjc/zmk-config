@@ -43,9 +43,10 @@
 #define RB1 34
 #define RB2 35
 #define RB3 36
-#define RB4 39
+#define RB4 37
 
-#define LH0 42  // left thumb keys
+#define LH0 43  // left thumb keys inc shared central one
+#define LH1 42
 
 #define RH0 43  // right thumb keys inc shared central one
 #define RH1 44
