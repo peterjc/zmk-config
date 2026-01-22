@@ -1,0 +1,87 @@
+/*                              42 KEY MATRIX / LAYOUT MAPPING
+
+Here I am treating the inner keys as lower down (LM0, LB0, RM0, and RB0), as drawn here:
+
+  ╭────────────────────┬────────────────────╮ ╭─────────────────────┬─────────────────────╮
+  │  0   1   2   3     │      6   7   8   9 │ │ LT4 LT3 LT2 LT1     │     RT1 RT2 RT3 RT4 │
+  │ 10  11  12  13   4 │  5  16  17  18  19 │ │ LM4 LM3 LM2 LM1 LM0 │ RM0 RM1 RM2 RM3 RM4 │
+  │ 20  21  22  23  14 │ 15  26  27  28  29 │ │ LB4 LB3 LB2 LB1 LB0 │ RB0 RB1 RB2 RB3 RB4 │
+  │ 30  31  32  33  34 │ 35  36  37  38  39 │ │ ⬇️  ⬅️  ⏺️  ➡️  ⬆️  │ ⬆️  ⬅️  ⏺️  ➡️  ⬇️  │
+  ╰───────────╮ 24  40 │ 41  25 ╭───────────╯ ╰───────────╮ LH1 LH0 │ RH0 RH1 ╭───────────╯
+              ╰────────┴────────╯                         ╰─────────┴─────────╯
+
+However, in the default ZMK firmware however, they are treated as one row higher, with the
+tucked thumbs LH1 and RH1 too:
+
+  ╭────────────────────┬────────────────────╮ ╭─────────────────────┬─────────────────────╮
+  │  0   1   2   3   4 │  5   6   7   8   9 │ │ LT4 LT3 LT2 LT1 LM0 │ RM0 RT1 RT2 RT3 RT4 │
+  │ 10  11  12  13  14 │ 15  16  17  18  19 │ │ LM4 LM3 LM2 LM1 LB0 │ RB0 RM1 RM2 RM3 RM4 │
+  │ 20  21  22  23  24 │ 25  26  27  28  29 │ │ LB4 LB3 LB2 LB1 LH1 │ RH1 RB1 RB2 RB3 RB4 │
+  │ 30  31  32  33  34 │ 35  36  37  38  39 │ │ ⬇️  ⬅️  ⏺️  ➡️  ⬆️  │ ⬆️  ⬅️  ⏺️  ➡️  ⬇️  │
+  ╰───────────────╮ 40 │ 41  ╭──────────────╯ ╰───────────────╮ LH0 │ RH0 ╭───────────────╯
+                  ╰────┴─────╯                                ╰─────┴─────╯
+
+And there are the two five-way buttons too (keys 30 to 39), which is why the splayed thumbs
+LH0 and RH0 are keys 40 and 41. */
+
+#pragma once
+
+// Do NOT define LT0
+#define LT1  3  // left-top row
+#define LT2  2
+#define LT3  1
+#define LT4  0
+
+// Do NOT define RT0
+#define RT1  6  // right-top row
+#define RT2  7
+#define RT3  8
+#define RT4  9
+
+#define LM0 4  // left-middle row
+#define LM1 13
+#define LM2 12
+#define LM3 11
+#define LM4 10
+
+#define RM0 5  // right-middle row
+#define RM1 16
+#define RM2 17
+#define RM3 18
+#define RM4 19
+
+#define LB0 14  // left-bottom row
+#define LB1 23
+#define LB2 22
+#define LB3 21
+#define LB4 20
+
+#define RB0 15  // right-bottom row
+#define RB1 26
+#define RB2 27
+#define RB3 28
+#define RB4 29
+
+#define LH0 40  // left thumb keys
+#define LH1 24
+
+#define RH0 41  // right thumb keys
+#define RH1 25
+
+// Drop top row middle corners (Qwerty T and Y, or LT0 and RT0, or k04 and k05)
+// and the most tucked thumbs (LH2 and RH2 in ZMK-helpers terms, k30 and k35).
+// Move up the inner columns (k14, k15, k24, k25) and 'middle' thumbs (k31 and k34).
+// Insert the two 5-way navigation buttons.
+#define LAYER_FROM36( \
+    k00, k01, k02, k03, k04, k05, k06, k07, k08, k09, \
+    k10, k11, k12, k13, k14, k15, k16, k17, k18, k19, \
+    k20, k21, k22, k23, k24, k25, k26, k27, k28, k29, \
+              k30, k31, k32, k33, k34, k35            \
+) \
+    k00  k01  k02  k03  k14  k15  k06  k07  k08  k09  \
+    k10  k11  k12  k13  k24  k25  k16  k17  k18  k19  \
+    k20  k21  k22  k23  k31  k34  k26  k27  k28  k29  \
+    &kp PG_DN &kp HOME &kp KP_ENTER &kp END &kp PG_UP &kp UP &kp LEFT &kp ENTER &kp RIGHT &kp DOWN  \
+    k32  k33
+
+#include "3x5_3.dtsi"
