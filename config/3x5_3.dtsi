@@ -5,11 +5,11 @@
 // Tested on macOS. Symbols assume keyboard is set in the OS as ISO, and used
 // with the British locale (e.g. double-quote versus at sign, pipe, etc).
 //
-// Assumes 36-key keyboard in the common 3x5_3 layout (three rows of five
-// columns, and three thumb keys, per hand) or 34-key keyboard in the 3x5_2
-// layout (where the most tucked thumb keys are dropped). This is handled
-// via the LAYER_FROM36 definition, which must be defined before including
-// this file. This should also include a line like this:
+// Assumes 36-key keyboard in the common 33333_3 aka 3x5_3 layout (three rows
+// of five columns, and three thumb keys, per hand), or 34-key keyboard in the
+// 33333_2 aka 3x5_2 layout (where the most tucked thumb keys are dropped).
+// This is handled via the LAYER_FROM36 definition, which must be defined
+// before including this file. This should also include a line like this:
 // #include "zmk-helpers/key-labels/36.h"
 
 #include <behaviors.dtsi>
