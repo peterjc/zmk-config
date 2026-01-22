@@ -99,7 +99,7 @@ inner column, and two thumb keys. This is used by the keyboards like the
 
 For this I drop my `X` and `/` (slash) keys. Note the `X` combo bottom left.
 
-TODO: Resolve their vertical combos for percent and caret.
+TODO: Resolve how to type `/` and `?`.
 
 ### Bivvy16D
 
