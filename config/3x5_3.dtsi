@@ -203,6 +203,19 @@
         // `&ng ENTER` (kana-shift when held), ideally both.
         // Standard (ABC) shift is useful for katakana, here ommitted.
         // Layer combined with shift+space for selecting previous kanji selection on tap.
+#ifdef NG_LAYER_FROM36
+        // Allow Naginata specific macro to preferentially drop Qwerty T and Y (arrows)
+        naginata_layer {
+            display-name = "Naginata";
+            bindings = <NG_LAYER_FROM36( \
+                &ng Q, &ng W, &ng E,   &ng R,     &ng T,    &ng Y,     &ng U,                 &ng I,     &ng O,      &ng P, \
+                &ng A, &ng S, &ng D,   &ng F,     &ng G,    &ng H,     &ng J,                 &ng K,     &ng L,      &ng SEMI, \
+                &ng Z, &ng X, &ng C,   &ng V,     &ng B,    &ng N,     &ng M,                 &ng COMMA, &ng DOT,    &ng SLASH, \
+                              &kp TAB, &ng ENTER, &kp BSPC, &ng SPACE, &lt NUM_NAV LS(SPACE), &mo NUM_NAV \
+                )>;
+        };
+#else
+
         naginata_layer {
             display-name = "Naginata";
             bindings = <LAYER_FROM36( \
@@ -212,6 +225,7 @@
                               &kp TAB, &ng ENTER, &kp BSPC, &ng SPACE, &lt NUM_NAV LS(SPACE), &mo NUM_NAV \
                 )>;
         };
+#endif
 
         num_nav_layer {
             display-name = "Num + Nav";
