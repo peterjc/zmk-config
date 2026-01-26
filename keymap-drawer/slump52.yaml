@@ -65,7 +65,7 @@ layers:
   - {left: る, right: よ}
   - {left: す, right: え}
   - {left: へ, right: ゆ}
-  - '*'
+  - {left: へ, right: ゆ}
   - '7'
   - '8'
   - '9'
@@ -78,7 +78,7 @@ layers:
   - {h: 濁音, left: あ, right: の}
   - {left: い, right: も}
   - {left: う, right: つ}
-  - →
+  - {left: へ, right: ゆ}
   - '4'
   - '5'
   - '6'
