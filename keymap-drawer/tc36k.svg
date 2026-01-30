@@ -277,6 +277,24 @@ text.right {
 <tspan x="0" dy="-1.2em">Num</tspan><tspan x="0" dy="1.2em">+</tspan><tspan x="0" dy="1.2em">Nav</tspan>
 </text>
 </a></g>
+<g class="combo combopos-0">
+<path d="M360,17 h-326 a6.0,6.0 0 0 0 -6.0,6.0 v21" class="combo"/>
+<path d="M360,17 h326 a6.0,6.0 0 0 1 6.0,6.0 v21" class="combo"/>
+<rect rx="6" ry="6" x="335" y="4" width="50" height="26" class="combo"/>
+<text x="360" y="17" class="combo tap">
+<tspan x="360" dy="-0.6em">Studio</tspan><tspan x="360" dy="1.2em">Unlock</tspan>
+</text>
+</g>
+<g class="combo combopos-1">
+<path d="M360,169 l-62,-42" class="combo"/>
+<path d="M360,169 l62,-42" class="combo"/>
+<path d="M360,169 l-100,45" class="combo"/>
+<path d="M360,169 l100,45" class="combo"/>
+<rect rx="6" ry="6" x="335" y="156" width="50" height="26" class="combo"/>
+<text x="360" y="169" class="combo tap">
+<tspan x="360" dy="-0.6em">Boot</tspan><tspan x="360" dy="1.2em">loader</tspan>
+</text>
+</g>
 <g class="combo combopos-2">
 <path d="M530,197 h-66 a6.0,6.0 0 0 1 -6.0,-6.0 v-3" class="combo"/>
 <path d="M530,197 h18 a6.0,6.0 0 0 0 6.0,-6.0 v-84" class="combo"/>

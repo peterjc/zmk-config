@@ -29,7 +29,7 @@ layers:
   - {t: oO, type: high}
   - {t: yY, type: medium}
   - {t: wW, type: medium}
-  - ⌫
+  - {t: rR, type: high}
   - ⌫
   - ⇧⇪
   - {t: ⎵, h: Num+Nav, type: high}
@@ -62,7 +62,7 @@ layers:
   - {left: ん, right: ね}
   - {left: ら, right: わ}
   - {left: れ}
-  - ⌫
+  - {t: ⏎, h: Kana-Shift, type: kshift}
   - ⌫
   - {t: ⎵, h: Kana-Shift, type: kshift}
   - {t: ⇧⎵, h: Num + Nav}
@@ -99,19 +99,21 @@ layers:
   - 'VOL
 
     DOWN'
-  - {t: ▽, type: trans}
+  - {t: '0', h: ⇧}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
 combos:
 - p: [0, 9]
-  k: '&studio_unlock'
+  k: Studio Unlock
   l: [HD Promethium]
-  hidden: true
-- p: [4, 5, 14, 15]
-  k: '&bootloader'
+  a: top
+  o: 0.3
+  w: 50.0
+- p: [4, 5, 28, 31]
+  k: Boot loader
   l: [HD Promethium]
-  hidden: true
+  w: 50.0
 - p: [5, 17]
   k: かな
   l: [HD Promethium, Naginata]

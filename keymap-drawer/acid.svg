@@ -266,6 +266,24 @@ text.right {
 <text x="0" y="0" class="key high tap">⎵</text>
 <text x="0" y="24" class="key high hold">Num+Nav</text>
 </g>
+<g class="combo combopos-0">
+<path d="M350,16 h-316 a6.0,6.0 0 0 0 -6.0,6.0 v21" class="combo"/>
+<path d="M350,16 h316 a6.0,6.0 0 0 1 6.0,6.0 v21" class="combo"/>
+<rect rx="6" ry="6" x="325" y="3" width="50" height="26" class="combo"/>
+<text x="350" y="16" class="combo tap">
+<tspan x="350" dy="-0.6em">Studio</tspan><tspan x="350" dy="1.2em">Unlock</tspan>
+</text>
+</g>
+<g class="combo combopos-1">
+<path d="M350,100 l-82,-47" class="combo"/>
+<path d="M350,100 l82,-47" class="combo"/>
+<path d="M350,100 l-82,47" class="combo"/>
+<path d="M350,100 l82,47" class="combo"/>
+<rect rx="6" ry="6" x="325" y="87" width="50" height="26" class="combo"/>
+<text x="350" y="100" class="combo tap">
+<tspan x="350" dy="-0.6em">Boot</tspan><tspan x="350" dy="1.2em">loader</tspan>
+</text>
+</g>
 <g class="combo combopos-2">
 <path d="M532,128 h-78 a6.0,6.0 0 0 1 -6.0,-6.0 v-3" class="combo"/>
 <path d="M532,128 h22 a6.0,6.0 0 0 0 6.0,-6.0 v-19" class="combo"/>

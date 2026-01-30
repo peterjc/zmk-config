@@ -1,4 +1,4 @@
-<svg width="757" height="1245" viewBox="0 0 757 1245" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="757" height="1247" viewBox="0 0 757 1247" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <style>/* inherit to force styles through use tags*/
 svg path {
     fill: inherit;
@@ -128,7 +128,7 @@ text.right {
 </style>
 <g transform="translate(30, 0)" class="layer-HD Promethium">
 <text x="0" y="28" class="label" id="HD-Promethium">HD Promethium</text>
-<g transform="translate(0, 56)">
+<g transform="translate(0, 57)">
 <g transform="translate(46, 56) rotate(10.0)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">⎋</text>
@@ -300,6 +300,24 @@ text.right {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">⇧⇪</text>
 </g>
+<g class="combo combopos-0">
+<path d="M349,12 h-297 a6.0,6.0 0 0 0 -6.0,6.0 v19" class="combo"/>
+<path d="M349,12 h297 a6.0,6.0 0 0 1 6.0,6.0 v19" class="combo"/>
+<rect rx="6" ry="6" x="324" y="-1" width="50" height="26" class="combo"/>
+<text x="349" y="12" class="combo tap">
+<tspan x="349" dy="-0.6em">Studio</tspan><tspan x="349" dy="1.2em">Unlock</tspan>
+</text>
+</g>
+<g class="combo combopos-1">
+<path d="M349,195 l-58,-52" class="combo"/>
+<path d="M349,195 l58,-52" class="combo"/>
+<path d="M349,195 l-109,56" class="combo"/>
+<path d="M349,195 l109,56" class="combo"/>
+<rect rx="6" ry="6" x="324" y="182" width="50" height="26" class="combo"/>
+<text x="349" y="195" class="combo tap">
+<tspan x="349" dy="-0.6em">Boot</tspan><tspan x="349" dy="1.2em">loader</tspan>
+</text>
+</g>
 <g class="combo combopos-2">
 <path d="M504,158 h-78 a6.0,6.0 0 0 1 -6.0,-6.0 v-3" class="combo"/>
 <path d="M504,158 h22 a6.0,6.0 0 0 0 6.0,-6.0 v-45" class="combo"/>
@@ -444,7 +462,7 @@ text.right {
 </g>
 </g>
 </g>
-<g transform="translate(30, 396)" class="layer-Naginata">
+<g transform="translate(30, 398)" class="layer-Naginata">
 <text x="0" y="28" class="label" id="Naginata">Naginata</text>
 <g transform="translate(0, 56)">
 <g transform="translate(46, 56) rotate(10.0)" class="key keypos-0">
@@ -678,7 +696,7 @@ text.right {
 </g>
 </g>
 </g>
-<g transform="translate(30, 793)" class="layer-Num + Nav">
+<g transform="translate(30, 794)" class="layer-Num + Nav">
 <text x="0" y="28" class="label" id="Num--Nav">Num + Nav</text>
 <g transform="translate(0, 56)">
 <g transform="translate(46, 56) rotate(10.0)" class="key keypos-0">

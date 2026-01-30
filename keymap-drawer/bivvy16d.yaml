@@ -135,13 +135,15 @@ layers:
   - {t: ▽, type: trans}
 combos:
 - p: [0, 9]
-  k: '&studio_unlock'
+  k: Studio Unlock
   l: [HD Promethium]
-  hidden: true
-- p: [4, 5, 14, 15]
-  k: '&bootloader'
+  a: top
+  o: 0.3
+  w: 50.0
+- p: [4, 5, 24, 25]
+  k: Boot loader
   l: [HD Promethium]
-  hidden: true
+  w: 50.0
 - p: [5, 17]
   k: かな
   l: [HD Promethium, Naginata]
