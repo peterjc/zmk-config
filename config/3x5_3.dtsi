@@ -263,10 +263,10 @@
         };
 
 #ifndef LT0
-        // Inner corners on 32-style  (T, G, H, N) = &bootloader
+        // Inner corners on 32-style  (T, G, home thumbs) = &bootloader
         combo_bootloader {
             timeout-ms = <300>;
-            key-positions = <LM0 RM0 LB0 RB0>;
+            key-positions = <LM0 RM0 LH1 RH1>;
             bindings = <&bootloader>;
             layers = <DEFAULT>;
         };
