@@ -133,8 +133,8 @@ parse_config:
     KP_PLUS: '+'
     KP_MINUS: '-'
   zmk_combos:
-    combo_studio_unlock: {'hidden': true}
-    combo_bootloader: {'hidden': true}
+    combo_studio_unlock: {'key': 'Studio Unlock', 'align': 'top', 'offset': 0.3, 'width': 50}
+    combo_bootloader: {'key': 'Boot loader', 'width': 50}
     tab_combo: {'align': 'bottom', 'offset': -0.02, 'slide': -0.5, 'height': 15}
     enter_combo: {'align': 'bottom', 'offset': -0.02, 'slide': 0.5, 'height': 15}
     combo_ng_on: {'align': 'bottom', 'offset': -0.02, 'slide': 0.5, 'key': 'かな', 'height': 15}
@@ -258,6 +258,9 @@ parse_config:
     '&ng ENTER': {'t': '⏎', 'h': 'Kana-Shift', 'type': 'kshift'}
     '&base_with_mod LGUI': '⌘'
     '&td_caps': {'t': '⇧⇪'}
+    '&studio_unlock': {'t': 'Studio Unlock'}
+    '&bootloader': {'t': 'Boot loader'}
+    '&caps_word': {'t': 'Caps Word'}
 draw_config:
   append_colon_to_layer_header: false
   # dark_mode: auto
