@@ -124,11 +124,11 @@
             ignore-modifiers;
         };
 
-        td_caps: tap_dance_shift_cap_words{
-            compatible = "zmk,behavior-tap-dance";
+        shift_caps: shift_cap_words{
+            compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
             bindings = <&skq RSHFT>, <&caps_word>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         // make shift+quote give double-quote like ANSI or Apple UK
@@ -203,7 +203,7 @@
                 &kp ESCAPE, &kp P, &kp G,   &kp M, &kp X,    &kp SLASH,         &kp BSPC,           &xquote, &kp MINUS, &plus_equal, \
                 &kp S,      &kp N, &kp T,   &kp H, &kp K,    &dot_colon_excl,   &kp A,              &kp E,   &kp I,     &kp C,  \
                 &kp B,      &kp F, &kp D,   &kp L, &kp J,    &comma_semi_qmark, &kp U,              &kp O,   &kp Y,     &kp W,  \
-                                   &kp TAB, &kp R, &kp BSPC, &td_caps,          &blt NUM_NAV SPACE, &mo NUM_NAV \
+                                   &kp TAB, &kp R, &kp BSPC, &shift_caps,       &blt NUM_NAV SPACE, &mo NUM_NAV \
             )>;
         };
 

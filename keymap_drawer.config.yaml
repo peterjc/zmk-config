@@ -260,7 +260,7 @@ parse_config:
     '&ng SPACE': {'t': '⎵', 'h': 'Kana-Shift', 'type': 'kshift'}
     '&ng ENTER': {'t': '⏎', 'h': 'Kana-Shift', 'type': 'kshift'}
     '&base_with_mod LGUI': '⌘'
-    '&td_caps': {'t': '⇧⇪'}
+    '&shift_caps': {'t': '⇧⇪'}
     '&studio_unlock': {'t': 'Studio Unlock'}
     '&bootloader': {'t': 'Boot loader'}
     '&caps_word': {'t': 'Caps Word'}
