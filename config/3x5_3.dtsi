@@ -158,6 +158,20 @@
             keep-mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
         };
 
+        // For combos giving ( and ) or < and > when shift is held
+        open_par_lt: open_par_lt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp LESS_THAN>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        close_par_gt: close_par_gt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp GREATER_THAN>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
         dot_colon_excl: dot_colon_excl {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -490,28 +504,28 @@
         };
 #endif
 
-        // 2-key horizontal combos for () with linger for alternative <>
+        // 2-key horizontal combos for () with shift for <>
         open_bracket_less_than {
-            bindings = <&as LESS_THAN LEFT_PARENTHESIS>;
+            bindings = <&open_par_lt>;
             key-positions = <LM0 LM1>;
             layers = <DEFAULT NUM_NAV>;
         };
 
         close_bracket_greater_than {
-            bindings = <&as GREATER_THAN RIGHT_PARENTHESIS>;
+            bindings = <&close_par_gt>;
             key-positions = <RM0 RM1>;
             layers = <DEFAULT NUM_NAV>;
         };
 
-        // 2-key horizontal combos for [] with linger for shifted form {}
+        // 2-key horizontal combos for [] with shifted form {}
         open_square_curly {
-            bindings = <&as LEFT_BRACE LEFT_BRACKET>;
+            bindings = <&kp LEFT_BRACKET>;
             key-positions = <LB0 LB1>;
             layers = <DEFAULT NUM_NAV>;
         };
 
         close_square_curly {
-            bindings = <&as RIGHT_BRACE RIGHT_BRACKET>;
+            bindings = <&kp RIGHT_BRACKET>;
             key-positions = <RB0 RB1>;
             layers = <DEFAULT NUM_NAV>;
         };
