@@ -423,8 +423,8 @@
             layers = <DEFAULT NUM_NAV>;
         };
 
-        exclamation_mark {
-            bindings = <&kp EXCL>;
+        forward_slash {
+            bindings = <&kp SLASH>;
             key-positions = <RM0 RB0>;
             layers = <DEFAULT NUM_NAV>;
         };
