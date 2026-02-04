@@ -33,8 +33,6 @@
 
 #define my_linger_term 300// linger mod-tap trigger time window
 
-#define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
-
 / {
     macros {
         // To switch to Japanese mode, this sends what Karabiner-Elements sees
@@ -138,7 +136,7 @@
         xquote: override_shift_quote {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&as LS(N2) SQT>, <&kp N2>;
+            bindings = <&kp SQT>, <&kp N2>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             // need to keep shift, and anything else too:
             keep-mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
@@ -148,7 +146,7 @@
         _plus_equal: _plus_equal {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&as EQUAL LS(EQUAL)>, <&kp EQUAL>;
+            bindings = <&kp LS(EQUAL)>, <&kp EQUAL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             // do NOT want to keep shift active, but anything else is fine:
             keep-mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
@@ -190,10 +188,10 @@
         default_layer {
             display-name = "HD Promethium";
             bindings = <LAYER_FROM36( \
-                &kp ESCAPE, AS(P), AS(G),   AS(M), AS(X),    AS(SLASH),         &kp BSPC,           &xquote, AS(MINUS), &plus_equal, \
-                AS(S),      AS(N), AS(T),   AS(H), AS(K),    &dot_colon_excl,   AS(A),              AS(E),   AS(I),     AS(C),  \
-                AS(B),      AS(F), AS(D),   AS(L), AS(J),    &comma_semi_qmark, AS(U),              AS(O),   AS(Y),     AS(W),  \
-                                   &kp TAB, AS(R), &kp BSPC, &td_caps,          &blt NUM_NAV SPACE, &mo NUM_NAV \
+                &kp ESCAPE, &kp P, &kp G,   &kp M, &kp X,    &kp SLASH,         &kp BSPC,           &xquote, &kp MINUS, &plus_equal, \
+                &kp S,      &kp N, &kp T,   &kp H, &kp K,    &dot_colon_excl,   &kp A,              &kp E,   &kp I,     &kp C,  \
+                &kp B,      &kp F, &kp D,   &kp L, &kp J,    &comma_semi_qmark, &kp U,              &kp O,   &kp Y,     &kp W,  \
+                                   &kp TAB, &kp R, &kp BSPC, &td_caps,          &blt NUM_NAV SPACE, &mo NUM_NAV \
             )>;
         };
 
@@ -351,28 +349,28 @@
 
         // 2-key horizontal combos for rare letters
         q_combo {
-            bindings = <AS(Q)>;
+            bindings = <&kp Q>;
             key-positions = <LT1 LT2>;
             layers = <DEFAULT>;
             timeout-ms = <100>;
         };
 
         z_combo {
-            bindings = <AS(Z)>;
+            bindings = <&kp Z>;
             key-positions = <RT2 RT3>;
             layers = <DEFAULT>;
             timeout-ms = <75>;
         };
 
         v_combo {
-            bindings = <AS(V)>;
+            bindings = <&kp V>;
             key-positions = <LT2 LT3>;
             layers = <DEFAULT>;
             timeout-ms = <75>;
         };
 
         x_combo {
-            bindings = <AS(X)>;
+            bindings = <&kp X>;
             key-positions = <LB2 LB3>;
             layers = <DEFAULT>;
             timeout-ms = <75>;
