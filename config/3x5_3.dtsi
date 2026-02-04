@@ -522,13 +522,18 @@
 
 // Bluetooth combos for the Hesse
 #ifdef CONFIG_WIRELESS
-        combo_bt_prev {
-            bindings = <&bt BT_PRV>;
+        combo_bt0 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <LT3 LT4>;
+            layers = <NUM_NAV>;
+        };
+        combo_bt1 {
+            bindings = <&bt BT_SEL 1>;
             key-positions = <LT2 LT3>;
             layers = <NUM_NAV>;
         };
-        combo_bt_next {
-            bindings = <&bt BT_NXT>;
+        combo_bt2 {
+            bindings = <&bt BT_SEL 2>;
             key-positions = <LT1 LT2>;
             layers = <NUM_NAV>;
         };
