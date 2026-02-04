@@ -104,8 +104,12 @@ inner column, and two thumb keys. This is used by the keyboards like the
 [Visorbearer](https://github.com/carrefinho/visorbearer).
 
 For this I drop my `X` and `/` (slash) keys. Note the `X` combo bottom left,
-'/' combo on the remaining right inner column keys, and '?' on shift on the
-right inner column. This allows '../' with a similar motion (tap, tap, combo).
+`/` combo on the remaining right inner column keys, and `?` on shift on the
+right inner column. This allows `../` with a similar motion of the right
+index finger (tap, tap, combo).
+
+For the Naginata layer this just means dropping the pair of cursor keys,
+which are redundant with a navigation layer.
 
 ### Bivvy16D
 
@@ -120,9 +124,9 @@ over when they are included. This is much better than the Hesse mentioned above.
 
 ### Bivouac34
 
-The ZMK keymap in file [bivouac34.keymap](config/bivouac34.keymap) uses the split
-33332+2 layout described here (32 keys only). The keyboard also supports a 34 key
-33332+3 layout (which I am not using).
+The ZMK keymap in file [bivouac34.keymap](config/bivouac34.keymap) uses the same
+split 33332+2 layout described above (32 keys only). The keyboard also supports a
+34 key 33332+3 layout (which I am not using).
 
 ## Split 23332+2 Layout with 30 keys
 
@@ -132,20 +136,20 @@ index finger's inner column, and two thumb keys. This is used by the keyboards l
 the [Hummingbird](https://github.com/PJE66/hummingbird).
 
 This would mean dropping my `Escape` and `=`/`+` keys and all the combos on them.
-Right now that seems challenging.
+Right now that seems challenging. It would also break using the Naginata layout.
 
 ## Slump layouts - Split 44332+2
 
 My 'slump' layout has a 30-key core with additional thumb keys, and one top corner
 key per hand (Escape and Backspace with Qwerty), and a bottom corner pinky key (tab
 and enter perhaps). The inner column is staggered (or 'slumped') to allow the bottom
-key to be a thumb key. This then looks like a 44332+2 split layout. Moreover, the
-pinky column can optionally be down-shifted by one key.
+inner key to be a thumb key. This then looks like a 44332+2 split layout. Moreover,
+the pinky column can optionally be down-shifted by one key.
 
 ### Slump52
 
 This keyboard has that 44332+2 style, plus an extra central thumb key, number pad
-and cursors. This layout embeds the 33332+2 layout desrcibed above.
+and cursors. This layout embeds the 33332+2 layout described above.
 
 ![Keymap Image](keymap-drawer/slump52.svg)
 
