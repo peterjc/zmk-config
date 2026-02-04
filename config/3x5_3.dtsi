@@ -148,8 +148,6 @@
             #binding-cells = <0>;
             bindings = <&kp LS(EQUAL)>, <&kp EQUAL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            // do NOT want to keep shift active, but anything else is fine:
-            keep-mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
         };
         // Do not flip equal and plus when any non-shift mod is used:
         plus_equal: plus_equal {
@@ -157,7 +155,7 @@
             #binding-cells = <0>;
             bindings = <&_plus_equal>, <&kp EQUAL>;
             mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
-            keep-mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
         };
 
         dot_colon_excl: dot_colon_excl {
