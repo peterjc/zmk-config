@@ -162,19 +162,19 @@
             keep-mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
         };
 
-        dot_colon: dot_colon {
+        dot_colon_excl: dot_colon_excl {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&as COLON DOT>, <&kp SEMI>;
+            bindings = <&as COLON DOT>, <&kp EXCL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             // need to keep shift, and anything else too:
             keep-mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
         };
 
-        comma_semi: comma_semi {
+        comma_semi_qmark: comma_semi_qmark {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&as SEMI COMMA>, <&kp SEMI>;
+            bindings = <&as SEMI COMMA>, <&kp QMARK>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             // do NOT want to keep shift active, but anything else is fine:
             keep-mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
@@ -190,10 +190,10 @@
         default_layer {
             display-name = "HD Promethium";
             bindings = <LAYER_FROM36( \
-                &kp ESCAPE, AS(P), AS(G),   AS(M), AS(X),    AS(SLASH),   &kp BSPC,           &xquote, AS(MINUS), &plus_equal, \
-                AS(S),      AS(N), AS(T),   AS(H), AS(K),    &dot_colon,  AS(A),              AS(E),   AS(I),     AS(C),  \
-                AS(B),      AS(F), AS(D),   AS(L), AS(J),    &comma_semi, AS(U),              AS(O),   AS(Y),     AS(W),  \
-                                   &kp TAB, AS(R), &kp BSPC, &td_caps,    &blt NUM_NAV SPACE, &mo NUM_NAV \
+                &kp ESCAPE, AS(P), AS(G),   AS(M), AS(X),    AS(SLASH),         &kp BSPC,           &xquote, AS(MINUS), &plus_equal, \
+                AS(S),      AS(N), AS(T),   AS(H), AS(K),    &dot_colon_excl,   AS(A),              AS(E),   AS(I),     AS(C),  \
+                AS(B),      AS(F), AS(D),   AS(L), AS(J),    &comma_semi_qmark, AS(U),              AS(O),   AS(Y),     AS(W),  \
+                                   &kp TAB, AS(R), &kp BSPC, &td_caps,          &blt NUM_NAV SPACE, &mo NUM_NAV \
             )>;
         };
 
