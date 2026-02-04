@@ -191,7 +191,7 @@ text.right {
 </g>
 <g transform="translate(458, 169) rotate(-22.0)" class="key medium-low keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key medium-low"/>
-<text x="0" y="0" class="key medium-low tap">.:</text>
+<text x="0" y="0" class="key medium-low tap">.:!</text>
 </g>
 <g transform="translate(505, 134) rotate(-22.0)" class="key high keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key high"/>
@@ -231,7 +231,7 @@ text.right {
 </g>
 <g transform="translate(477, 221) rotate(-22.0)" class="key medium-low keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key medium-low"/>
-<text x="0" y="0" class="key medium-low tap">,;</text>
+<text x="0" y="0" class="key medium-low tap">,;?</text>
 </g>
 <g transform="translate(524, 186) rotate(-22.0)" class="key medium-high keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key medium-high"/>
@@ -391,7 +391,7 @@ text.right {
 <path d="M429,195 v-20 a6.0,6.0 0 0 1 6.0,-6.0 h4" class="combo"/>
 <path d="M429,195 v20 a6.0,6.0 0 0 0 6.0,6.0 h24" class="combo"/>
 <rect rx="6" ry="6" x="415" y="182" width="28" height="26" class="combo"/>
-<text x="429" y="195" class="combo tap">!</text>
+<text x="429" y="195" class="combo tap">/</text>
 </g>
 <g class="combo combopos-23">
 <rect rx="6" ry="6" x="433" y="130" width="28" height="26" class="combo"/>
@@ -869,7 +869,7 @@ text.right {
 <path d="M429,195 v-20 a6.0,6.0 0 0 1 6.0,-6.0 h4" class="combo"/>
 <path d="M429,195 v20 a6.0,6.0 0 0 0 6.0,6.0 h24" class="combo"/>
 <rect rx="6" ry="6" x="415" y="182" width="28" height="26" class="combo"/>
-<text x="429" y="195" class="combo tap">!</text>
+<text x="429" y="195" class="combo tap">/</text>
 </g>
 <g class="combo combopos-15">
 <rect rx="6" ry="6" x="433" y="130" width="28" height="26" class="combo"/>
@@ -916,24 +916,27 @@ text.right {
 <text x="501" y="204" class="combo tap">]}</text>
 </g>
 <g class="combo combopos-26">
-<rect rx="6" ry="6" x="130" y="24" width="28" height="26" class="combo"/>
-<text x="144" y="37" class="combo tap">
-<tspan x="144" dy="-0.6em">BT</tspan><tspan x="144" dy="1.2em">PRV</tspan>
-</text>
+<rect rx="6" ry="6" x="53" y="37" width="28" height="26" class="combo"/>
+<text x="67" y="50" class="combo tap">BT</text>
+<text x="67" y="61" class="combo hold">0</text>
 </g>
 <g class="combo combopos-27">
-<rect rx="6" ry="6" x="195" y="46" width="28" height="26" class="combo"/>
-<text x="209" y="59" class="combo tap">
-<tspan x="209" dy="-0.6em">BT</tspan><tspan x="209" dy="1.2em">NXT</tspan>
-</text>
+<rect rx="6" ry="6" x="130" y="24" width="28" height="26" class="combo"/>
+<text x="144" y="37" class="combo tap">BT</text>
+<text x="144" y="48" class="combo hold">1</text>
 </g>
 <g class="combo combopos-28">
+<rect rx="6" ry="6" x="195" y="46" width="28" height="26" class="combo"/>
+<text x="209" y="59" class="combo tap">BT</text>
+<text x="209" y="70" class="combo hold">2</text>
+</g>
+<g class="combo combopos-29">
 <rect rx="6" ry="6" x="497" y="46" width="28" height="26" class="combo"/>
 <text x="511" y="59" class="combo tap">
 <tspan x="511" dy="-0.6em">BT</tspan><tspan x="511" dy="1.2em">CLR</tspan>
 </text>
 </g>
-<g class="combo combopos-29">
+<g class="combo combopos-30">
 <rect rx="6" ry="6" x="561" y="24" width="28" height="26" class="combo"/>
 <text x="575" y="37" class="combo tap">
 <tspan x="575" dy="-0.6em">BT</tspan><tspan x="575" dy="1.2em">…</tspan>

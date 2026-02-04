@@ -16,7 +16,7 @@ layers:
   - {t: tT, type: high}
   - {t: hH, type: high}
   - {t: kK, type: low}
-  - {t: '.:', type: medium-low}
+  - {t: '.:!', type: medium-low}
   - {t: aA, type: high}
   - {t: eE, type: high}
   - {t: iI, type: high}
@@ -26,7 +26,7 @@ layers:
   - {t: dD, type: medium-high}
   - {t: lL, type: medium-high}
   - {t: jJ, type: low}
-  - {t: ',;', type: medium-low}
+  - {t: ',;?', type: medium-low}
   - {t: uU, type: medium-high}
   - {t: oO, type: high}
   - {t: yY, type: medium}
@@ -202,7 +202,7 @@ combos:
   l: [HD Promethium, Num + Nav]
   a: right
 - p: [15, 25]
-  k: '!'
+  k: /
   l: [HD Promethium, Num + Nav]
   a: left
 - p: [5, 15]
@@ -238,11 +238,14 @@ combos:
 - p: [25, 26]
   k: ']}'
   l: [HD Promethium, Num + Nav]
+- p: [1, 0]
+  k: {t: BT, h: '0'}
+  l: [Num + Nav]
 - p: [2, 1]
-  k: BT PRV
+  k: {t: BT, h: '1'}
   l: [Num + Nav]
 - p: [3, 2]
-  k: BT NXT
+  k: {t: BT, h: '2'}
   l: [Num + Nav]
 - p: [6, 7]
   k: BT CLR
