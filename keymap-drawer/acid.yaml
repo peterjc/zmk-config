@@ -165,7 +165,7 @@ combos:
   k: ⌘
   l: [HD Promethium, Num + Nav]
 - p: [3, 2]
-  k: {t: qQ, type: low}
+  k: {t: vQ, type: low}
   l: [HD Promethium]
 - p: [7, 8]
   k: {t: zZ, type: low}
