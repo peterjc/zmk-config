@@ -20,6 +20,12 @@ I wanted to be able to use this on my laptop too - achieved with [custom Karabin
 rules](https://codeberg.org/peterjc/kana-chording-ke/src/branch/main/hands-down-on-jis-macbook)
 (see this [blog post](https://blastedbio.blogspot.com/2025/05/what-have-you-done-to-your-keyboard.html)).
 
+This uses "linger keys" or "auto-shift", where holding a letter or punctuation
+key generally gives the same as shift+tap would. The exceptions are shown in the
+keymap images with three symbols for plain tap, long tap, and shift+tap (for
+dot, colon, exclamation mark, and comma, semi-colon, and question mark).
+This is part of my adaptions for even fewer keys (see below).
+
 The second layer is for typing in Japanese using Naginata Style (薙刀式) (see
 [blog post](https://astrobeano.blogspot.com/2025/08/naginata-style-for-typing-in-japanese.html))
 using the [ZMK Naginata module](https://github.com/eswai/zmk-naginata). I have
@@ -97,9 +103,9 @@ ring, middle, and index fingers - but then only 2 keys for the index finger's
 inner column, and two thumb keys. This is used by the keyboards like the
 [Visorbearer](https://github.com/carrefinho/visorbearer).
 
-For this I drop my `X` and `/` (slash) keys. Note the `X` combo bottom left.
-
-TODO: Resolve how to type `/` and `?`.
+For this I drop my `X` and `/` (slash) keys. Note the `X` combo bottom left,
+'/' combo on the remaining right inner column keys, and '?' on shift on the
+right inner column. This allows '../' with a similar motion (tap, tap, combo).
 
 ### Bivvy16D
 
