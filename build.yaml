@@ -28,10 +28,10 @@ include:
     shield: slump52
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: rpi_pico2/rp2350a/m33
-    shield: slump52
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
+#  - board: rpi_pico2/rp2350a/m33
+#    shield: slump52
+#    snippet: studio-rpc-usb-uart
+#    cmake-args: -DCONFIG_ZMK_STUDIO=y
   # Bivouac34
   - board: rpi_pico
     shield: bivouac34
