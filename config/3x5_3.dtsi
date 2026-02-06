@@ -31,8 +31,6 @@
 #define NAGINATA 1
 #define NUM_NAV 2
 
-#define my_linger_term 300// linger mod-tap trigger time window
-
 / {
     macros {
         // To switch to Japanese mode, this sends what Karabiner-Elements sees
@@ -87,15 +85,6 @@
 
 / {
     behaviors {
-
-        as: auto_shift {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping_term_ms = <my_linger_term>;
-            quick_tap_ms = <250>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
 
         hpmt: hold_preferred_mod_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -172,19 +161,19 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        dot_colon_excl: dot_colon_excl {
+        dot_colon: dot_colon {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&as COLON DOT>, <&kp EXCL>;
+            bindings = <&kp DOT>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             // need to keep shift, and anything else too:
             keep-mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
         };
 
-        comma_semi_qmark: comma_semi_qmark {
+        comma_semi: comma_semi {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&as SEMI COMMA>, <&kp QMARK>;
+            bindings = <&kp COMMA>, <&kp SEMI>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             // do NOT want to keep shift active, but anything else is fine:
             keep-mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
@@ -200,10 +189,10 @@
         default_layer {
             display-name = "HD Promethium";
             bindings = <LAYER_FROM36( \
-                &kp ESCAPE, &kp P, &kp G,   &kp M, &kp X,    &kp SLASH,         &kp BSPC,           &xquote, &kp MINUS, &plus_equal, \
-                &kp S,      &kp N, &kp T,   &kp H, &kp K,    &dot_colon_excl,   &kp A,              &kp E,   &kp I,     &kp C,  \
-                &kp B,      &kp F, &kp D,   &kp L, &kp J,    &comma_semi_qmark, &kp U,              &kp O,   &kp Y,     &kp W,  \
-                                   &kp TAB, &kp R, &kp BSPC, &shift_caps,       &blt NUM_NAV SPACE, &mo NUM_NAV \
+                &kp ESCAPE, &kp P, &kp G,   &kp M, &kp X,    &kp SLASH,   &kp BSPC,           &xquote, &kp MINUS, &plus_equal, \
+                &kp S,      &kp N, &kp T,   &kp H, &kp K,    &dot_colon,  &kp A,              &kp E,   &kp I,     &kp C,  \
+                &kp B,      &kp F, &kp D,   &kp L, &kp J,    &comma_semi, &kp U,              &kp O,   &kp Y,     &kp W,  \
+                                   &kp TAB, &kp R, &kp BSPC, &shift_caps, &blt NUM_NAV SPACE, &mo NUM_NAV \
             )>;
         };
 
@@ -427,8 +416,8 @@
         };
 #endif
 
-        pipe_sign {
-            bindings = <&kp LS(NON_US_BACKSLASH)>;
+        backslash_pipe_sign {
+            bindings = <&kp NON_US_BACKSLASH>;
             key-positions = <LM0 LB0>;
             layers = <DEFAULT NUM_NAV>;
         };
@@ -465,8 +454,8 @@
             layers = <DEFAULT NUM_NAV>;
         };
 
-        backslash_sign {
-            bindings = <&kp NON_US_BACKSLASH>;
+        exclamation_mark {
+            bindings = <&kp EXCLAMATION>;
             key-positions = <RT3 RM3>;
             layers = <DEFAULT NUM_NAV>;
         };

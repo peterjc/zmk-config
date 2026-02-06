@@ -140,9 +140,10 @@ parse_config:
     combo_ng_on: {'align': 'bottom', 'offset': -0.02, 'slide': 0.5, 'key': 'かな', 'height': 15}
     combo_ng_off: {'align': 'bottom', 'offset': -0.02, 'slide': -0.5, 'key': 'ABC', 'height': 15}
     pipe_sign: {'align': 'right', 'key': '|'}
+    backslash_pipe_sign: {'align': 'right', 'key': '\|'}
     caret_sign: {'key': '^'}
-    exclamation_mark: {'align': 'left'}
-    forward_slash: {'align': 'left', 'key': '/'}
+    exclamation_mark: {'key': '!'}
+    forward_slash: {'align': 'left', 'key': '/?'}
     # Do not show slash and question-mark, just show slash:
     slash: {'key': '/', 'align': 'left'}
     backtick: {'key': '`'}
@@ -184,10 +185,8 @@ parse_config:
     '&kp M': {'t': 'mM', 'type': 'medium'}
     '&kp COMMA': {'t': ',<', 'type': 'medium-low'}
     '&comma_semi': {'t': ',;', 'type': 'medium-low'}
-    '&comma_semi_qmark': {'t': ',;?', 'type': 'medium-low'}
     '&kp DOT': {'t': '.>', 'type': 'medium-low'}
     '&dot_colon': {'t': '.:', 'type': 'medium-low'}
-    '&dot_colon_excl': {'t': '.:!', 'type': 'medium-low'}
     # not in Bird mappings:
     '&kp SLASH': {'t': '/?', 'type': 'low'}
     '&xquote': {'t': '''"', 'type': 'medium-low'}
