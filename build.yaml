@@ -56,10 +56,3 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: rpi_pico
     shield: bivvy16d_right
-  # Bivvy16D (split, NRF52480 Zero):
-  - board: nice_nano@2.0.0
-    shield: bivvy16d_left
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: nice_nano@2.0.0
-    shield: bivvy16d_right
