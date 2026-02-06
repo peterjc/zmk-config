@@ -470,13 +470,13 @@
 #ifndef LT0
         open_curly {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <LB0 LM1>;
+            key-positions = <LM0 LM1>;
             layers = <DEFAULT NUM_NAV>;
         };
 
         close_curly {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <RB0 RM1>;
+            key-positions = <RM0 RM1>;
             layers = <DEFAULT NUM_NAV>;
         };
 #else
@@ -494,6 +494,19 @@
 #endif
 
         // 2-key horizontal combos for () with shift for <>
+#ifndef LT0
+        open_bracket_less_than {
+            bindings = <&open_par_lt>;
+            key-positions = <LM1 LB0>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        close_bracket_greater_than {
+            bindings = <&close_par_gt>;
+            key-positions = <RM1 RB0>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+#else
         open_bracket_less_than {
             bindings = <&open_par_lt>;
             key-positions = <LM0 LM1>;
@@ -505,6 +518,7 @@
             key-positions = <RM0 RM1>;
             layers = <DEFAULT NUM_NAV>;
         };
+#endif
 
         // 2-key horizontal combos for [] with shifted form {}
         open_square_curly {
