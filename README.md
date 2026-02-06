@@ -20,14 +20,10 @@ I wanted to be able to use this on my laptop too - achieved with [custom Karabin
 rules](https://codeberg.org/peterjc/kana-chording-ke/src/branch/main/hands-down-on-jis-macbook)
 (see this [blog post](https://blastedbio.blogspot.com/2025/05/what-have-you-done-to-your-keyboard.html)).
 
-For the dot and comma keys *only* this uses "linger keys" or "auto-shift", shown in the
-keymap images with three symbols for short tap, long tap, and shift+tap (giving
-dot, colon, exclamation mark, and comma, semi-colon, and question mark).
-This is part of my adaptions for even fewer keys (see below).
-
 Most of the combos are for symbols which on a traditional layout are normally typed with shift.
-The brackets are an exception where the keymap images with two symbols indicate a plain combo,
-or with shift. This combines `[{` and `]}` as normal, but `(<` and `)>` is atypical.
+The brackets and other inner column combos are an exception where the keymap images with
+two symbols indicate a plain combo, or with shift. Mostly these are the normal pairing
+like `/?`, `[{` and `]}`, but `(<` and `)>` are atypical.
 
 The second layer is for typing in Japanese using Naginata Style (薙刀式) (see
 [blog post](https://astrobeano.blogspot.com/2025/08/naginata-style-for-typing-in-japanese.html))
@@ -107,9 +103,8 @@ inner column, and two thumb keys. This is used by the keyboards like the
 [Visorbearer](https://github.com/carrefinho/visorbearer).
 
 For this I drop my `X` and `/` (slash) keys. Note the `X` combo bottom left,
-`/` combo on the remaining right inner column keys, and `?` on shift on the
-right inner column. This allows `../` with a similar motion of the right
-index finger (tap, tap, combo).
+`/` combo on the remaining right inner column keys. This allows `../` with a
+similar motion of the right index finger (tap, tap, combo).
 
 For the Naginata layer this just means dropping the pair of cursor keys,
 which are redundant with a navigation layer.
