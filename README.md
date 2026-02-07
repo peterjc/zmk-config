@@ -44,9 +44,10 @@ an extra inner column), plus three thumb keys.
 
 ![Keymap Image](keymap-drawer/hesse.svg)
 
-In this keymap image the base layer keys and space are coloured by usage frequencies (orange/pink
-for highest use - mainly home keys, down through pink, purples, to a dark blue for low like the
-letters demoted to combos: Q, Z, and V).
+In this keymap image the base layer keys and space are coloured by usage frequencies:
+orange/pink for highest use - mainly home keys, down through pink, purples,
+to a dark blue for low like the letters demoted to combos: Q, Z, and V (and X
+for even smaller keyboards - see below).
 
 ### Gamma Omega TC36K
 
