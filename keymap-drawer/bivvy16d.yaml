@@ -6,7 +6,7 @@ layers:
   - {t: gG, type: medium}
   - {t: mM, type: medium}
   - {t: kK, type: low}
-  - {t: '.:!', type: medium-low}
+  - {t: '.:', type: medium-low}
   - ⌫
   - {t: '''"', type: medium-low}
   - {t: -_, type: medium-low}
@@ -16,7 +16,7 @@ layers:
   - {t: tT, type: high}
   - {t: hH, type: high}
   - {t: jJ, type: low}
-  - {t: ',;?', type: medium-low}
+  - {t: ',;', type: medium-low}
   - {t: aA, type: high}
   - {t: eE, type: high}
   - {t: iI, type: high}
@@ -216,11 +216,11 @@ combos:
   k: '%'
   l: [HD Promethium, Num + Nav]
 - p: [4, 14]
-  k: '|'
+  k: \|
   l: [HD Promethium, Num + Nav]
   a: right
 - p: [5, 15]
-  k: /
+  k: /?
   l: [HD Promethium, Num + Nav]
   a: left
 - p: [6, 5]
@@ -233,21 +233,21 @@ combos:
   k: '#'
   l: [HD Promethium, Num + Nav]
 - p: [8, 18]
-  k: \
+  k: '!'
   l: [HD Promethium, Num + Nav]
 - p: [9, 19]
   k: '~'
   l: [HD Promethium, Num + Nav]
-- p: [14, 13]
+- p: [4, 13]
   k: '{'
   l: [HD Promethium, Num + Nav]
-- p: [15, 16]
+- p: [5, 16]
   k: '}'
   l: [HD Promethium, Num + Nav]
-- p: [4, 13]
+- p: [13, 14]
   k: (<
   l: [HD Promethium, Num + Nav]
-- p: [5, 16]
+- p: [16, 15]
   k: )>
   l: [HD Promethium, Num + Nav]
 - p: [14, 23]
