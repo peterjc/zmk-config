@@ -85,3 +85,55 @@ LH0 and RH0 are keys 40 and 41. */
     k32  k33
 
 #include "3x5_3.dtsi"
+#include <dt-bindings/led/led.h>
+
+&pinctrl {
+    pio0_spi0_default: pio0_spi0_default {
+        group1 {
+            pinmux = <PIO0_P0>;
+        };
+    };
+};
+
+&pio0 {
+    status = "okay";
+
+    pio0_spi0: pio0_spi0 {
+        pinctrl-0 = <&pio0_spi0_default>;
+        pinctrl-names = "default";
+
+        compatible = "raspberrypi,pico-spi-pio";
+        #address-cells = <1>;
+        #size-cells = <0>;
+        clocks = <&system_clk>;
+        clock-frequency = <4000000>;
+
+        /* GP25 is a pad on the back of the RP2040-Zero that this keyboard isn't using */
+        /* GP16 is the WS2812 smart RGB LED on the front of the Wareshare RP2040-Zero */
+        clk-gpios = <&gpio0 25 GPIO_ACTIVE_HIGH>; /* Must be defined. Select a pin that is not used elsewhere. */
+        mosi-gpios = <&gpio0 16 GPIO_ACTIVE_HIGH>; /* Data In pin. */
+        miso-gpios = <&pro_micro 16 GPIO_ACTIVE_HIGH>; /* Must be defined. Re-using the DI pin is OK for WS2812. */
+
+        led_strip: ws2812@0 {
+            compatible = "worldsemi,ws2812-spi";
+
+            /* SPI */
+            reg = <0>; /* ignored, but necessary for SPI bindings */
+            spi-max-frequency = <4000000>;
+
+            /* WS2812 */
+            chain-length = <1>; /* number of LEDs */
+            spi-one-frame = <0x70>;
+            spi-zero-frame = <0x40>;
+            color-mapping = <LED_COLOR_ID_GREEN
+                             LED_COLOR_ID_RED
+                             LED_COLOR_ID_BLUE>;
+        };
+    };
+};
+
+/ {
+    chosen {
+        zmk,underglow = &led_strip;
+    };
+};
