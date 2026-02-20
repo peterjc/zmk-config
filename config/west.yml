@@ -25,5 +25,8 @@ manifest:
     - name: zmk-naginata
       remote: peterjc
       revision: tap-q-escape
+    - name: zmk-smart-rgbled-widget
+      url: https://github.com/awkannan/zmk-smart-rgbled-widget
+      revision: main
   self:
     path: config
