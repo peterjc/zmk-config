@@ -85,3 +85,8 @@ LH0 and RH0 are keys 40 and 41. */
     k32  k33
 
 #include "3x5_3.dtsi"
+
+# Now the smart RGB (here rather than an overlay)...
+CONFIG_ZMK_RGB_UNDERGLOW=y
+CONFIG_SMART_RGBLED_WIDGET=y
+CONFIG_RGBLED_WIDGET_SHOW_LAYER_COLORS=y
