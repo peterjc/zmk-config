@@ -192,7 +192,6 @@ parse_config:
     '&xquote': {'t': '''"', 'type': 'medium-low'}
     '&kp MINUS': {'t': '-_', 'type': 'medium-low'}
     '&kp EQUAL': {'t': '=+', 'type': 'low'}
-    '&plus_equal': {'t': '+=', 'type': 'low'}
     '&kp SPACE': {'t': '⎵', 'type': 'high'}
     '&blt NUM_NAV SPACE': {'t': '⎵', 'h': 'Num+Nav', 'type': 'high'}
     # And again for auto-shift:
