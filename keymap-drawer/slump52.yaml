@@ -11,7 +11,7 @@ layers:
   - ⌫
   - {t: '''"', type: medium-low}
   - {t: -_, type: medium-low}
-  - {t: +=, type: low}
+  - {t: =+, type: low}
   - '*'
   - '7'
   - '8'
