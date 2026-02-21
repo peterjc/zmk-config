@@ -38,13 +38,13 @@ include:
     shield: hesse
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-  # Acid (split):
-  - board: xiao_ble//zmk
-    shield: acid_left
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: xiao_ble//zmk
-    shield: acid_right
+  # # Acid (split):
+  # - board: xiao_ble//zmk
+  #   shield: acid_left
+  #   snippet: studio-rpc-usb-uart
+  #   cmake-args: -DCONFIG_ZMK_STUDIO=y
+  # - board: xiao_ble//zmk
+  #   shield: acid_right
   # Bivvy16D (split, RP2040-Zero):
   - board: rpi_pico//zmk
     shield: bivvy16d_left
