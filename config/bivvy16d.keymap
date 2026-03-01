@@ -105,7 +105,7 @@ LH0 and RH0 are keys 40 and 41. */
         compatible = "raspberrypi,pico-spi-pio";
         #address-cells = <1>;
         #size-cells = <0>;
-        clocks = <&system_clk>;
+        clocks = <&clocks RPI_PICO_CLKID_CLK_SYS>;
         clock-frequency = <4000000>;
 
         /* GP25 is a pad on the back of the RP2040-Zero that this keyboard isn't using */

@@ -120,7 +120,7 @@ Same, just without LH2 and RH2 and the remaining four thumb keys being 28, 29, 3
         compatible = "raspberrypi,pico-spi-pio";
         #address-cells = <1>;
         #size-cells = <0>;
-        clocks = <&system_clk>;
+        clocks = <&clocks RPI_PICO_CLKID_CLK_SYS>;
         clock-frequency = <4000000>;
 
         /* GP25 is a pad on the back of the RP2040-Zero that this keyboard isn't using */
