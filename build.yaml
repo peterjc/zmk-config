@@ -19,36 +19,36 @@
 #
 include:
   # Gamma Omega TC36K:
-  - board: rpi_pico//zmk
+  - board: rpi_pico
     shield: tc36k
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   # Slump52:
-  - board: rpi_pico//zmk
+  - board: rpi_pico
     shield: slump52
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   # Bivouac34 (RP2040-Zero):
-  - board: rpi_pico//zmk
+  - board: rpi_pico
     shield: bivouac34
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   # Gamma Omega Hesse
-  - board: nice_nano@2.0.0//zmk
+  - board: nice_nano_v2
     shield: hesse
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   # # Acid (split):
-  # - board: xiao_ble//zmk
+  # - board: xiao_ble
   #   shield: acid_left
   #   snippet: studio-rpc-usb-uart
   #   cmake-args: -DCONFIG_ZMK_STUDIO=y
-  # - board: xiao_ble//zmk
+  # - board: xiao_ble
   #   shield: acid_right
   # Bivvy16D (split, RP2040-Zero):
-  - board: rpi_pico//zmk
+  - board: rpi_pico
     shield: bivvy16d_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: rpi_pico//zmk
+  - board: rpi_pico
     shield: bivvy16d_right

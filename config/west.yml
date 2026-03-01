@@ -1,7 +1,7 @@
 manifest:
   defaults:
-    # This is currently ZMK pre-0.4, using Zephyr 4.1
-    revision: main
+    # Current stable release is ZMK 0.3
+    revision: v0.3
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
@@ -19,7 +19,7 @@ manifest:
       import: app/west.yml
     - name: zmk-keyboard-graph-theory
       remote: peterjc
-      revision: main
+      revision: v0.3
     - name: zmk-helpers
       remote: urob
     - name: zmk-naginata
