@@ -11,8 +11,6 @@ manifest:
       url-base: https://github.com/peterjc
     - name: urob
       url-base: https://github.com/urob
-    - name: peterjc
-      url-base: https://github.com/peterjc
   projects:
     - name: zmk
       remote: zmkfirmware
