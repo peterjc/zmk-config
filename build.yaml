@@ -18,12 +18,12 @@
 #     artifact-name: corne_left_with_studio
 #
 include:
-  # Gamma Omega TC36K:
+  # Gamma Omega TC36K (RP2040 Pico):
   - board: rpi_pico
     shield: tc36k
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-  # Slump52:
+  # Slump52 (RP2040 Pico):
   - board: rpi_pico
     shield: slump52
     snippet: studio-rpc-usb-uart
@@ -33,18 +33,18 @@ include:
     shield: bivouac34
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-  # Gamma Omega Hesse
+  # Gamma Omega Hesse (nRF52840):
   - board: nice_nano_v2
     shield: hesse
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-  # # Acid (split):
-  # - board: xiao_ble
-  #   shield: acid_left
-  #   snippet: studio-rpc-usb-uart
-  #   cmake-args: -DCONFIG_ZMK_STUDIO=y
-  # - board: xiao_ble
-  #   shield: acid_right
+  # Acid (split, Xiao nRF52840):
+  - board: seeeduino_xiao_ble
+    shield: acid_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: seeeduino_xiao_ble
+    shield: acid_right
   # Bivvy16D (split, RP2040-Zero):
   - board: rpi_pico
     shield: bivvy16d_left
