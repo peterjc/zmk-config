@@ -197,7 +197,78 @@ parse_config:
     '&kp EQUAL': {'t': '=+', 'type': 'low'}
     '&kp SPACE': {'t': '⎵', 'type': 'high'}
     '&blt NUM_NAV SPACE': {'t': '⎵', 'h': 'Num+Nav', 'type': 'high'}
-    # And again for auto-shift:
+    # And again for D5 left:
+    '&D5_left_ktap Q': {'t': 'Q', 'type': 'low'}
+    '&D5_left_ktap W': {'t': 'W', 'type': 'medium'}
+    '&D5_left_ktap E': {'t': 'E', 'type': 'high'}
+    '&D5_left_ktap R': {'t': 'R', 'type': 'high'}
+    '&D5_left_ktap T': {'t': 'T', 'type': 'high'}
+    '&D5_left_ktap Y': {'t': 'Y', 'type': 'medium'}
+    '&D5_left_ktap U': {'t': 'U', 'type': 'medium-high'}
+    '&D5_left_ktap I': {'t': 'I', 'type': 'high'}
+    '&D5_left_ktap O': {'t': 'O', 'type': 'high'}
+    '&D5_left_ktap P': {'t': 'P', 'type': 'medium-low'}
+    '&D5_left_ktap A': {'t': 'A', 'type': 'high'}
+    '&D5_left_ktap S': {'t': 'S', 'type': 'high'}
+    '&D5_left_ktap D': {'t': 'D', 'type': 'medium-high'}
+    '&D5_left_ktap F': {'t': 'F', 'type': 'medium'}
+    '&D5_left_ktap G': {'t': 'G', 'type': 'medium'}
+    '&D5_left_ktap H': {'t': 'H', 'type': 'high'}
+    '&D5_left_ktap J': {'t': 'J', 'type': 'low'}
+    '&D5_left_ktap K': {'t': 'K', 'type': 'low'}
+    '&D5_left_ktap L': {'t': 'L', 'type': 'medium-high'}
+    '&D5_left_ktap Z': {'t': 'Z', 'type': 'low'}
+    '&D5_left_ktap X': {'t': 'X', 'type': 'low'}
+    '&D5_left_ktap C': {'t': 'C', 'type': 'medium'}
+    '&D5_left_ktap V': {'t': 'V', 'type': 'low'}
+    '&D5_left_ktap B': {'t': 'B', 'type': 'medium-low'}
+    '&D5_left_ktap N': {'t': 'N', 'type': 'high'}
+    '&D5_left_ktap M': {'t': 'M', 'type': 'medium'}
+    # And again for D5 right:
+    '&D5_right_ktap Q': {'t': 'Q', 'type': 'low'}
+    '&D5_right_ktap W': {'t': 'W', 'type': 'medium'}
+    '&D5_right_ktap E': {'t': 'E', 'type': 'high'}
+    '&D5_right_ktap R': {'t': 'R', 'type': 'high'}
+    '&D5_right_ktap T': {'t': 'T', 'type': 'high'}
+    '&D5_right_ktap Y': {'t': 'Y', 'type': 'medium'}
+    '&D5_right_ktap U': {'t': 'U', 'type': 'medium-high'}
+    '&D5_right_ktap I': {'t': 'I', 'type': 'high'}
+    '&D5_right_ktap O': {'t': 'O', 'type': 'high'}
+    '&D5_right_ktap P': {'t': 'P', 'type': 'medium-low'}
+    '&D5_right_ktap A': {'t': 'A', 'type': 'high'}
+    '&D5_right_ktap S': {'t': 'S', 'type': 'high'}
+    '&D5_right_ktap D': {'t': 'D', 'type': 'medium-high'}
+    '&D5_right_ktap F': {'t': 'F', 'type': 'medium'}
+    '&D5_right_ktap G': {'t': 'G', 'type': 'medium'}
+    '&D5_right_ktap H': {'t': 'H', 'type': 'high'}
+    '&D5_right_ktap J': {'t': 'J', 'type': 'low'}
+    '&D5_right_ktap K': {'t': 'K', 'type': 'low'}
+    '&D5_right_ktap L': {'t': 'L', 'type': 'medium-high'}
+    '&D5_right_ktap Z': {'t': 'Z', 'type': 'low'}
+    '&D5_right_ktap X': {'t': 'X', 'type': 'low'}
+    '&D5_right_ktap C': {'t': 'C', 'type': 'medium'}
+    '&D5_right_ktap V': {'t': 'V', 'type': 'low'}
+    '&D5_right_ktap B': {'t': 'B', 'type': 'medium-low'}
+    '&D5_right_ktap N': {'t': 'N', 'type': 'high'}
+    '&D5_right_ktap M': {'t': 'M', 'type': 'medium'}
+    # And the D5 combos
+    '&LK2(E,C)': {'t': 'EC'}
+    '&LK2(E,S)': {'t': 'ES'}
+    '&LK2(K,T)': {'t': 'KT'}
+    '&LK2(D,T)': {'t': 'DT'}
+    '&LK2(W,R)': {'t': 'WR'}
+    '&LK2(R,M)': {'t': 'RM'}
+    '&LK2(R,V)': {'t': 'RV'}
+    '&LK2(U,I)': {'t': 'UI'}
+    '&RK2(B,J)': {'t': 'BJ'}
+    '&RK2(B,L)': {'t': 'BL'}
+    '&RK2(H,L)': {'t': 'HL'}
+    '&RK2(N,F)': {'t': 'NF'}
+    '&RK2(N,P)': {'t': 'NP'}
+    '&RK2(E,G)': {'t': 'EG'}
+    '&RK2(E,S)': {'t': 'ES'}
+    '&RK2(O,A)': {'t': 'OA'}
+     # And again for auto-shift:
     'AS(Q)': {'t': 'qQ', 'type': 'low'}
     'AS(W)': {'t': 'wW', 'type': 'medium'}
     'AS(E)': {'t': 'eE', 'type': 'high'}
