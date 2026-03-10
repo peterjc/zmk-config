@@ -39,6 +39,8 @@
 #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 #define LK(keycode) &D5_left_ktap keycode
 #define RK(keycode) &D5_right_ktap keycode
+#define LK2(keycode1,keycode2) &D5_left2_ktap keycode1 keycode2
+#define RK2(keycode1,keycode2) &D5_right2_ktap keycode1 keycode2
 
 / {
     macros {
@@ -107,14 +109,14 @@
         };
         // Double key-press macros for D5 with sticky layer change
         D5_left2_ktap: D5_left_two_key_tap {
-            compatible = "zmk,behavior-macro-one-param";
+            compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
             display-name = "D5 Left 2 Key Taps";
             bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, < &sl D5_LEFT>;
             tap-ms = <30>;
         };
         D5_right2_ktap: D5_right_two_key_tap {
-            compatible = "zmk,behavior-macro-one-param";
+            compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
             display-name = "D5 Right 2 Key Taps";
             bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&sl D5_RIGHT>;
