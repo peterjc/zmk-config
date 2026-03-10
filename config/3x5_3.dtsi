@@ -366,6 +366,7 @@
         bksp_combo {
             bindings = <&kp BKSP>;
             key-positions = <RT1 RT2>;
+            layers = <DEFAULT NAGINATA NUM_NAV>;
             timeout-ms = <75>;
         };
 
@@ -637,13 +638,13 @@
         };
 
         // D5 left hand horizontal combos:
-        combo_d5_left_delete {
+        combo_d5_left_escape {
             bindings = <&kp ESCAPE>;
             key-positions = <LT2 LT3>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
         combo_d5_left_backspace {
-            bindings = <&kp BKSP>;
+            bindings = <&kp BSPC>;
             key-positions = <LT1 LT2>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
@@ -668,12 +669,12 @@
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
         combo_d5_left_tab {
-            bindings = <LK(TAB)>;
+            bindings = <&kp TAB>;
             key-positions = <LB2 LB3>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
         combo_d5_left_ent {
-            bindings = <LK(ENTER)>;
+            bindings = <&kp ENTER>;
             key-positions = <LB1 LB2>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
@@ -683,19 +684,19 @@
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
         combo_d5_left_ui {
-            bindings = <LK2(U, I)>;
+            bindings = <LK2(U,I)>;
             key-positions = <LH0 LH1>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
 
         // D5 right hand horizontal combos:
         combo_d5_right_del {
-            bindings = <&kp DELETE>;
+            bindings = <&kp DEL>;
             key-positions = <RT3 RT2>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
         combo_d5_right_backspace {
-            bindings = <&kp BKSP>;
+            bindings = <&kp BSPC>;
             key-positions = <RT2 RT1>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
@@ -720,7 +721,7 @@
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
         combo_d5_right_tab {
-            bindings = <RK(TAB)>;
+            bindings = <&kp TAB>;
             key-positions = <RB3 RB2>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
@@ -735,45 +736,82 @@
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
         combo_d5_right_oa {
-            bindings = <LK2(O, A)>;
+            bindings = <RK2(O,A)>;
             key-positions = <RH0 RH1>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
 
         // D5 left hand vertical combos:
         combo_d5_left_ec {
-            bindings = <RK2(E,C)>;
+            bindings = <LK2(E,C)>;
             key-positions = <LT3 LM3>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
         combo_d5_left_es {
-            bindings = <RK2(E,S)>;
+            bindings = <LK2(E,S)>;
             key-positions = <LM3 LB3>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
         combo_d5_left_kt {
-            bindings = <RK2(K,T)>;
+            bindings = <LK2(K,T)>;
             key-positions = <LT2 LM2>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
         combo_d5_left_dt {
-            bindings = <RK2(D,T)>;
+            bindings = <LK2(D,T)>;
             key-positions = <LM2 LB2>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
         combo_d5_left_wr {
-            bindings = <RK2(W,R)>;
+            bindings = <LK2(W,R)>;
             key-positions = <LT1 LM1>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
         combo_d5_left_rm {
-            bindings = <RK2(R,M)>;
+            bindings = <LK2(R,M)>;
             key-positions = <LM1 LB1>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
         combo_d5_left_rv {
-            bindings = <RK2(R,V)>;
+            bindings = <LK2(R,V)>;
             key-positions = <LM0 LB0>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+
+        // D5 right hand vertical combos:
+        combo_d5_right_eg {
+            bindings = <RK2(E,G)>;
+            key-positions = <RT3 RM3>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        combo_d5_right_es {
+            bindings = <RK2(E,S)>;
+            key-positions = <RM3 RB3>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        combo_d5_right_nf {
+            bindings = <RK2(N,F)>;
+            key-positions = <RT2 RM2>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        combo_d5_right_np {
+            bindings = <RK2(N,P)>;
+            key-positions = <RM2 RB2>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        combo_d5_right_bl {
+            bindings = <RK2(B,L)>;
+            key-positions = <RT1 RM1>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        combo_d5_right_hl {
+            bindings = <RK2(H,L)>;
+            key-positions = <RM1 RB1>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        combo_d5_right_bj {
+            bindings = <RK2(B,J)>;
+            key-positions = <RM0 RB0>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
 
