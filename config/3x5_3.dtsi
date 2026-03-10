@@ -1,6 +1,8 @@
 // This file is my personal keymap, a modified version of the inverted Hands
 // Down Promethium layout, with a numbers/navigation layer, symbols on
 // chords/combos, and a Naginata Style layer for typing in Japanese.
+// And as a bonus, a simplified version of Strawberry Turtle's D5 layout
+// (none of their layers).
 //
 // Tested on macOS. Symbols assume keyboard is set in the OS as ISO, and used
 // with the British locale (e.g. double-quote versus at sign, pipe, etc).
@@ -636,7 +638,7 @@
 
         // D5 left hand horizontal combos:
         combo_d5_left_delete {
-            bindings = <&kp DELETE>;
+            bindings = <&kp ESCAPE>;
             key-positions = <LT2 LT3>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
@@ -665,14 +667,13 @@
             key-positions = <LM1 LM3>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
-        // my addition:
-        combo_d5_left_period {
-            bindings = <LK(PERIOD)>;
+        combo_d5_left_tab {
+            bindings = <LK(TAB)>;
             key-positions = <LB2 LB3>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
-        combo_d5_left_tab {
-            bindings = <LK(TAB)>;
+        combo_d5_left_ent {
+            bindings = <LK(ENTER)>;
             key-positions = <LB1 LB2>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
@@ -683,13 +684,13 @@
         };
         combo_d5_left_ui {
             bindings = <LK2(U, I)>;
-            key-positions = <LH1 LH2>;
+            key-positions = <LH0 LH1>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
 
         // D5 right hand horizontal combos:
-        combo_d5_right_escape {
-            bindings = <&kp ESCAPE>;
+        combo_d5_right_del {
+            bindings = <&kp DELETE>;
             key-positions = <RT3 RT2>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
@@ -718,9 +719,8 @@
             key-positions = <RM1 RM3>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
-        // my addition:
-        combo_d5_right_comma {
-            bindings = <RK(COMMA)>;
+        combo_d5_right_tab {
+            bindings = <RK(TAB)>;
             key-positions = <RB3 RB2>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
@@ -736,7 +736,7 @@
         };
         combo_d5_right_oa {
             bindings = <LK2(O, A)>;
-            key-positions = <RH1 RH2>;
+            key-positions = <RH0 RH1>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
 
@@ -751,7 +751,31 @@
             key-positions = <LM3 LB3>;
             layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
         };
-
+        combo_d5_left_kt {
+            bindings = <RK2(K,T)>;
+            key-positions = <LT2 LM2>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        combo_d5_left_dt {
+            bindings = <RK2(D,T)>;
+            key-positions = <LM2 LB2>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        combo_d5_left_wr {
+            bindings = <RK2(W,R)>;
+            key-positions = <LT1 LM1>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        combo_d5_left_rm {
+            bindings = <RK2(R,M)>;
+            key-positions = <LM1 LB1>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
+        combo_d5_left_rv {
+            bindings = <RK2(R,V)>;
+            key-positions = <LM0 LB0>;
+            layers = <DOUBLE5 D5_LEFT D5_RIGHT>;
+        };
 
     };
 };
