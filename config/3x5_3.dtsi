@@ -231,7 +231,7 @@
                 &kp ESCAPE, LK(C), LK(K), LK(W), LK(Q),        RK(Z), RK(B), RK(F), RK(G), &kp BSPC, \
                 &kp SPACE,  LK(E), LK(T), LK(R), LK(Y),        RK(Y), RK(L), RK(N), RK(E), &kp SPACE, \
                 &kp TAB,    LK(S), LK(D), LK(M), LK(V),        RK(J), RK(H), RK(P), RK(S), &kp ENTER, \
-                                   LK(U), LK(I), &kp BSPC, &kp RSHFT, RK(A), RK(O) \
+                               &kp LSHFT, LK(U), LK(I),        RK(A), RK(O), &mo NUM_NAV \
             )>;
         };
         double5_left_layer {
