@@ -31,7 +31,7 @@ layers:
   - {t: wW, type: medium}
   - {t: rR, type: high}
   - ⌫
-  - ⇧⇪
+  - ⇧
   - {t: ⎵, h: Num+Nav, type: high}
   Naginata:
   - {t: ⎋, h: Small-kana}

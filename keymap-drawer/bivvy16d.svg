@@ -298,7 +298,7 @@ text.right {
 </g>
 <g transform="translate(429, 294) rotate(-37.0)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⇧⇪</text>
+<text x="0" y="0" class="key tap">⇧</text>
 </g>
 <g class="combo combopos-0">
 <path d="M349,12 h-297 a6.0,6.0 0 0 0 -6.0,6.0 v19" class="combo"/>
