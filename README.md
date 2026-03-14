@@ -27,8 +27,10 @@ like `/?`, `[{` and `]}`, but `(<` and `)>` are atypical.
 
 The second layer is for typing in Japanese using Naginata Style (薙刀式) (see
 [blog post](https://astrobeano.blogspot.com/2025/08/naginata-style-for-typing-in-japanese.html))
-using the [ZMK Naginata module](https://github.com/eswai/zmk-naginata). I have
-made minor changes so that Qwerty `Q` is now Escape on tap, small on hold, and
+using the [ZMK Naginata module](https://github.com/eswai/zmk-naginata). This is
+currently at v17 ([four rarer characters swapped compared to v16, ぬ with め top left,
+and む with ね on the bottom row](https://oookaworks.seesaa.net/article/519707171.html)).
+I made minor changes so that Qwerty `Q` is now Escape on tap, small on hold, and
 added shift-space on a thumb for kanji selection without needing editing layers.
 Due to my brackets combos clashing with the default way to switch Japanese mode
 and the Naginata layer on and off, those are Qwerty `D`+`G` (labelled 'ABC' in
