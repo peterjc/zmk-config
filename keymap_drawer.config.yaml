@@ -226,9 +226,9 @@ parse_config:
     'AS(EQUAL)': {'t': '=+', 'type': 'low'}
     # These are the Naginata Style keys for typing in Japanese using kana:
     '&ng Q': {'t': '⎋', 'h': 'Small-kana'}
-    '&ng W': {'left': 'き', 'right': 'ぬ'}
+    '&ng W': {'left': 'き', 'right': 'め'}
     '&ng E': {'left': 'て', 'right': 'り'}
-    '&ng R': {'left': 'し', 'right': 'め'}
+    '&ng R': {'left': 'し', 'right': 'ね'}
     '&ng T': {'t': '←'}
     '&ng Y': {'t': '→'}
     '&ng U': {'left': '⌫', 'right': 'さ'}
@@ -249,10 +249,10 @@ parse_config:
     '&ng X': {'left': 'ひ'}
     '&ng C': {'left': 'は', 'right': 'を'}
     '&ng V': {'left': 'こ', 'right': '、', 'h': '半濁音'}
-    '&ng B': {'left': 'そ', 'right': 'む'}
+    '&ng B': {'left': 'そ', 'right': 'ぬ'}
     '&ng N': {'left': 'た', 'right': 'お'}
     '&ng M': {'left': 'な', 'right': '。', 'h': '半濁音'}
-    '&ng COMMA': {'left': 'ん', 'right': 'ね'}
+    '&ng COMMA': {'left': 'ん', 'right': 'む'}
     '&ng DOT': {'left': 'ら', 'right': 'わ'}
     '&ng SLASH': {'left': 'れ'}
     '&ng SPACE': {'t': '⎵', 'h': 'Kana-Shift', 'type': 'kshift'}
