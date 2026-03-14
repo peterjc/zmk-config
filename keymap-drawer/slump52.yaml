@@ -56,9 +56,9 @@ layers:
   Naginata:
   - {t: ⎋, h: Small-kana}
   - {t: ⎋, h: Small-kana}
-  - {left: き, right: ぬ}
+  - {left: き, right: め}
   - {left: て, right: り}
-  - {left: し, right: め}
+  - {left: し, right: ね}
   - {left: っ, right: ち}
   - {left: く, right: や}
   - {left: ⌫, right: さ}
@@ -73,7 +73,7 @@ layers:
   - {left: け, right: み}
   - {left: と, right: に}
   - {h: 濁音, left: か, right: ま}
-  - {left: そ, right: む}
+  - {left: そ, right: ぬ}
   - {left: た, right: お}
   - {h: 濁音, left: あ, right: の}
   - {left: い, right: も}
@@ -89,7 +89,7 @@ layers:
   - {t: ⏎, h: Kana-Shift, type: kshift}
   - {t: ⇧⎵, h: Num + Nav}
   - {h: 半濁音, left: な, right: 。}
-  - {left: ん, right: ね}
+  - {left: ん, right: む}
   - {left: ら, right: わ}
   - {left: ー, right: ふ}
   - '1'

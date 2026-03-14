@@ -516,7 +516,7 @@ text.right {
 <g transform="translate(145, 38) rotate(12.0)" class="key keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="-24" y="0" class="key left">き</text>
-<text x="24" y="0" class="key right">ぬ</text>
+<text x="24" y="0" class="key right">め</text>
 </g>
 <g transform="translate(203, 54) rotate(21.0)" class="key keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -526,7 +526,7 @@ text.right {
 <g transform="translate(256, 77) rotate(25.0)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="-24" y="0" class="key left">し</text>
-<text x="24" y="0" class="key right">め</text>
+<text x="24" y="0" class="key right">ね</text>
 </g>
 <g transform="translate(295, 126) rotate(25.0)" class="key keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -599,7 +599,7 @@ text.right {
 <g transform="translate(272, 177) rotate(25.0)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="-24" y="0" class="key left">そ</text>
-<text x="24" y="0" class="key right">む</text>
+<text x="24" y="0" class="key right">ぬ</text>
 </g>
 <g transform="translate(422, 177) rotate(-25.0)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -679,7 +679,7 @@ text.right {
 <g transform="translate(543, 157) rotate(-16.0)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="-24" y="0" class="key left">ん</text>
-<text x="24" y="0" class="key right">ね</text>
+<text x="24" y="0" class="key right">む</text>
 </g>
 <g transform="translate(604, 144) rotate(-7.0)" class="key keypos-36">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

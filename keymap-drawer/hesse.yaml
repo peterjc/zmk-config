@@ -39,9 +39,9 @@ layers:
   - Num + Nav
   Naginata:
   - {t: ⎋, h: Small-kana}
-  - {left: き, right: ぬ}
+  - {left: き, right: め}
   - {left: て, right: り}
-  - {left: し, right: め}
+  - {left: し, right: ね}
   - ←
   - →
   - {left: ⌫, right: さ}
@@ -62,10 +62,10 @@ layers:
   - {left: ひ}
   - {left: は, right: を}
   - {h: 半濁音, left: こ, right: 、}
-  - {left: そ, right: む}
+  - {left: そ, right: ぬ}
   - {left: た, right: お}
   - {h: 半濁音, left: な, right: 。}
-  - {left: ん, right: ね}
+  - {left: ん, right: む}
   - {left: ら, right: わ}
   - {left: れ}
   - ↹
