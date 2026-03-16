@@ -1,6 +1,6 @@
 /*                              42 KEY MATRIX / LAYOUT MAPPING
 
-Here I am treating the inner keys as lower down (LM0, LB0, RM0, and RB0), as drawn here:
+Here on most layers I am treating the inner keys as lower down (LM0, LB0, RM0, and RB0), as drawn here:
 
   ╭────────────────────┬────────────────────╮ ╭─────────────────────┬─────────────────────╮
   │  0   1   2   3     │      6   7   8   9 │ │ LT4 LT3 LT2 LT1     │     RT1 RT2 RT3 RT4 │
@@ -10,8 +10,8 @@ Here I am treating the inner keys as lower down (LM0, LB0, RM0, and RB0), as dra
   ╰───────────╮ 24  40 │ 41  25 ╭───────────╯ ╰───────────╮ LH1 LH0 │ RH0 RH1 ╭───────────╯
               ╰────────┴────────╯                         ╰─────────┴─────────╯
 
-However, in the default ZMK firmware however, they are treated as one row higher, with the
-tucked thumbs LH1 and RH1 too:
+However, in the default ZMK firmware (and the Naginata layer), they are treated as one row higher,
+with the tucked thumbs LH1 and RH1 too:
 
   ╭────────────────────┬────────────────────╮ ╭─────────────────────┬─────────────────────╮
   │  0   1   2   3   4 │  5   6   7   8   9 │ │ LT4 LT3 LT2 LT1 LM0 │ RM0 RT1 RT2 RT3 RT4 │
@@ -83,5 +83,23 @@ LH0 and RH0 are keys 40 and 41. */
     k20  k21  k22  k23  k31  k34  k26  k27  k28  k29  \
     &kp PG_DN &kp HOME &kp KP_ENTER &kp END &kp PG_UP &kp UP &kp LEFT &kp ENTER &kp RIGHT &kp DOWN  \
     k32  k33
+
+// This drops Qwerty B and N (k24 and k25), which in my Naginata where the
+// inner columns are vertically inverted are the reduntant left/right arrows.
+// Thumbs as above.
+#define NG_LAYER_FROM36( \
+    k00, k01, k02, k03, k04, k05, k06, k07, k08, k09, \
+    k10, k11, k12, k13, k14, k15, k16, k17, k18, k19, \
+    k20, k21, k22, k23, k24, k25, k26, k27, k28, k29, \
+              k30, k31, k32, k33, k34, k35            \
+) \
+    k00  k01  k02  k03  k04  k05  k06  k07  k08  k09  \
+    k10  k11  k12  k13  k14  k15  k16  k17  k18  k19  \
+    k20  k21  k22  k23  k31  k34  k26  k27  k28  k29  \
+    &kp PG_DN &kp HOME &kp KP_ENTER &kp END &kp PG_UP &kp UP &kp LEFT &kp ENTER &kp RIGHT &kp DOWN  \
+    k32  k33
+
+
+
 
 #include "3x5_3.dtsi"

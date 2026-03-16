@@ -1,6 +1,6 @@
 /*                              34 KEY MATRIX / LAYOUT MAPPING
 
-Here I am treating the inner keys as lower down (LM0, LB0, RM0, and RB0), as drawn here:
+Here for most layers I am treating the inner keys as lower down (LM0, LB0, RM0, and RB0), as drawn here:
 
   ╭────────────────────┬────────────────────╮ ╭─────────────────────┬─────────────────────╮
   │  0   1   2   3     │      6   7   8   9 │ │ LT4 LT3 LT2 LT1     │     RT1 RT2 RT3 RT4 │
@@ -9,7 +9,7 @@ Here I am treating the inner keys as lower down (LM0, LB0, RM0, and RB0), as dra
   ╰───────╮ 28  29  30 │ 31  32  33 ╭───────╯ ╰───────╮ LH2 LH1 LH0 │ RH0 RH1 RH2 ╭───────╯
           ╰────────────┴────────────╯                 ╰─────────────┴─────────────╯
 
-However, in the default ZMK firmware however, they are treated as one row higher (LT0, LM0, RT0, RM0):
+However, for the Naginata layer and in the default ZMK firmware, they are treated as one row higher (LT0, LM0, RT0, RM0):
 
   ╭────────────────────┬────────────────────╮ ╭─────────────────────┬─────────────────────╮
   │  0   1   2   3   4 │  5   6   7   8   9 │ │ LT4 LT3 LT2 LT1 LT0 │ RT0 RT1 RT2 RT3 RT4 │
@@ -88,6 +88,21 @@ Same, just without LH2 and RH2 and the remaining four thumb keys being 28, 29, 3
 ) \
     k00  k01  k02  k03  k14  k15  k06  k07  k08  k09  \
     k10  k11  k12  k13  k24  k25  k16  k17  k18  k19  \
+    k20  k21  k22  k23            k26  k27  k28  k29  \
+                   k31  k32  k33  k34
+//            k30  k31  k32  k33  k34  k35
+
+// This drops Qwerty B and N (k24 and k25), which in my Naginata where the
+// inner columns are vertically inverted are the reduntant left/right arrows.
+// Thumbs as above.
+#define NG_LAYER_FROM36( \
+    k00, k01, k02, k03, k04, k05, k06, k07, k08, k09, \
+    k10, k11, k12, k13, k14, k15, k16, k17, k18, k19, \
+    k20, k21, k22, k23, k24, k25, k26, k27, k28, k29, \
+              k30, k31, k32, k33, k34, k35            \
+) \
+    k00  k01  k02  k03  k04  k05  k06  k07  k08  k09  \
+    k10  k11  k12  k13  k14  k15  k16  k17  k18  k19  \
     k20  k21  k22  k23            k26  k27  k28  k29  \
                    k31  k32  k33  k34
 //            k30  k31  k32  k33  k34  k35
