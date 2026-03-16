@@ -59,8 +59,8 @@ layers:
   - {left: き, right: め}
   - {left: て, right: り}
   - {left: し, right: ね}
-  - {left: っ, right: ち}
-  - {left: く, right: や}
+  - {left: そ, right: ぬ}
+  - {left: た, right: お}
   - {left: ⌫, right: さ}
   - {left: る, right: よ}
   - {left: す, right: え}
@@ -73,8 +73,8 @@ layers:
   - {left: け, right: み}
   - {left: と, right: に}
   - {h: 濁音, left: か, right: ま}
-  - {left: そ, right: ぬ}
-  - {left: た, right: お}
+  - {left: っ, right: ち}
+  - {left: く, right: や}
   - {h: 濁音, left: あ, right: の}
   - {left: い, right: も}
   - {left: う, right: つ}

@@ -40,8 +40,8 @@ layers:
   - {left: き, right: め}
   - {left: て, right: り}
   - {left: し, right: ね}
-  - ←
-  - →
+  - {left: そ, right: ぬ}
+  - {left: た, right: お}
   - {left: ⌫, right: さ}
   - {left: る, right: よ}
   - {left: す, right: え}
@@ -60,8 +60,8 @@ layers:
   - {left: ひ}
   - {left: は, right: を}
   - {h: 半濁音, left: こ, right: 、}
-  - {left: そ, right: ぬ}
-  - {left: た, right: お}
+  - ←
+  - →
   - {h: 半濁音, left: な, right: 。}
   - {left: ん, right: む}
   - {left: ら, right: わ}
