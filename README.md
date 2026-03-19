@@ -151,6 +151,21 @@ the [Hummingbird](https://github.com/PJE66/hummingbird).
 This would mean dropping my `Escape` and `=`/`+` keys and all the combos on them.
 Right now that seems challenging. It would also break using the Naginata layout.
 
+
+## Split 33332+1 Layout with 30 keys
+
+By this I mean a layout where each hand gets columns of 3 keys for the pinky, ring,
+middle, and index fingers, and again only 2 keys for the index finger's inner column,
+but only one thumb keys. This is used by some of the [awesome Hummingbird inspired
+keyboards](https://github.com/jcmkk3/awesome-hummingbirds) - for example this is
+one of the layouts supported by the
+[Visorbearer](https://github.com/carrefinho/visorbearer).
+
+This would mean dropping backspace of the left thumb (leaving just the Naginata
+Style backspace on the index finger), and the dedicated shift on the right thumb.
+That seems possible...
+
+
 ## Slump layouts - Split 44332+2
 
 My 'slump' layout has a 30-key core with additional thumb keys, and one top corner
