@@ -33,7 +33,7 @@ layers:
   - {t: fF, type: medium}
   - {t: dD, type: medium-high}
   - {t: lL, type: medium-high}
-  - {t: rR, type: high}
+  - {t: rR, h: ⇧}
   - {t: ⎵, h: Num+Nav, type: high}
   - {t: uU, type: medium-high}
   - {t: oO, type: high}
@@ -150,7 +150,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - .
+  - {t: .>, type: medium-low}
   - {t: ▽, type: trans}
   - ⇧
   - {t: ▽, type: trans}
