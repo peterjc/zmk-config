@@ -1,4 +1,4 @@
-layout: {zmk_keyboard: bivvy16d}
+layout: {zmk_keyboard: goldilocks32, layout_name: physical_layout32}
 layers:
   HD Promethium:
   - ⎋
@@ -31,11 +31,6 @@ layers:
   - {t: oO, type: high}
   - {t: yY, type: medium}
   - {t: wW, type: medium}
-  - ⇟
-  - ↖
-  - KP ENTER
-  - ↘
-  - ⇞
   - ↑
   - ←
   - ⏎
@@ -74,11 +69,6 @@ layers:
   - {left: ん, right: む}
   - {left: ら, right: わ}
   - {left: れ}
-  - ⇟
-  - ↖
-  - KP ENTER
-  - ↘
-  - ⇞
   - ↑
   - ←
   - ⏎
@@ -121,11 +111,6 @@ layers:
   - 'VOL
 
     DOWN'
-  - ⇟
-  - ↖
-  - KP ENTER
-  - ↘
-  - ⇞
   - ↑
   - ←
   - ⏎

@@ -32,7 +32,7 @@ layers:
   - {t: yY, type: medium}
   - {t: wW, type: medium}
   - ↹
-  - {t: rR, type: high}
+  - {t: rR, h: ⇧}
   - ⌫
   - ⇧
   - {t: ⎵, h: Num+Nav, type: high}
@@ -97,7 +97,7 @@ layers:
   - 'VOL
 
     UP'
-  - .
+  - {t: .>, type: medium-low}
   - '7'
   - '8'
   - '9'
