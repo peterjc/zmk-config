@@ -108,28 +108,38 @@ For this I drop my `X` and `/` (slash) keys. Note the `X` combo bottom left,
 `/` combo on the remaining right inner column keys. This allows `../` with a
 similar motion of the right index finger (tap, tap, combo).
 
-For the Naginata layer this just means dropping the pair of cursor keys,
-which are redundant with a navigation layer.
+![Keymap image](keymap-drawer/bivouac34.svg)
+
+For the Naginata layer this means dropping the pair of cursor keys, which are
+redundant with a navigation layer - but the remaining inner column keys are
+vertically swapped to ensure the ya-combos are comfortable (see this
+[blog post](https://astrobeano.blogspot.com/2026/03/naginata-style-update.html)).
 
 ### Bivvy16D
 
 The ZMK keymap in file [bivvy16d.keymap](config/bivvy16D.keymap) uses the split
-33332+2 layout described here plus navigation and cursors on the two 5-way
-navigation buttons.
-
-![Keymap image](keymap-drawer/bivvy16d.svg)
+33332+2 layout described here (32 keys) plus navigation and cursors on the two
+5-way navigation buttons.
 
 The Bivvy16D has 14-key roll-over excluding the navigation buttons, 4-key roll
-over when they are included (per hand). This is much better than the Hesse
-mentioned above.
+over when they are included (per hand).
 
 ### Bivouac34
 
-The ZMK keymap in file [bivouac34.keymap](config/bivouac34.keymap) uses the same
-split 33332+2 layout described above (32 keys only). The keyboard also supports a
+The ZMK keymap in file [bivouac34.keymap](config/bivouac34.keymap) is the layout
+shown above, a split 33332+2 layout (32 keys only). The keyboard also supports a
 34 key 33332+3 layout (which I am not using).
 
 Like the Hesse (above), this has only 4-key roll-over.
+
+### Goldilocks32
+
+The ZMK keymap in file [goldilocks32.keymap](config/goldilocks32.keymap) uses the same
+split 33332+2 layout described above (32 keys) plus cursors and enter on the 5-way
+navigation button.
+
+The Goldilocks32 has 6-key roll-over excluding the navigation button, 4-key roll
+over when that is included.
 
 ## Split 23332+2 Layout with 30 keys
 
