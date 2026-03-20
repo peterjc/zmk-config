@@ -89,7 +89,7 @@ layers:
   - 'VOL
 
     UP'
-  - {t: .>, type: medium-low}
+  - .
   - '7'
   - '8'
   - '9'

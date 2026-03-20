@@ -150,7 +150,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - {t: .>, type: medium-low}
+  - .
   - {t: ▽, type: trans}
   - ⇧
   - {t: ▽, type: trans}

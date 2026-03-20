@@ -946,9 +946,9 @@ text.right {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">3</text>
 </g>
-<g transform="translate(28, 196)" class="key medium-low keypos-41">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key medium-low"/>
-<text x="0" y="0" class="key medium-low tap">.&gt;</text>
+<g transform="translate(28, 196)" class="key keypos-41">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">.</text>
 </g>
 <g transform="translate(300, 258) rotate(35.0)" class="key trans keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
