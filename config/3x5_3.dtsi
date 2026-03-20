@@ -236,10 +236,10 @@
             display-name = "Num + Nav";
             bindings = <LAYER_FROM36( \
                 &kp KP_DIVIDE,   &kp N1, &kp N2, &kp N3, &kp KP_EQUAL, &kp ESCAPE, &kp BSPC,     &kp UP,     &kp C_MUTE,    &kp C_PLAY_PAUSE, \
-                &kp KP_MULTIPLY, &kp N4, &kp N5, &kp N6, &kp KP_PLUS,  &kp PG_UP,  &kp LEFT,     &kp DOWN,   &kp RIGHT,     &kp C_VOL_UP, \
-                &kp DOT,         &kp N7, &kp N8, &kp N9, &kp KP_MINUS, &kp PG_DN,  &kp LA(LEFT), &kp RETURN, &kp LA(RIGHT), &kp C_VOL_DOWN, \
+                &kp KP_MULTIPLY, &kp N4, &kp N5, &kp N6, &kp KP_PLUS,  &kp PG_UP,  &kp LEFT,     &kp DOWN,   &kp RIGHT,     &kp C_VOLUME_UP, \
+                &kp DOT,         &kp N7, &kp N8, &kp N9, &kp KP_MINUS, &kp PG_DN,  &kp LA(LEFT), &kp RETURN, &kp LA(RIGHT), &kp C_VOLUME_DOWN, \
                                          &trans, &hpmt LSHFT N0, &trans, &trans, &trans, &trans \
-            )>;
+                )>;
         };
 
         // Empty layers for ZMK Studio:
