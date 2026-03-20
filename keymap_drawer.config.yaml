@@ -196,6 +196,7 @@ parse_config:
     '&kp EQUAL': {'t': '=+', 'type': 'low'}
     '&kp SPACE': {'t': '⎵', 'type': 'high'}
     '&blt NUM_NAV SPACE': {'t': '⎵', 'h': 'Num+Nav', 'type': 'high'}
+    '&space_R_nav': {'t': '⎵R', 'type': 'high'}
     # And again for auto-shift:
     'AS(Q)': {'t': 'qQ', 'type': 'low'}
     'AS(W)': {'t': 'wW', 'type': 'medium'}
