@@ -122,15 +122,6 @@ redundant with a navigation layer - but the remaining inner column keys are
 vertically swapped to ensure the ya-combos are comfortable (see this
 [blog post](https://astrobeano.blogspot.com/2026/03/naginata-style-update.html)).
 
-### Bivvy16D
-
-The ZMK keymap in file [bivvy16d.keymap](config/bivvy16D.keymap) uses the split
-33332+2 layout described here (32 keys) plus navigation and cursors on the two
-5-way navigation buttons.
-
-The Bivvy16D has 14-key roll-over excluding the navigation buttons, 4-key roll
-over when they are included (per hand).
-
 ### Bivouac34
 
 The ZMK keymap in file [bivouac34.keymap](config/bivouac34.keymap) is the layout
@@ -138,15 +129,6 @@ shown above, a split 33332+2 layout (32 keys only). The keyboard also supports a
 34 key 33332+3 layout (which I am not using).
 
 Like the Hesse (above), this has only 4-key roll-over.
-
-### Goldilocks32
-
-The ZMK keymap in file [goldilocks32.keymap](config/goldilocks32.keymap) uses the same
-split 33332+2 layout described above (32 keys) plus cursors and enter on the 5-way
-navigation button.
-
-The Goldilocks32 has 6-key roll-over excluding the navigation button, 4-key roll
-over when that is included.
 
 ## Split 23332+2 Layout with 30 keys
 
@@ -168,9 +150,30 @@ keyboards](https://github.com/jcmkk3/awesome-hummingbirds) - for example this is
 one of the layouts supported by the
 [Visorbearer](https://github.com/carrefinho/visorbearer).
 
-This would mean dropping backspace of the left thumb (leaving just the Naginata
-Style backspace on the index finger), and the dedicated shift on the right thumb.
-That seems possible...
+This means dropping backspace of the left thumb (leaving just the Naginata Style
+backspace on the index finger), and the dedicated shift on the right thumb (and
+holding the `R` left thumb for shift). Capital `R` is therefore on the left-thumb
+on the numbers and navigation layer.
+
+![Keymap image](keymap-drawer/bivvy16d.svg)
+
+### Bivvy16D
+
+The ZMK keymap in file [bivvy16d.keymap](config/bivvy16D.keymap) is the 30 key
+layout above, plus navigation and cursors on the two 5-way navigation buttons.
+
+The Bivvy16D has 14-key roll-over excluding the navigation buttons, 4-key roll
+over when they are included (per hand). It can be built like this with 30 keys,
+or with two keys per thumb for 32 keys.
+
+### Goldilocks32
+
+The ZMK keymap in file [goldilocks32.keymap](config/goldilocks32.keymap) uses this
+30 key layout, plus cursors and enter on the 5-way navigation button.
+
+The Goldilocks32 has 6-key roll-over excluding the navigation button, 4-key roll
+over when that is included. It can be built like this with 30 keys, or with two
+keys per thumb for 32 keys.
 
 
 ## Slump layouts - Split 44332+2
