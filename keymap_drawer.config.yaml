@@ -197,6 +197,7 @@ parse_config:
     '&kp SPACE': {'t': '⎵', 'type': 'high'}
     '&blt NUM_NAV SPACE': {'t': '⎵', 'h': 'Num+Nav', 'type': 'high'}
     '&bmt LSHFT R': {'t': 'rR', 'h': '⇧', 'type': 'high'}
+    '&kp RS(R)': {'t': 'R'}
     # And again for auto-shift:
     'AS(Q)': {'t': 'qQ', 'type': 'low'}
     'AS(W)': {'t': 'wW', 'type': 'medium'}
