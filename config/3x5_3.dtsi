@@ -223,13 +223,13 @@
         };
 
         // Empty layers for ZMK Studio:
-        extra3 {
-            status = "reserved";
-        };
         extra4 {
             status = "reserved";
         };
         extra5 {
+            status = "reserved";
+        };
+        extra6 {
             status = "reserved";
         };
     };
