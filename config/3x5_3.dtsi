@@ -251,7 +251,7 @@
                 &ng Q, &ng W, &ng E,   &ng R,     &ng B,    &ng N,     &ng U,                 &ng I,     &ng O,      &ng P, \
                 &ng A, &ng S, &ng D,   &ng F,     &ng G,    &ng H,     &ng J,                 &ng K,     &ng L,      &ng SEMI, \
                 &ng Z, &ng X, &ng C,   &ng V,     &ng T,    &ng Y,     &ng M,                 &ng COMMA, &ng DOT,    &ng SLASH, \
-                              &kp TAB, &ng ENTER, &kp BSPC, &ng SPACE, &lt NUM_NAV LS(SPACE), &mo NUM_NAV \
+                              &kp TAB, &ng SPACE, &kp BSPC, &ng ENTER, &lt NUM_NAV LS(SPACE), &mo NUM_NAV \
                 )>;
         };
 #else
@@ -262,7 +262,7 @@
                 &ng Q, &ng W, &ng E,   &ng R,     &ng B,    &ng N,     &ng U,                 &ng I,     &ng O,      &ng P, \
                 &ng A, &ng S, &ng D,   &ng F,     &ng G,    &ng H,     &ng J,                 &ng K,     &ng L,      &ng SEMI, \
                 &ng Z, &ng X, &ng C,   &ng V,     &ng T,    &ng Y,     &ng M,                 &ng COMMA, &ng DOT,    &ng SLASH, \
-                              &kp TAB, &ng ENTER, &kp BSPC, &ng SPACE, &lt NUM_NAV LS(SPACE), &mo NUM_NAV \
+                              &kp TAB, &ng SPACE, &kp BSPC, &ng ENTER, &lt NUM_NAV LS(SPACE), &mo NUM_NAV \
                 )>;
         };
 #endif
