@@ -36,6 +36,13 @@ and the Naginata layer on and off, those are Qwerty `D`+`G` (labelled 'ABC' in
 the image) and Qwerty `H`+`K` instead (labelled 'かな'). This layout uses a *lot*
 of chording, but these are not defined as ZMK combos, and so are not drawn here.
 
+The third and final layer is a combined numbers and navigation layer. The right
+hand has navigation keys including an inverted-tee set of cursors at the Qwerty
+JKIL position inspired by [Dreymar's Extend layer](https://dreymar.colemak.org/layers-extend.html).
+The left hand has a numberpad, with 123 at the top like a mobile phone (since
+in a traditionad keyboard 123 are about there).
+
+
 ## Split 3x5_3 aka 33333+3 Layout with 36 keys
 
 The QMK project uses the term `split_3x5_3` for one of their standard community
