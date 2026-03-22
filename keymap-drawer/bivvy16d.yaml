@@ -189,7 +189,7 @@ combos:
   k: ⌘
   l: [HD Promethium, Num + Nav]
 - p: [3, 2]
-  k: {t: vQ, type: low}
+  k: {t: qQ, type: low}
   l: [HD Promethium]
 - p: [7, 8]
   k: {t: zZ, type: low}
