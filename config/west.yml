@@ -20,6 +20,8 @@ manifest:
       revision: main
     - name: zmk-helpers
       remote: urob
+    - name: zmk-adaptive-key
+      remote: urob
     - name: zmk-naginata
       remote: peterjc
       revision: tap-q-escape

@@ -15,6 +15,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <behaviors/naginata.dtsi>
+#include "adaptive-keys.h"
 
 / {
   chosen {
@@ -175,9 +176,9 @@
         default_layer {
             display-name = "HD Promethium";
             bindings = <LAYER_FROM36( \
-                &kp ESCAPE, &kp P, &kp G,   &kp M,        &kp X,    &kp SLASH,   &kp BSPC,           &xquote, &kp MINUS, &kp EQUAL, \
-                &kp S,      &kp N, &kp T,   &kp H,        &kp K,    &dot_colon,  &kp A,              &kp E,   &kp I,     &kp C,  \
-                &kp B,      &kp F, &kp D,   &kp L,        &kp J,    &comma_semi, &kp U,              &kp O,   &kp Y,     &kp W,  \
+                &kp ESCAPE, &ak_P, &ak_G,   &ak_M,        &ak_X,    &kp SLASH,   &kp BSPC,           &xquote, &kp MINUS, &kp EQUAL, \
+                &ak_S,      &ak_N, &ak_T,   &ak_H,        &ak_K,    &dot_colon,  &ak_A,              &ak_E,   &ak_I,     &ak_C,  \
+                &ak_B,      &ak_F, &ak_D,   &ak_L,        &ak_J,    &comma_semi, &ak_U,              &ak_O,   &ak_Y,     &ak_W,  \
                                    &kp TAB, &bmt LSHFT R, &kp BSPC, &kp RSHFT,   &blt NUM_NAV SPACE, &mo NUM_NAV \
             )>;
         };
@@ -340,28 +341,28 @@
 
         // 2-key horizontal combos for rare letters
         q_combo {
-            bindings = <&kp Q>;
+            bindings = <&ak_Q>;
             key-positions = <LT1 LT2>;
             layers = <DEFAULT>;
             timeout-ms = <100>;
         };
 
         z_combo {
-            bindings = <&kp Z>;
+            bindings = <&ak_Z>;
             key-positions = <RT2 RT3>;
             layers = <DEFAULT>;
             timeout-ms = <75>;
         };
 
         v_combo {
-            bindings = <&kp V>;
+            bindings = <&ak_V>;
             key-positions = <LT2 LT3>;
             layers = <DEFAULT>;
             timeout-ms = <75>;
         };
 
         x_combo {
-            bindings = <&kp X>;
+            bindings = <&ak_X>;
             key-positions = <LB2 LB3>;
             layers = <DEFAULT>;
             timeout-ms = <75>;
