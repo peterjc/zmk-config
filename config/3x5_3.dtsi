@@ -86,7 +86,7 @@
 / {
     behaviors {
 
-         comma_space: comma_space {
+        comma_space: comma_space {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap &kp COMMA &kp SPACE>;
@@ -204,7 +204,7 @@
         comma_semi: comma_semi {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp SEMI>;
+            bindings = <&magic_comma_shift>, <&kp SEMI>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             // do NOT want to keep shift active, but anything else is fine:
             keep-mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
@@ -220,10 +220,10 @@
         default_layer {
             display-name = "HD Promethium";
             bindings = <LAYER_FROM36( \
-                &kp ESCAPE, &kp P, &kp G,   &kp M,        &kp X,    &kp SLASH,          &kp BSPC,           &xquote, &kp MINUS, &kp EQUAL, \
-                &kp S,      &kp N, &kp T,   &kp H,        &kp K,    &dot_colon,         &kp A,              &kp E,   &kp I,     &kp C,  \
-                &kp B,      &kp F, &kp D,   &kp L,        &kp J,    &magic_comma_shift, &kp U,              &kp O,   &kp Y,     &kp W,  \
-                                   &kp TAB, &bmt LSHFT R, &kp BSPC, &kp RSHFT,          &blt NUM_NAV SPACE, &mo NUM_NAV \
+                &kp ESCAPE, &kp P, &kp G,   &kp M,        &kp X,    &kp SLASH,   &kp BSPC,           &xquote, &kp MINUS, &kp EQUAL, \
+                &kp S,      &kp N, &kp T,   &kp H,        &kp K,    &dot_colon,  &kp A,              &kp E,   &kp I,     &kp C,  \
+                &kp B,      &kp F, &kp D,   &kp L,        &kp J,    &comma_semi, &kp U,              &kp O,   &kp Y,     &kp W,  \
+                                   &kp TAB, &bmt LSHFT R, &kp BSPC, &kp RSHFT,   &blt NUM_NAV SPACE, &mo NUM_NAV \
             )>;
         };
 
