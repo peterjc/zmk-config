@@ -141,7 +141,7 @@
             // (Staying with default limit of 32 definitions)
         };
 
-        hpmt_qt: hold_preferred_mod_tap_qt {
+        hpmt: hold_preferred_mod_tap_qt {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
@@ -149,15 +149,7 @@
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
         };
-        hpmt: hold_preferred_mod_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <300>;
-            bindings = <&kp>, <&kp>;
-        };
-
-        bmt_qt: balanced_mod_tap_qt {
+        bmt: balanced_mod_tap_qt {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
@@ -165,15 +157,7 @@
             quick-tap-ms = <250>;
             bindings = <&kp>, <&kp>;
         };
-        bmt: balanced_mod_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <300>;
-            bindings = <&kp>, <&kp>;
-        };
-
-        tpmt_qt: tap_preferred_mod_tap_qt {
+        tpmt: tap_preferred_mod_tap_qt {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -181,27 +165,12 @@
             quick-tap-ms = <250>;
             bindings = <&kp>, <&kp>;
         };
-        tpmt: tap_preferred_mod_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <300>;
-            bindings = <&kp>, <&kp>;
-        };
-
-        blt_qt: balanced_layer_tap_qt {
+        blt: balanced_layer_tap_qt {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <300>;
             quick-tap-ms = <250>;
-            bindings = <&mo>, <&kp>;
-        };
-        blt: balanced_layer_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <300>;
             bindings = <&mo>, <&kp>;
         };
 
@@ -261,7 +230,7 @@
                 &kp ESCAPE, &kp P, &kp G,   &kp M,        &kp X,    &kp SLASH,   &kp BSPC,           &xquote, &kp MINUS, &kp EQUAL, \
                 &kp S,      &kp N, &kp T,   &kp H,        &kp K,    &dot_colon,  &kp A,              &kp E,   &kp I,     &kp C,  \
                 &kp B,      &kp F, &kp D,   &kp L,        &kp J,    &comma_semi, &kp U,              &kp O,   &kp Y,     &kp W,  \
-                                   &kp TAB, &blt_qt NUM_NAV R, &hpmt_qt LSHFT BSPC, &hpmt_qt RSHFT BSPC, &bmt RSHFT SPACE, &mo NUM_NAV \
+                                   &kp TAB, &bmt LSHFT R, &kp BSPC, &kp RSHFT,   &blt NUM_NAV SPACE, &mo NUM_NAV \
             )>;
         };
 
