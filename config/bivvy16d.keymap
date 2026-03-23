@@ -1,4 +1,4 @@
-/*                              42 KEY MATRIX / LAYOUT MAPPING
+/*                       32 (or 42 inc nav) KEY MATRIX / LAYOUT MAPPING
 
 Here on most layers I am treating the inner keys as lower down (LM0, LB0, RM0, and RB0), as drawn here:
 
@@ -21,8 +21,9 @@ with the tucked thumbs LH1 and RH1 too:
   ╰───────────────╮ 40 │ 41  ╭──────────────╯ ╰───────────────╮ LH0 │ RH0 ╭───────────────╯
                   ╰────┴─────╯                                ╰─────┴─────╯
 
-And there are the two five-way buttons too (keys 30 to 39), which is why the splayed thumbs
-LH0 and RH0 are keys 40 and 41. */
+And there are the two five-way buttons too (keys 30 to 39), which is why the optional splayed
+thumbs LH0 and RH0 are keys 40 and 41.
+*/
 
 #pragma once
 
@@ -62,11 +63,16 @@ LH0 and RH0 are keys 40 and 41. */
 #define RB3 28
 #define RB4 29
 
-#define LH0 40  // left thumb keys
-#define LH1 24
+// If using all four thumbs:
+// #define LH0 40  // left thumb keys
+// #define LH1 24
+//
+// #define RH0 41  // right thumb keys
+// #define RH1 25
 
-#define RH0 41  // right thumb keys
-#define RH1 25
+// Using just one key per thumb
+#define LH1 24  // left thumb keys
+#define RH1 25  // right thumb keys
 
 // Drop top row middle corners (Qwerty T and Y, or LT0 and RT0, or k04 and k05)
 // and the most tucked thumbs (LH2 and RH2 in ZMK-helpers terms, k30 and k35).
@@ -82,7 +88,7 @@ LH0 and RH0 are keys 40 and 41. */
     k10  k11  k12  k13  k24  k25  k16  k17  k18  k19  \
     k20  k21  k22  k23  k31  k34  k26  k27  k28  k29  \
     &kp PG_DN &kp HOME &kp KP_ENTER &kp END &kp PG_UP &kp UP &kp LEFT &kp ENTER &kp RIGHT &kp DOWN  \
-    k32  k33
+//    k32  k33
 
 // This drops Qwerty B and N (k24 and k25), which in my Naginata where the
 // inner columns are vertically inverted are the reduntant left/right arrows.
@@ -97,9 +103,14 @@ LH0 and RH0 are keys 40 and 41. */
     k10  k11  k12  k13  k14  k15  k16  k17  k18  k19  \
     k20  k21  k22  k23  k31  k34  k26  k27  k28  k29  \
     &kp PG_DN &kp HOME &kp KP_ENTER &kp END &kp PG_UP &kp UP &kp LEFT &kp ENTER &kp RIGHT &kp DOWN  \
-    k32  k33
-
-
+//   k32  k33
 
 
 #include "3x5_3.dtsi"
+
+/ {
+    chosen {
+        zmk,physical-layout = &bivvy16d_L15_R15_layout;
+        // Other chosen items
+    };
+};

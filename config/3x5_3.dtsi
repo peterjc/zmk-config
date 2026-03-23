@@ -141,7 +141,7 @@
             // (Staying with default limit of 32 definitions)
         };
 
-        hpmt: hold_preferred_mod_tap {
+        hpmt: hold_preferred_mod_tap_qt {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
@@ -149,8 +149,7 @@
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
         };
-
-        bmt: balanced_mod_tap {
+        bmt: balanced_mod_tap_qt {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
@@ -158,8 +157,7 @@
             quick-tap-ms = <250>;
             bindings = <&kp>, <&kp>;
         };
-
-        tpmt: tap_preferred_mod_tap {
+        tpmt: tap_preferred_mod_tap_qt {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -167,8 +165,7 @@
             quick-tap-ms = <250>;
             bindings = <&kp>, <&kp>;
         };
-
-        blt: balanced_layer_tap {
+        blt: balanced_layer_tap_qt {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
@@ -251,7 +248,7 @@
                 &ng Q, &ng W, &ng E,   &ng R,     &ng B,    &ng N,     &ng U,                 &ng I,     &ng O,      &ng P, \
                 &ng A, &ng S, &ng D,   &ng F,     &ng G,    &ng H,     &ng J,                 &ng K,     &ng L,      &ng SEMI, \
                 &ng Z, &ng X, &ng C,   &ng V,     &ng T,    &ng Y,     &ng M,                 &ng COMMA, &ng DOT,    &ng SLASH, \
-                              &kp TAB, &ng ENTER, &kp BSPC, &ng SPACE, &lt NUM_NAV LS(SPACE), &mo NUM_NAV \
+                              &kp TAB, &ng SPACE, &kp BSPC, &ng ENTER, &lt NUM_NAV LS(SPACE), &mo NUM_NAV \
                 )>;
         };
 #else
@@ -262,7 +259,7 @@
                 &ng Q, &ng W, &ng E,   &ng R,     &ng B,    &ng N,     &ng U,                 &ng I,     &ng O,      &ng P, \
                 &ng A, &ng S, &ng D,   &ng F,     &ng G,    &ng H,     &ng J,                 &ng K,     &ng L,      &ng SEMI, \
                 &ng Z, &ng X, &ng C,   &ng V,     &ng T,    &ng Y,     &ng M,                 &ng COMMA, &ng DOT,    &ng SLASH, \
-                              &kp TAB, &ng ENTER, &kp BSPC, &ng SPACE, &lt NUM_NAV LS(SPACE), &mo NUM_NAV \
+                              &kp TAB, &ng SPACE, &kp BSPC, &ng ENTER, &lt NUM_NAV LS(SPACE), &mo NUM_NAV \
                 )>;
         };
 #endif
@@ -270,9 +267,9 @@
         num_nav_layer {
             display-name = "Num + Nav";
             bindings = <LAYER_FROM36( \
-                &kp KP_DIVIDE,   &kp N1, &kp N2, &kp N3, &kp KP_EQUAL, &kp ESCAPE, &kp HOME,     &kp UP,     &kp END,       &kp C_PLAY_PAUSE, \
-                &kp KP_MULTIPLY, &kp N4, &kp N5, &kp N6, &kp KP_PLUS,  &kp PG_UP,  &kp LEFT,     &kp DOWN,   &kp RIGHT,     &kp C_VOLUME_UP, \
-                &kp DOT,         &kp N7, &kp N8, &kp N9, &kp KP_MINUS, &kp PG_DN,  &kp LA(LEFT), &kp RETURN, &kp LA(RIGHT), &kp C_VOLUME_DOWN, \
+                &kp KP_DIVIDE,   &kp N1, &kp N2, &kp N3, &kp KP_EQUAL, &kp ESCAPE, &kp BSPC,     &kp UP,     &kp UNDERSCORE, &kp C_PLAY_PAUSE, \
+                &kp KP_MULTIPLY, &kp N4, &kp N5, &kp N6, &kp KP_PLUS,  &kp PG_UP,  &kp LEFT,     &kp DOWN,   &kp RIGHT,      &kp C_VOLUME_UP, \
+                &kp DOT,         &kp N7, &kp N8, &kp N9, &kp KP_MINUS, &kp PG_DN,  &kp LA(LEFT), &kp RETURN, &kp LA(RIGHT),  &kp C_VOLUME_DOWN, \
                                          &trans, &hpmt LSHFT N0, &trans, &trans, &trans, &trans \
             )>;
         };
