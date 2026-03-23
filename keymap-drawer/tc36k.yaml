@@ -32,7 +32,7 @@ layers:
   - {t: yY, type: medium}
   - {t: wW, type: medium}
   - ↹
-  - {t: rR, h: ⇧}
+  - {t: rR, h: ⇧, type: high}
   - ⌫
   - ⇧
   - {t: ⎵, h: Num+Nav, type: high}

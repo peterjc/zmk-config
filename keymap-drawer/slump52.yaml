@@ -33,7 +33,7 @@ layers:
   - {t: fF, type: medium}
   - {t: dD, type: medium-high}
   - {t: lL, type: medium-high}
-  - {t: rR, h: ⇧}
+  - {t: rR, h: ⇧, type: high}
   - {t: ⎵, h: Num+Nav, type: high}
   - {t: uU, type: medium-high}
   - {t: oO, type: high}

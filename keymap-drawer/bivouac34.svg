@@ -241,10 +241,10 @@ text.right {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key medium"/>
 <text x="0" y="0" class="key medium tap">wW</text>
 </g>
-<g transform="translate(200, 267) rotate(33.0)" class="key keypos-28">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">rR</text>
-<text x="0" y="24" class="key hold">⇧</text>
+<g transform="translate(200, 267) rotate(33.0)" class="key high keypos-28">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key high"/>
+<text x="0" y="0" class="key high tap">rR</text>
+<text x="0" y="24" class="key high hold">⇧</text>
 </g>
 <g transform="translate(247, 299) rotate(33.0)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
