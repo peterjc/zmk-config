@@ -69,9 +69,9 @@ layers:
   - {left: ら, right: わ}
   - {left: れ}
   - ↹
-  - {t: ⏎, h: Kana-Shift, type: kshift}
-  - ⌫
   - {t: ⎵, h: Kana-Shift, type: kshift}
+  - ⌫
+  - {t: ⏎, h: Kana-Shift, type: kshift}
   - {t: ⇧⎵, h: Num + Nav}
   - Num + Nav
   Num + Nav:
@@ -81,9 +81,9 @@ layers:
   - '3'
   - '='
   - ⎋
-  - ↖
+  - ⌫
   - ↑
-  - ↘
+  - _
   - ⏯
   - '*'
   - '4'

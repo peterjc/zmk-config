@@ -1,4 +1,4 @@
-layout: {zmk_keyboard: goldilocks32, layout_name: physical_layout32}
+layout: {zmk_keyboard: goldilocks32, layout_name: physical_layout30}
 layers:
   HD Promethium:
   - ⎋
@@ -36,8 +36,6 @@ layers:
   - ⏎
   - →
   - ↓
-  - ⌫
-  - ⇧
   Naginata:
   - {t: ⎋, h: Small-kana}
   - {left: き, right: め}
@@ -63,7 +61,7 @@ layers:
   - {left: ひ}
   - {left: は, right: を}
   - {h: 半濁音, left: こ, right: 、}
-  - {t: ⏎, h: Kana-Shift, type: kshift}
+  - {t: ⎵, h: Kana-Shift, type: kshift}
   - {t: ⇧⎵, h: Num + Nav}
   - {h: 半濁音, left: な, right: 。}
   - {left: ん, right: む}
@@ -74,8 +72,6 @@ layers:
   - ⏎
   - →
   - ↓
-  - ⌫
-  - {t: ⎵, h: Kana-Shift, type: kshift}
   Num + Nav:
   - /
   - '1'
@@ -83,9 +79,9 @@ layers:
   - '3'
   - +
   - ⇞
-  - ↖
+  - ⌫
   - ↑
-  - ↘
+  - _
   - ⏯
   - '*'
   - '4'
@@ -116,8 +112,6 @@ layers:
   - ⏎
   - →
   - ↓
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
 combos:
 - p: [0, 9]
   k: Studio Unlock
