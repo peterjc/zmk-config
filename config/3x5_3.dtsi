@@ -138,6 +138,7 @@
             // plain combos
             // lbrace { sequence = <LEFT_BRACE>; bindings = <&kp LS(LEFT_BRACE)>; };
             // rbrace { sequence = <RIGHT_BRACE>; bindings = <&kp LS(RIGHT_BRACE)>; };
+            // (Staying with default limit of 32 definitions)
         };
 
         hpmt: hold_preferred_mod_tap {
