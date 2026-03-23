@@ -95,6 +95,11 @@
             compatible = "zmk,behavior-leader-key";
             #binding-cells = <0>;
             // default = <&kp COMMA>;
+            // main use of a default is comma then space:
+            space { sequence = <SPACE>; bindings = <&comma_space>; };
+            // workaround to get comma alone (eg for command+comma shortcut without any timeout):
+            dot { sequence = <DOT>; bindings = <&kp COMMA>; };
+            // standard shifts:
             a { sequence = <A>; bindings = <&kp LS(A)>; };
             b { sequence = <B>; bindings = <&kp LS(B)>; };
             c { sequence = <C>; bindings = <&kp LS(C)>; };
@@ -121,14 +126,18 @@
             x { sequence = <X>; bindings = <&kp LS(X)>; };
             y { sequence = <Y>; bindings = <&kp LS(Y)>; };
             z { sequence = <Z>; bindings = <&kp LS(Z)>; };
-            // see &dot_colon and &comma_semi too:
-            dot { sequence = <DOT>; bindings = <&kp COMMA>; };
-            // see &xquote:
-            sqt { sequence = <SQT>; bindings = <&kp S(N2)>; };
             minus { sequence = <MINUS>; bindings = <&kp LS(MINUS)>; };
             equal { sequence = <EQUAL>; bindings = <&kp LS(EQUAL)>; };
             slash { sequence = <SLASH>; bindings = <&kp LS(SLASH)>; };
-            space { sequence = <SPACE>; bindings = <&comma_space>; };
+            pipe { sequence = <NON_US_BACKSLASH>; bindings = <&kp LS(NON_US_BACKSLASH)>; };
+            // see &xquote for this exception (UK vs US layout):
+            sqt { sequence = <SQT>; bindings = <&kp S(N2)>; };
+            // see combos with mod-morph
+            lt { sequence = <LEFT_PARENTHESIS>; bindings = <&kp LESS_THAN>; };
+            gt { sequence = <RIGHT_PARENTHESIS>; bindings = <&kp GREATER_THAN>; };
+            // plain combos
+            lbrace { sequence = <LEFT_BRACE>; bindings = <&kp LS(LEFT_BRACE)>; };
+            rbrace { sequence = <RIGHT_BRACE>; bindings = <&kp LS(RIGHT_BRACE)>; };
         };
 
         hpmt: hold_preferred_mod_tap {
