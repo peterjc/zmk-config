@@ -220,10 +220,10 @@
         default_layer {
             display-name = "HD Promethium";
             bindings = <LAYER_FROM36( \
-                &kp ESCAPE, &kp P, &kp G,   &kp M,        &kp X,    &kp SLASH,          &kp BSPC,           &xquote, &kp MINUS, &kp EQUAL, \
-                &kp S,      &kp N, &kp T,   &kp H,        &kp K,    &dot_colon,         &kp A,              &kp E,   &kp I,     &kp C,  \
-                &kp B,      &kp F, &kp D,   &kp L,        &kp J,    &magic_comma_shift, &kp U,              &kp O,   &kp Y,     &kp W,  \
-                                   &kp TAB, &bmt LSHFT R, &kp BSPC, &kp RSHFT,          &blt NUM_NAV SPACE, &mo NUM_NAV \
+                &kp ESCAPE, &kp P, &kp G,   &kp M,          &kp X,    &kp SLASH,          &kp BSPC,           &xquote, &kp MINUS, &kp EQUAL, \
+                &kp S,      &kp N, &kp T,   &kp H,          &kp K,    &dot_colon,         &kp A,              &kp E,   &kp I,     &kp C,  \
+                &kp B,      &kp F, &kp D,   &kp L,          &kp J,    &magic_comma_shift, &kp U,              &kp O,   &kp Y,     &kp W,  \
+                                   &kp TAB, &blt NUM_NAV R, &kp BSPC, &kp RSHFT,          &blt NUM_NAV SPACE, &mo NUM_NAV \
             )>;
         };
 
@@ -263,7 +263,7 @@
                 &kp KP_DIVIDE,   &kp N1, &kp N2, &kp N3, &kp KP_EQUAL, &kp ESCAPE, &kp HOME,     &kp UP,     &kp END,       &kp C_PLAY_PAUSE, \
                 &kp KP_MULTIPLY, &kp N4, &kp N5, &kp N6, &kp KP_PLUS,  &kp PG_UP,  &kp LEFT,     &kp DOWN,   &kp RIGHT,     &kp C_VOLUME_UP, \
                 &kp DOT,         &kp N7, &kp N8, &kp N9, &kp KP_MINUS, &kp PG_DN,  &kp LA(LEFT), &kp RETURN, &kp LA(RIGHT), &kp C_VOLUME_DOWN, \
-                                         &trans, &hpmt LSHFT N0, &trans, &trans, &trans, &trans \
+                                         &trans, &hpmt LSHFT N0, &trans, &trans, &hpmt RSHFT SPACE, &trans \
             )>;
         };
 
