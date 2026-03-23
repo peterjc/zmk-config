@@ -21,7 +21,8 @@ manifest:
     - name: zmk-helpers
       remote: urob
     - name: zmk-leader-key
-      remote: urob
+      remote: peterjc
+      revision: comma
     - name: zmk-naginata
       remote: peterjc
       revision: tap-q-escape
