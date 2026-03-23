@@ -11,11 +11,11 @@ My base layer is the inverted [Hands Down Promethium
 layout](https://www.reddit.com/r/KeyboardLayouts/comments/1g66ivi/hands_down_promethium_snth_meets_hd_silverengram/)
 with my personal modifications ("Pico Mod") intended to help with some readline shortcuts
 (horizontal pair `B`/`F` for back/forward, vertical pair `P`/`N` for previous/next).
-It also has matching `B` (bottom left) and `W` (bottom right) for back to start of word, and
-forward to start of next word in Vim or Helix.
-Most of the symbols are 2-key vertical combos, the brackets are 2-key horizontal combos
-(open on the left hand, close on the right). There is a single combined numbers and navigation
-layer accessed by holding the right thumb.
+It also has matching `B` (bottom left) and `W` (bottom right) for back to start
+of word, and forward to start of next word in Vim or Helix.
+Most of the symbols are 2-key vertical combos, the brackets are 2-key horizontal
+combos (open on the left hand, close on the right).
+
 I wanted to be able to use this on my laptop too - achieved with [custom Karabiner-Elements
 rules](https://codeberg.org/peterjc/kana-chording-ke/src/branch/main/hands-down-on-jis-macbook)
 (see this [blog post](https://blastedbio.blogspot.com/2025/05/what-have-you-done-to-your-keyboard.html)).
@@ -32,21 +32,23 @@ currently at [v17](https://oookaworks.seesaa.net/article/519707171.html).
 I made minor changes so that Qwerty `Q` is now Escape on tap, small on hold, and
 added shift-space on a thumb for kanji selection without needing editing layers.
 Due to my brackets combos clashing with the default way to switch Japanese mode
-and the Naginata layer on and off, those are Qwerty `D`+`G` (labelled 'ABC' in
-the image) and Qwerty `H`+`K` instead (labelled 'かな'). This layout uses a *lot*
+and the Naginata layer on and off, those are Qwerty `D`+`G` (labeled 'ABC' in
+the image) and Qwerty `H`+`K` instead (labeled 'かな'). This layout uses a *lot*
 of chording, but these are not defined as ZMK combos, and so are not drawn here.
 
 The third and final layer is a combined numbers and navigation layer. The right
 hand has navigation keys including an inverted-tee set of cursors at the Qwerty
 JKIL position inspired by [Dreymar's Extend layer](https://dreymar.colemak.org/layers-extend.html).
-The left hand has a numberpad, with 123 at the top like a mobile phone (since
-in a traditionad keyboard 123 are about there).
+The left hand has a number-pad, with 123 at the top like a mobile phone (since
+in a traditional keyboard 123 are about there).
 
+I am trying *Magic Comma Shift* whereby typing comma then a letter will give the
+capital version of the letter - but typing comma and space just works as usual.
 
 ## Split 3x5_3 aka 33333+3 Layout with 36 keys
 
 The QMK project uses the term `split_3x5_3` for one of their standard community
-layout names for the most common 36 key layouts. This means a symmetrical split
+layout names for the most common 36 key layout. This means a symmetrical split
 layout where each hand has three rows and five columns (the index finger gets
 an extra inner column), plus three thumb keys.
 
@@ -60,7 +62,7 @@ for even smaller keyboards - see below).
 ### Gamma Omega TC36K
 
 The ZMK keymap in file [tc36k.keymap](config/tc36k.keymap) is the split 3x5_3
-layout described above (without the bluetooth combos) for the self-built
+layout described above (without the Bluetooth combos) for the self-built
 [Gamma Omega TC36K](https://github.com/unspecworks/gamma-omega/tree/main/tc36k).
 This is a single PCB no-diode variant of the Gamma Omega where [I designed the
 wiring and PCB](https://astrobeano.blogspot.com/2025/08/my-first-self-built-computer-keyboard.html).
@@ -151,9 +153,9 @@ one of the layouts supported by the
 [Visorbearer](https://github.com/carrefinho/visorbearer).
 
 This means dropping backspace of the left thumb (leaving just the Naginata Style
-backspace on the index finger), and the dedicated shift on the right thumb (and
-holding the `R` left thumb for shift). Capital `R` is therefore on the left-thumb
-on the numbers and navigation layer.
+backspace on the index finger), and the dedicated shift on the right thumb (note
+holding the `R` left thumb gives shift). Capital `R` is available with *Magic
+Comma Shift* only.
 
 ![Keymap image](keymap-drawer/bivvy16d.svg)
 
