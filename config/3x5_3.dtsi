@@ -86,6 +86,61 @@
 / {
     behaviors {
 
+        comma_space: comma_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp COMMA &kp SPACE>;
+        };
+        magic_comma_shift: magic_comma_shift {
+            compatible = "zmk,behavior-leader-key";
+            #binding-cells = <0>;
+            // default = <&kp COMMA>;
+            // main use of a default is comma then space:
+            space { sequence = <SPACE>; bindings = <&comma_space>; };
+            // workaround to get comma alone (eg for command+comma shortcut without any timeout):
+            dot { sequence = <DOT>; bindings = <&kp COMMA>; };
+            // standard shifts:
+            a { sequence = <A>; bindings = <&kp LS(A)>; };
+            b { sequence = <B>; bindings = <&kp LS(B)>; };
+            c { sequence = <C>; bindings = <&kp LS(C)>; };
+            d { sequence = <D>; bindings = <&kp LS(D)>; };
+            e { sequence = <E>; bindings = <&kp LS(E)>; };
+            f { sequence = <F>; bindings = <&kp LS(F)>; };
+            g { sequence = <G>; bindings = <&kp LS(G)>; };
+            h { sequence = <H>; bindings = <&kp LS(H)>; };
+            i { sequence = <I>; bindings = <&kp LS(I)>; };
+            j { sequence = <J>; bindings = <&kp LS(J)>; };
+            k { sequence = <K>; bindings = <&kp LS(K)>; };
+            l { sequence = <L>; bindings = <&kp LS(L)>; };
+            m { sequence = <M>; bindings = <&kp LS(M)>; };
+            n { sequence = <N>; bindings = <&kp LS(N)>; };
+            o { sequence = <O>; bindings = <&kp LS(O)>; };
+            p { sequence = <P>; bindings = <&kp LS(P)>; };
+            q { sequence = <Q>; bindings = <&kp LS(Q)>; };
+            r { sequence = <R>; bindings = <&kp LS(R)>; };
+            s { sequence = <S>; bindings = <&kp LS(S)>; };
+            t { sequence = <T>; bindings = <&kp LS(T)>; };
+            u { sequence = <U>; bindings = <&kp LS(U)>; };
+            v { sequence = <V>; bindings = <&kp LS(V)>; };
+            w { sequence = <W>; bindings = <&kp LS(W)>; };
+            x { sequence = <X>; bindings = <&kp LS(X)>; };
+            y { sequence = <Y>; bindings = <&kp LS(Y)>; };
+            z { sequence = <Z>; bindings = <&kp LS(Z)>; };
+            minus { sequence = <MINUS>; bindings = <&kp LS(MINUS)>; };
+            equal { sequence = <EQUAL>; bindings = <&kp LS(EQUAL)>; };
+            slash { sequence = <SLASH>; bindings = <&kp LS(SLASH)>; };
+            // pipe { sequence = <NON_US_BACKSLASH>; bindings = <&kp LS(NON_US_BACKSLASH)>; };
+            // see &xquote for this exception (UK vs US layout):
+            sqt { sequence = <SQT>; bindings = <&kp S(N2)>; };
+            // see combos with mod-morph
+            // lt { sequence = <LEFT_PARENTHESIS>; bindings = <&kp LESS_THAN>; };
+            // gt { sequence = <RIGHT_PARENTHESIS>; bindings = <&kp GREATER_THAN>; };
+            // plain combos
+            // lbrace { sequence = <LEFT_BRACE>; bindings = <&kp LS(LEFT_BRACE)>; };
+            // rbrace { sequence = <RIGHT_BRACE>; bindings = <&kp LS(RIGHT_BRACE)>; };
+            // (Staying with default limit of 32 definitions)
+        };
+
         hpmt: hold_preferred_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -159,7 +214,7 @@
         comma_semi: comma_semi {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp SEMI>;
+            bindings = <&magic_comma_shift>, <&kp SEMI>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             // do NOT want to keep shift active, but anything else is fine:
             keep-mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
