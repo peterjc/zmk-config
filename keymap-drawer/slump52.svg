@@ -299,17 +299,19 @@ text.right {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key medium-low"/>
 <text x="0" y="0" class="key medium-low tap">bB</text>
 </g>
-<g transform="translate(300, 258) rotate(35.0)" class="key keypos-42">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⌫</text>
+<g transform="translate(300, 258) rotate(35.0)" class="key high keypos-42">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key high"/>
+<text x="0" y="0" class="key high tap">rR</text>
+<text x="0" y="24" class="key high hold">⇧</text>
 </g>
 <g transform="translate(347, 297) rotate(-45.0)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⇧</text>
+<text x="0" y="0" class="key tap">⌫</text>
 </g>
-<g transform="translate(393, 258) rotate(-35.0)" class="key keypos-44">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⇧</text>
+<g transform="translate(393, 258) rotate(-35.0)" class="key high keypos-44">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key high"/>
+<text x="0" y="0" class="key high tap">⎵</text>
+<text x="0" y="24" class="key high hold">Num+Nav</text>
 </g>
 <g transform="translate(547, 301) rotate(-11.5)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -662,7 +664,7 @@ text.right {
 </g>
 <g transform="translate(248, 228) rotate(25.0)" class="key kshift keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key kshift"/>
-<text x="0" y="0" class="key kshift tap">⏎</text>
+<text x="0" y="0" class="key kshift tap">⎵</text>
 <text x="0" y="24" class="key kshift hold"><tspan style="font-size: 70%">Kana-Shift</tspan></text>
 </g>
 <g transform="translate(446, 228) rotate(-25.0)" class="key keypos-33">
@@ -708,19 +710,21 @@ text.right {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="-24" y="0" class="key left">ほ</text>
 </g>
-<g transform="translate(300, 258) rotate(35.0)" class="key keypos-42">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⌫</text>
-</g>
-<g transform="translate(347, 297) rotate(-45.0)" class="key keypos-43">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⇧</text>
-</g>
-<g transform="translate(393, 258) rotate(-35.0)" class="key kshift keypos-44">
+<g transform="translate(300, 258) rotate(35.0)" class="key kshift keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key kshift"/>
 <text x="0" y="0" class="key kshift tap">⎵</text>
 <text x="0" y="24" class="key kshift hold"><tspan style="font-size: 70%">Kana-Shift</tspan></text>
 </g>
+<g transform="translate(347, 297) rotate(-45.0)" class="key keypos-43">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">⌫</text>
+</g>
+<g transform="translate(393, 258) rotate(-35.0)" class="key keypos-44">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">⇧⎵</text>
+<a href="#Num--Nav">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 78%">Num + Nav</tspan></text>
+</a></g>
 <g transform="translate(547, 301) rotate(-11.5)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">←</text>
@@ -810,7 +814,7 @@ text.right {
 </g>
 <g transform="translate(437, 77) rotate(-25.0)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">↖</text>
+<text x="0" y="0" class="key tap">⌫</text>
 </g>
 <g transform="translate(491, 54) rotate(-21.0)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -818,7 +822,7 @@ text.right {
 </g>
 <g transform="translate(548, 38) rotate(-12.0)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">↘</text>
+<text x="0" y="0" class="key tap">_</text>
 </g>
 <g transform="translate(608, 30) rotate(-3.0)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -950,13 +954,14 @@ text.right {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">.</text>
 </g>
-<g transform="translate(300, 258) rotate(35.0)" class="key trans keypos-42">
+<g transform="translate(300, 258) rotate(35.0)" class="key keypos-42">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">0</text>
+<text x="0" y="24" class="key hold">⇧</text>
+</g>
+<g transform="translate(347, 297) rotate(-45.0)" class="key trans keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
-</g>
-<g transform="translate(347, 297) rotate(-45.0)" class="key keypos-43">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⇧</text>
 </g>
 <g transform="translate(393, 258) rotate(-35.0)" class="key trans keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>

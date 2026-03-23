@@ -43,9 +43,9 @@ layers:
   - '2'
   - '3'
   - {t: bB, type: medium-low}
+  - {t: rR, h: ⇧, type: high}
   - ⌫
-  - ⇧
-  - ⇧
+  - {t: ⎵, h: Num+Nav, type: high}
   - ←
   - ↓
   - ↑
@@ -86,7 +86,7 @@ layers:
   - {left: ひ}
   - {left: は, right: を}
   - {h: 半濁音, left: こ, right: 、}
-  - {t: ⏎, h: Kana-Shift, type: kshift}
+  - {t: ⎵, h: Kana-Shift, type: kshift}
   - {t: ⇧⎵, h: Num + Nav}
   - {h: 半濁音, left: な, right: 。}
   - {left: ん, right: む}
@@ -96,9 +96,9 @@ layers:
   - '2'
   - '3'
   - {left: ほ}
-  - ⌫
-  - ⇧
   - {t: ⎵, h: Kana-Shift, type: kshift}
+  - ⌫
+  - {t: ⇧⎵, h: Num + Nav}
   - ←
   - ↓
   - ↑
@@ -114,9 +114,9 @@ layers:
   - '3'
   - +
   - ⇞
-  - ↖
+  - ⌫
   - ↑
-  - ↘
+  - _
   - ⏯
   - '*'
   - '7'
@@ -151,8 +151,8 @@ layers:
   - '2'
   - '3'
   - .
+  - {t: '0', h: ⇧}
   - {t: ▽, type: trans}
-  - ⇧
   - {t: ▽, type: trans}
   - ←
   - ↓
