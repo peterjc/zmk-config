@@ -86,6 +86,17 @@
 / {
     behaviors {
 
+        magic_comma_shift: magic_comma_shift {
+            compatible = "zmk,behavior-leader-key";
+            #binding-cells = <0>;
+            // default = <&kp COMMA>;
+            a { sequence = <A>; bindings = <&kp LS(A)>; };
+            b { sequence = <B>; bindings = <&kp LS(B)>; };
+            c { sequence = <C>; bindings = <&kp LS(C)>; };
+            // ...
+            z { sequence = <Z>; bindings = <&kp LS(Z)>; };
+        };
+
         hpmt: hold_preferred_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -175,10 +186,10 @@
         default_layer {
             display-name = "HD Promethium";
             bindings = <LAYER_FROM36( \
-                &kp ESCAPE, &kp P, &kp G,   &kp M,        &kp X,    &kp SLASH,   &kp BSPC,           &xquote, &kp MINUS, &kp EQUAL, \
-                &kp S,      &kp N, &kp T,   &kp H,        &kp K,    &dot_colon,  &kp A,              &kp E,   &kp I,     &kp C,  \
-                &kp B,      &kp F, &kp D,   &kp L,        &kp J,    &comma_semi, &kp U,              &kp O,   &kp Y,     &kp W,  \
-                                   &kp TAB, &bmt LSHFT R, &kp BSPC, &kp RSHFT,   &blt NUM_NAV SPACE, &mo NUM_NAV \
+                &kp ESCAPE, &kp P, &kp G,   &kp M,        &kp X,    &kp SLASH,          &kp BSPC,           &xquote, &kp MINUS, &kp EQUAL, \
+                &kp S,      &kp N, &kp T,   &kp H,        &kp K,    &dot_colon,         &kp A,              &kp E,   &kp I,     &kp C,  \
+                &kp B,      &kp F, &kp D,   &kp L,        &kp J,    &magic_comma_shift, &kp U,              &kp O,   &kp Y,     &kp W,  \
+                                   &kp TAB, &bmt LSHFT R, &kp BSPC, &kp RSHFT,          &blt NUM_NAV SPACE, &mo NUM_NAV \
             )>;
         };
 
