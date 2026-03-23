@@ -86,6 +86,11 @@
 / {
     behaviors {
 
+         comma_space: comma_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp COMMA &kp SPACE>;
+        };
         magic_comma_shift: magic_comma_shift {
             compatible = "zmk,behavior-leader-key";
             #binding-cells = <0>;
@@ -93,8 +98,37 @@
             a { sequence = <A>; bindings = <&kp LS(A)>; };
             b { sequence = <B>; bindings = <&kp LS(B)>; };
             c { sequence = <C>; bindings = <&kp LS(C)>; };
-            // ...
+            d { sequence = <D>; bindings = <&kp LS(D)>; };
+            e { sequence = <E>; bindings = <&kp LS(E)>; };
+            f { sequence = <F>; bindings = <&kp LS(F)>; };
+            g { sequence = <G>; bindings = <&kp LS(G)>; };
+            h { sequence = <H>; bindings = <&kp LS(H)>; };
+            i { sequence = <I>; bindings = <&kp LS(I)>; };
+            j { sequence = <J>; bindings = <&kp LS(J)>; };
+            k { sequence = <K>; bindings = <&kp LS(K)>; };
+            l { sequence = <L>; bindings = <&kp LS(L)>; };
+            m { sequence = <M>; bindings = <&kp LS(M)>; };
+            n { sequence = <N>; bindings = <&kp LS(N)>; };
+            o { sequence = <O>; bindings = <&kp LS(O)>; };
+            p { sequence = <P>; bindings = <&kp LS(P)>; };
+            q { sequence = <Q>; bindings = <&kp LS(Q)>; };
+            r { sequence = <R>; bindings = <&kp LS(R)>; };
+            s { sequence = <S>; bindings = <&kp LS(S)>; };
+            t { sequence = <T>; bindings = <&kp LS(T)>; };
+            u { sequence = <U>; bindings = <&kp LS(U)>; };
+            v { sequence = <V>; bindings = <&kp LS(V)>; };
+            w { sequence = <W>; bindings = <&kp LS(W)>; };
+            x { sequence = <X>; bindings = <&kp LS(X)>; };
+            y { sequence = <Y>; bindings = <&kp LS(Y)>; };
             z { sequence = <Z>; bindings = <&kp LS(Z)>; };
+            // see &dot_colon and &comma_semi too:
+            dot { sequence = <DOT>; bindings = <&kp COMMA>; };
+            // see &xquote:
+            sqt { sequence = <SQT>; bindings = <&kp S(N2)>; };
+            minus { sequence = <MINUS>; bindings = <&kp LS(MINUS)>; };
+            equal { sequence = <EQUAL>; bindings = <&kp LS(EQUAL)>; };
+            slash { sequence = <SLASH>; bindings = <&kp LS(SLASH)>; };
+            space { sequence = <SPACE>; bindings = <&comma_space>; };
         };
 
         hpmt: hold_preferred_mod_tap {
