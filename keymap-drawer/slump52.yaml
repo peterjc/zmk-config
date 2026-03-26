@@ -34,7 +34,7 @@ layers:
   - {t: dD, type: medium-high}
   - {t: lL, type: medium-high}
   - {t: rR, h: ⇧, type: high}
-  - {t: ⎵, h: Num+Nav, type: high}
+  - {t: ⎵R, h: Num+Nav, type: high}
   - {t: uU, type: medium-high}
   - {t: oO, type: high}
   - {t: yY, type: medium}
@@ -45,7 +45,7 @@ layers:
   - {t: bB, type: medium-low}
   - {t: rR, h: ⇧, type: high}
   - ⌫
-  - {t: ⎵, h: Num+Nav, type: high}
+  - {t: ⎵R, h: Num+Nav, type: high}
   - ←
   - ↓
   - ↑
@@ -229,6 +229,9 @@ combos:
   l: [HD Promethium]
 - p: [30, 29]
   k: {t: xX, type: low}
+  l: [HD Promethium]
+- p: [42, 44]
+  k: ⇧⎵
   l: [HD Promethium]
 - p: [15, 28]
   k: '`'

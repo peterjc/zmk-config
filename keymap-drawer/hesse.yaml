@@ -35,7 +35,7 @@ layers:
   - {t: rR, h: ⇧, type: high}
   - ⌫
   - ⇧
-  - {t: ⎵, h: Num+Nav, type: high}
+  - {t: ⎵R, h: Num+Nav, type: high}
   - Num + Nav
   Naginata:
   - {t: ⎋, h: Small-kana}
@@ -181,6 +181,9 @@ combos:
   l: [HD Promethium]
 - p: [22, 21]
   k: {t: xX, type: low}
+  l: [HD Promethium]
+- p: [31, 34]
+  k: ⇧⎵
   l: [HD Promethium]
 - p: [0, 10]
   k: '`'
