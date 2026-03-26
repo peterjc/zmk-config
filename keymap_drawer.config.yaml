@@ -133,6 +133,7 @@ parse_config:
     KP_PLUS: '+'
     KP_MINUS: '-'
   zmk_combos:
+    #shift_space_combo: {'key': '⇧⎵', 'align': 'top'}
     combo_studio_unlock: {'key': 'Studio Unlock', 'align': 'top', 'offset': 0.3, 'width': 50}
     combo_bootloader: {'key': 'Boot loader', 'width': 50}
     tab_combo: {'align': 'bottom', 'offset': -0.02, 'slide': -0.5, 'height': 15}
@@ -197,6 +198,7 @@ parse_config:
     '&kp SPACE': {'t': '⎵', 'type': 'high'}
     '&blt NUM_NAV SPACE': {'t': '⎵', 'h': 'Num+Nav', 'type': 'high'}
     '&bmt LSHFT R': {'t': 'rR', 'h': '⇧', 'type': 'high'}
+    '&space_R_layer NUM_NAV 0': {'t': '⎵R', 'h': 'Num+Nav', 'type': 'high'}
     # And again for auto-shift:
     'AS(Q)': {'t': 'qQ', 'type': 'low'}
     'AS(W)': {'t': 'wW', 'type': 'medium'}
