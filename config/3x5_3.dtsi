@@ -148,7 +148,6 @@
             tapping-term-ms = <300>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
-            hold-while-undecided;
         };
         bmt: balanced_mod_tap_qt {
             compatible = "zmk,behavior-hold-tap";
@@ -157,7 +156,6 @@
             tapping-term-ms = <300>;
             quick-tap-ms = <250>;
             bindings = <&kp>, <&kp>;
-            hold-while-undecided;
         };
         tpmt: tap_preferred_mod_tap_qt {
             compatible = "zmk,behavior-hold-tap";
