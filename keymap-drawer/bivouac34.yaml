@@ -180,27 +180,27 @@ combos:
   k: '@'
   l: [HD Promethium, Num + Nav]
 - p: [2, 12]
-  k: £
+  k: '|'
   l: [HD Promethium, Num + Nav]
 - p: [3, 13]
   k: $
   l: [HD Promethium, Num + Nav]
 - p: [3, 4]
-  k: '%'
+  k: \
   l: [HD Promethium, Num + Nav]
 - p: [4, 14]
-  k: \|
+  k: '%'
   l: [HD Promethium, Num + Nav]
   a: right
 - p: [5, 15]
-  k: /?
+  k: ^
   l: [HD Promethium, Num + Nav]
   a: left
 - p: [6, 5]
-  k: ^
+  k: /
   l: [HD Promethium, Num + Nav]
 - p: [6, 16]
-  k: '&'
+  k: '?'
   l: [HD Promethium, Num + Nav]
 - p: [7, 17]
   k: '#'

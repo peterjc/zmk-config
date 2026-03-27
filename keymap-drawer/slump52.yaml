@@ -240,27 +240,27 @@ combos:
   k: '@'
   l: [HD Promethium, Num + Nav]
 - p: [3, 17]
-  k: £
+  k: '|'
   l: [HD Promethium, Num + Nav]
 - p: [4, 18]
   k: $
   l: [HD Promethium, Num + Nav]
 - p: [4, 5]
-  k: '%'
+  k: \
   l: [HD Promethium, Num + Nav]
 - p: [5, 19]
-  k: \|
+  k: '%'
   l: [HD Promethium, Num + Nav]
   a: right
 - p: [6, 20]
-  k: /?
+  k: ^
   l: [HD Promethium, Num + Nav]
   a: left
 - p: [7, 6]
-  k: ^
+  k: /
   l: [HD Promethium, Num + Nav]
 - p: [7, 21]
-  k: '&'
+  k: '?'
   l: [HD Promethium, Num + Nav]
 - p: [8, 22]
   k: '#'
