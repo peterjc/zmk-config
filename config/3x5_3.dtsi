@@ -468,8 +468,8 @@
             layers = <DEFAULT NUM_NAV>;
         };
 
-        gbp_sign {
-            bindings = <&kp LS(NUMBER_3)>;
+        pipe_sign {
+            bindings = <&kp LS(NON_US_BACKSLASH)>;
             key-positions = <LT2 LM2>;
             layers = <DEFAULT NUM_NAV>;
         };
@@ -481,47 +481,47 @@
         };
 
 #ifndef LT0
-        percent_sign {
-            bindings = <&kp PERCENT>;
+        backslash_sign {
+            bindings = <&kp NON_US_BACKSLASH>;
             key-positions = <LT1 LM0>;
             layers = <DEFAULT NUM_NAV>;
         };
 #else
-        percent_sign {
-            bindings = <&kp PERCENT>;
+        backslash_sign {
+            bindings = <&kp NON_US_BACKSLASH>;
             key-positions = <LT0 LM0>;
             layers = <DEFAULT NUM_NAV>;
         };
 #endif
 
-        backslash_pipe_sign {
-            bindings = <&kp NON_US_BACKSLASH>;
+        percent_sign {
+            bindings = <&kp PERCENT>;
             key-positions = <LM0 LB0>;
             layers = <DEFAULT NUM_NAV>;
         };
 
-        forward_slash {
-            bindings = <&kp SLASH>;
+        caret_sign {
+            bindings = <&kp CARET>;
             key-positions = <RM0 RB0>;
             layers = <DEFAULT NUM_NAV>;
         };
 
 #ifndef RT0
-        caret_sign {
-            bindings = <&kp CARET>;
+        slash_sign {
+            bindings = <&kp SLASH>;
             key-positions = <RT1 RM0>;
             layers = <DEFAULT NUM_NAV>;
         };
 #else
-        caret_sign {
-            bindings = <&kp CARET>;
+        slash_sign {
+            bindings = <&kp SLASH>;
             key-positions = <RT0 RM0>;
             layers = <DEFAULT NUM_NAV>;
         };
 #endif
 
-        ampersand_sign {
-            bindings = <&kp AMPS>;
+        question_mark {
+            bindings = <&kp QMARK>;
             key-positions = <RT1 RM1>;
             layers = <DEFAULT NUM_NAV>;
         };
