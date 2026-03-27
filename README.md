@@ -21,9 +21,9 @@ rules](https://codeberg.org/peterjc/kana-chording-ke/src/branch/main/hands-down-
 (see this [blog post](https://blastedbio.blogspot.com/2025/05/what-have-you-done-to-your-keyboard.html)).
 
 Most of the combos are for symbols which on a traditional layout are normally typed with shift.
-The brackets and other inner column combos are an exception where the keymap images with
-two symbols indicate a plain combo, or with shift. Mostly these are the normal pairing
-like `/?`, `[{` and `]}`, but `(<` and `)>` are atypical.
+The brackets and other inner column combos are an exception where the keyma
+images with two symbols indicate a plain combo, or with shift. Here `[{` and `]}`
+are normal pairings, but `(<` and `)>` are atypical.
 
 The second layer is for typing in Japanese using Naginata Style (薙刀式) (see
 [blog post](https://astrobeano.blogspot.com/2025/08/naginata-style-for-typing-in-japanese.html))
