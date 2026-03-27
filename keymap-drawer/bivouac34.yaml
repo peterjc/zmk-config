@@ -30,7 +30,7 @@ layers:
   - {t: yY, type: medium}
   - {t: wW, type: medium}
   - {t: rR, h: ⇧, type: high}
-  - ⌫
+  - {t: ⌫, h: ⇧}
   - ⇧
   - {t: ⎵R, h: Num+Nav, type: high}
   Naginata:

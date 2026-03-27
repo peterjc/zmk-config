@@ -44,7 +44,7 @@ layers:
   - '3'
   - {t: bB, type: medium-low}
   - {t: rR, h: ⇧, type: high}
-  - ⌫
+  - {t: ⌫, h: ⇧}
   - {t: ⎵R, h: Num+Nav, type: high}
   - ←
   - ↓
