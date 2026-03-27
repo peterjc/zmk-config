@@ -91,7 +91,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
-            tap-ms = <20>;
+            tap-ms = <15>;
             bindings = <&macro_tap &kp COMMA &kp SPACE>;
         };
         comma_enter: comma_enter {
@@ -156,7 +156,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
-            tap-ms = <20>;
+            tap-ms = <15>;
             bindings = <&macro_tap &kp DOT &kp SPACE &sk LSHIFT>;
         };
 
