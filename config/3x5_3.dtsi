@@ -32,6 +32,20 @@
 #define NUM_NAV 2
 
 / {
+    behaviors {
+      skq: sticky_key_quick_release {
+        compatible = "zmk,behavior-sticky-key";
+        #binding-cells = <1>;
+        bindings = <&kp>;
+        release-after-ms = <1000>;
+        quick-release;
+        lazy;
+        ignore-modifiers;
+      };
+    };
+};
+
+/ {
     macros {
         // To switch to Japanese mode, this sends what Karabiner-Elements sees
         // as japanese_kana (Apple's kana key for macOS),
@@ -157,7 +171,7 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <15>;
-            bindings = <&macro_tap &kp DOT &kp SPACE &sk LSHIFT>;
+            bindings = <&macro_tap &kp DOT &kp SPACE &skq LSHIFT>;
         };
 
         hpmt: hold_preferred_mod_tap_qt {
