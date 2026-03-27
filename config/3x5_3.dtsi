@@ -166,12 +166,16 @@
             // (Staying with default limit of 32 definitions)
         };
 
+        // Use a shorter than default tap time and wait between dot and space,
+        // but no wait at all between the space and (lazy) sticky shift.
         magic_dot: magic_dot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <15>;
-            bindings = <&macro_tap &kp DOT &kp SPACE &skq LSHIFT>;
+            bindings = <&macro_tap &kp DOT &kp SPACE>
+            , <&macro_wait_time 0>
+            , <&skq LSHIFT>;
         };
 
         hpmt: hold_preferred_mod_tap_qt {
