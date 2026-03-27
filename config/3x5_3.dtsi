@@ -152,6 +152,14 @@
             // (Staying with default limit of 32 definitions)
         };
 
+        magic_dot: magic_dot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <20>;
+            bindings = <&macro_tap &kp DOT &kp SPACE &sk LSHIFT>;
+        };
+
         hpmt: hold_preferred_mod_tap_qt {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -231,7 +239,7 @@
         dot_colon: dot_colon {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp COLON>;
+            bindings = <&magic_dot>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             // need to keep shift, and anything else too:
             keep-mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
