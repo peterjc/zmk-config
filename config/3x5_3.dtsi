@@ -86,10 +86,20 @@
 / {
     behaviors {
 
+        // Default wait time is 15ms, tap time 30ms
         comma_space: comma_space {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <20>;
             bindings = <&macro_tap &kp COMMA &kp SPACE>;
+        };
+        comma_enter: comma_enter {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <20>;
+            bindings = <&macro_tap &kp COMMA &kp ENTER>;
         };
         magic_comma_shift: magic_comma_shift {
             compatible = "zmk,behavior-leader-key";
