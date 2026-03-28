@@ -409,62 +409,6 @@
             require-prior-idle-ms = <125>;
         };
 
-        // 2-key horizontal home-row combos for modifiers
-        left_alt_combo {
-            bindings = <&kp LALT>;
-            key-positions = <LM3 LM4>;
-            layers = <DEFAULT NUM_NAV>;
-            require-prior-idle-ms = <250>;
-        };
-        right_alt_combo {
-            bindings = <&kp RALT>;
-            key-positions = <RM3 RM4>;
-            layers = <DEFAULT NUM_NAV>;
-            require-prior-idle-ms = <250>;
-        };
-        left_ctrl_combo {
-            bindings = <&kp LCTRL>;
-            key-positions = <LM2 LM3>;
-            layers = <DEFAULT NUM_NAV>;
-            require-prior-idle-ms = <250>;
-        };
-        right_ctrl_combo {
-            bindings = <&kp RCTRL>;
-            key-positions = <RM2 RM3>;
-            layers = <DEFAULT NUM_NAV>;
-            require-prior-idle-ms = <250>;
-        };
-        left_gui_combo {
-            bindings = <&kp LGUI>;
-            key-positions = <LM1 LM2>;
-            layers = <DEFAULT NUM_NAV>;
-            require-prior-idle-ms = <250>;
-            timeout-ms = <40>;
-        };
-        right_gui_combo {
-            bindings = <&kp RGUI>;
-            key-positions = <RM1 RM2>;
-            layers = <DEFAULT NUM_NAV>;
-            require-prior-idle-ms = <250>;
-            timeout-ms = <40>;
-        };
-
-        // 2-key horizontal bottom-row combos for shift
-        left_shift_combo {
-            bindings = <&kp LSHFT>;
-            key-positions = <LB1 LB2>;
-            layers = <DEFAULT NUM_NAV>;
-            require-prior-idle-ms = <250>;
-            timeout-ms = <40>;
-        };
-        right_shift_combo {
-            bindings = <&kp RSHFT>;
-            key-positions = <RB1 RB2>;
-            layers = <DEFAULT NUM_NAV>;
-            require-prior-idle-ms = <250>;
-            timeout-ms = <40>;
-        };
-
         // 2-key horizontal combos for rare letters
         q_combo {
             bindings = <&kp Q>;
