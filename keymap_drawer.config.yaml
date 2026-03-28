@@ -155,31 +155,31 @@ parse_config:
     close_square_curly: {'key': ']}'}
   raw_binding_map:
     # These are the English letters defined here to tag them by usage:
-    '&kp A': {'t': 'aA', 'type': 'high'}
-    '&kp B': {'t': 'bB', 'type': 'medium-low'}
-    '&kp C': {'t': 'cC', 'type': 'medium'}
-    '&kp D': {'t': 'dD', 'type': 'medium-high'}
-    '&kp E': {'t': 'eE', 'type': 'high'}
-    '&kp F': {'t': 'fF', 'type': 'medium'}
+    '&hmr LGUI A': {'t': 'aA', 'type': 'high', 'h': '⌘'}
+    '&hml RSHFT B': {'t': 'bB', 'type': 'medium-low', 'h': '⇧'}
+    '&hmr LSHFT C': {'t': 'cC', 'type': 'medium', 'h': '⇧'}
+    '&hml RCTRL D': {'t': 'dD', 'type': 'medium-high', 'h': '⌃'}
+    '&hmr LCTRL E': {'t': 'eE', 'type': 'high', 'h': '⌃'}
+    '&hml RALT F': {'t': 'fF', 'type': 'medium', 'h': '⎇'}
     '&kp G': {'t': 'gG', 'type': 'medium'}
-    '&kp H': {'t': 'hH', 'type': 'high'}
-    '&kp I': {'t': 'iI', 'type': 'high'}
+    '&hml LGUI H': {'t': 'hH', 'type': 'high', 'h': '⌘'}
+    '&hmr LALT I': {'t': 'iI', 'type': 'high', 'h': '⎇'}
     '&kp J': {'t': 'jJ', 'type': 'low'}
     '&kp K': {'t': 'kK', 'type': 'low'}
-    '&kp L': {'t': 'lL', 'type': 'medium-high'}
+    '&hml RGUI L': {'t': 'lL', 'type': 'medium-high', 'h': '⌘'}
     '&kp M': {'t': 'mM', 'type': 'medium'}
-    '&kp N': {'t': 'nN', 'type': 'high'}
-    '&kp O': {'t': 'oO', 'type': 'high'}
+    '&hml LALT N': {'t': 'nN', 'type': 'high', 'h': '⎇'}
+    '&hmr RCTRL O': {'t': 'oO', 'type': 'high', 'h': '⌃'}
     '&kp P': {'t': 'pP', 'type': 'medium-low'}
     '&kp Q': {'t': 'vQ', 'type': 'low'}
     '&kp R': {'t': 'rR', 'type': 'high'}
-    '&kp S': {'t': 'sS', 'type': 'high'}
-    '&kp T': {'t': 'tT', 'type': 'high'}
-    '&kp U': {'t': 'uU', 'type': 'medium-high'}
+    '&hml LSHFT S': {'t': 'sS', 'type': 'high', 'h': '⇧'}
+    '&hml LCTRL T': {'t': 'tT', 'type': 'high', 'h': '⌃'}
+    '&hmr RGUI U': {'t': 'uU', 'type': 'medium-high', 'h': '⌘'}
     '&kp V': {'t': 'vV', 'type': 'low'}
-    '&kp W': {'t': 'wW', 'type': 'medium'}
+    '&hmr RSHFT W': {'t': 'wW', 'type': 'medium', 'h': '⇧'}
     '&kp X': {'t': 'xX', 'type': 'low'}
-    '&kp Y': {'t': 'yY', 'type': 'medium'}
+    '&hmr RALT Y': {'t': 'yY', 'type': 'medium', 'h': '⎇'}
     '&kp Z': {'t': 'zZ', 'type': 'low'}
     '&kp COMMA': {'t': ',<', 'type': 'medium-low'}
     '&kp SEMI': {'t': ';:', 'type': 'low'}
