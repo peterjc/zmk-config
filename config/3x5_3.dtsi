@@ -31,6 +31,23 @@
 #define NAGINATA 1
 #define NUM_NAV 2
 
+#ifndef LT0
+  // Have reduced 33332 blocks like some Hummingbird keyboards
+  #define KEYS_L LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4
+  #define KEYS_R RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4
+#else
+  // Have the full 33333 or 3x5 blocks
+  #define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4
+  #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4
+#endif
+#ifndef LH0
+  #define THUMBS LH1 RH1 // Only two thumb-keys (one per thumb)
+#elifndef LH2
+  #define THUMBS LH1 LH0 RH0 RH1 // Four thumb-keys (two per thumb)
+#else
+  #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2 // At least six thumb-keys
+#endif
+
 / {
     behaviors {
       skq: sticky_key_quick_release {
@@ -178,6 +195,31 @@
             , <&skq LSHIFT>;
         };
 
+        /* Left-hand HRMs. */
+        hml: home_row_mod_left {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-on-release;
+        };
+        /* Right-hand HRMs. */
+        hmr: home_row_mod_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_L THUMBS>;
+            hold-trigger-on-release;
+        };
+
         hpmt: hold_preferred_mod_tap_qt {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -283,7 +325,7 @@
             display-name = "HD Promethium";
             bindings = <LAYER_FROM36( \
                 &kp ESCAPE, &kp P, &kp G, &kp M, &kp X,      &kp SLASH,   &kp BSPC, &xquote, &kp MINUS, &kp EQUAL, \
-                &kp S,      &kp N, &kp T, &kp H, &kp K,      &dot_colon,  &kp A,    &kp E,   &kp I,     &kp C,  \
+                &hml LALT S, &hml LCTRL N, &hml LGUI T, &hml LSHFT H, &kp K, &dot_colon, &hmr RSHFT A, &hmr RGUI E, &hmr RCTRL I, &hmr RALT C,  \
                 &kp B,      &kp F, &kp D, &kp L, &kp J,      &comma_semi, &kp U,    &kp O,   &kp Y,     &kp W,  \
                 &kp TAB, &bmt LSHFT R, &hpmt LSHFT BSPC,     &kp RSHFT, &space_R_layer NUM_NAV 0, &mo NUM_NAV \
             )>;
