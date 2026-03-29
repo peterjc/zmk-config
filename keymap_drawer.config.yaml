@@ -157,30 +157,30 @@ parse_config:
     # These are the English letters defined here to tag them by usage:
     '&kp Q': {'t': 'vQ', 'type': 'low'}
     '&kp W': {'t': 'wW', 'type': 'medium'}
-    '&kp E': {'t': 'eE', 'type': 'high'}
+    '&hmr RGUI E': {'t': 'eE', 'type': 'high', 'h': '⌘'}
     '&kp R': {'t': 'rR', 'type': 'high'}
-    '&kp T': {'t': 'tT', 'type': 'high'}
+    '&hml LGUI T': {'t': 'tT', 'type': 'high', 'h': '⌘'}
     '&kp Y': {'t': 'yY', 'type': 'medium'}
     '&kp U': {'t': 'uU', 'type': 'medium-high'}
-    '&kp I': {'t': 'iI', 'type': 'high'}
+    '&hmr RCTRL I': {'t': 'iI', 'type': 'high', 'h': '⌃'}
     '&kp O': {'t': 'oO', 'type': 'high'}
     '&kp P': {'t': 'pP', 'type': 'medium-low'}
-    '&kp A': {'t': 'aA', 'type': 'high'}
-    '&kp S': {'t': 'sS', 'type': 'high'}
+    '&hmr RSHFT A': {'t': 'aA', 'type': 'high', 'h': '⇧'}
+    '&hml LALT S': {'t': 'sS', 'type': 'high', 'h': '⎇'}
     '&kp D': {'t': 'dD', 'type': 'medium-high'}
     '&kp F': {'t': 'fF', 'type': 'medium'}
     '&kp G': {'t': 'gG', 'type': 'medium'}
-    '&kp H': {'t': 'hH', 'type': 'high'}
+    '&hml LSHFT H': {'t': 'hH', 'type': 'high', 'h': '⇧'}
     '&kp J': {'t': 'jJ', 'type': 'low'}
     '&kp K': {'t': 'kK', 'type': 'low'}
     '&kp L': {'t': 'lL', 'type': 'medium-high'}
     '&kp SEMI': {'t': ';:', 'type': 'low'}
     '&kp Z': {'t': 'zZ', 'type': 'low'}
     '&kp X': {'t': 'xX', 'type': 'low'}
-    '&kp C': {'t': 'cC', 'type': 'medium'}
+    '&hmr RALT C': {'t': 'cC', 'type': 'medium', 'h': '⎇'}
     '&kp V': {'t': 'vV', 'type': 'low'}
     '&kp B': {'t': 'bB', 'type': 'medium-low'}
-    '&kp N': {'t': 'nN', 'type': 'high'}
+    '&hml LCTRL N': {'t': 'nN', 'type': 'high', 'h': '⌃'}
     '&kp M': {'t': 'mM', 'type': 'medium'}
     '&kp COMMA': {'t': ',<', 'type': 'medium-low'}
     '&comma_semi': {'t': ',;', 'type': 'medium-low'}
