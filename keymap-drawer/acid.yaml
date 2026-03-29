@@ -11,16 +11,16 @@ layers:
   - {t: '''"', type: medium-low}
   - {t: -_, type: medium-low}
   - {t: =+, type: low}
-  - {t: sS, type: high}
-  - {t: nN, type: high}
-  - {t: tT, type: high}
-  - {t: hH, type: high}
+  - {t: sS, h: ⎇, type: high}
+  - {t: nN, h: ⌃, type: high}
+  - {t: tT, h: ⌘, type: high}
+  - {t: hH, h: ⇧, type: high}
   - {t: kK, type: low}
   - {t: '.:', type: medium-low}
-  - {t: aA, type: high}
-  - {t: eE, type: high}
-  - {t: iI, type: high}
-  - {t: cC, type: medium}
+  - {t: aA, h: ⇧, type: high}
+  - {t: eE, h: ⌘, type: high}
+  - {t: iI, h: ⌃, type: high}
+  - {t: cC, h: ⎇, type: medium}
   - {t: bB, type: medium-low}
   - {t: fF, type: medium}
   - {t: dD, type: medium-high}
@@ -31,10 +31,10 @@ layers:
   - {t: oO, type: high}
   - {t: yY, type: medium}
   - {t: wW, type: medium}
-  - {t: rR, h: ⇧, type: high}
+  - {t: rR, type: high}
   - {t: ⌫, h: ⇧}
   - ⇧
-  - {t: ⎵R, h: Num+Nav, type: high}
+  - {t: ⎵, h: Num+Nav, type: high}
   Naginata:
   - {t: ⎋, h: Small-kana}
   - {left: き, right: め}
@@ -81,18 +81,18 @@ layers:
   - ↑
   - _
   - ⏯
-  - '*'
-  - '4'
-  - '5'
-  - '6'
+  - {t: '*', h: ⎇}
+  - {t: '4', h: ⌃}
+  - {t: '5', h: ⌘}
+  - {t: '6', h: ⇧}
   - +
   - ⇞
   - ←
   - ↓
   - →
-  - 'VOL
+  - {t: 'VOL
 
-    UP'
+      UP', h: ⎇}
   - .
   - '7'
   - '8'
@@ -146,24 +146,6 @@ combos:
   o: -0.02
   s: 0.5
   h: 15.0
-- p: [11, 10]
-  k: ⎇
-  l: [HD Promethium, Num + Nav]
-- p: [12, 11]
-  k: ⌃
-  l: [HD Promethium, Num + Nav]
-- p: [13, 12]
-  k: ⌘
-  l: [HD Promethium, Num + Nav]
-- p: [18, 19]
-  k: ⎇
-  l: [HD Promethium, Num + Nav]
-- p: [17, 18]
-  k: ⌃
-  l: [HD Promethium, Num + Nav]
-- p: [16, 17]
-  k: ⌘
-  l: [HD Promethium, Num + Nav]
 - p: [3, 2]
   k: {t: vQ, type: low}
   l: [HD Promethium]
@@ -175,9 +157,6 @@ combos:
   l: [HD Promethium]
 - p: [22, 21]
   k: {t: xX, type: low}
-  l: [HD Promethium]
-- p: [30, 33]
-  k: ⇧⎵
   l: [HD Promethium]
 - p: [0, 10]
   k: '`'
