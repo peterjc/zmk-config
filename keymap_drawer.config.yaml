@@ -155,34 +155,34 @@ parse_config:
     close_square_curly: {'key': ']}'}
   raw_binding_map:
     # These are the English letters defined here to tag them by usage:
-    '&kp Q': {'t': 'vQ', 'type': 'low'}
-    '&kp W': {'t': 'wW', 'type': 'medium'}
-    '&kp E': {'t': 'eE', 'type': 'high'}
-    '&kp R': {'t': 'rR', 'type': 'high'}
-    '&kp T': {'t': 'tT', 'type': 'high'}
-    '&kp Y': {'t': 'yY', 'type': 'medium'}
-    '&kp U': {'t': 'uU', 'type': 'medium-high'}
-    '&kp I': {'t': 'iI', 'type': 'high'}
-    '&kp O': {'t': 'oO', 'type': 'high'}
-    '&kp P': {'t': 'pP', 'type': 'medium-low'}
     '&kp A': {'t': 'aA', 'type': 'high'}
-    '&kp S': {'t': 'sS', 'type': 'high'}
+    '&kp B': {'t': 'bB', 'type': 'medium-low'}
+    '&kp C': {'t': 'cC', 'type': 'medium'}
     '&kp D': {'t': 'dD', 'type': 'medium-high'}
+    '&kp E': {'t': 'eE', 'type': 'high'}
     '&kp F': {'t': 'fF', 'type': 'medium'}
     '&kp G': {'t': 'gG', 'type': 'medium'}
     '&kp H': {'t': 'hH', 'type': 'high'}
+    '&kp I': {'t': 'iI', 'type': 'high'}
     '&kp J': {'t': 'jJ', 'type': 'low'}
     '&kp K': {'t': 'kK', 'type': 'low'}
     '&kp L': {'t': 'lL', 'type': 'medium-high'}
-    '&kp SEMI': {'t': ';:', 'type': 'low'}
-    '&kp Z': {'t': 'zZ', 'type': 'low'}
-    '&kp X': {'t': 'xX', 'type': 'low'}
-    '&kp C': {'t': 'cC', 'type': 'medium'}
-    '&kp V': {'t': 'vV', 'type': 'low'}
-    '&kp B': {'t': 'bB', 'type': 'medium-low'}
-    '&kp N': {'t': 'nN', 'type': 'high'}
     '&kp M': {'t': 'mM', 'type': 'medium'}
+    '&kp N': {'t': 'nN', 'type': 'high'}
+    '&kp O': {'t': 'oO', 'type': 'high'}
+    '&kp P': {'t': 'pP', 'type': 'medium-low'}
+    '&kp Q': {'t': 'vQ', 'type': 'low'}
+    '&kp R': {'t': 'rR', 'type': 'high'}
+    '&kp S': {'t': 'sS', 'type': 'high'}
+    '&kp T': {'t': 'tT', 'type': 'high'}
+    '&kp U': {'t': 'uU', 'type': 'medium-high'}
+    '&kp V': {'t': 'vV', 'type': 'low'}
+    '&kp W': {'t': 'wW', 'type': 'medium'}
+    '&kp X': {'t': 'xX', 'type': 'low'}
+    '&kp Y': {'t': 'yY', 'type': 'medium'}
+    '&kp Z': {'t': 'zZ', 'type': 'low'}
     '&kp COMMA': {'t': ',<', 'type': 'medium-low'}
+    '&kp SEMI': {'t': ';:', 'type': 'low'}
     '&comma_semi': {'t': ',;', 'type': 'medium-low'}
     #'&kp DOT': {'t': '.>', 'type': 'medium-low'}
     # For use with numberpad:
@@ -198,32 +198,32 @@ parse_config:
     '&bmt LSHFT R': {'t': 'rR', 'h': '⇧', 'type': 'high'}
     '&space_R_layer NUM_NAV 0': {'t': '⎵R', 'h': 'Num+Nav', 'type': 'high'}
     # And again for auto-shift:
-    'AS(Q)': {'t': 'qQ', 'type': 'low'}
-    'AS(W)': {'t': 'wW', 'type': 'medium'}
-    'AS(E)': {'t': 'eE', 'type': 'high'}
-    'AS(R)': {'t': 'rR', 'type': 'high'}
-    'AS(T)': {'t': 'tT', 'type': 'high'}
-    'AS(Y)': {'t': 'yY', 'type': 'medium'}
-    'AS(U)': {'t': 'uU', 'type': 'medium-high'}
-    'AS(I)': {'t': 'iI', 'type': 'high'}
-    'AS(O)': {'t': 'oO', 'type': 'high'}
-    'AS(P)': {'t': 'pP', 'type': 'medium-low'}
     'AS(A)': {'t': 'aA', 'type': 'high'}
-    'AS(S)': {'t': 'sS', 'type': 'high'}
+    'AS(B)': {'t': 'bB', 'type': 'medium-low'}
+    'AS(C)': {'t': 'cC', 'type': 'medium'}
     'AS(D)': {'t': 'dD', 'type': 'medium-high'}
+    'AS(E)': {'t': 'eE', 'type': 'high'}
     'AS(F)': {'t': 'fF', 'type': 'medium'}
     'AS(G)': {'t': 'gG', 'type': 'medium'}
     'AS(H)': {'t': 'hH', 'type': 'high'}
+    'AS(I)': {'t': 'iI', 'type': 'high'}
     'AS(J)': {'t': 'jJ', 'type': 'low'}
     'AS(K)': {'t': 'kK', 'type': 'low'}
     'AS(L)': {'t': 'lL', 'type': 'medium-high'}
-    'AS(Z)': {'t': 'zZ', 'type': 'low'}
-    'AS(X)': {'t': 'xX', 'type': 'low'}
-    'AS(C)': {'t': 'cC', 'type': 'medium'}
-    'AS(V)': {'t': 'vV', 'type': 'low'}
-    'AS(B)': {'t': 'bB', 'type': 'medium-low'}
-    'AS(N)': {'t': 'nN', 'type': 'high'}
     'AS(M)': {'t': 'mM', 'type': 'medium'}
+    'AS(N)': {'t': 'nN', 'type': 'high'}
+    'AS(O)': {'t': 'oO', 'type': 'high'}
+    'AS(P)': {'t': 'pP', 'type': 'medium-low'}
+    'AS(Q)': {'t': 'qQ', 'type': 'low'}
+    'AS(R)': {'t': 'rR', 'type': 'high'}
+    'AS(S)': {'t': 'sS', 'type': 'high'}
+    'AS(T)': {'t': 'tT', 'type': 'high'}
+    'AS(U)': {'t': 'uU', 'type': 'medium-high'}
+    'AS(V)': {'t': 'vV', 'type': 'low'}
+    'AS(W)': {'t': 'wW', 'type': 'medium'}
+    'AS(X)': {'t': 'xX', 'type': 'low'}
+    'AS(Y)': {'t': 'yY', 'type': 'medium'}
+    'AS(Z)': {'t': 'zZ', 'type': 'low'}
     'AS(SLASH)': {'t': '/?', 'type': 'low'}
     'AS(MINUS)': {'t': '-_', 'type': 'medium-low'}
     'AS(EQUAL)': {'t': '=+', 'type': 'low'}
