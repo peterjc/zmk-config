@@ -16,6 +16,11 @@ of word, and forward to start of next word in Vim or Helix.
 Most of the symbols are 2-key vertical combos, the brackets are 2-key horizontal
 combos (open on the left hand, close on the right).
 
+This has *Auto Shift* setup, meaning a long tap on the base layer letters and
+symbols gives the capital or shifted form. I am also trying out *Magic Comma Shift*
+whereby typing comma then a letter will give the capital version of the letter -
+but typing comma and space just works as usual.
+
 I wanted to be able to use this on my laptop too - achieved with [custom Karabiner-Elements
 rules](https://codeberg.org/peterjc/kana-chording-ke/src/branch/main/hands-down-on-jis-macbook)
 (see this [blog post](https://blastedbio.blogspot.com/2025/05/what-have-you-done-to-your-keyboard.html)).
@@ -41,9 +46,6 @@ hand has navigation keys including an inverted-tee set of cursors at the Qwerty
 JKIL position inspired by [Dreymar's Extend layer](https://dreymar.colemak.org/layers-extend.html).
 The left hand has a number-pad, with 123 at the top like a mobile phone (since
 in a traditional keyboard 123 are about there).
-
-I am trying *Magic Comma Shift* whereby typing comma then a letter will give the
-capital version of the letter - but typing comma and space just works as usual.
 
 ## Split 3x5_3 aka 33333+3 Layout with 36 keys
 
