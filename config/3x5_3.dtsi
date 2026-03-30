@@ -185,24 +185,6 @@
             bindings = <&mo>, <&kp>;
         };
 
-        space_R: space_R {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE>, <&kp R>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            // need to keep shift, and anything else too:
-            keep-mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
-        };
-        space_R_layer: space_R_layer {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <300>;
-            quick-tap-ms = <250>;
-            bindings = <&mo>, <&space_R>;
-            display-name = "Space/R/Layer";
-        };
-
         // make shift+quote give double-quote like ANSI or Apple UK
         // when host setup with British layout (would be @-sign)
         xquote: override_shift_quote {
@@ -259,7 +241,7 @@
                 &kp ESCAPE, &kp P, &kp G, &kp M, &kp X,      &kp SLASH,   &kp BSPC, &xquote, &kp MINUS, &kp EQUAL, \
                 &kp S,      &kp N, &kp T, &kp H, &kp K,      &dot_colon,  &kp A,    &kp E,   &kp I,     &kp C,  \
                 &kp B,      &kp F, &kp D, &kp L, &kp J,      &comma_semi, &kp U,    &kp O,   &kp Y,     &kp W,  \
-                &kp TAB, &bmt LSHFT R, &hpmt LSHFT BSPC,     &kp RSHFT, &space_R_layer NUM_NAV 0, &mo NUM_NAV \
+                &kp TAB, &bmt LSHFT R, &hpmt LSHFT BSPC,     &kp RSHFT, &blt NUM_NAV SPACE, &mo NUM_NAV \
             )>;
         };
 
@@ -444,13 +426,6 @@
         x_combo {
             bindings = <&kp X>;
             key-positions = <LB2 LB3>;
-            layers = <DEFAULT>;
-            timeout-ms = <75>;
-        };
-
-        shift_space_combo {
-            bindings = <&kp LS(SPACE)>;
-            key-positions = <LH1 RH1>;
             layers = <DEFAULT>;
             timeout-ms = <75>;
         };
