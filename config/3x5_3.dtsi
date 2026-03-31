@@ -414,6 +414,22 @@
             timeout-ms = <40>;
         };
 
+        // 2-key horizontal bottom-row combos for shift
+        left_shift_combo {
+            bindings = <&kp LSHFT>;
+            key-positions = <LB1 LB2>;
+            layers = <DEFAULT NUM_NAV>;
+            require-prior-idle-ms = <250>;
+            timeout-ms = <40>;
+        };
+        right_shift_combo {
+            bindings = <&kp RSHFT>;
+            key-positions = <RB1 RB2>;
+            layers = <DEFAULT NUM_NAV>;
+            require-prior-idle-ms = <250>;
+            timeout-ms = <40>;
+        };
+
         // 2-key horizontal combos for rare letters
         q_combo {
             bindings = <AS(Q)>;
