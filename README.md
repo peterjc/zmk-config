@@ -25,8 +25,8 @@ I wanted to be able to use this on my laptop too - achieved with [custom Karabin
 rules](https://codeberg.org/peterjc/kana-chording-ke/src/branch/main/hands-down-on-jis-macbook)
 (see this [blog post](https://blastedbio.blogspot.com/2025/05/what-have-you-done-to-your-keyboard.html)).
 
-Most of the combos are for symbols which on a traditional layout are normally typed with shift.
-The brackets and other inner column combos are an exception where the keyma
+Most of the combos are for symbols which on a traditional layout are normally typed
+with shift. Brackets and other inner column combos are an exception where the keymap
 images with two symbols indicate a plain combo, or with shift. Here `[{` and `]}`
 are normal pairings, but `(<` and `)>` are atypical.
 
