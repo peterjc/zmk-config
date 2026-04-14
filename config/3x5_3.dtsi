@@ -164,11 +164,12 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-
+        /* Don't use this for alt or GUI on Windows; shift and ctrl fine */
         hpmt: hold_preferred_mod_tap_qt {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
+            hold-while-undecided;
             tapping-term-ms = <300>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
