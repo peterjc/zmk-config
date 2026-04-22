@@ -133,6 +133,8 @@ parse_config:
     KP_PLUS: '+'
     KP_MINUS: '-'
   zmk_combos:
+    sticky_shift_combo: {'hidden': true}
+    magic_dot_combo: {'hidden': true}
     caps_word_combo: {'key': '⇪'}
     combo_studio_unlock: {'key': 'Studio Unlock', 'align': 'top', 'offset': 0.3, 'width': 50}
     combo_bootloader: {'key': 'Boot loader', 'width': 50}

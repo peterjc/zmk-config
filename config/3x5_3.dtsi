@@ -174,6 +174,28 @@
             // (Staying with default limit of 32 definitions)
         };
 
+        skq: sticky_key_quick_release {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <1000>;
+            quick-release;
+            lazy;
+            ignore-modifiers;
+        };
+
+        // Use a shorter than default tap time and wait between dot and space,
+        // but no wait at all between the space and (lazy) sticky shift.
+        magic_dot: magic_dot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <15>;
+            bindings = <&macro_tap &kp DOT &kp SPACE>
+            , <&macro_wait_time 0>
+            , <&skq LSHIFT>;
+        };
+
         /* Left-hand HRMs. */
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
@@ -417,6 +439,23 @@
             key-positions = <LM1 LM3>; // Qwerty S+F, on left hand home row
             bindings = <&ng_off>;
             layers = <DEFAULT NAGINATA>;
+        };
+
+        // 2-key horizontal combos on home row
+        sticky_shift_combo {
+            bindings = <&skq RSHFT>;
+            key-positions = <LM1 LM2>;
+            layers = <DEFAULT NUM_NAV>;
+            require-prior-idle-ms = <250>;
+            timeout-ms = <40>;
+        };
+
+        magic_dot_combo {
+            bindings = <&magic_dot>;
+            key-positions = <RM1 RM2>;
+            layers = <DEFAULT NUM_NAV>;
+            require-prior-idle-ms = <250>;
+            timeout-ms = <40>;
         };
 
         // 3-key horizontal combos on bottom row
