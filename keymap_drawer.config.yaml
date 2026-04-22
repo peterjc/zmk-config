@@ -172,7 +172,7 @@ parse_config:
     '&hmr RCTRL O': {'t': 'oO', 'type': 'high', 'h': '⌃'}
     '&kp P': {'t': 'pP', 'type': 'medium-low'}
     '&kp Q': {'t': 'vQ', 'type': 'low'}
-    '&kp R': {'t': 'rR', 'type': 'high'}
+    '&bmt LSHFT R': {'t': 'rR', 'type': 'high', 'h': '⇧'}
     '&hml RSHFT S': {'t': 'sS', 'type': 'high', 'h': '⇧'}
     '&hml LCTRL T': {'t': 'tT', 'type': 'high', 'h': '⌃'}
     '&hmr RGUI U': {'t': 'uU', 'type': 'medium-high', 'h': '⌘'}
