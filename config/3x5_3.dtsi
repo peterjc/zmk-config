@@ -406,7 +406,7 @@
         combo_ng_on {
             timeout-ms = <300>;
             require-prior-idle-ms = <250>;
-            key-positions = <RM0 RM2>; // Qwerty H+K, on right hand home row
+            key-positions = <RM1 RM3>; // Qwerty J+L, on right hand home row
             bindings = <&ng_on>;
             layers = <DEFAULT NAGINATA>;
         };
@@ -414,12 +414,12 @@
         combo_ng_off {
             timeout-ms = <300>;
             require-prior-idle-ms = <250>;
-            key-positions = <LM0 LM2>; // Qwerty D+G, on left hand home row
+            key-positions = <LM1 LM3>; // Qwerty S+F, on left hand home row
             bindings = <&ng_off>;
             layers = <DEFAULT NAGINATA>;
         };
 
-        // 3-key horizontal combos
+        // 3-key horizontal combos on bottom row
         tab_combo {
             bindings = <&kp TAB>;
             key-positions = <LB1 LB2 LB3>;
