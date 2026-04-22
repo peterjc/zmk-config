@@ -126,20 +126,28 @@ combos:
   k: Boot loader
   l: [HD Promethium]
   w: 50.0
-- p: [15, 17]
+- p: [16, 18]
   k: かな
   l: [HD Promethium, Naginata]
   a: bottom
   o: -0.02
   s: 0.5
   h: 15.0
-- p: [14, 12]
+- p: [13, 11]
   k: ABC
   l: [HD Promethium, Naginata]
   a: bottom
   o: -0.02
   s: -0.5
   h: 15.0
+- p: [13, 12]
+  k: {t: ⇧, h: sticky}
+  l: [HD Promethium, Num + Nav]
+  hidden: true
+- p: [16, 17]
+  k: '&magic_dot'
+  l: [HD Promethium, Num + Nav]
+  hidden: true
 - p: [23, 22, 21]
   k: ↹
   a: bottom
