@@ -208,10 +208,12 @@
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
         };
+        /* Don't use this for alt or GUI on Windows; shift and ctrl fine */
         bmt: balanced_mod_tap_qt {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
+            hold-while-undecided;
             tapping-term-ms = <300>;
             quick-tap-ms = <250>;
             bindings = <&kp>, <&kp>;
@@ -312,7 +314,7 @@
                 &kp ESCAPE,   &kp P,       &kp G,        &kp M,       &kp X,            &kp SLASH,   &kp BSPC,    &xquote,      &kp MINUS,   &kp EQUAL, \
                 &hml RSHFT S, &hml LALT N, &hml LCTRL T, &hml LGUI H, &kp K,            &dot_colon,  &hmr LGUI A, &hmr LCTRL E, &hmr LALT I, &hmr RSHFT C, \
                 &hml RSHFT B, &hml RALT F, &hml RCTRL D, &hml RGUI L, &kp J,            &comma_semi, &hmr RGUI U, &hmr RCTRL O, &hmr RALT Y, &hmr RSHFT W, \
-                                           &kp TAB,    &hpmt LSHFT R, &hpmt LSHFT BSPC, &kp RSHFT,   &space_R_layer NUM_NAV 0, &mo NUM_NAV \
+                                           &kp TAB,     &bmt LSHFT R, &hpmt LSHFT BSPC, &kp RSHFT,   &space_R_layer NUM_NAV 0, &mo NUM_NAV \
             )>;
         };
 
