@@ -157,7 +157,7 @@ parse_config:
     # These are the English letters defined here to tag them by usage:
     '&hmr LGUI A': {'t': 'aA', 'type': 'high', 'h': '⌘'}
     '&hml RSHFT B': {'t': 'bB', 'type': 'medium-low', 'h': '⇧'}
-    '&hmr LSHFT C': {'t': 'cC', 'type': 'medium', 'h': '⇧'}
+    '&hmr RSHFT C': {'t': 'cC', 'type': 'medium', 'h': '⇧'}
     '&hml RCTRL D': {'t': 'dD', 'type': 'medium-high', 'h': '⌃'}
     '&hmr LCTRL E': {'t': 'eE', 'type': 'high', 'h': '⌃'}
     '&hml RALT F': {'t': 'fF', 'type': 'medium', 'h': '⎇'}
@@ -173,7 +173,7 @@ parse_config:
     '&kp P': {'t': 'pP', 'type': 'medium-low'}
     '&kp Q': {'t': 'vQ', 'type': 'low'}
     '&kp R': {'t': 'rR', 'type': 'high'}
-    '&hml LSHFT S': {'t': 'sS', 'type': 'high', 'h': '⇧'}
+    '&hml RSHFT S': {'t': 'sS', 'type': 'high', 'h': '⇧'}
     '&hml LCTRL T': {'t': 'tT', 'type': 'high', 'h': '⌃'}
     '&hmr RGUI U': {'t': 'uU', 'type': 'medium-high', 'h': '⌘'}
     '&kp V': {'t': 'vV', 'type': 'low'}
@@ -195,6 +195,7 @@ parse_config:
     '&kp EQUAL': {'t': '=+', 'type': 'low'}
     '&kp SPACE': {'t': '⎵', 'type': 'high'}
     '&blt NUM_NAV SPACE': {'t': '⎵', 'h': 'Num+Nav', 'type': 'high'}
+    '&space_R_layer NUM_NAV 0': {'t': '⎵R', 'h': 'Num+Nav', 'type': 'high'}
     # And again for auto-shift:
     'AS(A)': {'t': 'aA', 'type': 'high'}
     'AS(B)': {'t': 'bB', 'type': 'medium-low'}
