@@ -231,12 +231,13 @@
             bindings = <&kp>, <&kp>;
         };
         /* Don't use this for alt or GUI on Windows; shift and ctrl fine */
-        bmt: balanced_mod_tap {
+        bmt: balanced_mod_tap_qt {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
             hold-while-undecided;
             tapping-term-ms = <300>;
+            quick-tap-ms = <250>;
             bindings = <&kp>, <&kp>;
         };
         tpmt: tap_preferred_mod_tap_qt {
