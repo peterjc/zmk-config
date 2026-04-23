@@ -220,9 +220,6 @@ combos:
 - p: [30, 29]
   k: {t: xX, type: low}
   l: [HD Promethium]
-- p: [42, 44]
-  k: ⇪
-  l: [HD Promethium]
 - p: [15, 28]
   k: '`'
   l: [HD Promethium, Num + Nav]
