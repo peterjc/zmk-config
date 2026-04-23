@@ -304,12 +304,12 @@ text.right {
 </text>
 </g>
 <g class="combo combopos-1">
-<path d="M360,169 l-62,-42" class="combo"/>
-<path d="M360,169 l62,-42" class="combo"/>
-<path d="M360,169 l-100,45" class="combo"/>
-<path d="M360,169 l100,45" class="combo"/>
-<rect rx="6" ry="6" x="335" y="156" width="50" height="26" class="combo"/>
-<text x="360" y="169" class="combo tap">
+<path d="M360,250 h-72 a6.0,6.0 0 0 1 -6.0,-6.0 v-108" class="combo"/>
+<path d="M360,250 h72 a6.0,6.0 0 0 0 6.0,-6.0 v-108" class="combo"/>
+<path d="M360,250 h-111 a6.0,6.0 0 0 1 -6.0,-6.0 v-4" class="combo"/>
+<path d="M360,250 h111 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
+<rect rx="6" ry="6" x="335" y="237" width="50" height="26" class="combo"/>
+<text x="360" y="250" class="combo tap">
 <tspan x="360" dy="-0.6em">Boot</tspan><tspan x="360" dy="1.2em">loader</tspan>
 </text>
 </g>

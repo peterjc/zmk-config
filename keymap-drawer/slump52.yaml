@@ -173,6 +173,7 @@ combos:
 - p: [5, 6, 19, 20]
   k: Boot loader
   l: [HD Promethium]
+  a: bottom
   w: 50.0
 - p: [21, 23]
   k: かな
