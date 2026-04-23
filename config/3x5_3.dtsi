@@ -501,6 +501,13 @@
             timeout-ms = <75>;
         };
 
+        caps_word_combo {
+            bindings = <&caps_word>;
+            key-positions = <LH1 RH1>;
+            layers = <DEFAULT>;
+            timeout-ms = <75>;
+        };
+
         // 2-key vertical combos (symbols)
         backtick {
             bindings = <&kp GRAVE>;
