@@ -170,7 +170,7 @@ combos:
   a: top
   o: 0.3
   w: 50.0
-- p: [5, 6, 42, 44]
+- p: [5, 6, 19, 20]
   k: Boot loader
   l: [HD Promethium]
   w: 50.0
