@@ -377,16 +377,16 @@ text.right {
 </text>
 </g>
 <g class="combo combopos-2">
-<path d="M487,154 h-83 a6.0,6.0 0 0 1 -6.0,-6.0 v-3" class="combo"/>
-<path d="M487,154 h24 a6.0,6.0 0 0 0 6.0,-6.0 v-24" class="combo"/>
-<rect rx="6" ry="6" x="473" y="146" width="28" height="15" class="combo"/>
-<text x="487" y="154" class="combo tap">かな</text>
+<path d="M558,156 h-91 a6.0,6.0 0 0 1 -6.0,-6.0 v-3" class="combo"/>
+<path d="M558,156 h26 a6.0,6.0 0 0 0 6.0,-6.0 v-42" class="combo"/>
+<rect rx="6" ry="6" x="544" y="148" width="28" height="15" class="combo"/>
+<text x="558" y="156" class="combo tap">かな</text>
 </g>
 <g class="combo combopos-3">
-<path d="M206,154 h83 a6.0,6.0 0 0 0 6.0,-6.0 v-3" class="combo"/>
-<path d="M206,154 h-24 a6.0,6.0 0 0 1 -6.0,-6.0 v-24" class="combo"/>
-<rect rx="6" ry="6" x="192" y="146" width="28" height="15" class="combo"/>
-<text x="206" y="154" class="combo tap">ABC</text>
+<path d="M135,156 h91 a6.0,6.0 0 0 0 6.0,-6.0 v-3" class="combo"/>
+<path d="M135,156 h-26 a6.0,6.0 0 0 1 -6.0,-6.0 v-42" class="combo"/>
+<rect rx="6" ry="6" x="121" y="148" width="28" height="15" class="combo"/>
+<text x="135" y="156" class="combo tap">ABC</text>
 </g>
 <g class="combo combopos-4">
 <path d="M119,207 h84 a6.0,6.0 0 0 0 6.0,-6.0 v-3" class="combo"/>
@@ -751,16 +751,16 @@ text.right {
 <text x="0" y="0" class="key tap">RET</text>
 </g>
 <g class="combo combopos-0">
-<path d="M487,154 h-83 a6.0,6.0 0 0 1 -6.0,-6.0 v-3" class="combo"/>
-<path d="M487,154 h24 a6.0,6.0 0 0 0 6.0,-6.0 v-24" class="combo"/>
-<rect rx="6" ry="6" x="473" y="146" width="28" height="15" class="combo"/>
-<text x="487" y="154" class="combo tap">かな</text>
+<path d="M558,156 h-91 a6.0,6.0 0 0 1 -6.0,-6.0 v-3" class="combo"/>
+<path d="M558,156 h26 a6.0,6.0 0 0 0 6.0,-6.0 v-42" class="combo"/>
+<rect rx="6" ry="6" x="544" y="148" width="28" height="15" class="combo"/>
+<text x="558" y="156" class="combo tap">かな</text>
 </g>
 <g class="combo combopos-1">
-<path d="M206,154 h83 a6.0,6.0 0 0 0 6.0,-6.0 v-3" class="combo"/>
-<path d="M206,154 h-24 a6.0,6.0 0 0 1 -6.0,-6.0 v-24" class="combo"/>
-<rect rx="6" ry="6" x="192" y="146" width="28" height="15" class="combo"/>
-<text x="206" y="154" class="combo tap">ABC</text>
+<path d="M135,156 h91 a6.0,6.0 0 0 0 6.0,-6.0 v-3" class="combo"/>
+<path d="M135,156 h-26 a6.0,6.0 0 0 1 -6.0,-6.0 v-42" class="combo"/>
+<rect rx="6" ry="6" x="121" y="148" width="28" height="15" class="combo"/>
+<text x="135" y="156" class="combo tap">ABC</text>
 </g>
 <g class="combo combopos-2">
 <path d="M119,207 h84 a6.0,6.0 0 0 0 6.0,-6.0 v-3" class="combo"/>
