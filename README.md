@@ -32,8 +32,8 @@ currently at [v17](https://oookaworks.seesaa.net/article/519707171.html).
 I made minor changes so that Qwerty `Q` is now Escape on tap, small on hold, and
 added shift-space on a thumb for kanji selection without needing editing layers.
 Due to my brackets combos clashing with the default way to switch Japanese mode
-and the Naginata layer on and off, those are Qwerty `D`+`G` (labeled 'ABC' in
-the image) and Qwerty `H`+`K` instead (labeled 'かな'). This layout uses a *lot*
+and the Naginata layer on and off, those are Qwerty `S`+`D` (labeled 'ABC' in
+the image) and Qwerty `K`+`L` instead (labeled 'かな'). This layout uses a *lot*
 of chording, but these are not defined as ZMK combos, and so are not drawn here.
 
 The third and final layer is a combined numbers and navigation layer. The right
