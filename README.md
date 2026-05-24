@@ -28,6 +28,13 @@ column horizontal combos are an exception where the keymap images with two symbo
 indicate a plain combo, or with shift. Here `[{` and `]}` are normal pairings, but
 `(<` and `)>` are atypical.
 
+This base layer has *Auto Shift* setup, meaning a long tap on the base layer
+letters and symbols gives the capital or shifted form (except the letter `r`
+on the left thumb which is shift when held - you can hold this and tap space
+on the right thumb for capital `R`). I am also trying out *Magic Comma Shift*
+whereby typing comma then a letter will give the capital version of the
+letter - but typing comma and space just works as usual.
+
 The second layer is for typing in Japanese using Naginata Style (薙刀式) (see
 [blog post](https://astrobeano.blogspot.com/2025/08/naginata-style-for-typing-in-japanese.html))
 using the [ZMK Naginata module](https://github.com/eswai/zmk-naginata). This is
@@ -45,11 +52,6 @@ hand has navigation keys including an inverted-tee set of cursors at the Qwerty
 JKIL position inspired by [Dreymar's Extend layer](https://dreymar.colemak.org/layers-extend.html).
 The left hand has a number-pad, with 123 at the top like a mobile phone (since
 in a traditional keyboard 123 are about there).
-
-I am trying *Magic Comma Shift* whereby typing comma then a letter will give the
-capital version of the letter - but typing comma and space just works as usual.
-Otherwise you can hold the left thumb (letter `r`) for shift (and then tap space
-on the right thumb for capital `R`).
 
 ## Split 3x5_3 aka 33333+3 Layout with 36 keys
 
@@ -147,7 +149,6 @@ the [Hummingbird](https://github.com/PJE66/hummingbird).
 
 This would mean dropping my `Escape` and `=`/`+` keys and all the combos on them.
 Right now that seems challenging. It would also break using the Naginata layout.
-
 
 ## Split 33332+1 Layout with 30 keys
 

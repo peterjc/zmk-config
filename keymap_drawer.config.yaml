@@ -172,7 +172,8 @@ parse_config:
     '&kp O': {'t': 'oO', 'type': 'high'}
     '&kp P': {'t': 'pP', 'type': 'medium-low'}
     '&kp Q': {'t': 'vQ', 'type': 'low'}
-    '&kp R': {'t': 'rR', 'type': 'high'}
+    # '&kp R': {'t': 'rR', 'type': 'high', 'h': '⇧'}
+    '&bmt LSHFT R': {'t': 'rR', 'type': 'high', 'h': '⇧'}
     '&kp S': {'t': 'sS', 'type': 'high'}
     '&kp T': {'t': 'tT', 'type': 'high'}
     '&kp U': {'t': 'uU', 'type': 'medium-high'}
