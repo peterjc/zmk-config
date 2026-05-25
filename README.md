@@ -161,7 +161,7 @@ Comma Shift* only.
 
 ### Bivvy16D
 
-The ZMK keymap in file [bivvy16d.keymap](config/bivvy16D.keymap) is the 30 key
+The ZMK keymap in file [bivvy16d.keymap](config/bivvy16d.keymap) is the 30 key
 layout above, plus navigation and cursors on the two 5-way navigation buttons.
 
 The Bivvy16D has 14-key roll-over excluding the navigation buttons, 4-key roll
