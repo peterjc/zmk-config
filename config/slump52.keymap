@@ -73,7 +73,7 @@ Using pinky stagger here, and treating the thumbs as five thumb keys with no Qwe
          k20                 k31 k32 k34 &kp LEFT &kp DOWN &kp UP &kp RIGHT k29 &kp N0 &kp RET
 
 // This drops Qwerty B and N (k24 and k25), which in my Naginata where the
-// inner columns are vertically inverted are the reduntant left/right arrows.
+// inner columns are vertically inverted are the redundant left/right arrows.
 #define NG_LAYER_FROM36( \
     k00, k01, k02, k03, k04, k05, k06, k07, k08, k09, \
     k10, k11, k12, k13, k14, k15, k16, k17, k18, k19, \

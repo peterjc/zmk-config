@@ -20,7 +20,10 @@ However, for the Naginata layer and in the default ZMK firmware, they are treate
 
                                32 KEY MATRIX / LAYOUT MAPPING
 
-Same, just without LH2 and RH2 and the remaining four thumb keys being 28, 29, 30 and 31. */
+Same, just without LH2 and RH2 and the remaining four thumb keys being 28, 29, 30 and 31.
+Using that here, see the chosen setting.
+
+*/
 
 #pragma once
 
@@ -93,7 +96,7 @@ Same, just without LH2 and RH2 and the remaining four thumb keys being 28, 29, 3
 //            k30  k31  k32  k33  k34  k35
 
 // This drops Qwerty B and N (k24 and k25), which in my Naginata where the
-// inner columns are vertically inverted are the reduntant left/right arrows.
+// inner columns are vertically inverted are the redundant left/right arrows.
 // Thumbs as above.
 #define NG_LAYER_FROM36( \
     k00, k01, k02, k03, k04, k05, k06, k07, k08, k09, \
