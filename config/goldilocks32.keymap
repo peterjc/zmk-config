@@ -32,7 +32,9 @@ However, for the Naginata layer and in the default ZMK firmware, they are treate
 
                                30 KEY MATRIX / LAYOUT MAPPING
 
-Same, just without LH0 and RH0 aka keys 35 and 36. */
+Same, just without LH0 and RH0 aka keys 35 and 36. That is used here (see the chosen setting)!
+
+*/
 
 #pragma once
 
@@ -97,7 +99,7 @@ Same, just without LH0 and RH0 aka keys 35 and 36. */
 //                        k32  k33
 
 // This drops Qwerty B and N (k24 and k25), which in my Naginata where the
-// inner columns are vertically inverted are the reduntant left/right arrows.
+// inner columns are vertically inverted are the redundant left/right arrows.
 // Thumbs as above.
 #define NG_LAYER_FROM36( \
     k00, k01, k02, k03, k04, k05, k06, k07, k08, k09, \
