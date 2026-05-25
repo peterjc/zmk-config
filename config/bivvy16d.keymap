@@ -23,6 +23,11 @@ with the tucked thumbs LH1 and RH1 too:
 
 And there are the two five-way buttons too (keys 30 to 39), which is why the optional splayed
 thumbs LH0 and RH0 are keys 40 and 41.
+
+                         30 (or 40 inc nav) KEY MATRIX / LAYOUT MAPPING
+
+Same, just without LH0 and RH0 aka keys 40 and 41. That is used here (see the chosen setting)!
+
 */
 
 #pragma once
@@ -91,7 +96,7 @@ thumbs LH0 and RH0 are keys 40 and 41.
 //    k32  k33
 
 // This drops Qwerty B and N (k24 and k25), which in my Naginata where the
-// inner columns are vertically inverted are the reduntant left/right arrows.
+// inner columns are vertically inverted are the redundant left/right arrows.
 // Thumbs as above.
 #define NG_LAYER_FROM36( \
     k00, k01, k02, k03, k04, k05, k06, k07, k08, k09, \
