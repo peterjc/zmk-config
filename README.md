@@ -12,28 +12,30 @@ layout](https://www.reddit.com/r/KeyboardLayouts/comments/1g66ivi/hands_down_pro
 with my personal modifications ("Pico Mod") intended to help with some readline shortcuts
 (horizontal pair `B`/`F` for back/forward, vertical pair `P`/`N` for previous/next).
 It also has matching `B` (bottom left) and `W` (bottom right) for back to start
-of word, and forward to start of next word in Vim or Helix.
-Most of the symbols are 2-key vertical combos, the brackets are 2-key horizontal
-combos (open on the left hand, close on the right).
+of word, and forward to start of next word in Vim or Helix. The punctuation keys are
+also different, with the notable feature of backspace on the right index finger top
+row (see below).
 
 I wanted to be able to use this on my laptop too - achieved with [custom Karabiner-Elements
 rules](https://codeberg.org/peterjc/kana-chording-ke/src/branch/main/hands-down-on-jis-macbook)
 (see this [blog post](https://blastedbio.blogspot.com/2025/05/what-have-you-done-to-your-keyboard.html)).
 
 Most of the combos are for symbols which on a traditional layout are normally typed
-with shift. Brackets and other inner column combos are an exception where the keymap
-images with two symbols indicate a plain combo, or with shift. Here `[{` and `]}`
-are normal pairings, but `(<` and `)>` are atypical.
+with shift. Brackets (open on the left hand, close on the right) and other inner
+column horizontal combos are an exception where the keymap images with two symbols
+indicate a plain combo, or with shift. Here `[{` and `]}` are normal pairings, but
+`(<` and `)>` are atypical.
 
 The second layer is for typing in Japanese using Naginata Style (薙刀式) (see
 [blog post](https://astrobeano.blogspot.com/2025/08/naginata-style-for-typing-in-japanese.html))
 using the [ZMK Naginata module](https://github.com/eswai/zmk-naginata). This is
-currently at [v17](https://oookaworks.seesaa.net/article/519707171.html).
+currently at [v17](https://oookaworks.seesaa.net/article/519707171.html). This
+introduces the idea of putting backspace on the right index finger top row.
 I made minor changes so that Qwerty `Q` is now Escape on tap, small on hold, and
 added shift-space on a thumb for kanji selection without needing editing layers.
 Due to my brackets combos clashing with the default way to switch Japanese mode
-and the Naginata layer on and off, those are Qwerty `S`+`D` (labeled 'ABC' in
-the image) and Qwerty `K`+`L` instead (labeled 'かな'). This layout uses a *lot*
+and the Naginata layer on and off, those are Qwerty `S`+`F` (labeled 'ABC' in
+the image) and Qwerty `J`+`L` instead (labeled 'かな'). This layout uses a *lot*
 of chording, but these are not defined as ZMK combos, and so are not drawn here.
 
 The third and final layer is a combined numbers and navigation layer. The right
@@ -44,6 +46,8 @@ in a traditional keyboard 123 are about there).
 
 I am trying *Magic Comma Shift* whereby typing comma then a letter will give the
 capital version of the letter - but typing comma and space just works as usual.
+Otherwise you can hold the left thumb (letter `r`) for shift (and then tap space
+on the right thumb for capital `R`).
 
 ## Split 3x5_3 aka 33333+3 Layout with 36 keys
 
