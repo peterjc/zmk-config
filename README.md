@@ -189,7 +189,8 @@ the pinky column can optionally be down-shifted by one key.
 ### Slump52
 
 This keyboard has that 44332+2 style, plus an extra central thumb key, number pad
-and cursors. This layout embeds the 33332+2 layout described above.
+and cursors. This layout embeds the 33332+1 layout described above, with some keys
+actions like Escape and the thumbs duplicated.
 
 ![Keymap Image](keymap-drawer/slump52.svg)
 
