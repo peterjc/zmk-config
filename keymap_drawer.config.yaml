@@ -195,7 +195,7 @@ parse_config:
     '&kp MINUS': {'t': '-_', 'type': 'medium-low'}
     '&kp EQUAL': {'t': '=+', 'type': 'low'}
     '&kp SPACE': {'t': '⎵', 'type': 'high'}
-    '&blt NUM_NAV SPACE': {'t': '⎵', 'h': 'Num+Nav', 'type': 'high'}
+    '&blt NUM_NAV SPACE': {'t': '⎵', 'h': 'Num+Nav'}
     '&space_R_layer NUM_NAV 0': {'t': '⎵R', 'h': 'Num+Nav', 'type': 'high'}
     # And again for auto-shift:
     'AS(A)': {'t': 'aA', 'type': 'high'}
@@ -258,7 +258,7 @@ parse_config:
     '&ng COMMA': {'left': 'ん', 'right': 'む'}
     '&ng DOT': {'left': 'ら', 'right': 'わ'}
     '&ng SLASH': {'left': 'れ'}
-    '&ng SPACE': {'t': '⎵', 'h': 'Kana-Shift', 'type': 'kshift'}
+    '&ng SPACE': {'t': '⇧+⎵', 'h': 'Kana-Shift', 'type': 'kshift'}
     '&ng ENTER': {'t': '⏎', 'h': 'Kana-Shift', 'type': 'kshift'}
     '&base_with_mod LGUI': '⌘'
     '&shift_caps': {'t': '⇧⇪'}
