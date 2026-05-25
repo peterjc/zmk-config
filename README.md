@@ -7,6 +7,12 @@ for use with programmable mechanical computer keyboards.
 The keymap images are rendered automatically using [keymap-drawer](https://github.com/caksoylar/keymap-drawer)
 using this [Draw Keymaps GitHub Action](.github/workflows/draw-keymaps.yml).
 
+I wanted to be able to use this on my laptop too - achieved with [custom Karabiner-Elements
+rules](https://codeberg.org/peterjc/kana-chording-ke/src/branch/main/hands-down-on-jis-macbook)
+(see this [blog post](https://blastedbio.blogspot.com/2025/05/what-have-you-done-to-your-keyboard.html)).
+
+## Hands Down Promethium "Pico Mod"
+
 My base layer is the inverted [Hands Down Promethium
 layout](https://www.reddit.com/r/KeyboardLayouts/comments/1g66ivi/hands_down_promethium_snth_meets_hd_silverengram/)
 with my personal modifications ("Pico Mod") intended to help with some readline shortcuts
@@ -15,10 +21,6 @@ It also has matching `B` (bottom left) and `W` (bottom right) for back to start
 of word, and forward to start of next word in Vim or Helix. The punctuation keys are
 also different, with the notable feature of backspace on the right index finger top
 row (see below).
-
-I wanted to be able to use this on my laptop too - achieved with [custom Karabiner-Elements
-rules](https://codeberg.org/peterjc/kana-chording-ke/src/branch/main/hands-down-on-jis-macbook)
-(see this [blog post](https://blastedbio.blogspot.com/2025/05/what-have-you-done-to-your-keyboard.html)).
 
 Most of the combos are for symbols which on a traditional layout are normally typed
 with shift. Brackets (open on the left hand, close on the right) and other inner
