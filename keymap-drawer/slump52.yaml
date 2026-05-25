@@ -8,7 +8,7 @@ layers:
   - {t: mM, type: medium}
   - {t: kK, type: low}
   - {t: '.:', type: medium-low}
-  - ⌫
+  - {t: ⌫, h: Sft+⌫}
   - {t: '''"', type: medium-low}
   - {t: -_, type: medium-low}
   - {t: =+, type: low}
@@ -17,32 +17,32 @@ layers:
   - '8'
   - '9'
   - ⎋
-  - {t: nN, h: ⎇, type: high}
-  - {t: tT, h: ⌃, type: high}
-  - {t: hH, h: ⌘, type: high}
+  - {t: nN, type: high}
+  - {t: tT, type: high}
+  - {t: hH, type: high}
   - {t: jJ, type: low}
   - {t: ',;', type: medium-low}
-  - {t: aA, h: ⌘, type: high}
-  - {t: eE, h: ⌃, type: high}
-  - {t: iI, h: ⎇, type: high}
+  - {t: aA, type: high}
+  - {t: eE, type: high}
+  - {t: iI, type: high}
   - {t: '/?', type: low}
   - '4'
   - '5'
   - '6'
-  - {t: sS, h: ⇧, type: high}
-  - {t: fF, h: ⎇, type: medium}
-  - {t: dD, h: ⌃, type: medium-high}
-  - {t: lL, h: ⌘, type: medium-high}
+  - {t: sS, type: high}
+  - {t: fF, type: medium}
+  - {t: dD, type: medium-high}
+  - {t: lL, type: medium-high}
   - {t: rR, h: ⇧, type: high}
   - {t: ⎵R, h: Num+Nav, type: high}
-  - {t: uU, h: ⌘, type: medium-high}
-  - {t: oO, h: ⌃, type: high}
-  - {t: yY, h: ⎇, type: medium}
-  - {t: cC, h: ⇧, type: medium}
+  - {t: uU, type: medium-high}
+  - {t: oO, type: high}
+  - {t: yY, type: medium}
+  - {t: cC, type: medium}
   - '1'
   - '2'
   - '3'
-  - {t: bB, h: ⇧, type: medium-low}
+  - {t: bB, type: medium-low}
   - {t: rR, h: ⇧, type: high}
   - {t: ⌫, h: ⇧}
   - {t: ⎵R, h: Num+Nav, type: high}
@@ -50,7 +50,7 @@ layers:
   - ↓
   - ↑
   - →
-  - {t: wW, h: ⇧, type: medium}
+  - {t: wW, type: medium}
   - '0'
   - RET
   Naginata:
@@ -123,9 +123,9 @@ layers:
   - '8'
   - '9'
   - /
-  - {t: '4', h: ⎇}
-  - {t: '5', h: ⌃}
-  - {t: '6', h: ⌘}
+  - '4'
+  - '5'
+  - '6'
   - '-'
   - ⇟
   - ←
@@ -135,22 +135,22 @@ layers:
   - '4'
   - '5'
   - '6'
-  - {t: '*', h: ⇧}
-  - {t: '7', h: ⎇}
-  - {t: '8', h: ⌃}
-  - {t: '9', h: ⌘}
+  - '*'
+  - '7'
+  - '8'
+  - '9'
   - {t: '0', h: ⇧}
   - {type: held}
   - ↞
   - ⏎
   - ↠
-  - {t: 'VOL
+  - 'VOL
 
-      UP', h: ⇧}
+    UP'
   - '1'
   - '2'
   - '3'
-  - {t: ., h: ⇧}
+  - .
   - {t: '0', h: ⇧}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -158,9 +158,9 @@ layers:
   - ↓
   - ↑
   - →
-  - {t: 'VOL
+  - 'VOL
 
-      DOWN', h: ⇧}
+    DOWN'
   - '0'
   - RET
 combos:
@@ -201,8 +201,32 @@ combos:
   o: -0.02
   s: 0.5
   h: 15.0
+- p: [16, 28]
+  k: ⎇
+  l: [HD Promethium, Num + Nav]
+- p: [23, 37]
+  k: ⎇
+  l: [HD Promethium, Num + Nav]
+- p: [17, 16]
+  k: ⌃
+  l: [HD Promethium, Num + Nav]
+- p: [22, 23]
+  k: ⌃
+  l: [HD Promethium, Num + Nav]
+- p: [18, 17]
+  k: ⌘
+  l: [HD Promethium, Num + Nav]
+- p: [21, 22]
+  k: ⌘
+  l: [HD Promethium, Num + Nav]
+- p: [31, 30]
+  k: ⇧
+  l: [HD Promethium, Num + Nav]
+- p: [34, 35]
+  k: ⇧
+  l: [HD Promethium, Num + Nav]
 - p: [4, 3]
-  k: {t: vQ, type: low}
+  k: {t: qQ, type: low}
   l: [HD Promethium]
 - p: [8, 9]
   k: {t: zZ, type: low}
