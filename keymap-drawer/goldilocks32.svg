@@ -572,15 +572,14 @@ text.right {
 </g>
 <g transform="translate(251, 274) rotate(37.0)" class="key kshift keypos-24">
 <rect rx="6" ry="6" x="-46" y="-26" width="91" height="52" class="key kshift"/>
-<text x="0" y="0" class="key kshift tap">⎵</text>
+<text x="0" y="0" class="key kshift tap">⇧+⎵</text>
 <text x="0" y="24" class="key kshift hold"><tspan style="font-size: 70%">Kana-Shift</tspan></text>
 </g>
 <g transform="translate(431, 274) rotate(-37.0)" class="key keypos-25">
 <rect rx="6" ry="6" x="-46" y="-26" width="91" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⇧⎵</text>
-<a href="#Num--Nav">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 78%">Num + Nav</tspan></text>
-</a></g>
+<text x="0" y="0" class="key tap">⎵</text>
+<text x="0" y="24" class="key hold">Num+Nav</text>
+</g>
 <g transform="translate(487, 192) rotate(-22.0)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="24" class="key hold">半濁音</text>
@@ -755,8 +754,9 @@ text.right {
 <text x="0" y="0" class="key tap">0</text>
 <text x="0" y="24" class="key hold">⇧</text>
 </g>
-<g transform="translate(431, 274) rotate(-37.0)" class="key held keypos-25">
-<rect rx="6" ry="6" x="-46" y="-26" width="91" height="52" class="key held"/>
+<g transform="translate(431, 274) rotate(-37.0)" class="key trans keypos-25">
+<rect rx="6" ry="6" x="-46" y="-26" width="91" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(487, 192) rotate(-22.0)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

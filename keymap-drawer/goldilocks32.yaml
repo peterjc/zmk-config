@@ -61,8 +61,8 @@ layers:
   - {left: ひ}
   - {left: は, right: を}
   - {h: 半濁音, left: こ, right: 、}
-  - {t: ⎵, h: Kana-Shift, type: kshift}
-  - {t: ⇧⎵, h: Num + Nav}
+  - {t: ⇧+⎵, h: Kana-Shift, type: kshift}
+  - {t: ⎵, h: Num+Nav}
   - {h: 半濁音, left: な, right: 。}
   - {left: ん, right: む}
   - {left: ら, right: わ}
@@ -100,7 +100,7 @@ layers:
   - '8'
   - '9'
   - {t: '0', h: ⇧}
-  - {type: held}
+  - {t: ▽, type: trans}
   - ↞
   - ⏎
   - ↠

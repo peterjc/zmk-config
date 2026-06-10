@@ -583,7 +583,7 @@ text.right {
 </g>
 <g transform="translate(200, 267) rotate(33.0)" class="key kshift keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key kshift"/>
-<text x="0" y="0" class="key kshift tap">⎵</text>
+<text x="0" y="0" class="key kshift tap">⇧+⎵</text>
 <text x="0" y="24" class="key kshift hold"><tspan style="font-size: 70%">Kana-Shift</tspan></text>
 </g>
 <g transform="translate(247, 299) rotate(33.0)" class="key keypos-29">
@@ -597,10 +597,9 @@ text.right {
 </g>
 <g transform="translate(483, 267) rotate(-33.0)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⇧⎵</text>
-<a href="#Num--Nav">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 78%">Num + Nav</tspan></text>
-</a></g>
+<text x="0" y="0" class="key tap">⎵</text>
+<text x="0" y="24" class="key hold">Num+Nav</text>
+</g>
 <g class="combo combopos-0">
 <path d="M557,162 h-83 a6.0,6.0 0 0 1 -6.0,-6.0 v-3" class="combo"/>
 <path d="M557,162 h24 a6.0,6.0 0 0 0 6.0,-6.0 v-45" class="combo"/>
@@ -761,8 +760,9 @@ text.right {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(483, 267) rotate(-33.0)" class="key held keypos-31">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+<g transform="translate(483, 267) rotate(-33.0)" class="key trans keypos-31">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
 <path d="M169,214 h21 a6.0,6.0 0 0 0 6.0,-6.0 v-3" class="combo"/>
