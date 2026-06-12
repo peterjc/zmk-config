@@ -1,0 +1,232 @@
+layout: {zmk_keyboard: rugby_union}
+layers:
+  HD Promethium:
+  - ⎋
+  - {t: pP, type: medium-low}
+  - {t: gG, type: medium}
+  - {t: mM, type: medium}
+  - {t: kK, type: low}
+  - {t: '.:', type: medium-low}
+  - {t: ⌫, h: Sft+⌫}
+  - {t: '''"', type: medium-low}
+  - {t: -_, type: medium-low}
+  - {t: =+, type: low}
+  - {t: sS, type: high}
+  - {t: nN, type: high}
+  - {t: tT, type: high}
+  - {t: hH, type: high}
+  - {t: jJ, type: low}
+  - {t: ',;', type: medium-low}
+  - {t: aA, type: high}
+  - {t: eE, type: high}
+  - {t: iI, type: high}
+  - {t: cC, type: medium}
+  - {t: bB, type: medium-low}
+  - {t: fF, type: medium}
+  - {t: dD, type: medium-high}
+  - {t: lL, type: medium-high}
+  - {t: rR, h: ⇧, type: high}
+  - {t: ⎵R, h: Num+Nav, type: high}
+  - {t: uU, type: medium-high}
+  - {t: oO, type: high}
+  - {t: yY, type: medium}
+  - {t: wW, type: medium}
+  Naginata:
+  - {t: ⎋, h: Small-kana}
+  - {left: き, right: め}
+  - {left: て, right: り}
+  - {left: し, right: ね}
+  - {left: そ, right: ぬ}
+  - {left: た, right: お}
+  - {left: ⌫, right: さ}
+  - {left: る, right: よ}
+  - {left: す, right: え}
+  - {left: へ, right: ゆ}
+  - {left: ろ, right: せ}
+  - {left: け, right: み}
+  - {left: と, right: に}
+  - {h: 濁音, left: か, right: ま}
+  - {left: っ, right: ち}
+  - {left: く, right: や}
+  - {h: 濁音, left: あ, right: の}
+  - {left: い, right: も}
+  - {left: う, right: つ}
+  - {left: ー, right: ふ}
+  - {left: ほ}
+  - {left: ひ}
+  - {left: は, right: を}
+  - {h: 半濁音, left: こ, right: 、}
+  - {t: ⇧+⎵, h: Kana-Shift, type: kshift}
+  - {t: ⎵, h: Num+Nav}
+  - {h: 半濁音, left: な, right: 。}
+  - {left: ん, right: む}
+  - {left: ら, right: わ}
+  - {left: れ}
+  Num + Nav:
+  - /
+  - '1'
+  - '2'
+  - '3'
+  - +
+  - ⇞
+  - ⌫
+  - ↑
+  - _
+  - ⏯
+  - '*'
+  - '4'
+  - '5'
+  - '6'
+  - '-'
+  - ⇟
+  - ←
+  - ↓
+  - →
+  - 'VOL
+
+    UP'
+  - .
+  - '7'
+  - '8'
+  - '9'
+  - {t: '0', h: ⇧}
+  - {t: ▽, type: trans}
+  - ↞
+  - ⏎
+  - ↠
+  - 'VOL
+
+    DOWN'
+combos:
+- p: [0, 9]
+  k: Studio Unlock
+  l: [HD Promethium]
+  a: top
+  o: 0.3
+  w: 50.0
+- p: [4, 5, 14, 15]
+  k: Boot loader
+  l: [HD Promethium]
+  a: bottom
+  w: 50.0
+- p: [16, 18]
+  k: かな
+  l: [HD Promethium, Naginata]
+  a: bottom
+  o: -0.02
+  s: 0.5
+  h: 15.0
+- p: [13, 11]
+  k: ABC
+  l: [HD Promethium, Naginata]
+  a: bottom
+  o: -0.02
+  s: -0.5
+  h: 15.0
+- p: [23, 22, 21]
+  k: ↹
+  a: bottom
+  o: -0.02
+  s: -0.5
+  h: 15.0
+- p: [26, 27, 28]
+  k: ⏎
+  a: bottom
+  o: -0.02
+  s: 0.5
+  h: 15.0
+- p: [11, 10]
+  k: ⎇
+  l: [HD Promethium, Num + Nav]
+- p: [18, 19]
+  k: ⎇
+  l: [HD Promethium, Num + Nav]
+- p: [12, 11]
+  k: ⌃
+  l: [HD Promethium, Num + Nav]
+- p: [17, 18]
+  k: ⌃
+  l: [HD Promethium, Num + Nav]
+- p: [13, 12]
+  k: ⌘
+  l: [HD Promethium, Num + Nav]
+- p: [16, 17]
+  k: ⌘
+  l: [HD Promethium, Num + Nav]
+- p: [23, 22]
+  k: ⇧
+  l: [HD Promethium, Num + Nav]
+- p: [26, 27]
+  k: ⇧
+  l: [HD Promethium, Num + Nav]
+- p: [3, 2]
+  k: {t: qQ, type: low}
+  l: [HD Promethium]
+- p: [7, 8]
+  k: {t: zZ, type: low}
+  l: [HD Promethium]
+- p: [2, 1]
+  k: {t: vV, type: low}
+  l: [HD Promethium]
+- p: [22, 21]
+  k: {t: xX, type: low}
+  l: [HD Promethium]
+- p: [24, 25]
+  k: ⇪
+  l: [HD Promethium]
+- p: [0, 10]
+  k: '`'
+  l: [HD Promethium, Num + Nav]
+- p: [1, 11]
+  k: '@'
+  l: [HD Promethium, Num + Nav]
+- p: [2, 12]
+  k: '|'
+  l: [HD Promethium, Num + Nav]
+- p: [3, 13]
+  k: $
+  l: [HD Promethium, Num + Nav]
+- p: [3, 4]
+  k: \
+  l: [HD Promethium, Num + Nav]
+- p: [4, 14]
+  k: '%'
+  l: [HD Promethium, Num + Nav]
+  a: right
+- p: [5, 15]
+  k: ^
+  l: [HD Promethium, Num + Nav]
+  a: left
+- p: [6, 5]
+  k: /
+  l: [HD Promethium, Num + Nav]
+- p: [6, 16]
+  k: '?'
+  l: [HD Promethium, Num + Nav]
+- p: [7, 17]
+  k: '#'
+  l: [HD Promethium, Num + Nav]
+- p: [8, 18]
+  k: '!'
+  l: [HD Promethium, Num + Nav]
+- p: [9, 19]
+  k: '~'
+  l: [HD Promethium, Num + Nav]
+- p: [4, 13]
+  k: '{'
+  l: [HD Promethium, Num + Nav]
+- p: [5, 16]
+  k: '}'
+  l: [HD Promethium, Num + Nav]
+- p: [13, 14]
+  k: (<
+  l: [HD Promethium, Num + Nav]
+- p: [16, 15]
+  k: )>
+  l: [HD Promethium, Num + Nav]
+- p: [14, 23]
+  k: '[{'
+  l: [HD Promethium, Num + Nav]
+- p: [15, 26]
+  k: ']}'
+  l: [HD Promethium, Num + Nav]
