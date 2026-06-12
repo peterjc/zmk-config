@@ -162,9 +162,9 @@ one of the layouts supported by the
 This means dropping backspace on the left thumb (leaving just the Naginata Style
 backspace on the index finger), and the dedicated shift on the right thumb (note
 holding the `R` left thumb gives shift). Capital `R` is available with *Magic
-Comma Shift* only.
+Comma Shift* or my holding the left thumb and tapping the right thumb.
 
-![Keymap image](keymap-drawer/bivvy16d.svg)
+![Keymap image](keymap-drawer/rugby_union.svg)
 
 ### Bivvy16D
 
@@ -184,6 +184,10 @@ The Goldilocks32 has 6-key roll-over excluding the navigation button, 4-key roll
 over when that is included. It can be built like this with 30 keys, or with two
 keys per thumb for 32 keys.
 
+### Rugby Union
+
+The ZMK keymap in file [rugby_union.keymap](config/rugby_union.keymap) uses this
+30 key layout. The Rugby Union keyboard has 8-key roll-over.
 
 ## Slump layouts - Split 44332+2
 
