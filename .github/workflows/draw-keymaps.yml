@@ -6,6 +6,7 @@ on:
     paths:
       - 'config/*.keymap'
       - 'config/*.dtsi'
+      - build.yaml
       - keymap_drawer.config.yaml
       - .github/workflows/draw-keymaps.yml
 
