@@ -219,6 +219,30 @@ combos:
 - p: [21, 22]
   k: ⌘
   l: [HD Promethium, Num + Nav]
+- p: [18, 17, 16]
+  k: Ctl+⌘
+  l: [HD Promethium, Num + Nav]
+  hidden: true
+- p: [21, 22, 23]
+  k: Ctl+⌘
+  l: [HD Promethium, Num + Nav]
+  hidden: true
+- p: [17, 16, 28]
+  k: Ctl+⎇
+  l: [HD Promethium, Num + Nav]
+  hidden: true
+- p: [22, 23, 37]
+  k: Ctl+⎇
+  l: [HD Promethium, Num + Nav]
+  hidden: true
+- p: [18, 17, 16, 28]
+  k: Ctl+Alt+⌘
+  l: [HD Promethium, Num + Nav]
+  hidden: true
+- p: [21, 22, 23, 37]
+  k: Ctl+AltGr+⌘
+  l: [HD Promethium, Num + Nav]
+  hidden: true
 - p: [31, 30]
   k: ⇧
   l: [HD Promethium, Num + Nav]

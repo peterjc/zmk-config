@@ -183,6 +183,30 @@ combos:
 - p: [16, 17]
   k: ⌘
   l: [HD Promethium, Num + Nav]
+- p: [13, 12, 11]
+  k: Ctl+⌘
+  l: [HD Promethium, Num + Nav]
+  hidden: true
+- p: [16, 17, 18]
+  k: Ctl+⌘
+  l: [HD Promethium, Num + Nav]
+  hidden: true
+- p: [12, 11, 10]
+  k: Ctl+⎇
+  l: [HD Promethium, Num + Nav]
+  hidden: true
+- p: [17, 18, 19]
+  k: Ctl+⎇
+  l: [HD Promethium, Num + Nav]
+  hidden: true
+- p: [13, 12, 11, 10]
+  k: Ctl+Alt+⌘
+  l: [HD Promethium, Num + Nav]
+  hidden: true
+- p: [16, 17, 18, 19]
+  k: Ctl+AltGr+⌘
+  l: [HD Promethium, Num + Nav]
+  hidden: true
 - p: [23, 22]
   k: ⇧
   l: [HD Promethium, Num + Nav]
