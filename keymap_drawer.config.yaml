@@ -153,6 +153,13 @@ parse_config:
     close_bracket_greater_than: {'key': ')>'}
     open_square_curly: {'key': '[{'}
     close_square_curly: {'key': ']}'}
+    # Hide the stacked modifier combos
+    left_ctrl_gui_combo: {'hidden': true}
+    right_ctrl_gui_combo: {'hidden': true}
+    left_ctrl_alt_combo: {'hidden': true}
+    right_ctrl_alt_combo: {'hidden': true}
+    left_ctrl_alt_gui_combo: {'hidden': true}
+    right_ctrl_alt_gui_combo: {'hidden': true}
   raw_binding_map:
     # These are the English letters defined here to tag them by usage:
     '&kp A': {'t': 'aA', 'type': 'high'}
