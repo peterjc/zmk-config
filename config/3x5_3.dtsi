@@ -445,7 +445,7 @@
             bindings = <&kp RGUI>;
             key-positions = <RM1 RM2>;
             layers = <DEFAULT NUM_NAV>;
-            require-prior-idle-ms = <250>;
+            require-prior-idle-ms = <200>;
             timeout-ms = <40>;
         };
         // Stacked modifiers with 3 or 4 keys
