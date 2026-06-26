@@ -344,11 +344,11 @@
             layers = <DEFAULT>;
         };
 
-#ifndef LT0
-        // Inner column corners on 32-style  (T, G, B, N) = &bootloader
+#ifndef LB0
+        // Inner column corners on 32-style  (T, Y, G, H) = &bootloader
         combo_bootloader {
             timeout-ms = <300>;
-            key-positions = <LM0 RM0 LB0 RB0>;
+            key-positions = <LM0 RM0 LT0 RT0>;
             bindings = <&bootloader>;
             layers = <DEFAULT>;
         };
@@ -555,19 +555,7 @@
             layers = <DEFAULT NUM_NAV>;
         };
 
-#ifndef LT0
-        backslash_sign {
-            bindings = <&kp NON_US_BACKSLASH>;
-            key-positions = <LT1 LM0>;
-            layers = <DEFAULT NUM_NAV>;
-        };
-        percent_sign {
-            bindings = <&kp PERCENT>;
-            key-positions = <LM0 LB0>;
-            layers = <DEFAULT NUM_NAV>;
-        };
-#else
-        backslash_sign {
+       backslash_sign {
             bindings = <&kp NON_US_BACKSLASH>;
             key-positions = <LT0 LT1>;
             layers = <DEFAULT NUM_NAV>;
@@ -578,23 +566,8 @@
             key-positions = <LT0 LM0>;
             layers = <DEFAULT NUM_NAV>;
         };
-#endif
 
-#ifndef RT0
-        slash_sign {
-            bindings = <&kp SLASH>;
-            key-positions = <RT1 RM0>;
-            layers = <DEFAULT NUM_NAV>;
-        };
-
-        caret_sign {
-            bindings = <&kp CARET>;
-            key-positions = <RM0 RB0>;
-            layers = <DEFAULT NUM_NAV>;
-        };
-
-#else
-        slash_sign {
+       slash_sign {
             bindings = <&kp SLASH>;
             key-positions = <RT1 RT0>;
             layers = <DEFAULT NUM_NAV>;
@@ -605,8 +578,6 @@
             key-positions = <RT0 RM0>;
             layers = <DEFAULT NUM_NAV>;
         };
-
-#endif
 
         question_mark {
             bindings = <&kp QMARK>;
@@ -633,35 +604,23 @@
         };
 
         // 2-key horizontal combos for {}, can instead use shift with the [] combos:
-#ifndef LT0
+        // (not comfortable enough to use with 3-key inner columns)
+#ifndef LB0
         open_curly {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <LM0 LM1>;
+            key-positions = <LT0 LM1>;
             layers = <DEFAULT NUM_NAV>;
         };
 
         close_curly {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <RM0 RM1>;
+            key-positions = <RT0 RM1>;
             layers = <DEFAULT NUM_NAV>;
         };
 #endif
 
         // 2-key horizontal combos for () with shift for <>
-#ifndef LT0
-        open_bracket_less_than {
-            bindings = <&open_par_lt>;
-            key-positions = <LM1 LB0>;
-            layers = <DEFAULT NUM_NAV>;
-        };
-
-        close_bracket_greater_than {
-            bindings = <&close_par_gt>;
-            key-positions = <RM1 RB0>;
-            layers = <DEFAULT NUM_NAV>;
-        };
-#else
-        open_bracket_less_than {
+       open_bracket_less_than {
             bindings = <&open_par_lt>;
             key-positions = <LM0 LM1>;
             layers = <DEFAULT NUM_NAV>;
@@ -672,8 +631,21 @@
             key-positions = <RM0 RM1>;
             layers = <DEFAULT NUM_NAV>;
         };
-#endif
 
+#ifndef LB0
+        // 2-key horizontal combos for [] with shifted form {}
+        open_square_curly {
+            bindings = <AS(LEFT_BRACKET)>;
+            key-positions = <LM0 LB1>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        close_square_curly {
+            bindings = <AS(RIGHT_BRACKET)>;
+            key-positions = <RM0 RB1>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+#else
         // 2-key horizontal combos for [] with shifted form {}
         open_square_curly {
             bindings = <AS(LEFT_BRACKET)>;
@@ -686,6 +658,7 @@
             key-positions = <RB0 RB1>;
             layers = <DEFAULT NUM_NAV>;
         };
+#endif
 
 // Bluetooth combos for the Hesse
 #ifdef CONFIG_WIRELESS
