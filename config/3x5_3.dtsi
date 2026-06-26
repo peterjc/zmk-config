@@ -286,9 +286,9 @@
         default_layer {
             display-name = "HD Promethium";
             bindings = <LAYER_FROM36( \
-                &kp ESCAPE, AS(P), AS(G), AS(M), AS(X),      AS(SLASH),   AS(BSPC), &xquote, AS(MINUS), AS(EQUAL), \
-                AS(S),      AS(N), AS(T), AS(H), AS(K),      &dot_colon,  AS(A),    AS(E),   AS(I),     AS(C),  \
-                AS(B),      AS(F), AS(D), AS(L), AS(J),      &comma_semi, AS(U),    AS(O),   AS(Y),     AS(W),  \
+                &kp ESCAPE, AS(P), AS(G), AS(M), AS(K),      &dot_colon,  AS(BSPC), &xquote, AS(MINUS), AS(EQUAL), \
+                AS(S),      AS(N), AS(T), AS(H), AS(J),      &comma_semi, AS(A),    AS(E),   AS(I),     AS(C),  \
+                AS(B),      AS(F), AS(D), AS(L), &kp LEFT,   &kp RIGHT,   AS(U),    AS(O),   AS(Y),     AS(W),  \
                 &kp TAB, &bmt LSHFT R, &hpmt LSHFT BSPC,     &kp RSHFT, &space_R_layer NUM_NAV 0, &mo NUM_NAV \
             )>;
         };
@@ -299,19 +299,6 @@
         // `&ng ENTER` (kana-shift when held), ideally both.
         // Standard (ABC) shift is useful for katakana, here ommitted.
         // Layer combined with shift+space for selecting previous kanji selection on tap.
-#ifdef NG_LAYER_FROM36
-        // Allow Naginata specific macro to preferentially drop Qwerty T and Y (arrows)
-        naginata_layer {
-            display-name = "Naginata";
-            bindings = <NG_LAYER_FROM36( \
-                &ng Q, &ng W, &ng E,   &ng R,     &ng B,    &ng N,     &ng U,                 &ng I,     &ng O,      &ng P, \
-                &ng A, &ng S, &ng D,   &ng F,     &ng G,    &ng H,     &ng J,                 &ng K,     &ng L,      &ng SEMI, \
-                &ng Z, &ng X, &ng C,   &ng V,     &ng T,    &ng Y,     &ng M,                 &ng COMMA, &ng DOT,    &ng SLASH, \
-                              &kp TAB, &ng SPACE, &kp BSPC, &ng ENTER, &blt NUM_NAV SPACE, &mo NUM_NAV \
-                )>;
-        };
-#else
-
         naginata_layer {
             display-name = "Naginata";
             bindings = <LAYER_FROM36( \
@@ -321,7 +308,6 @@
                               &kp TAB, &ng SPACE, &kp BSPC, &ng ENTER, &blt NUM_NAV SPACE, &mo NUM_NAV \
                 )>;
         };
-#endif
 
         num_nav_layer {
             display-name = "Num + Nav";
