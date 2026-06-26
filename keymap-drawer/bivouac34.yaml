@@ -110,7 +110,7 @@ combos:
   a: top
   o: 0.3
   w: 50.0
-- p: [4, 5, 14, 15]
+- p: [14, 15, 4, 5]
   k: Boot loader
   l: [HD Promethium]
   a: bottom
@@ -216,7 +216,7 @@ combos:
 - p: [3, 13]
   k: $
   l: [HD Promethium, Num + Nav]
-- p: [3, 4]
+- p: [4, 3]
   k: \
   l: [HD Promethium, Num + Nav]
 - p: [4, 14]
@@ -248,10 +248,10 @@ combos:
 - p: [5, 16]
   k: '}'
   l: [HD Promethium, Num + Nav]
-- p: [13, 14]
+- p: [14, 13]
   k: (<
   l: [HD Promethium, Num + Nav]
-- p: [16, 15]
+- p: [15, 16]
   k: )>
   l: [HD Promethium, Num + Nav]
 - p: [14, 23]

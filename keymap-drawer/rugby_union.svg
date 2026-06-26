@@ -261,10 +261,10 @@ text.right {
 </text>
 </g>
 <g class="combo combopos-1">
-<path d="M365,278 h-75 a6.0,6.0 0 0 1 -6.0,-6.0 v-44" class="combo"/>
-<path d="M365,278 h75 a6.0,6.0 0 0 0 6.0,-6.0 v-44" class="combo"/>
 <path d="M365,278 h-111 a6.0,6.0 0 0 1 -6.0,-6.0 v-4" class="combo"/>
 <path d="M365,278 h110 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
+<path d="M365,278 h-75 a6.0,6.0 0 0 1 -6.0,-6.0 v-44" class="combo"/>
+<path d="M365,278 h75 a6.0,6.0 0 0 0 6.0,-6.0 v-44" class="combo"/>
 <rect rx="6" ry="6" x="340" y="265" width="50" height="26" class="combo"/>
 <text x="365" y="278" class="combo tap">
 <tspan x="365" dy="-0.6em">Boot</tspan><tspan x="365" dy="1.2em">loader</tspan>
