@@ -71,8 +71,8 @@ layers:
   - '1'
   - '2'
   - '3'
-  - +
-  - ⇞
+  - '='
+  - ⎋
   - ⌫
   - ↑
   - _
@@ -81,8 +81,8 @@ layers:
   - '4'
   - '5'
   - '6'
-  - '-'
-  - ⇟
+  - +
+  - ⇞
   - ←
   - ↓
   - →
@@ -223,13 +223,13 @@ combos:
   k: '%'
   l: [HD Promethium, Num + Nav]
   a: right
+- p: [6, 5]
+  k: /
+  l: [HD Promethium, Num + Nav]
 - p: [5, 15]
   k: ^
   l: [HD Promethium, Num + Nav]
   a: left
-- p: [6, 5]
-  k: /
-  l: [HD Promethium, Num + Nav]
 - p: [6, 16]
   k: '?'
   l: [HD Promethium, Num + Nav]
