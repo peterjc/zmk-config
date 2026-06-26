@@ -561,17 +561,29 @@
             key-positions = <LT1 LM0>;
             layers = <DEFAULT NUM_NAV>;
         };
+        percent_sign {
+            bindings = <&kp PERCENT>;
+            key-positions = <LM0 LB0>;
+            layers = <DEFAULT NUM_NAV>;
+        };
 #else
         backslash_sign {
             bindings = <&kp NON_US_BACKSLASH>;
+            key-positions = <LT0 LT1>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        percent_sign {
+            bindings = <&kp PERCENT>;
             key-positions = <LT0 LM0>;
             layers = <DEFAULT NUM_NAV>;
         };
 #endif
 
-        percent_sign {
-            bindings = <&kp PERCENT>;
-            key-positions = <LM0 LB0>;
+#ifndef RT0
+        slash_sign {
+            bindings = <&kp SLASH>;
+            key-positions = <RT1 RM0>;
             layers = <DEFAULT NUM_NAV>;
         };
 
@@ -581,18 +593,19 @@
             layers = <DEFAULT NUM_NAV>;
         };
 
-#ifndef RT0
-        slash_sign {
-            bindings = <&kp SLASH>;
-            key-positions = <RT1 RM0>;
-            layers = <DEFAULT NUM_NAV>;
-        };
 #else
         slash_sign {
             bindings = <&kp SLASH>;
+            key-positions = <RT1 RT0>;
+            layers = <DEFAULT NUM_NAV>;
+        };
+
+        caret_sign {
+            bindings = <&kp CARET>;
             key-positions = <RT0 RM0>;
             layers = <DEFAULT NUM_NAV>;
         };
+
 #endif
 
         question_mark {
@@ -630,18 +643,6 @@
         close_curly {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <RM0 RM1>;
-            layers = <DEFAULT NUM_NAV>;
-        };
-#else
-        open_curly {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <LT0 LT1>;
-            layers = <DEFAULT NUM_NAV>;
-        };
-
-        close_curly {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <RT0 RT1>;
             layers = <DEFAULT NUM_NAV>;
         };
 #endif
