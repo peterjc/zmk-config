@@ -11,11 +11,17 @@ I wanted to be able to use this on my laptop too - achieved with [custom Karabin
 rules](https://codeberg.org/peterjc/kana-chording-ke/src/branch/main/hands-down-on-jis-macbook)
 (see this [blog post](https://blastedbio.blogspot.com/2025/05/what-have-you-done-to-your-keyboard.html)).
 
+I've now built multiple self-designed programmable keyboards, which have
+generally been getting smaller starting with 36 keys down to just 30 keys.
+This has meant some 'spare' keys when using my core layout on the larger
+keyboards (specifically extra thumb keys, and on the inner column).
+
 ## Hands Down Promethium "Pico Mod"
 
-My base layer is the inverted [Hands Down Promethium
+My base layer started as the inverted [Hands Down Promethium
 layout](https://www.reddit.com/r/KeyboardLayouts/comments/1g66ivi/hands_down_promethium_snth_meets_hd_silverengram/)
-with my personal modifications ("Pico Mod") intended to help with some readline shortcuts
+layout, but with my personal modifications ("Pico Mod") for less keys etc.
+The initial changes were intended to help with some readline shortcuts
 (horizontal pair `B`/`F` for back/forward, vertical pair `P`/`N` for previous/next).
 It also has matching `B` (bottom left) and `W` (bottom right) for back to start
 of word, and forward to start of next word in Vim or Helix. The punctuation keys are
@@ -29,11 +35,13 @@ indicate a plain combo, or with shift. Here `[{` and `]}` are normal pairings, b
 `(<` and `)>` are atypical.
 
 This base layer has *Auto Shift* setup, meaning a long tap on the base layer
-letters and symbols gives the capital or shifted form (except the letter `r`
-on the left thumb which is shift when held - you can hold this and tap space
-on the right thumb for capital `R`). I am also trying out *Magic Comma Shift*
-whereby typing comma then a letter will give the capital version of the
-letter - but typing comma and space just works as usual.
+letters and symbols gives the capital or shifted form. The letter `r` on the
+left thumb is an exception, giving shift when held - I can hold this and tap
+space on the right thumb for capital `R`).
+
+I am also trying out *Magic Comma Shift* whereby typing comma then a letter
+will give the capital version of the letter - but typing comma and space just
+works as usual.
 
 The second layer is for typing in Japanese using Naginata Style (薙刀式) (see
 [blog post](https://astrobeano.blogspot.com/2025/08/naginata-style-for-typing-in-japanese.html))
@@ -64,8 +72,9 @@ an extra inner column), plus three thumb keys.
 
 In this keymap image the base layer keys and space are coloured by usage frequencies:
 orange/pink for highest use - mainly home keys, down through pink, purples,
-to a dark blue for low like the letters demoted to combos: Q, Z, and V (and X
-for even smaller keyboards - see below).
+to a dark blue for low like the letters demoted to combos. That started with
+Q and Z as per the original Hands Down Promethium, but I also demoted V and X
+for even smaller keyboards - see below.
 
 ### Gamma Omega TC36K
 
