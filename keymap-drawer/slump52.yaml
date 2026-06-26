@@ -12,7 +12,7 @@ layers:
   - {t: '''"', type: medium-low}
   - {t: -_, type: medium-low}
   - {t: =+, type: low}
-  - '*'
+  - {t: =+, type: low}
   - '7'
   - '8'
   - '9'
@@ -25,7 +25,7 @@ layers:
   - {t: aA, type: high}
   - {t: eE, type: high}
   - {t: iI, type: high}
-  - {t: '/?', type: low}
+  - {t: =+, type: low}
   - '4'
   - '5'
   - '6'
@@ -112,13 +112,13 @@ layers:
   - '1'
   - '2'
   - '3'
-  - +
-  - ⇞
+  - '='
+  - ⎋
   - ⌫
   - ↑
   - _
   - ⏯
-  - '*'
+  - ⏯
   - '7'
   - '8'
   - '9'
@@ -126,12 +126,12 @@ layers:
   - '4'
   - '5'
   - '6'
-  - '-'
-  - ⇟
+  - +
+  - ⇞
   - ←
   - ↓
   - →
-  - ⎋
+  - ⏯
   - '4'
   - '5'
   - '6'
@@ -283,13 +283,13 @@ combos:
   k: '%'
   l: [HD Promethium, Num + Nav]
   a: right
+- p: [7, 6]
+  k: /
+  l: [HD Promethium, Num + Nav]
 - p: [6, 20]
   k: ^
   l: [HD Promethium, Num + Nav]
   a: left
-- p: [7, 6]
-  k: /
-  l: [HD Promethium, Num + Nav]
 - p: [7, 21]
   k: '?'
   l: [HD Promethium, Num + Nav]
