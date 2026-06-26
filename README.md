@@ -91,28 +91,19 @@ post](https://astrobeano.blogspot.com/2026/03/naginata-style-update.html)).
 
 ![Keymap image](keymap-drawer/rugby_union.svg)
 
-### Rugby Union
+* *Rugby Union*:
+  The ZMK keymap in file [rugby_union.keymap](config/rugby_union.keymap) uses
+  this 30 key layout. The Rugby Union keyboard has 8-key roll-over.
 
-The ZMK keymap in file [rugby_union.keymap](config/rugby_union.keymap) uses this
-30 key layout. The Rugby Union keyboard has 8-key roll-over.
+* *Goldilocks32*:
+  The ZMK keymap in file [goldilocks32.keymap](config/goldilocks32.keymap) uses
+  this 30 key layout, plus cursors and enter on the 5-way navigation button.
+  This keyboard can also be built with two keys per thumb for 32 keys.
 
-### Goldilocks32
-
-The ZMK keymap in file [goldilocks32.keymap](config/goldilocks32.keymap) uses this
-30 key layout, plus cursors and enter on the 5-way navigation button.
-
-The Goldilocks32 has 6-key roll-over excluding the navigation button, 4-key roll
-over when that is included. It can be built like this with 30 keys, or with two
-keys per thumb for 32 keys.
-
-### Bivvy16D
-
-The ZMK keymap in file [bivvy16d.keymap](config/bivvy16d.keymap) is the 30 key
-layout above, plus navigation and cursors on the two 5-way navigation buttons.
-
-The Bivvy16D has 14-key roll-over excluding the navigation buttons, 4-key roll
-over when they are included (per hand). It can be built like this with 30 keys,
-or with two keys per thumb for 32 keys.
+* *Bivvy16D*:
+  The ZMK keymap in file [bivvy16d.keymap](config/bivvy16d.keymap) is the 30
+  key layout above, plus navigation and cursors on the two 5-way navigation
+  buttons. This keyboard can also be built with two keys per thumb for 32 keys.
 
 ## Split 23332+2 Layout with 30 keys
 
@@ -136,13 +127,10 @@ and a dedicated shift on the right thumb.
 
 ![Keymap image](keymap-drawer/bivouac34.svg)
 
-### Bivouac34
-
-The ZMK keymap in file [bivouac34.keymap](config/bivouac34.keymap) is the layout
-shown above, a split 33332+2 layout (32 keys only). The keyboard also supports a
-34 key 33332+3 layout (which I am not using).
-
-Like the Hesse (below), this has only 4-key roll-over.
+* *Bivouac34*:
+  The ZMK keymap in file [bivouac34.keymap](config/bivouac34.keymap) is the
+  layout shown above. This keyboard also supports a 34 key 33332+3 layout
+  (which I am not using).
 
 ## Split 3x5_2 aka 33333+2 Layout with 34 keys
 
@@ -158,13 +146,9 @@ columns are still inverted (see this
 
 ![Keymap Image](keymap-drawer/acid.svg)
 
-### Forager Acid
-
-The ZMK keymap in file [acid.keymap](config/hesse.keymap) is the split 3x5_2
-layout described above for my self-built variant of the Forager keyboard.
-
-The Forager Acid keyboard has only 4-key roll-over per hand (so better than
-the Hesse mentioned above).
+* *Forager Acid*:
+  The ZMK keymap in file [acid.keymap](config/hesse.keymap) is the split
+  3x5_2 layout described above for my self-built variant of the Forager keyboard.
 
 ## Split 3x5_3 aka 33333+3 Layout with 36 keys
 
@@ -177,30 +161,20 @@ As above, but with extra thumb keys.
 
 ![Keymap Image](keymap-drawer/hesse.svg)
 
-### Gamma Omega TC36K
+* *Gamma Omega TC36K*:
+  The ZMK keymap in file [tc36k.keymap](config/tc36k.keymap) is the split 3x5_3
+  layout described above (without the Bluetooth combos) for the self-built
+  [Gamma Omega TC36K](https://github.com/unspecworks/gamma-omega/tree/main/tc36k).
+  This is a single PCB no-diode variant of the Gamma Omega where [I designed the
+  wiring and PCB](https://astrobeano.blogspot.com/2025/08/my-first-self-built-computer-keyboard.html).
 
-The ZMK keymap in file [tc36k.keymap](config/tc36k.keymap) is the split 3x5_3
-layout described above (without the Bluetooth combos) for the self-built
-[Gamma Omega TC36K](https://github.com/unspecworks/gamma-omega/tree/main/tc36k).
-This is a single PCB no-diode variant of the Gamma Omega where [I designed the
-wiring and PCB](https://astrobeano.blogspot.com/2025/08/my-first-self-built-computer-keyboard.html).
-
-This uses my [ZMK firmware for the TC36K](https://github.com/peterjc/zmk-keyboard-graph-theory/tree/main/boards/shields/tc36k)
-(I also wrote [QMK firmware for the TC36K](https://github.com/peterjc/qmk_userspace/tree/main/keyboards/tutte_coxeter_36k)).
-
-This keyboard has 6-key roll-over, which is not a limitation with this or most keymaps.
-
-### Gamma Omega Hesse
-
-The ZMK keymap in file [hesse.keymap](config/hesse.keymap) is the
-split 3x5_3 layout described above for the self-built
-[Gamma Omega Hesse](https://github.com/unspecworks/gamma-omega/tree/main/tc36k).
-This is a Bluetooth version of the Gamma Omega.
-
-This uses my [ZMK firmware for the Hesse](https://github.com/peterjc/zmk-keyboard-graph-theory/tree/main/boards/shields/hesse)
-
-This keyboard has only 4-key roll-over, which was kept in mind when editing this
-keymap. i.e. I try not to use any combos needing more than four keys in total.
+* *Gamma Omega Hesse*:
+  The ZMK keymap in file [hesse.keymap](config/hesse.keymap) is the split 3x5_3
+  layout described above for the self-built [Gamma Omega
+  Hesse](https://github.com/unspecworks/gamma-omega/tree/main/tc36k).
+  This is a Bluetooth version of the Gamma Omega which has only 4-key roll-over,
+  which was kept in mind when editing this keymap. i.e. I try not to use any
+  combos needing more than four keys in total.
 
 ## Slump layouts - Split 44332+2
 
@@ -210,12 +184,10 @@ and enter perhaps). The inner column is staggered (or 'slumped') to allow the bo
 inner key to be a thumb key. This then looks like a 44332+2 split layout. Moreover,
 the pinky column can optionally be down-shifted by one key.
 
-### Slump52
-
-This keyboard has that 44332+2 style, plus an extra central thumb key, number pad
-and cursors. This layout embeds the 33332+1 layout described above, with some keys
-actions like Escape and the thumbs duplicated.
+* *Slump52*:
+  This keyboard has that 44332+2 style, plus an extra central thumb key, number pad
+  and cursors. The ZMK keymap in file [slump52.keymap](config/slump52.keymap) embeds
+  the 33332+1 layout described above, with some keys actions like Escape and the
+  thumbs duplicated.
 
 ![Keymap Image](keymap-drawer/slump52.svg)
-
-The ZMK keymap in file [slump52.keymap](config/slump52.keymap) defines this.
