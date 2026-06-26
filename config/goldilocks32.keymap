@@ -11,7 +11,7 @@ The logical layout in the firmware is like this, where the more tucked thumb is 
                       ╰────┴────╯                                         ╰─────┴─────╯
 
 
-However, the inner row are treated as higher up (LT0, LM0, RT0, RM0):
+However, the inner row are treated as higher up (LT0, LM0, RT0, RM0) with thumb keys LH1 and RH1:
 
   ╭────────────────────────┬────────────────────────╮ ╭─────────────────────────┬─────────────────────────╮
   │  0   1   2   3   4     │      5   6   7   8   9 │ │ LT4 LT3 LT2 LT1 LT0     │     RT0 RT1 RT2 RT3 RT4 │
@@ -29,38 +29,38 @@ Same, just without LH0 and RH0 aka keys 35 and 36. That is used here (see the ch
 
 #pragma once
 
-// Do NOT define LT0
-#define LT1  3  // left-top row
+#define LT0  4  // left-top row
+#define LT1  3
 #define LT2  2
 #define LT3  1
 #define LT4  0
 
-// Do NOT define RT0
-#define RT1  6  // right-top row
+#define RT0  5  // right-top row
+#define RT1  6
 #define RT2  7
 #define RT3  8
 #define RT4  9
 
-#define LM0 4  // left-middle row
+#define LM0 14 // left-middle row
 #define LM1 13
 #define LM2 12
 #define LM3 11
 #define LM4 10
 
-#define RM0 5  // right-middle row
+#define RM0 15 // right-middle row
 #define RM1 16
 #define RM2 17
 #define RM3 18
 #define RM4 19
 
-#define LB0 14  // left-bottom row
-#define LB1 23
+// Do NOT define LB0
+#define LB1 23  // left-bottom row
 #define LB2 22
 #define LB3 21
 #define LB4 20
 
-#define RB0 15  // right-bottom row
-#define RB1 26
+// Do NOT define RB0
+#define RB1 26  // right-bottom row
 #define RB2 27
 #define RB3 28
 #define RB4 29

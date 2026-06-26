@@ -18,38 +18,38 @@ Using that here, see the chosen setting.
 
 #pragma once
 
-// Do NOT define LT0
-#define LT1  3  // left-top row
+#define LT0  4  // left-top row
+#define LT1  3
 #define LT2  2
 #define LT3  1
 #define LT4  0
 
-// Do NOT define RT0
-#define RT1  6  // right-top row
+#define RT0  5  // right-top row
+#define RT1  6
 #define RT2  7
 #define RT3  8
 #define RT4  9
 
-#define LM0 4  // left-middle row
+#define LM0 14 // left-middle row
 #define LM1 13
 #define LM2 12
 #define LM3 11
 #define LM4 10
 
-#define RM0 5  // right-middle row
+#define RM0 15 // right-middle row
 #define RM1 16
 #define RM2 17
 #define RM3 18
 #define RM4 19
 
-#define LB0 14  // left-bottom row
-#define LB1 23
+// Do NOT define LB0
+#define LB1 23  // left-bottom row
 #define LB2 22
 #define LB3 21
 #define LB4 20
 
-#define RB0 15  // right-bottom row
-#define RB1 24
+// Do NOT define RB0
+#define RB1 24  // right-bottom row
 #define RB2 25
 #define RB3 26
 #define RB4 27
