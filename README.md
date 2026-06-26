@@ -28,11 +28,11 @@ of word, and forward to start of next word in Vim or Helix. The punctuation keys
 also different, with the notable feature of backspace on the right index finger top
 row (see below).
 
-In these keymap images the base layer keys and space are coloured by usage frequencies:
-orange/pink for highest use - mainly home keys, down through pink, purples,
-to a dark blue for low like the letters demoted to combos. That started with
-Q and Z as per the original Hands Down Promethium, but I also demoted V and X
-for even smaller keyboards - see below.
+In these keymap images the base layer keys and space are coloured by usage
+frequencies: orange/pink for highest use - mainly home keys, down through
+pink, purples, to a dark blue for low like the letters demoted to combos.
+That started with `Q` and `Z` as per the original Hands Down Promethium,
+but I also demoted `V` and `X` for even smaller keyboards - see below.
 
 This base layer has *Auto Shift* setup, meaning a long tap on the base layer
 letters and symbols gives the capital or shifted form. The letter `r` on the
@@ -43,11 +43,11 @@ I am also trying out *Magic Comma Shift* whereby typing comma then a letter
 will give the capital version of the letter - but typing comma and space just
 works as usual.
 
-Most of the combos are for symbols which on a traditional layout are normally typed
-with shift. Brackets (open on the left hand, close on the right) as inner
-column horizontal combos are an exception where the keymap images with two symbols
-indicate a plain combo, or with shift. Here `[{` and `]}` are normal pairings, but
-`(<` and `)>` are atypical.
+Most of the combos are for symbols which on a traditional layout are normally
+typed with shift. Brackets (open on the left hand, close on the right) as
+inner column horizontal combos are an exception where the keymap images with
+two symbols indicate a plain combo, or with shift. Here `[{` and `]}` are
+normal pairings, but `(<` and `)>` are atypical.
 
 The second layer is for typing in Japanese using Naginata Style (薙刀式) (see
 [blog post](https://astrobeano.blogspot.com/2025/08/naginata-style-for-typing-in-japanese.html))
