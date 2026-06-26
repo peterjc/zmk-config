@@ -669,11 +669,11 @@ text.right {
 </g>
 <g transform="translate(276, 136) rotate(22.0)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">=</text>
+<text x="0" y="0" class="key tap">+</text>
 </g>
 <g transform="translate(406, 136) rotate(-22.0)" class="key keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⎋</text>
+<text x="0" y="0" class="key tap">⇞</text>
 </g>
 <g transform="translate(449, 85) rotate(-22.0)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -709,11 +709,11 @@ text.right {
 </g>
 <g transform="translate(257, 189) rotate(22.0)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">+</text>
+<text x="0" y="0" class="key tap">-</text>
 </g>
 <g transform="translate(425, 189) rotate(-22.0)" class="key keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⇞</text>
+<text x="0" y="0" class="key tap">⇟</text>
 </g>
 <g transform="translate(468, 139) rotate(-22.0)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
