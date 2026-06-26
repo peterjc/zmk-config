@@ -85,9 +85,9 @@ one of the layouts supported by the
 
 For the Naginata layer this means dropping the pair of cursor keys, which are
 redundant with a navigation layer - note the remaining inner column keys are
-vertically swapped to ensure that `や` is on the home row so that the ゃ-combos
-are comfortable (see this [blog
-post](https://astrobeano.blogspot.com/2026/03/naginata-style-update.html)).
+vertically swapped to ensure that `っ/ち` and `く/や` are on the home row.
+This keeps the ゃ-combos are comfortable (see this
+[blog post](https://astrobeano.blogspot.com/2026/03/naginata-style-update.html)).
 
 ![Keymap image](keymap-drawer/rugby_union.svg)
 
