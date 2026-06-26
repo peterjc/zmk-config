@@ -16,6 +16,10 @@ generally been getting smaller. I started at 36 keys, and am down to just
 30 keys. This has meant some 'spare' keys when using my core layout on the
 larger keyboards (specifically extra thumb keys, and on the inner column).
 
+These all build on a shared 36-key layout in [3x5_3.dtsi](config/3x5_3.dtsi)
+using the `LAYER_FROM36` macro, an idea from [Cem Aksoylar's ZMK
+config](https://github.com/caksoylar/zmk-config).
+
 ## Hands Down Promethium "Pico Mod"
 
 My base layer started as the inverted [Hands Down Promethium
@@ -147,11 +151,6 @@ layout names for the most common 34 key layouts. This means a symmetrical split
 layout where each hand has three rows and five columns (the index finger still
 gets a full extra inner column), plus two thumb keys.
 
-My layout here is the 3x5_3 layout below with the most tucked thumb keys
-discarded (being the least comfortable for me on my 36-key keyboards). This
-is done via the `LAYER_FROM36` macro idea from [Cem Aksoylar's ZMK
-config](https://github.com/caksoylar/zmk-config).
-
 Compared to the 2-key inner column layouts above, there are extra cursor
 left/right keys. This is close to the original Naginata layout but the inner
 columns are still inverted (see this
@@ -174,7 +173,7 @@ layout names for the most common 36 key layout. This means a symmetrical split
 layout where each hand has three rows and five columns (the index finger gets
 an extra inner column), plus three thumb keys.
 
-As above but with extra thumb keys.
+As above, but with extra thumb keys.
 
 ![Keymap Image](keymap-drawer/hesse.svg)
 
