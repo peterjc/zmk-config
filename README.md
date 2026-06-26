@@ -140,7 +140,7 @@ layout where each hand has three rows and five columns (the index finger still
 gets a full extra inner column), plus two thumb keys.
 
 Compared to the 2-key inner column layouts above, there are extra cursor
-left/right keys. This is close to the original Naginata layout but the inner
+left/right keys. This is closer to the original Naginata layout but the inner
 columns are still inverted (see this
 [blog post](https://astrobeano.blogspot.com/2026/03/naginata-style-update.html)).
 
