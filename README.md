@@ -57,8 +57,8 @@ introduces the idea of putting backspace on the right index finger top row.
 I made minor changes so that Qwerty `Q` is now Escape on tap, small on hold, and
 added shift-space on a thumb for kanji selection without needing editing layers.
 Due to my brackets combos clashing with the default way to switch Japanese mode
-and the Naginata layer on and off, those are Qwerty `S`+`F` (labeled 'ABC' in
-the image) and Qwerty `J`+`L` instead (labeled 'かな'). This layout uses a *lot*
+and the Naginata layer on and off, those are Qwerty `S`+`F` (labeled `ABC` in
+the image) and Qwerty `J`+`L` instead (labeled `かな`). This layout uses a *lot*
 of chording, but these are not defined as ZMK combos, and so are not drawn here.
 
 The third and final layer is a combined numbers and navigation layer. The right
@@ -66,6 +66,9 @@ hand has navigation keys including an inverted-tee set of cursors at the Qwerty
 JKIL position inspired by [Dreymar's Extend layer](https://dreymar.colemak.org/layers-extend.html).
 The left hand has a number-pad, with 123 at the top like a mobile phone (since
 in a traditional keyboard 123 are about there).
+
+I use home-row 2-key horizontal combos for the non-shift modifier keys (alt,
+ctrl, and command/GUI) with shift on the left thumb.
 
 ## Split 33332+1 Layout with 30 keys
 
@@ -78,8 +81,9 @@ one of the layouts supported by the
 
 For the Naginata layer this means dropping the pair of cursor keys, which are
 redundant with a navigation layer - note the remaining inner column keys are
-vertically swapped to ensure the ya-combos are comfortable (see this
-[blog post](https://astrobeano.blogspot.com/2026/03/naginata-style-update.html)).
+vertically swapped to ensure that `や` is on the home row so that the ゃ-combos
+are comfortable (see this [blog
+post](https://astrobeano.blogspot.com/2026/03/naginata-style-update.html)).
 
 ![Keymap image](keymap-drawer/rugby_union.svg)
 
