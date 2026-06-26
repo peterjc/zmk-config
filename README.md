@@ -12,9 +12,9 @@ rules](https://codeberg.org/peterjc/kana-chording-ke/src/branch/main/hands-down-
 (see this [blog post](https://blastedbio.blogspot.com/2025/05/what-have-you-done-to-your-keyboard.html)).
 
 I've now built multiple self-designed programmable keyboards, which have
-generally been getting smaller starting with 36 keys down to just 30 keys.
-This has meant some 'spare' keys when using my core layout on the larger
-keyboards (specifically extra thumb keys, and on the inner column).
+generally been getting smaller. I started at 36 keys, and am down to just
+30 keys. This has meant some 'spare' keys when using my core layout on the
+larger keyboards (specifically extra thumb keys, and on the inner column).
 
 ## Hands Down Promethium "Pico Mod"
 
@@ -28,11 +28,11 @@ of word, and forward to start of next word in Vim or Helix. The punctuation keys
 also different, with the notable feature of backspace on the right index finger top
 row (see below).
 
-Most of the combos are for symbols which on a traditional layout are normally typed
-with shift. Brackets (open on the left hand, close on the right) and other inner
-column horizontal combos are an exception where the keymap images with two symbols
-indicate a plain combo, or with shift. Here `[{` and `]}` are normal pairings, but
-`(<` and `)>` are atypical.
+In these keymap images the base layer keys and space are coloured by usage frequencies:
+orange/pink for highest use - mainly home keys, down through pink, purples,
+to a dark blue for low like the letters demoted to combos. That started with
+Q and Z as per the original Hands Down Promethium, but I also demoted V and X
+for even smaller keyboards - see below.
 
 This base layer has *Auto Shift* setup, meaning a long tap on the base layer
 letters and symbols gives the capital or shifted form. The letter `r` on the
@@ -42,6 +42,12 @@ space on the right thumb for capital `R`).
 I am also trying out *Magic Comma Shift* whereby typing comma then a letter
 will give the capital version of the letter - but typing comma and space just
 works as usual.
+
+Most of the combos are for symbols which on a traditional layout are normally typed
+with shift. Brackets (open on the left hand, close on the right) as inner
+column horizontal combos are an exception where the keymap images with two symbols
+indicate a plain combo, or with shift. Here `[{` and `]}` are normal pairings, but
+`(<` and `)>` are atypical.
 
 The second layer is for typing in Japanese using Naginata Style (薙刀式) (see
 [blog post](https://astrobeano.blogspot.com/2025/08/naginata-style-for-typing-in-japanese.html))
@@ -61,6 +67,102 @@ JKIL position inspired by [Dreymar's Extend layer](https://dreymar.colemak.org/l
 The left hand has a number-pad, with 123 at the top like a mobile phone (since
 in a traditional keyboard 123 are about there).
 
+## Split 33332+1 Layout with 30 keys
+
+By this I mean a layout where each hand gets columns of 3 keys for the pinky, ring,
+middle, and index fingers, and again only 2 keys for the index finger's inner column,
+but only one thumb key. This is used by some of the [awesome Hummingbird inspired
+keyboards](https://github.com/jcmkk3/awesome-hummingbirds) - for example this is
+one of the layouts supported by the
+[Visorbearer](https://github.com/carrefinho/visorbearer).
+
+For the Naginata layer this means dropping the pair of cursor keys, which are
+redundant with a navigation layer - note the remaining inner column keys are
+vertically swapped to ensure the ya-combos are comfortable (see this
+[blog post](https://astrobeano.blogspot.com/2026/03/naginata-style-update.html)).
+
+![Keymap image](keymap-drawer/rugby_union.svg)
+
+### Rugby Union
+
+The ZMK keymap in file [rugby_union.keymap](config/rugby_union.keymap) uses this
+30 key layout. The Rugby Union keyboard has 8-key roll-over.
+
+### Goldilocks32
+
+The ZMK keymap in file [goldilocks32.keymap](config/goldilocks32.keymap) uses this
+30 key layout, plus cursors and enter on the 5-way navigation button.
+
+The Goldilocks32 has 6-key roll-over excluding the navigation button, 4-key roll
+over when that is included. It can be built like this with 30 keys, or with two
+keys per thumb for 32 keys.
+
+### Bivvy16D
+
+The ZMK keymap in file [bivvy16d.keymap](config/bivvy16d.keymap) is the 30 key
+layout above, plus navigation and cursors on the two 5-way navigation buttons.
+
+The Bivvy16D has 14-key roll-over excluding the navigation buttons, 4-key roll
+over when they are included (per hand). It can be built like this with 30 keys,
+or with two keys per thumb for 32 keys.
+
+## Split 23332+2 Layout with 30 keys
+
+By this I mean a layout where each hand gets columns of only 2 keys for the pinky,
+but 3 keys for the ring, middle, and index fingers, and again only 2 keys for the
+index finger's inner column, and two thumb keys. This is used by the keyboards like
+the [Hummingbird](https://github.com/PJE66/hummingbird).
+
+This would mean dropping my `Escape` and `=`/`+` keys and all the combos on them -
+or moving them to the extra thumb keys perhap?
+
+## Split 33332+2 Layout with 32 keys
+
+By this I mean a layout where each hand gets columns of 3 keys for the pinky,
+ring, middle, and index fingers - but then only 2 keys for the index finger's
+inner column, and two thumb keys. This is used by the keyboards like the
+[Visorbearer](https://github.com/carrefinho/visorbearer).
+
+As above but with extra thumb keys - an extra backspace on the left thumb,
+and a dedicated shift on the right thumb.
+
+![Keymap image](keymap-drawer/bivouac34.svg)
+
+### Bivouac34
+
+The ZMK keymap in file [bivouac34.keymap](config/bivouac34.keymap) is the layout
+shown above, a split 33332+2 layout (32 keys only). The keyboard also supports a
+34 key 33332+3 layout (which I am not using).
+
+Like the Hesse (below), this has only 4-key roll-over.
+
+## Split 3x5_2 aka 33333+2 Layout with 34 keys
+
+The QMK project uses the term `split_3x5_2` for one of their standard community
+layout names for the most common 34 key layouts. This means a symmetrical split
+layout where each hand has three rows and five columns (the index finger still
+gets a full extra inner column), plus two thumb keys.
+
+My layout here is the 3x5_3 layout below with the most tucked thumb keys
+discarded (being the least comfortable for me on my 36-key keyboards). This
+is done via the `LAYER_FROM36` macro idea from [Cem Aksoylar's ZMK
+config](https://github.com/caksoylar/zmk-config).
+
+Compared to the 2-key inner column layouts above, there are extra cursor
+left/right keys. This is close to the original Naginata layout but the inner
+columns are still inverted (see this
+[blog post](https://astrobeano.blogspot.com/2026/03/naginata-style-update.html)).
+
+![Keymap Image](keymap-drawer/acid.svg)
+
+### Forager Acid
+
+The ZMK keymap in file [acid.keymap](config/hesse.keymap) is the split 3x5_2
+layout described above for my self-built variant of the Forager keyboard.
+
+The Forager Acid keyboard has only 4-key roll-over per hand (so better than
+the Hesse mentioned above).
+
 ## Split 3x5_3 aka 33333+3 Layout with 36 keys
 
 The QMK project uses the term `split_3x5_3` for one of their standard community
@@ -68,13 +170,9 @@ layout names for the most common 36 key layout. This means a symmetrical split
 layout where each hand has three rows and five columns (the index finger gets
 an extra inner column), plus three thumb keys.
 
-![Keymap Image](keymap-drawer/hesse.svg)
+As above but with extra thumb keys.
 
-In this keymap image the base layer keys and space are coloured by usage frequencies:
-orange/pink for highest use - mainly home keys, down through pink, purples,
-to a dark blue for low like the letters demoted to combos. That started with
-Q and Z as per the original Hands Down Promethium, but I also demoted V and X
-for even smaller keyboards - see below.
+![Keymap Image](keymap-drawer/hesse.svg)
 
 ### Gamma Omega TC36K
 
@@ -100,103 +198,6 @@ This uses my [ZMK firmware for the Hesse](https://github.com/peterjc/zmk-keyboar
 
 This keyboard has only 4-key roll-over, which was kept in mind when editing this
 keymap. i.e. I try not to use any combos needing more than four keys in total.
-
-## Split 3x5_2 aka 33333+2 Layout with 34 keys
-
-The QMK project uses the term `split_3x5_2` for one of their standard community
-layout names for the most common 34 key layouts. This means a symmetrical split
-layout where each hand has three rows and five columns (the index finger still
-gets a full extra inner column), plus two thumb keys.
-
-My layout here is the 3x5_3 layout above with the most tucked thumb keys
-discarded (being the least comfortable for me on my 36-key keyboards). This
-is done via the `LAYER_FROM36` macro idea from [Cem Aksoylar's ZMK
-config](https://github.com/caksoylar/zmk-config),
-
-### Forager Acid
-
-The ZMK keymap in file [acid.keymap](config/hesse.keymap) is the split 3x5_2
-layout described above for my self-built variant of the Forager keyboard.
-
-![Keymap Image](keymap-drawer/acid.svg)
-
-The Forager Acid keyboard has only 4-key roll-over per hand (so better than
-the Hesse mentioned above).
-
-## Split 33332+2 Layout with 32 keys
-
-By this I mean a layout where each hand gets columns of 3 keys for the pinky,
-ring, middle, and index fingers - but then only 2 keys for the index finger's
-inner column, and two thumb keys. This is used by the keyboards like the
-[Visorbearer](https://github.com/carrefinho/visorbearer).
-
-For this I drop my `X` and `/` (slash) keys. Note the `X` combo bottom left,
-`/` combo on the remaining right inner column keys. This allows `../` with a
-similar motion of the right index finger (tap, tap, combo).
-
-![Keymap image](keymap-drawer/bivouac34.svg)
-
-For the Naginata layer this means dropping the pair of cursor keys, which are
-redundant with a navigation layer - but the remaining inner column keys are
-vertically swapped to ensure the ya-combos are comfortable (see this
-[blog post](https://astrobeano.blogspot.com/2026/03/naginata-style-update.html)).
-
-### Bivouac34
-
-The ZMK keymap in file [bivouac34.keymap](config/bivouac34.keymap) is the layout
-shown above, a split 33332+2 layout (32 keys only). The keyboard also supports a
-34 key 33332+3 layout (which I am not using).
-
-Like the Hesse (above), this has only 4-key roll-over.
-
-## Split 23332+2 Layout with 30 keys
-
-By this I mean a layout where each hand gets columns of only 2 keys for the pinky,
-but 3 keys for the ring, middle, and index fingers, and again only 2 keys for the
-index finger's inner column, and two thumb keys. This is used by the keyboards like
-the [Hummingbird](https://github.com/PJE66/hummingbird).
-
-This would mean dropping my `Escape` and `=`/`+` keys and all the combos on them.
-Right now that seems challenging. It would also break using the Naginata layout.
-
-## Split 33332+1 Layout with 30 keys
-
-By this I mean a layout where each hand gets columns of 3 keys for the pinky, ring,
-middle, and index fingers, and again only 2 keys for the index finger's inner column,
-but only one thumb keys. This is used by some of the [awesome Hummingbird inspired
-keyboards](https://github.com/jcmkk3/awesome-hummingbirds) - for example this is
-one of the layouts supported by the
-[Visorbearer](https://github.com/carrefinho/visorbearer).
-
-This means dropping backspace on the left thumb (leaving just the Naginata Style
-backspace on the index finger), and the dedicated shift on the right thumb (note
-holding the `R` left thumb gives shift). Capital `R` is available with *Magic
-Comma Shift* or my holding the left thumb and tapping the right thumb.
-
-![Keymap image](keymap-drawer/rugby_union.svg)
-
-### Bivvy16D
-
-The ZMK keymap in file [bivvy16d.keymap](config/bivvy16d.keymap) is the 30 key
-layout above, plus navigation and cursors on the two 5-way navigation buttons.
-
-The Bivvy16D has 14-key roll-over excluding the navigation buttons, 4-key roll
-over when they are included (per hand). It can be built like this with 30 keys,
-or with two keys per thumb for 32 keys.
-
-### Goldilocks32
-
-The ZMK keymap in file [goldilocks32.keymap](config/goldilocks32.keymap) uses this
-30 key layout, plus cursors and enter on the 5-way navigation button.
-
-The Goldilocks32 has 6-key roll-over excluding the navigation button, 4-key roll
-over when that is included. It can be built like this with 30 keys, or with two
-keys per thumb for 32 keys.
-
-### Rugby Union
-
-The ZMK keymap in file [rugby_union.keymap](config/rugby_union.keymap) uses this
-30 key layout. The Rugby Union keyboard has 8-key roll-over.
 
 ## Slump layouts - Split 44332+2
 
