@@ -7,13 +7,16 @@ manifest:
       url-base: https://github.com/zmkfirmware
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
     - name: peterjc
       url-base: https://github.com/peterjc
     - name: urob
       url-base: https://github.com/urob
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: petejohanson
+      revision: move-to-zephyr-4-4-0
       import: app/west.yml
     - name: zmk-keyboard-graph-theory
       remote: peterjc
