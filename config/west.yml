@@ -16,7 +16,7 @@ manifest:
   projects:
     - name: zmk
       remote: petejohanson
-      revision: move-to-zephyr-4-4-0
+      revision: 5565f2179c1af83bdf210a6a362dfa4193c56189
       import: app/west.yml
     - name: zmk-keyboard-graph-theory
       remote: peterjc
