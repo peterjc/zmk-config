@@ -3,4 +3,4 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: petejohanson/zmk/.github/workflows/build-user-config.yml@move-to-zephyr-4-4-0
+    uses: petejohanson/zmk/.github/workflows/build-user-config.yml@5565f2179c1af83bdf210a6a362dfa4193c56189
