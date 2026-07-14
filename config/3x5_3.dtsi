@@ -7,10 +7,12 @@
 //
 // Assumes 36-key keyboard in the common 33333_3 aka 3x5_3 layout (three rows
 // of five columns, and three thumb keys, per hand), or 34-key keyboard in the
-// 33333_2 aka 3x5_2 layout (where the most tucked thumb keys are dropped).
+// 33333_2 aka 3x5_2 layout (where the most tucked thumb keys are dropped), or
+// 32-keys in 33332_2 layout (dropping the Qwerty B/N keys), and even smaller
+// down to 30-keys in the 33332_1 layout (one key per thumb).
 // This is handled via the LAYER_FROM36 definition, which must be defined
-// before including this file. This should also include a line like this:
-// #include "zmk-helpers/key-labels/36.h"
+// before including this file. This should also include all the ZMK-helper key
+// definitions or a line like this: #include "zmk-helpers/key-labels/36.h"
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
