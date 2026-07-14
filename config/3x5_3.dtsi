@@ -367,7 +367,7 @@
         // Japanese mode and 薙刀 (Naginata Style) on/off
         // Can't use <RM0 RM1> Qwerty H+J as I use that for close bracket
         combo_ng_on {
-            timeout-ms = <300>;
+            timeout-ms = <75>;
             require-prior-idle-ms = <250>;
             key-positions = <RM1 RM3>; // Qwerty J+L, on right hand home row
             bindings = <&ng_on>;
@@ -375,7 +375,7 @@
         };
         // Can't use <LM0 LM1> Qwerty F+G as I use that for open bracket
         combo_ng_off {
-            timeout-ms = <300>;
+            timeout-ms = <75>;
             require-prior-idle-ms = <250>;
             key-positions = <LM1 LM3>; // Qwerty S+F, on left hand home row
             bindings = <&ng_off>;
