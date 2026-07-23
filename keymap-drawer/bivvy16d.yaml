@@ -43,9 +43,9 @@ layers:
   - ↓
   Naginata:
   - {t: ⎋, h: Small-kana}
-  - {left: き, right: め}
+  - {left: き, right: ね}
   - {left: て, right: り}
-  - {left: し, right: ね}
+  - {left: し, right: め}
   - {left: そ, right: ぬ}
   - {left: た, right: お}
   - {left: ⌫, right: さ}

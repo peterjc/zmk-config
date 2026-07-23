@@ -56,9 +56,9 @@ layers:
   Naginata:
   - {t: ⎋, h: Small-kana}
   - {t: ⎋, h: Small-kana}
-  - {left: き, right: め}
+  - {left: き, right: ね}
   - {left: て, right: り}
-  - {left: し, right: ね}
+  - {left: し, right: め}
   - {left: そ, right: ぬ}
   - {left: た, right: お}
   - {left: ⌫, right: さ}
@@ -164,7 +164,7 @@ layers:
   - '0'
   - RET
 combos:
-- p: [0, 9]
+- p: [15, 24]
   k: Studio Unlock
   l: [HD Promethium]
   a: top
