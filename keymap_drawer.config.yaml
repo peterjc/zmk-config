@@ -236,9 +236,9 @@ parse_config:
     'AS(EQUAL)': {'t': '=+', 'type': 'low'}
     # These are the Naginata Style keys for typing in Japanese using kana:
     '&ng Q': {'t': '⎋', 'h': 'Small-kana'}
-    '&ng W': {'left': 'き', 'right': 'め'}
+    '&ng W': {'left': 'き', 'right': 'ね'}
     '&ng E': {'left': 'て', 'right': 'り'}
-    '&ng R': {'left': 'し', 'right': 'ね'}
+    '&ng R': {'left': 'し', 'right': 'め'}
     '&ng T': {'t': '←'}
     '&ng Y': {'t': '→'}
     '&ng U': {'left': '⌫', 'right': 'さ'}
