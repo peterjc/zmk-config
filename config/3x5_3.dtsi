@@ -341,7 +341,7 @@
         // Top left (Q) + top right (P) = &studio_unlock
         combo_studio_unlock {
             timeout-ms = <100>;
-            key-positions = <0 9>;
+            key-positions = <LT4 RT4>;
             bindings = <&studio_unlock>;
             layers = <DEFAULT>;
         };
