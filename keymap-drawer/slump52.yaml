@@ -264,6 +264,9 @@ combos:
 - p: [42, 44]
   k: ⇪
   l: [HD Promethium]
+- p: [42, 44]
+  k: ⇪
+  l: [Naginata]
 - p: [15, 28]
   k: '`'
   l: [HD Promethium, Num + Nav]

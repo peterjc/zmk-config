@@ -791,6 +791,10 @@ text.right {
 <rect rx="6" ry="6" x="501" y="199" width="28" height="15" class="combo"/>
 <text x="515" y="207" class="combo tap">⏎</text>
 </g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="333" y="245" width="28" height="26" class="combo"/>
+<text x="347" y="258" class="combo tap">⇪</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 785)" class="layer-Num + Nav">
