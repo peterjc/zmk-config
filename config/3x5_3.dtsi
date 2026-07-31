@@ -420,13 +420,13 @@
             bindings = <&kp RCTRL>;
             key-positions = <RM2 RM3>;
             layers = <DEFAULT NUM_NAV>;
-            require-prior-idle-ms = <250>;
+            require-prior-idle-ms = <200>;
         };
         left_gui_combo {
             bindings = <&kp LGUI>;
             key-positions = <LM1 LM2>;
             layers = <DEFAULT NUM_NAV>;
-            require-prior-idle-ms = <250>;
+            require-prior-idle-ms = <200>;
             timeout-ms = <40>;
         };
         right_gui_combo {
