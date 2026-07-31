@@ -525,10 +525,19 @@
             timeout-ms = <75>;
         };
 
+        // Caps-word is more useful than traditional caps lock in English:
         caps_word_combo {
             bindings = <&caps_word>;
             key-positions = <LH1 RH1>;
             layers = <DEFAULT>;
+            timeout-ms = <75>;
+        };
+
+        // With Japanese IME caps lock can be configured to toggle katakana mode:
+        caps_lock_combo {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <LH1 RH1>;
+            layers = <NAGINATA>;
             timeout-ms = <75>;
         };
 
