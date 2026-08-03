@@ -30,8 +30,9 @@
 
 // Aliases for my layers
 #define DEFAULT 0
-#define NAGINATA 1
-#define NUM_NAV 2
+#define AS_LAYER 1
+#define NAGINATA 2
+#define NUM_NAV 3
 
 #define my_linger_term 300// linger mod-tap trigger time window
 
@@ -288,6 +289,16 @@
         default_layer {
             display-name = "HD Promethium";
             bindings = <LAYER_FROM36( \
+                &kp ESCAPE, &kp P, &kp G, &kp M, &kp K,      &dot_colon,  &kp BSPC, &xquote, AS(MINUS), AS(EQUAL), \
+                &kp S,      &kp N, &kp T, &kp H, &kp J,      &comma_semi, &kp A,    &kp E,   &kp I,     &kp C, \
+                &kp B,      &kp F, &kp D, &kp L, &kp LEFT,   &kp RIGHT,   &kp U,    &kp O,   &kp Y,     &kp W, \
+                &kp TAB, &bmt LSHFT R, &hpmt LSHFT BSPC,     &kp RSHFT, &space_R_layer NUM_NAV 0, &mo NUM_NAV \
+            )>;
+        };
+
+        auto_shift_layer {
+            display-name = "HD Promethium (AS)";
+            bindings = <LAYER_FROM36( \
                 &kp ESCAPE, AS(P), AS(G), AS(M), AS(K),      &dot_colon,  AS(BSPC), &xquote, AS(MINUS), AS(EQUAL), \
                 AS(S),      AS(N), AS(T), AS(H), AS(J),      &comma_semi, AS(A),    AS(E),   AS(I),     AS(C),  \
                 AS(B),      AS(F), AS(D), AS(L), &kp LEFT,   &kp RIGHT,   AS(U),    AS(O),   AS(Y),     AS(W),  \
@@ -364,6 +375,14 @@
         };
 #endif
 
+        // Combo on numbers/nav layer to toggle auto-shift on/off
+        combo_toggle_as {
+            timeout-ms = <300>;
+            key-positions = <LT0 RT0>;
+            bindings = <&tog AS_LAYER>;
+            layers = <NUM_NAV>;
+        };
+
         // Japanese mode and 薙刀 (Naginata Style) on/off
         // Can't use <RM0 RM1> Qwerty H+J as I use that for close bracket
         combo_ng_on {
@@ -371,7 +390,7 @@
             require-prior-idle-ms = <250>;
             key-positions = <RM1 RM3>; // Qwerty J+L, on right hand home row
             bindings = <&ng_on>;
-            layers = <DEFAULT NAGINATA>;
+            layers = <DEFAULT AS_LAYER NAGINATA>;
         };
         // Can't use <LM0 LM1> Qwerty F+G as I use that for open bracket
         combo_ng_off {
@@ -379,7 +398,7 @@
             require-prior-idle-ms = <250>;
             key-positions = <LM1 LM3>; // Qwerty S+F, on left hand home row
             bindings = <&ng_off>;
-            layers = <DEFAULT NAGINATA>;
+            layers = <DEFAULT AS_LAYER NAGINATA>;
         };
 
         // 3-key horizontal combos on bottom row
@@ -401,38 +420,38 @@
         left_alt_combo {
             bindings = <&kp LALT>;
             key-positions = <LM3 LM4>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
             require-prior-idle-ms = <250>;
         };
         right_alt_combo {
             bindings = <&kp RALT>;
             key-positions = <RM3 RM4>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
             require-prior-idle-ms = <250>;
         };
         left_ctrl_combo {
             bindings = <&kp LCTRL>;
             key-positions = <LM2 LM3>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
             require-prior-idle-ms = <250>;
         };
         right_ctrl_combo {
             bindings = <&kp RCTRL>;
             key-positions = <RM2 RM3>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
             require-prior-idle-ms = <200>;
         };
         left_gui_combo {
             bindings = <&kp LGUI>;
             key-positions = <LM1 LM2>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
             require-prior-idle-ms = <200>;
             timeout-ms = <40>;
         };
         right_gui_combo {
             bindings = <&kp RGUI>;
             key-positions = <RM1 RM2>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
             require-prior-idle-ms = <200>;
             timeout-ms = <40>;
         };
@@ -440,42 +459,42 @@
         left_ctrl_gui_combo {
             bindings = <&kp LC(LGUI)>;
             key-positions = <LM1 LM2 LM3>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
             require-prior-idle-ms = <250>;
             timeout-ms = <40>;
         };
         right_ctrl_gui_combo {
             bindings = <&kp RC(RGUI)>;
             key-positions = <RM1 RM2 RM3>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
             require-prior-idle-ms = <250>;
             timeout-ms = <40>;
         };
         left_ctrl_alt_combo {
             bindings = <&kp LC(LALT)>;
             key-positions = <LM2 LM3 LM4>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
             require-prior-idle-ms = <250>;
             timeout-ms = <40>;
         };
         right_ctrl_alt_combo {
             bindings = <&kp RC(RALT)>;
             key-positions = <RM2 RM3 RM4>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
             require-prior-idle-ms = <250>;
             timeout-ms = <40>;
         };
         left_ctrl_alt_gui_combo {
             bindings = <&kp LC(LA(LGUI))>;
             key-positions = <LM1 LM2 LM3 LM4>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
             require-prior-idle-ms = <250>;
             timeout-ms = <40>;
         };
         right_ctrl_alt_gui_combo {
             bindings = <&kp RC(RA(RGUI))>;
             key-positions = <RM1 RM2 RM3 RM4>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
             require-prior-idle-ms = <250>;
             timeout-ms = <40>;
         };
@@ -484,14 +503,14 @@
         left_shift_combo {
             bindings = <&kp LSHFT>;
             key-positions = <LB1 LB2>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
             require-prior-idle-ms = <250>;
             timeout-ms = <40>;
         };
         right_shift_combo {
             bindings = <&kp RSHFT>;
             key-positions = <RB1 RB2>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
             require-prior-idle-ms = <250>;
             timeout-ms = <40>;
         };
@@ -500,28 +519,28 @@
         q_combo {
             bindings = <AS(Q)>;
             key-positions = <LT1 LT2>;
-            layers = <DEFAULT>;
+            layers = <DEFAULT AS_LAYER>;
             timeout-ms = <100>;
         };
 
         z_combo {
             bindings = <AS(Z)>;
             key-positions = <RT2 RT3>;
-            layers = <DEFAULT>;
+            layers = <DEFAULT AS_LAYER>;
             timeout-ms = <75>;
         };
 
         v_combo {
             bindings = <AS(V)>;
             key-positions = <LT2 LT3>;
-            layers = <DEFAULT>;
+            layers = <DEFAULT AS_LAYER>;
             timeout-ms = <75>;
         };
 
         x_combo {
             bindings = <AS(X)>;
             key-positions = <LB2 LB3>;
-            layers = <DEFAULT>;
+            layers = <DEFAULT AS_LAYER>;
             timeout-ms = <75>;
         };
 
@@ -529,7 +548,7 @@
         caps_word_combo {
             bindings = <&caps_word>;
             key-positions = <LH1 RH1>;
-            layers = <DEFAULT>;
+            layers = <DEFAULT AS_LAYER>;
             timeout-ms = <75>;
         };
 
@@ -545,73 +564,73 @@
         backtick {
             bindings = <&kp GRAVE>;
             key-positions = <LT4 LM4>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
         };
 
         at_sign {
             bindings = <&kp LS(SQT)>;
             key-positions = <LT3 LM3>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
         };
 
         pipe_sign {
             bindings = <&kp LS(NON_US_BACKSLASH)>;
             key-positions = <LT2 LM2>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
         };
 
         dollar_sign {
             bindings = <&kp DOLLAR>;
             key-positions = <LT1 LM1>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
         };
 
        backslash_sign {
             bindings = <&kp NON_US_BACKSLASH>;
             key-positions = <LT0 LT1>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
         };
 
         percent_sign {
             bindings = <&kp PERCENT>;
             key-positions = <LT0 LM0>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
         };
 
        slash_sign {
             bindings = <&kp SLASH>;
             key-positions = <RT1 RT0>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
         };
 
         caret_sign {
             bindings = <&kp CARET>;
             key-positions = <RT0 RM0>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
         };
 
         question_mark {
             bindings = <&kp QMARK>;
             key-positions = <RT1 RM1>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
         };
 
         hash_sign {
             bindings = <&kp NON_US_HASH>;
             key-positions = <RT2 RM2>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
         };
 
         exclamation_mark {
             bindings = <&kp EXCLAMATION>;
             key-positions = <RT3 RM3>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
         };
 
         tilde_sign {
             bindings = <&kp LS(NON_US_HASH)>;
             key-positions = <RT4 RM4>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
         };
 
         // 2-key horizontal combos for {}, can instead use shift with the [] combos:
@@ -620,13 +639,13 @@
         open_curly {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <LT0 LM1>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
         };
 
         close_curly {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <RT0 RM1>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
         };
 #endif
 
@@ -634,13 +653,13 @@
        open_bracket_less_than {
             bindings = <&open_par_lt>;
             key-positions = <LM0 LM1>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
         };
 
         close_bracket_greater_than {
             bindings = <&close_par_gt>;
             key-positions = <RM0 RM1>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
         };
 
 #ifndef LB0
@@ -648,26 +667,26 @@
         open_square_curly {
             bindings = <AS(LEFT_BRACKET)>;
             key-positions = <LM0 LB1>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
         };
 
         close_square_curly {
             bindings = <AS(RIGHT_BRACKET)>;
             key-positions = <RM0 RB1>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
         };
 #else
         // 2-key horizontal combos for [] with shifted form {}
         open_square_curly {
             bindings = <AS(LEFT_BRACKET)>;
             key-positions = <LB0 LB1>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
         };
 
         close_square_curly {
             bindings = <AS(RIGHT_BRACKET)>;
             key-positions = <RB0 RB1>;
-            layers = <DEFAULT NUM_NAV>;
+            layers = <DEFAULT AS_LAYER NUM_NAV>;
         };
 #endif
 

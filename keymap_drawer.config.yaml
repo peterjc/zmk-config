@@ -135,6 +135,7 @@ parse_config:
   zmk_combos:
     caps_lock_combo: {'key': '⇪'}
     caps_word_combo: {'key': '⇪'}
+    auto_shift_combo: {'key': 'AS'}
     combo_studio_unlock: {'key': 'Studio Unlock', 'align': 'top', 'offset': 0.3, 'width': 50}
     combo_bootloader: {'key': 'Boot loader', 'align': 'bottom', 'width': 50}
     tab_combo: {'align': 'bottom', 'offset': -0.02, 'slide': -0.5, 'height': 15}
