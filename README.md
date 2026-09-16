@@ -80,9 +80,9 @@ ctrl, and command/GUI) with shift on the left thumb.
 
 ## Split 33332+1 Layout with 30 keys
 
-By this I mean a layout where each hand gets columns of 3 keys for the pinky, ring,
-middle, and index fingers, and again only 2 keys for the index finger's inner column,
-but only one thumb key. This is used by some of the [awesome Hummingbird inspired
+By this I mean a layout where each hand gets columns of 3 keys for the pinky,
+ring, middle, and index fingers, only 2 keys for the index finger's inner column,
+and only one thumb key. This is used by some of the [awesome Hummingbird inspired
 keyboards](https://github.com/jcmkk3/awesome-hummingbirds) - for example this is
 one of the layouts supported by the
 [Visorbearer](https://github.com/carrefinho/visorbearer).
