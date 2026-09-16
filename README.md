@@ -20,7 +20,7 @@ These all build on a shared 36-key layout in [3x5_3.dtsi](config/3x5_3.dtsi)
 using the `LAYER_FROM36` macro, an idea from [Cem Aksoylar's ZMK
 config](https://github.com/caksoylar/zmk-config).
 
-## Hands Down Promethium "Pico Mod"
+## Layer 1: Hands Down Promethium "Pico Mod" for English
 
 My base layer started as the inverted [Hands Down Promethium
 layout](https://www.reddit.com/r/KeyboardLayouts/comments/1g66ivi/hands_down_promethium_snth_meets_hd_silverengram/)
@@ -53,10 +53,12 @@ inner column horizontal combos are an exception where the keymap images with
 two symbols indicate a plain combo, or with shift. Here `[{` and `]}` are
 normal pairings, but `(<` and `)>` are atypical.
 
+## Layer 2: Naginata Style (薙刀式) for Japanese
+
 The second layer is for typing in Japanese using Naginata Style (薙刀式) (see
 [blog post](https://astrobeano.blogspot.com/2025/08/naginata-style-for-typing-in-japanese.html))
 using the [ZMK Naginata module](https://github.com/eswai/zmk-naginata). This is
-currently at [v17](https://oookaworks.seesaa.net/article/519707171.html). This
+currently at [v18](https://oookaworks.seesaa.net/article/521080503.html). This
 introduces the idea of putting backspace on the right index finger top row.
 I made minor changes so that Qwerty `Q` is now Escape on tap, small on hold, and
 added shift-space on a thumb for kanji selection without needing editing layers.
@@ -64,6 +66,8 @@ Due to my brackets combos clashing with the default way to switch Japanese mode
 and the Naginata layer on and off, those are Qwerty `S`+`F` (labeled `ABC` in
 the image) and Qwerty `J`+`L` instead (labeled `かな`). This layout uses a *lot*
 of chording, but these are not defined as ZMK combos, and so are not drawn here.
+
+## Layer 3: Numbers and Navigation
 
 The third and final layer is a combined numbers and navigation layer. The right
 hand has navigation keys including an inverted-tee set of cursors at the Qwerty
