@@ -93,11 +93,15 @@ vertically swapped to ensure that `っ/ち` and `く/や` are on the home row.
 This keeps the ゃ-combos comfortable (see this
 [blog post](https://astrobeano.blogspot.com/2026/03/naginata-style-update.html)).
 
-![Keymap image](keymap-drawer/rugby_union.svg)
+![Keymap image](keymap-drawer/warped30.svg)
+
+* *Wee Bit Warped (30 keys)*:
+  The ZMK keymap in file [warped30.keymap](config/warped30.keymap) uses
+  this 30 key layout. This keyboard has 8-key roll-over.
 
 * *Rugby Union*:
   The ZMK keymap in file [rugby_union.keymap](config/rugby_union.keymap) uses
-  this 30 key layout. The Rugby Union keyboard has 8-key roll-over.
+  this 30 key layout. This keyboard has 8-key roll-over.
 
 * *Goldilocks32*:
   The ZMK keymap in file [goldilocks32.keymap](config/goldilocks32.keymap) uses

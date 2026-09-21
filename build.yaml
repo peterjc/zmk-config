@@ -43,6 +43,11 @@ include:
     shield: rugby_union
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
+  # Wee Bit Warped (30 keys) (RP2040 ProMicro):
+  - board: rpi_pico//zmk
+    shield: warped30
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
   # Gamma Omega Hesse
   - board: nice_nano@2.0.0//zmk
     shield: hesse
