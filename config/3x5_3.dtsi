@@ -78,6 +78,18 @@
                 ;
         };
 
+        new_sentence: new_sentence {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp DOT>
+                , <&macro_tap &kp SPACE>
+                , <&macro_tap &sk LSHIFT>
+                ;
+        };
+
         // Single key-press macro for use in linger-keys
         ktap: key_tap {
             compatible = "zmk,behavior-macro-one-param";
@@ -529,6 +541,13 @@
         caps_word_combo {
             bindings = <&caps_word>;
             key-positions = <LH1 RH1>;
+            layers = <DEFAULT>;
+            timeout-ms = <75>;
+        };
+
+        new_sentence_combo {
+            bindings = <&new_sentence>;
+            key-positions = <LM1 RM1>;
             layers = <DEFAULT>;
             timeout-ms = <75>;
         };
