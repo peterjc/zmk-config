@@ -2,35 +2,35 @@ layout: {zmk_keyboard: hesse}
 layers:
   HD Promethium:
   - ⎋
-  - {t: pP, type: medium-low}
-  - {t: gG, type: medium}
-  - {t: mM, type: medium}
-  - {t: kK, type: low}
+  - '&as_P'
+  - '&as_G'
+  - '&as_M'
+  - '&as_K'
   - {t: '.:', type: medium-low}
-  - {t: ⌫, h: Sft+⌫}
+  - ⌫
   - {t: '''"', type: medium-low}
   - {t: -_, type: medium-low}
   - {t: =+, type: low}
-  - {t: sS, type: high}
-  - {t: nN, type: high}
-  - {t: tT, type: high}
-  - {t: hH, type: high}
-  - {t: jJ, type: low}
+  - '&as_S'
+  - '&as_N'
+  - '&as_T'
+  - '&as_H'
+  - '&as_J'
   - {t: ',;', type: medium-low}
-  - {t: aA, type: high}
-  - {t: eE, type: high}
-  - {t: iI, type: high}
-  - {t: cC, type: medium}
-  - {t: bB, type: medium-low}
-  - {t: fF, type: medium}
-  - {t: dD, type: medium-high}
-  - {t: lL, type: medium-high}
+  - '&as_A'
+  - '&as_E'
+  - '&as_I'
+  - '&as_C'
+  - '&as_B'
+  - '&as_F'
+  - '&as_D'
+  - '&as_L'
   - ←
   - →
-  - {t: uU, type: medium-high}
-  - {t: oO, type: high}
-  - {t: yY, type: medium}
-  - {t: wW, type: medium}
+  - '&as_U'
+  - '&as_O'
+  - '&as_Y'
+  - '&as_W'
   - ↹
   - {t: rR, h: ⇧, type: high}
   - {t: ⌫, h: ⇧}
@@ -202,16 +202,16 @@ combos:
   k: ⇧
   l: [HD Promethium, Num + Nav]
 - p: [3, 2]
-  k: {t: qQ, type: low}
+  k: {t: vQ, h: Sft+Q}
   l: [HD Promethium]
 - p: [7, 8]
-  k: {t: zZ, type: low}
+  k: {t: zZ, h: Sft+Z}
   l: [HD Promethium]
 - p: [2, 1]
-  k: {t: vV, type: low}
+  k: {t: vV, h: Sft+V}
   l: [HD Promethium]
 - p: [22, 21]
-  k: {t: xX, type: low}
+  k: {t: xX, h: Sft+X}
   l: [HD Promethium]
 - p: [31, 34]
   k: ⇪
