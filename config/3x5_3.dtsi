@@ -78,18 +78,6 @@
                 ;
         };
 
-        new_sentence: new_sentence {
-            compatible = "zmk,behavior-macro";
-            wait-ms = <0>;
-            tap-ms = <0>;
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp DOT>
-                , <&macro_tap &kp SPACE>
-                , <&macro_tap &sk LSHIFT>
-                ;
-        };
-
         // Single key-press macro for use in linger-keys
         ktap: key_tap {
             compatible = "zmk,behavior-macro-one-param";
@@ -470,8 +458,8 @@
             timeout-ms = <75>;
         };
 
-        new_sentence_combo {
-            bindings = <&new_sentence>;
+        sticky_shift_combo {
+            bindings = <&sk LSHIFT>;
             key-positions = <LM1 RM1>;
             layers = <DEFAULT>;
             timeout-ms = <75>;
