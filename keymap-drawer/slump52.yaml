@@ -265,7 +265,7 @@ combos:
   k: ⇪
   l: [HD Promethium]
 - p: [18, 21]
-  k: '&new_sentence'
+  k: {t: LSHIFT, h: sticky}
   l: [HD Promethium]
   hidden: true
 - p: [42, 44]
