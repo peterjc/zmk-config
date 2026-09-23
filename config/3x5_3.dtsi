@@ -213,9 +213,9 @@
         default_layer {
             display-name = "HD Promethium";
             bindings = <LAYER_FROM36( \
-                &kp ESCAPE, AS(P), AS(G), AS(M), AS(K),      &dot_colon,  AS(BSPC), &xquote, AS(MINUS), AS(EQUAL), \
-                AS(S),      AS(N), AS(T), AS(H), AS(J),      &comma_semi, AS(A),    AS(E),   AS(I),     AS(C),  \
-                AS(B),      AS(F), AS(D), AS(L), &kp LEFT,   &kp RIGHT,   AS(U),    AS(O),   AS(Y),     AS(W),  \
+                &kp ESCAPE, &as_P, &as_G, &as_M, &as_K,      &dot_colon,  &kp BSPC, &xquote, &kp MINUS, &kp EQUAL, \
+                &as_S,      &as_N, &as_T, &as_H, &as_J,      &comma_semi, &as_A,    &as_E,   &as_I,     &as_C,  \
+                &as_B,      &as_F, &as_D, &as_L, &kp LEFT,   &kp RIGHT,   &as_U,    &as_O,   &as_Y,     &as_W,  \
                 &kp TAB, &bmt LSHFT R, &hpmt LSHFT BSPC,     &kp RSHFT, &space_R_layer NUM_NAV 0, &mo NUM_NAV \
             )>;
         };
