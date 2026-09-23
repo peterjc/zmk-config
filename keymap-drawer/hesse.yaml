@@ -220,6 +220,10 @@ combos:
   k: '&new_sentence'
   l: [HD Promethium]
   hidden: true
+- p: [12, 17]
+  k: {t: LSHIFT, h: sticky}
+  l: [HD Promethium]
+  hidden: true
 - p: [31, 34]
   k: ⇪
   l: [Naginata]
