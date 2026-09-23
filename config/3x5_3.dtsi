@@ -18,6 +18,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <behaviors/naginata.dtsi>
 
+#include "adaptive-keys.h"
+
 / {
   chosen {
     /delete-property/     zephyr,console;
