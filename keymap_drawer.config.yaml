@@ -162,6 +162,7 @@ parse_config:
     left_ctrl_alt_gui_combo: {'hidden': true}
     right_ctrl_alt_gui_combo: {'hidden': true}
     new_sentence_combo: {'hidden': true}
+    sticky_shift_combo: {'hidden': true}
   raw_binding_map:
     # These are the English letters defined here to tag them by usage:
     '&kp A': {'t': 'aA', 'type': 'high'}

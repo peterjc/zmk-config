@@ -552,6 +552,13 @@
             timeout-ms = <75>;
         };
 
+        sticky_shift_combo {
+            bindings = <&sk LSHIFT>;
+            key-positions = <LM2 RM2>;
+            layers = <DEFAULT>;
+            timeout-ms = <75>;
+        };
+
         // With Japanese IME caps lock can be configured to toggle katakana mode:
         caps_lock_combo {
             bindings = <&kp CAPSLOCK>;
