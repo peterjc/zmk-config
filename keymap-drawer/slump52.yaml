@@ -264,6 +264,10 @@ combos:
 - p: [42, 44]
   k: ⇪
   l: [HD Promethium]
+- p: [18, 21]
+  k: '&new_sentence'
+  l: [HD Promethium]
+  hidden: true
 - p: [42, 44]
   k: ⇪
   l: [Naginata]
