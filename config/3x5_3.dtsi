@@ -585,7 +585,7 @@
             layers = <DEFAULT NUM_NAV>;
         };
 
-       backslash_sign {
+        backslash_sign {
             bindings = <&kp NON_US_BACKSLASH>;
             key-positions = <LT0 LT1>;
             layers = <DEFAULT NUM_NAV>;
@@ -597,7 +597,7 @@
             layers = <DEFAULT NUM_NAV>;
         };
 
-       slash_sign {
+        slash_sign {
             bindings = <&kp SLASH>;
             key-positions = <RT1 RT0>;
             layers = <DEFAULT NUM_NAV>;
