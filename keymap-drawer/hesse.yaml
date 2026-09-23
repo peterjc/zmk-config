@@ -216,6 +216,10 @@ combos:
 - p: [31, 34]
   k: ⇪
   l: [HD Promethium]
+- p: [13, 16]
+  k: '&new_sentence'
+  l: [HD Promethium]
+  hidden: true
 - p: [31, 34]
   k: ⇪
   l: [Naginata]
