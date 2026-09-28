@@ -144,6 +144,7 @@ parse_config:
     pipe_sign: {'key': '|'}
     percent_sign: {'align': 'right', 'key': '%'}
     caret_sign: {'align': 'left', 'key': '^'}
+    qu_combo: {'align': 'top', 'offset':0.1, 'key': 'qu Qu'}
     # Do not show slash and question-mark, just show slash:
     slash_sign: {'key': '/'}
     backtick: {'key': '`'}
