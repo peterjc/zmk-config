@@ -30,9 +30,10 @@
 
 // Aliases for my layers
 #define DEFAULT 0
-#define NAGINATA 1
-#define NUM_NAV 2
-#define FUNCTION 3
+#define NO_U_LAYER 1
+#define NAGINATA 2
+#define NUM_NAV 3
+#define FUNCTION 4
 
 #define my_linger_term 300// linger mod-tap trigger time window
 
@@ -100,6 +101,7 @@
             bindings
                 = <&macro_tap &kp Q>
                 , <&macro_tap &kp U>
+                , <&sl NO_U_LAYER>
                 ;
         };
         macro_cap_qu: macro_cap_qu {
@@ -110,6 +112,7 @@
             bindings
                 = <&macro_tap &kp LS(Q)>
                 , <&macro_tap &kp U>
+                , <&sl NO_U_LAYER>
                 ;
         };
 
@@ -288,6 +291,16 @@
             )>;
         };
 
+        no_u_layer {
+            display-name = "No letter U";
+            bindings = <LAYER_FROM36( \
+                &trans, &trans, &trans, &trans, &trans,     &trans, &trans, &trans, &trans, &trans, \
+                &trans, &trans, &trans, &trans, &trans,     &trans, &trans, &trans, &trans, &trans, \
+                &trans, &trans, &trans, &trans, &trans,     &trans, &none,  &trans, &trans, &trans, \
+                                &trans, &trans, &trans,     &trans, &trans, &trans \
+            )>;
+        };
+
         // The Japanese Naginata Style layer is usually layer 1, after the default layer 0.
         // Follows Qwerty but with &np rather than &kp.
         // Thumbs must include `&ng SPACE` (kana-shift when held) and/or
@@ -325,9 +338,6 @@
         };
 
         // Empty layers for ZMK Studio:
-        extra5 {
-            status = "reserved";
-        };
         extra6 {
             status = "reserved";
         };
