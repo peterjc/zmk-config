@@ -190,10 +190,10 @@ combos:
   l: [HD Promethium, Num + Nav]
   hidden: true
 - p: [23, 22]
-  k: ⇧
+  k: {t: ⇧, h: sticky}
   l: [HD Promethium, Num + Nav]
 - p: [26, 27]
-  k: ⇧
+  k: {t: ⇧, h: sticky}
   l: [HD Promethium, Num + Nav]
 - p: [3, 2]
   k: {t: qQ, type: low}
@@ -212,10 +212,6 @@ combos:
   l: [HD Promethium]
 - p: [13, 16]
   k: '&new_sentence'
-  l: [HD Promethium]
-  hidden: true
-- p: [12, 17]
-  k: {t: LSHIFT, h: sticky}
   l: [HD Promethium]
   hidden: true
 - p: [30, 33]
