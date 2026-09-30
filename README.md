@@ -41,13 +41,19 @@ but I also demoted `V` and `X` for even smaller keyboards - see below.
 This base layer has *Auto Shift* setup, meaning a long tap on the base layer
 letters and symbols gives the capital or shifted form. The letter `r` on the
 left thumb is an exception, giving shift when held - I can hold this and tap
-space on the right thumb for capital `R`).
+space on the right thumb for capital `R`.
 
 I am also trying out *Magic Comma Shift* whereby typing comma then a letter
 will give the capital version of the letter - but typing comma and space just
 works as usual.
 
-Most of the combos are for symbols which on a traditional layout are normally
+Modifiers are done as two-key horizontal combos or chords, with Alt (Option),
+Control, and GUI, all on the home row. These expand to three and four keys
+versions to cover Alt+Control, Control+GUI, or all three (but not Alt+GUI).
+Additionally the bottom row 2-key horizontal combos with middle and index
+fingers give sticky shift.
+
+Most of the other combos are for symbols which on a traditional layout are normally
 typed with shift. Brackets (open on the left hand, close on the right) as
 inner column horizontal combos are an exception where the keymap images with
 two symbols indicate a plain combo, or with shift. Here `[{` and `]}` are
