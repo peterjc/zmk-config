@@ -501,19 +501,19 @@
             timeout-ms = <40>;
         };
 
-        // 2-key horizontal bottom-row combos for shift
+        // 2-key horizontal bottom-row combos for sticky shift
         left_shift_combo {
-            bindings = <&kp LSHFT>;
+            bindings = <&sk LSHFT>;
             key-positions = <LB1 LB2>;
             layers = <DEFAULT NUM_NAV>;
-            require-prior-idle-ms = <250>;
+            require-prior-idle-ms = <200>;
             timeout-ms = <40>;
         };
         right_shift_combo {
-            bindings = <&kp RSHFT>;
+            bindings = <&sk RSHFT>;
             key-positions = <RB1 RB2>;
             layers = <DEFAULT NUM_NAV>;
-            require-prior-idle-ms = <250>;
+            require-prior-idle-ms = <200>;
             timeout-ms = <40>;
         };
 
