@@ -98,34 +98,34 @@
             bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>;
             tap-ms = <30>;
         };
+
+        // Two key-press macro for use in magic comma etc
+        // Default wait time is 15ms, tap time 30ms
+        ktap2: two_key_taps {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            display-name = "Two Key Taps";
+            wait-ms = <10>;
+            tap-ms = <20>;
+            bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&macro_param_2to1>, <&kp MACRO_PLACEHOLDER>;
+            tap-ms = <30>;
+        };
+
     };
 };
 
 / {
     behaviors {
 
-        // Default wait time is 15ms, tap time 30ms
-        comma_space: comma_space {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <20>;
-            bindings = <&macro_tap &kp COMMA &kp SPACE>;
-        };
-        comma_enter: comma_enter {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <20>;
-            bindings = <&macro_tap &kp COMMA &kp ENTER>;
-        };
         magic_comma_shift: magic_comma_shift {
             compatible = "zmk,behavior-leader-key";
             #binding-cells = <0>;
             // default = <&kp COMMA>;
             // main use of a default would be comma then space, enter, non-letters:
-            space { sequence = <SPACE>; bindings = <&comma_space>; };
-            enter { sequence = <ENTER>; bindings = <&comma_enter>; };
+            space { sequence = <SPACE>; bindings = <&ktap2 COMMA SPACE>; };
+            enter { sequence = <ENTER>; bindings = <&ktap2 COMMA ENTER>; };
+            // for when you need comma followed by (closing) quotation:
+            quote { sequence = <SQT>; bindings = <&ktap2 COMMA SQT>; };
             // workaround to get comma alone (eg for command+comma shortcut without any timeout):
             dot { sequence = <DOT>; bindings = <&kp COMMA>; };
             // standard shifts:
@@ -159,8 +159,6 @@
             equal { sequence = <EQUAL>; bindings = <&kp LS(EQUAL)>; };
             slash { sequence = <SLASH>; bindings = <&kp LS(SLASH)>; };
             pipe { sequence = <NON_US_BACKSLASH>; bindings = <&kp LS(NON_US_BACKSLASH)>; };
-            // see &xquote for this exception (UK vs US layout):
-            sqt { sequence = <SQT>; bindings = <&kp LS(N2)>; };
             // see combos with mod-morph
             lt { sequence = <LEFT_PARENTHESIS>; bindings = <&kp LESS_THAN>; };
             gt { sequence = <RIGHT_PARENTHESIS>; bindings = <&kp GREATER_THAN>; };
