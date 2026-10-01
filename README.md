@@ -50,7 +50,7 @@ works as usual.
 Modifiers are done as two-key horizontal combos or chords, with Alt (Option),
 Control, and GUI, all on the home row. These expand to three and four keys
 versions to cover Alt+Control, Control+GUI, or all three (but not Alt+GUI).
-Additionally the bottom row 2-key horizontal combos with middle and index
+Additionally, the bottom row 2-key horizontal combos with middle and index
 fingers give sticky shift.
 
 Most of the other combos are for symbols which on a traditional layout are normally
