@@ -20,8 +20,6 @@ manifest:
       revision: main
     - name: zmk-helpers
       remote: urob
-    - name: zmk-leader-key
-      remote: urob
     - name: zmk-naginata
       remote: peterjc
       revision: ng-shift-space

@@ -43,10 +43,6 @@ letters and symbols gives the capital or shifted form. The letter `r` on the
 left thumb is an exception, giving shift when held - I can hold this and tap
 space on the right thumb for capital `R`.
 
-I am also trying out *Magic Comma Shift* whereby typing comma then a letter
-will give the capital version of the letter - but typing comma and space just
-works as usual.
-
 Modifiers are done as two-key horizontal combos or chords, with Alt (Option),
 Control, and GUI, all on the home row. These expand to three and four keys
 versions to cover Alt+Control, Control+GUI, or all three (but not Alt+GUI).
