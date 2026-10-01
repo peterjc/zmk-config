@@ -171,8 +171,8 @@
         as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping_term_ms = <my_linger_term>;
-            quick_tap_ms = <250>;
+            tapping-term-ms = <my_linger_term>;
+            quick-tap-ms = <250>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -284,8 +284,8 @@
         magic_comma_ht: magic_comma_ht {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping_term_ms = <my_linger_term>;
-            quick_tap_ms = <250>;
+            tapping-term-ms = <my_linger_term>;
+            quick-tap-ms = <250>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&magic_comma_shift>;
         };
