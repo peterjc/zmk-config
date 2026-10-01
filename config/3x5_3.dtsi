@@ -30,8 +30,9 @@
 
 // Aliases for my layers
 #define DEFAULT 0
-#define NAGINATA 1
-#define NUM_NAV 2
+#define NO_U_LAYER 1
+#define NAGINATA 2
+#define NUM_NAV 3
 
 #define my_linger_term 300// linger mod-tap trigger time window
 
@@ -90,6 +91,30 @@
                 ;
         };
 
+        // Takes an unused parameter to match &kp etc for use in auto-shift
+        macro_qu: macro_qu {
+            compatible = "zmk,behavior-macro-one-param";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <1>;
+            bindings
+                = <&macro_tap &kp Q>
+                , <&macro_tap &kp U>
+                , <&sl NO_U_LAYER>
+                ;
+        };
+        macro_cap_qu: macro_cap_qu {
+            compatible = "zmk,behavior-macro-one-param";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <1>;
+            bindings
+                = <&macro_tap &kp LS(Q)>
+                , <&macro_tap &kp U>
+                , <&sl NO_U_LAYER>
+                ;
+        };
+
         // Single key-press macro for use in linger-keys
         ktap: key_tap {
             compatible = "zmk,behavior-macro-one-param";
@@ -125,6 +150,15 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        as_qu: auto_shift_qu {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <my_linger_term>;
+            quick-tap-ms = <250>;
+            flavor = "tap-preferred";
+            bindings = <&macro_cap_qu>, <&macro_qu>;
+        };
+
         /* Don't use this for alt or GUI on Windows; shift and ctrl fine */
         /* Requires quick tap, used for R/shift on Num/Nav layer */
         hpmt: hold_preferred_mod_tap_qt {
@@ -253,6 +287,16 @@
                 AS(S),      AS(N), AS(T), AS(H), AS(J),      &comma_semi, AS(A),    AS(E),   AS(I),     AS(C),  \
                 AS(B),      AS(F), AS(D), AS(L), &kp LEFT,   &kp RIGHT,   AS(U),    AS(O),   AS(Y),     AS(W),  \
                 &kp TAB, &bmt LSHFT R, &hpmt LSHFT BSPC,     &kp RSHFT, &space_R_layer NUM_NAV 0, &mo NUM_NAV \
+            )>;
+        };
+
+        no_u_layer {
+            display-name = "No letter U";
+            bindings = <LAYER_FROM36( \
+                &trans, &trans, &trans, &trans, &trans,     &trans, &trans, &trans, &trans, &trans, \
+                &trans, &trans, &trans, &trans, &trans,     &trans, &trans, &trans, &trans, &trans, \
+                &trans, &trans, &trans, &trans, &trans,     &trans, &none,  &trans, &trans, &trans, \
+                                &trans, &trans, &trans,     &trans, &trans, &trans \
             )>;
         };
 
@@ -461,6 +505,13 @@
         q_combo {
             bindings = <AS(Q)>;
             key-positions = <LT1 LT2>;
+            layers = <DEFAULT>;
+            timeout-ms = <100>;
+        };
+
+        qu_combo {
+            bindings = <&as_qu 0 0>;
+            key-positions = <LT1 LT3>;
             layers = <DEFAULT>;
             timeout-ms = <100>;
         };
