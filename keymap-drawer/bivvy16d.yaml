@@ -41,6 +41,47 @@ layers:
   - ⏎
   - →
   - ↓
+  No letter U:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ⇟
+  - ↖
+  - KP ENTER
+  - ↘
+  - ⇞
+  - ↑
+  - ←
+  - ⏎
+  - →
+  - ↓
   Naginata:
   - {t: ⎋, h: Small-kana}
   - {left: き, right: ね}
@@ -216,6 +257,11 @@ combos:
 - p: [3, 2]
   k: {t: qQ, type: low}
   l: [HD Promethium]
+- p: [3, 1]
+  k: qu Qu
+  l: [HD Promethium]
+  a: top
+  o: 0.1
 - p: [7, 8]
   k: {t: zZ, type: low}
   l: [HD Promethium]
