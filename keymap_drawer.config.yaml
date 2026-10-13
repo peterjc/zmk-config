@@ -72,17 +72,17 @@ parse_config:
     LALT: ⎇
     LGUI: ⌘
     LSHFT: ⇧
-    LEFT_CONTROL: ⌃
+    LEFT_CONTROL: ⌃/⌘
     LEFT_ALT: ⎇
-    LEFT_GUI: ⌘
+    LEFT_GUI: ❖/⌃
     LEFT_SHFT: ⇧
     RCTRL: ⌃
     RALT: ⎇
     RGUI: ⌘
     RSHFT: ⇧
-    RIGHT_CONTROL: ⌃
+    RIGHT_CONTROL: ⌃/⌘
     RIGHT_ALT: ⎇
-    RIGHT_GUI: ⌘
+    RIGHT_GUI: ❖/⌃
     RIGHT_SHFT: ⇧
     LEFT: ←
     RIGHT: →
