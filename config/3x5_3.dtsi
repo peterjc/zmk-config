@@ -371,27 +371,27 @@
             layers = <DEFAULT NUM_NAV>;
             require-prior-idle-ms = <250>;
         };
-        left_ctrl_combo {
-            bindings = <&kp LCTRL>;
+        left_gui_combo {
+            bindings = <&kp LGUI>;
             key-positions = <LM2 LM3>;
             layers = <DEFAULT NUM_NAV>;
             require-prior-idle-ms = <250>;
         };
-        right_ctrl_combo {
-            bindings = <&kp RCTRL>;
+        right_gui_combo {
+            bindings = <&kp RGUI>;
             key-positions = <RM2 RM3>;
             layers = <DEFAULT NUM_NAV>;
             require-prior-idle-ms = <200>;
         };
-        left_gui_combo {
-            bindings = <&kp LGUI>;
+        left_ctrl_combo {
+            bindings = <&kp LCTRL>;
             key-positions = <LM1 LM2>;
             layers = <DEFAULT NUM_NAV>;
             require-prior-idle-ms = <200>;
             timeout-ms = <40>;
         };
-        right_gui_combo {
-            bindings = <&kp RGUI>;
+        right_ctrl_combo {
+            bindings = <&kp RCTRL>;
             key-positions = <RM1 RM2>;
             layers = <DEFAULT NUM_NAV>;
             require-prior-idle-ms = <200>;
@@ -412,15 +412,15 @@
             require-prior-idle-ms = <250>;
             timeout-ms = <40>;
         };
-        left_ctrl_alt_combo {
-            bindings = <&kp LC(LALT)>;
+        left_gui_alt_combo {
+            bindings = <&kp LA(LGUI)>;
             key-positions = <LM2 LM3 LM4>;
             layers = <DEFAULT NUM_NAV>;
             require-prior-idle-ms = <250>;
             timeout-ms = <40>;
         };
-        right_ctrl_alt_combo {
-            bindings = <&kp RC(RALT)>;
+        right_gui_alt_combo {
+            bindings = <&kp RA(RGUI)>;
             key-positions = <RM2 RM3 RM4>;
             layers = <DEFAULT NUM_NAV>;
             require-prior-idle-ms = <250>;

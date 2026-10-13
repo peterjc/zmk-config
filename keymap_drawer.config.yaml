@@ -70,19 +70,19 @@ parse_config:
     UNDERSCORE: _
     LCTRL: ⌃
     LALT: ⎇
-    LGUI: ⌘
+    LGUI: ❖
     LSHFT: ⇧
     LEFT_CONTROL: ⌃
     LEFT_ALT: ⎇
-    LEFT_GUI: ⌘
+    LEFT_GUI: ❖
     LEFT_SHFT: ⇧
     RCTRL: ⌃
     RALT: ⎇
-    RGUI: ⌘
+    RGUI: ❖
     RSHFT: ⇧
     RIGHT_CONTROL: ⌃
     RIGHT_ALT: ⎇
-    RIGHT_GUI: ⌘
+    RIGHT_GUI: ❖
     RIGHT_SHFT: ⇧
     LEFT: ←
     RIGHT: →
@@ -157,8 +157,8 @@ parse_config:
     # Hide the stacked modifier combos
     left_ctrl_gui_combo: {'hidden': true}
     right_ctrl_gui_combo: {'hidden': true}
-    left_ctrl_alt_combo: {'hidden': true}
-    right_ctrl_alt_combo: {'hidden': true}
+    left_gui_alt_combo: {'hidden': true}
+    right_gui_alt_combo: {'hidden': true}
     left_ctrl_alt_gui_combo: {'hidden': true}
     right_ctrl_alt_gui_combo: {'hidden': true}
     new_sentence_combo: {'hidden': true}

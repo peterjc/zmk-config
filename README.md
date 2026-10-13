@@ -78,7 +78,12 @@ The left hand has a number-pad, with 123 at the top like a mobile phone (since
 in a traditional keyboard 123 are about there).
 
 I use home-row 2-key horizontal combos for the non-shift modifier keys (alt,
-ctrl, and command/GUI) with shift on the left thumb.
+command/GUI, control) with shift on the left thumb. On macOS itself I then
+swap command and control so that the *primary* shortcuts remain on the
+middle/index finger combos (eg control+C for Windows/Linux and command+C for
+macOS for copy are in the same place). And then in the macOS terminal, I
+swap them back again so that control is back on middle/index. Muscle memory
+for command+c (copy) versus control+c (cancel) is still a risk!
 
 ## Split 33332+1 Layout with 30 keys
 
