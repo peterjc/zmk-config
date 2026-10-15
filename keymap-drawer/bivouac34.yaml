@@ -33,6 +33,39 @@ layers:
   - {t: ⌫, h: ⇧}
   - ⇧
   - {t: ⎵R, h: Num+Nav, type: high}
+  No letter U:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Naginata:
   - {t: ⎋, h: Small-kana}
   - {left: き, right: ね}
@@ -142,36 +175,36 @@ combos:
   s: 0.5
   h: 15.0
 - p: [11, 10]
-  k: ⎇
+  k: ⌘
   l: [HD Promethium, Num + Nav]
 - p: [18, 19]
-  k: ⎇
+  k: ⌘
   l: [HD Promethium, Num + Nav]
 - p: [12, 11]
-  k: ⌃
+  k: ⎇
   l: [HD Promethium, Num + Nav]
 - p: [17, 18]
-  k: ⌃
+  k: ⎇
   l: [HD Promethium, Num + Nav]
 - p: [13, 12]
-  k: ⌘
+  k: ⌃
   l: [HD Promethium, Num + Nav]
 - p: [16, 17]
-  k: ⌘
+  k: ⌃
   l: [HD Promethium, Num + Nav]
-- p: [13, 12, 11]
-  k: Ctl+⌘
-  l: [HD Promethium, Num + Nav]
-  hidden: true
-- p: [16, 17, 18]
-  k: Ctl+⌘
-  l: [HD Promethium, Num + Nav]
-  hidden: true
 - p: [12, 11, 10]
-  k: Ctl+⎇
+  k: Alt+⌘
   l: [HD Promethium, Num + Nav]
   hidden: true
 - p: [17, 18, 19]
+  k: AltGr+⌘
+  l: [HD Promethium, Num + Nav]
+  hidden: true
+- p: [13, 12, 11]
+  k: Ctl+⎇
+  l: [HD Promethium, Num + Nav]
+  hidden: true
+- p: [16, 17, 18]
   k: Ctl+⎇
   l: [HD Promethium, Num + Nav]
   hidden: true
@@ -192,6 +225,11 @@ combos:
 - p: [3, 2]
   k: {t: qQ, type: low}
   l: [HD Promethium]
+- p: [3, 1]
+  k: qu Qu
+  l: [HD Promethium]
+  a: top
+  o: 0.1
 - p: [7, 8]
   k: {t: zZ, type: low}
   l: [HD Promethium]

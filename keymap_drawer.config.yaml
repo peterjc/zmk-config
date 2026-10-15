@@ -72,17 +72,17 @@ parse_config:
     LALT: ⎇
     LGUI: ⌘
     LSHFT: ⇧
-    LEFT_CONTROL: ⌃
+    LEFT_CONTROL: ⌃/⌘
     LEFT_ALT: ⎇
-    LEFT_GUI: ⌘
+    LEFT_GUI: ❖/⌃
     LEFT_SHFT: ⇧
     RCTRL: ⌃
     RALT: ⎇
     RGUI: ⌘
     RSHFT: ⇧
-    RIGHT_CONTROL: ⌃
+    RIGHT_CONTROL: ⌃/⌘
     RIGHT_ALT: ⎇
-    RIGHT_GUI: ⌘
+    RIGHT_GUI: ❖/⌃
     RIGHT_SHFT: ⇧
     LEFT: ←
     RIGHT: →
@@ -107,6 +107,8 @@ parse_config:
     K_VOLUME_UP: "VOL\nUP"
     C_BRIGHTNESS_DEC: '☀↓'
     C_BRIGHTNESS_INC: '☀↑'
+    LC(LEFT): ↞
+    LC(RIGHT): ↠
     LA(LEFT): ↞
     LA(RIGHT): ↠
     LG(LEFT): ⇤
@@ -144,6 +146,7 @@ parse_config:
     pipe_sign: {'key': '|'}
     percent_sign: {'align': 'right', 'key': '%'}
     caret_sign: {'align': 'left', 'key': '^'}
+    qu_combo: {'align': 'top', 'offset':0.1, 'key': 'qu Qu'}
     # Do not show slash and question-mark, just show slash:
     slash_sign: {'key': '/'}
     backtick: {'key': '`'}
@@ -155,12 +158,12 @@ parse_config:
     open_square_curly: {'key': '[{'}
     close_square_curly: {'key': ']}'}
     # Hide the stacked modifier combos
-    left_ctrl_gui_combo: {'hidden': true}
-    right_ctrl_gui_combo: {'hidden': true}
-    left_ctrl_alt_combo: {'hidden': true}
-    right_ctrl_alt_combo: {'hidden': true}
-    left_ctrl_alt_gui_combo: {'hidden': true}
-    right_ctrl_alt_gui_combo: {'hidden': true}
+    left_gui_alt_combo: {'hidden': true}
+    right_gui_alt_combo: {'hidden': true}
+    left_alt_ctrl_combo: {'hidden': true}
+    right_alt_ctrl_combo: {'hidden': true}
+    left_gui_alt_ctrl_combo: {'hidden': true}
+    right_gui_alt_ctrl_combo: {'hidden': true}
     new_sentence_combo: {'hidden': true}
     sticky_shift_combo: {'hidden': true}
   raw_binding_map:
