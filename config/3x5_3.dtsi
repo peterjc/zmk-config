@@ -277,7 +277,7 @@
             bindings = <LAYER_FROM36( \
                 &kp KP_DIVIDE,   &kp N1, &kp N2, &kp N3, &kp KP_PLUS,  &kp PG_UP,  &kp BSPC,     &kp UP,     &kp UNDERSCORE, &kp C_PLAY_PAUSE, \
                 &kp KP_MULTIPLY, &kp N4, &kp N5, &kp N6, &kp KP_MINUS, &kp PG_DN,  &kp LEFT,     &kp DOWN,   &kp RIGHT,      &kp C_VOLUME_UP, \
-                &kp DOT,         &kp N7, &kp N8, &kp N9, &kp KP_EQUAL, &kp ESCAPE, &kp LA(LEFT), &kp RETURN, &kp LA(RIGHT),  &kp C_VOLUME_DOWN, \
+                &kp DOT,         &kp N7, &kp N8, &kp N9, &kp KP_EQUAL, &kp ESCAPE, &kp LC(LEFT), &kp RETURN, &kp LC(RIGHT),  &kp C_VOLUME_DOWN, \
                                          &trans, &hpmt2 LSHFT N0, &trans, &trans, &trans, &trans \
             )>;
         };
@@ -359,81 +359,84 @@
         };
 
         // 2-key horizontal home-row combos for modifiers
+        // Using Windows/Linux friendly order of GUI/ALT/CTRL with macOS
+        // system setting swapping GUI and CTRL to make it CTRL/ALT/GUI
+        // aka CONTROL/OPTION/COMMAND
+        left_gui_combo {
+            bindings = <&kp LGUI>;
+            key-positions = <LM3 LM4>;
+            layers = <DEFAULT NUM_NAV>;
+            require-prior-idle-ms = <250>;
+        };
+        right_gui_combo {
+            bindings = <&kp RGUI>;
+            key-positions = <RM3 RM4>;
+            layers = <DEFAULT NUM_NAV>;
+            require-prior-idle-ms = <250>;
+        };
         left_alt_combo {
             bindings = <&kp LALT>;
-            key-positions = <LM3 LM4>;
+            key-positions = <LM2 LM3>;
             layers = <DEFAULT NUM_NAV>;
             require-prior-idle-ms = <250>;
         };
         right_alt_combo {
             bindings = <&kp RALT>;
-            key-positions = <RM3 RM4>;
-            layers = <DEFAULT NUM_NAV>;
-            require-prior-idle-ms = <250>;
-        };
-        left_ctrl_combo {
-            bindings = <&kp LCTRL>;
-            key-positions = <LM2 LM3>;
-            layers = <DEFAULT NUM_NAV>;
-            require-prior-idle-ms = <250>;
-        };
-        right_ctrl_combo {
-            bindings = <&kp RCTRL>;
             key-positions = <RM2 RM3>;
             layers = <DEFAULT NUM_NAV>;
             require-prior-idle-ms = <200>;
         };
-        left_gui_combo {
-            bindings = <&kp LGUI>;
+        left_ctrl_combo {
+            bindings = <&kp LCTRL>;
             key-positions = <LM1 LM2>;
             layers = <DEFAULT NUM_NAV>;
             require-prior-idle-ms = <200>;
             timeout-ms = <40>;
         };
-        right_gui_combo {
-            bindings = <&kp RGUI>;
+        right_ctrl_combo {
+            bindings = <&kp RCTRL>;
             key-positions = <RM1 RM2>;
             layers = <DEFAULT NUM_NAV>;
             require-prior-idle-ms = <200>;
             timeout-ms = <40>;
         };
         // Stacked modifiers with 3 or 4 keys
-        left_ctrl_gui_combo {
-            bindings = <&kp LC(LGUI)>;
-            key-positions = <LM1 LM2 LM3>;
-            layers = <DEFAULT NUM_NAV>;
-            require-prior-idle-ms = <250>;
-            timeout-ms = <40>;
-        };
-        right_ctrl_gui_combo {
-            bindings = <&kp RC(RGUI)>;
-            key-positions = <RM1 RM2 RM3>;
-            layers = <DEFAULT NUM_NAV>;
-            require-prior-idle-ms = <250>;
-            timeout-ms = <40>;
-        };
-        left_ctrl_alt_combo {
-            bindings = <&kp LC(LALT)>;
+        left_gui_alt_combo {
+            bindings = <&kp LA(LGUI)>;
             key-positions = <LM2 LM3 LM4>;
             layers = <DEFAULT NUM_NAV>;
             require-prior-idle-ms = <250>;
             timeout-ms = <40>;
         };
-        right_ctrl_alt_combo {
-            bindings = <&kp RC(RALT)>;
+        right_gui_alt_combo {
+            bindings = <&kp RA(RGUI)>;
             key-positions = <RM2 RM3 RM4>;
             layers = <DEFAULT NUM_NAV>;
             require-prior-idle-ms = <250>;
             timeout-ms = <40>;
         };
-        left_ctrl_alt_gui_combo {
+        left_alt_ctrl_combo {
+            bindings = <&kp LC(LALT)>;
+            key-positions = <LM1 LM2 LM3>;
+            layers = <DEFAULT NUM_NAV>;
+            require-prior-idle-ms = <250>;
+            timeout-ms = <40>;
+        };
+        right_alt_ctrl_combo {
+            bindings = <&kp RC(RALT)>;
+            key-positions = <RM1 RM2 RM3>;
+            layers = <DEFAULT NUM_NAV>;
+            require-prior-idle-ms = <250>;
+            timeout-ms = <40>;
+        };
+        left_gui_alt_ctrl_combo {
             bindings = <&kp LC(LA(LGUI))>;
             key-positions = <LM1 LM2 LM3 LM4>;
             layers = <DEFAULT NUM_NAV>;
             require-prior-idle-ms = <250>;
             timeout-ms = <40>;
         };
-        right_ctrl_alt_gui_combo {
+        right_gui_alt_ctrl_combo {
             bindings = <&kp RC(RA(RGUI))>;
             key-positions = <RM1 RM2 RM3 RM4>;
             layers = <DEFAULT NUM_NAV>;
