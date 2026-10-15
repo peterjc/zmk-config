@@ -158,12 +158,12 @@ parse_config:
     open_square_curly: {'key': '[{'}
     close_square_curly: {'key': ']}'}
     # Hide the stacked modifier combos
-    left_ctrl_gui_combo: {'hidden': true}
-    right_ctrl_gui_combo: {'hidden': true}
-    left_ctrl_alt_combo: {'hidden': true}
-    right_ctrl_alt_combo: {'hidden': true}
-    left_ctrl_alt_gui_combo: {'hidden': true}
-    right_ctrl_alt_gui_combo: {'hidden': true}
+    left_gui_alt_combo: {'hidden': true}
+    right_gui_alt_combo: {'hidden': true}
+    left_alt_ctrl_combo: {'hidden': true}
+    right_alt_ctrl_combo: {'hidden': true}
+    left_gui_alt_ctrl_combo: {'hidden': true}
+    right_gui_alt_ctrl_combo: {'hidden': true}
     new_sentence_combo: {'hidden': true}
     sticky_shift_combo: {'hidden': true}
   raw_binding_map:
