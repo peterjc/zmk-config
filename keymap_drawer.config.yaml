@@ -107,6 +107,8 @@ parse_config:
     K_VOLUME_UP: "VOL\nUP"
     C_BRIGHTNESS_DEC: '☀↓'
     C_BRIGHTNESS_INC: '☀↑'
+    LC(LEFT): ↞
+    LC(RIGHT): ↠
     LA(LEFT): ↞
     LA(RIGHT): ↠
     LG(LEFT): ⇤
