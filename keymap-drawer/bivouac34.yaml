@@ -142,45 +142,45 @@ combos:
   s: 0.5
   h: 15.0
 - p: [11, 10]
-  k: ⎇
+  k: ❖
   l: [HD Promethium, Num + Nav]
 - p: [18, 19]
-  k: ⎇
+  k: ❖
   l: [HD Promethium, Num + Nav]
 - p: [12, 11]
-  k: ⌃
+  k: ⎇
   l: [HD Promethium, Num + Nav]
 - p: [17, 18]
-  k: ⌃
+  k: ⎇
   l: [HD Promethium, Num + Nav]
 - p: [13, 12]
-  k: ⌘
+  k: ⌃
   l: [HD Promethium, Num + Nav]
 - p: [16, 17]
-  k: ⌘
+  k: ⌃
   l: [HD Promethium, Num + Nav]
-- p: [13, 12, 11]
-  k: Ctl+⌘
-  l: [HD Promethium, Num + Nav]
-  hidden: true
-- p: [16, 17, 18]
-  k: Ctl+⌘
-  l: [HD Promethium, Num + Nav]
-  hidden: true
 - p: [12, 11, 10]
-  k: Ctl+⎇
+  k: Alt+❖
   l: [HD Promethium, Num + Nav]
   hidden: true
 - p: [17, 18, 19]
+  k: AltGr+❖
+  l: [HD Promethium, Num + Nav]
+  hidden: true
+- p: [13, 12, 11]
+  k: Ctl+⎇
+  l: [HD Promethium, Num + Nav]
+  hidden: true
+- p: [16, 17, 18]
   k: Ctl+⎇
   l: [HD Promethium, Num + Nav]
   hidden: true
 - p: [13, 12, 11, 10]
-  k: Ctl+Alt+⌘
+  k: Ctl+Alt+❖
   l: [HD Promethium, Num + Nav]
   hidden: true
 - p: [16, 17, 18, 19]
-  k: Ctl+AltGr+⌘
+  k: Ctl+AltGr+❖
   l: [HD Promethium, Num + Nav]
   hidden: true
 - p: [23, 22]
