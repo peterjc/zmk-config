@@ -47,16 +47,19 @@ Modifiers are done as two-key horizontal combos or chords on the home row:
 * Pinky/ring: GUI or Windows keys (swapped to Control on macOS),
 * Ring/middle: Alt (Option on macOS),
 * Middle/index: Control (swapped to Command on macOS).
+
 These expand to three and four keys versions to cover GUI+Alt, Alt+Control,
-or all three (but not GUI+Ctrl). On macOS itself I swap command and control
-so that the *primary* shortcuts remain on the middle/index finger combos (eg
-control+C for Windows/Linux and command+C for macOS for copy are in the same
-place). And then in the macOS terminal, I swap them back again so that control
-is back on middle/index. Muscle memory for command+c (copy) versus control+c
-(cancel) is still a risk! This order favours the main modifiers - see this
-post on [HMR order](https://precondition.github.io/home-row-mods#home-row-mods-order).
+or all three (but not GUI+Ctrl, which can be done in two steps). On macOS
+itself I swap command and control so that the *primary* shortcuts remain on
+the middle/index finger combos (eg control+C for Windows/Linux and command+C
+for macOS for copy are in the same place). And then in the macOS terminal, I
+swap them back again so that control is back on middle/index. Muscle memory
+for command+c (copy) versus control+c (cancel) is still a risk!
+
+This order favours the main modifiers - see this post on
+[HMR order](https://precondition.github.io/home-row-mods#home-row-mods-order).
 Additionally, the bottom row 2-key horizontal combos with middle and index
-fingers give sticky shift.
+fingers give sticky shift (used for shift+space).
 
 Most of the other combos are for symbols which on a traditional layout are normally
 typed with shift. Brackets (open on the left hand, close on the right) as
