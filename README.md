@@ -89,6 +89,14 @@ JKIL position inspired by [Dreymar's Extend layer](https://dreymar.colemak.org/l
 The left hand has a number-pad, with 123 at the top like a mobile phone (since
 in a traditional keyboard 123 are about there).
 
+## Layer 4: Function keys
+
+I didn't use these on macOS, but on Windows some like F2 for edit/rename are
+needed. This layer is reached by holding the top right corner key on the base
+layer, so the right half is just a copy of the navigation keys. The left half
+gets the function keys F1 to F12, plus a few others useful on Windows (Home,
+End, and Print Screen).
+
 ## Split 33332+1 Layout with 30 keys
 
 By this I mean a layout where each hand gets columns of 3 keys for the pinky,

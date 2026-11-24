@@ -32,6 +32,7 @@
 #define DEFAULT 0
 #define NAGINATA 1
 #define NUM_NAV 2
+#define FUNCTION 3
 
 #define my_linger_term 300// linger mod-tap trigger time window
 
@@ -249,7 +250,7 @@
         default_layer {
             display-name = "HD Promethium";
             bindings = <LAYER_FROM36( \
-                &kp ESCAPE, AS(P), AS(G), AS(M), AS(K),      &dot_colon,  AS(BSPC), &xquote, AS(MINUS), AS(EQUAL), \
+                &kp ESCAPE, AS(P), AS(G), AS(M), AS(K),      &dot_colon,  AS(BSPC), &xquote, AS(MINUS), &lt FUNCTION EQUAL, \
                 AS(S),      AS(N), AS(T), AS(H), AS(J),      &comma_semi, AS(A),    AS(E),   AS(I),     AS(C),  \
                 AS(B),      AS(F), AS(D), AS(L), &kp LEFT,   &kp RIGHT,   AS(U),    AS(O),   AS(Y),     AS(W),  \
                 &kp TAB, &bmt LSHFT R, &hpmt LSHFT BSPC,     &kp RSHFT, &space_R_layer NUM_NAV 0, &mo NUM_NAV \
@@ -282,10 +283,17 @@
             )>;
         };
 
-        // Empty layers for ZMK Studio:
-        extra4 {
-            status = "reserved";
+        function_layer {
+            display-name = "Function";
+            bindings = <LAYER_FROM36( \
+                &kp PSCRN, &kp F1, &kp F2, &kp F3, &kp F12,  &kp PG_UP,  &kp BSPC,     &kp UP,     &kp UNDERSCORE, &kp C_PLAY_PAUSE, \
+                &kp HOME,  &kp F4, &kp F5, &kp F6, &kp F11, &kp PG_DN,  &kp LEFT,     &kp DOWN,   &kp RIGHT,      &kp C_VOLUME_UP, \
+                &kp END,   &kp F7, &kp F8, &kp F9, &kp F10, &kp ESCAPE, &kp LC(LEFT), &kp RETURN, &kp LC(RIGHT),  &kp C_VOLUME_DOWN, \
+                                         &trans, &kp F10, &trans, &trans, &trans, &trans \
+            )>;
         };
+
+        // Empty layers for ZMK Studio:
         extra5 {
             status = "reserved";
         };
