@@ -10,7 +10,7 @@ layers:
   - {t: ⌫, h: Sft+⌫}
   - {t: '''"', type: medium-low}
   - {t: -_, type: medium-low}
-  - {t: =+, type: low}
+  - {t: =+, h: Function}
   - {t: sS, type: high}
   - {t: nN, type: high}
   - {t: tT, type: high}
@@ -106,6 +106,45 @@ layers:
 
     DOWN'
   - {t: '0', h: ⇧}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Function:
+  - PSCRN
+  - F1
+  - F2
+  - F3
+  - F12
+  - ⇞
+  - ⌫
+  - ↑
+  - _
+  - {t: ⏯, type: held}
+  - ↖
+  - F4
+  - F5
+  - F6
+  - F11
+  - ⇟
+  - ←
+  - ↓
+  - →
+  - 'VOL
+
+    UP'
+  - ↘
+  - F7
+  - F8
+  - F9
+  - F10
+  - ⎋
+  - ↞
+  - ⏎
+  - ↠
+  - 'VOL
+
+    DOWN'
+  - F10
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
