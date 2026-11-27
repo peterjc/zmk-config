@@ -176,7 +176,7 @@ combos:
   l: [HD Promethium, Num + Nav]
   hidden: true
 - p: [17, 18, 19]
-  k: AltGr+❖
+  k: Alt+❖
   l: [HD Promethium, Num + Nav]
   hidden: true
 - p: [13, 12, 11]
@@ -192,7 +192,7 @@ combos:
   l: [HD Promethium, Num + Nav]
   hidden: true
 - p: [16, 17, 18, 19]
-  k: Ctl+AltGr+❖
+  k: Ctl+Alt+❖
   l: [HD Promethium, Num + Nav]
   hidden: true
 - p: [23, 22]

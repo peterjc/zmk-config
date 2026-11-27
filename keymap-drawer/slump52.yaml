@@ -224,7 +224,7 @@ combos:
   l: [HD Promethium, Num + Nav]
   hidden: true
 - p: [22, 23, 37]
-  k: AltGr+❖
+  k: Alt+❖
   l: [HD Promethium, Num + Nav]
   hidden: true
 - p: [18, 17, 16]
@@ -240,7 +240,7 @@ combos:
   l: [HD Promethium, Num + Nav]
   hidden: true
 - p: [21, 22, 23, 37]
-  k: Ctl+AltGr+❖
+  k: Ctl+Alt+❖
   l: [HD Promethium, Num + Nav]
   hidden: true
 - p: [31, 30]
