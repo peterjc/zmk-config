@@ -362,6 +362,8 @@
         // Using Windows/Linux friendly order of GUI/ALT/CTRL with macOS
         // system setting swapping GUI and CTRL to make it CTRL/ALT/GUI
         // aka CONTROL/OPTION/COMMAND
+        // Using just LALT and not RALT aka AltGr because Windows is
+        // weird and treats that like LCTRL+RALT with UK/GB layout.
         left_gui_combo {
             bindings = <&kp LGUI>;
             key-positions = <LM3 LM4>;
@@ -381,7 +383,7 @@
             require-prior-idle-ms = <250>;
         };
         right_alt_combo {
-            bindings = <&kp RALT>;
+            bindings = <&kp LALT>;
             key-positions = <RM2 RM3>;
             layers = <DEFAULT NUM_NAV>;
             require-prior-idle-ms = <200>;
@@ -409,7 +411,7 @@
             timeout-ms = <40>;
         };
         right_gui_alt_combo {
-            bindings = <&kp RA(RGUI)>;
+            bindings = <&kp LA(RGUI)>;
             key-positions = <RM2 RM3 RM4>;
             layers = <DEFAULT NUM_NAV>;
             require-prior-idle-ms = <250>;
@@ -423,7 +425,7 @@
             timeout-ms = <40>;
         };
         right_alt_ctrl_combo {
-            bindings = <&kp RC(RALT)>;
+            bindings = <&kp RC(LALT)>;
             key-positions = <RM1 RM2 RM3>;
             layers = <DEFAULT NUM_NAV>;
             require-prior-idle-ms = <250>;
@@ -437,7 +439,7 @@
             timeout-ms = <40>;
         };
         right_gui_alt_ctrl_combo {
-            bindings = <&kp RC(RA(RGUI))>;
+            bindings = <&kp RC(LA(RGUI))>;
             key-positions = <RM1 RM2 RM3 RM4>;
             layers = <DEFAULT NUM_NAV>;
             require-prior-idle-ms = <250>;
